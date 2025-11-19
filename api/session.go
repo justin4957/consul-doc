@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/session.go
+Session API client for distributed locking and ephemeral data.
+
+## Linked Modules
+- [api/api](./api.go) - Main API client
+- [api/kv](./kv.go) - KV store using sessions for locks
+
+## Tags
+api, client, session, locking, distributed, ttl
+
+## Exports
+Session, SessionEntry, Create, Destroy, Renew, RenewPeriodic
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/session.go> a code:Module ;
+    code:name "api/session.go" ;
+    code:description "Session API client for distributed locking and ephemeral data" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api/api" ;
+        code:path "./api.go" ;
+        code:relationship "Main API client"
+    ], [
+        code:name "api/kv" ;
+        code:path "./kv.go" ;
+        code:relationship "KV store using sessions for locks"
+    ] ;
+    code:exports :Session, :SessionEntry, :Create, :Destroy, :Renew, :RenewPeriodic ;
+    code:tags "api", "client", "session", "locking", "distributed", "ttl" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

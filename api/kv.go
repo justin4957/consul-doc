@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/kv.go
+Key-value store API client for distributed configuration and metadata storage.
+
+## Linked Modules
+- [api/api](./api.go) - Main API client
+- [api/session](./session.go) - Session API for distributed locks
+
+## Tags
+api, client, kv, storage, distributed, locking
+
+## Exports
+KV, KVPair, KVPairs, Get, Put, Delete, List, CAS, Acquire, Release
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/kv.go> a code:Module ;
+    code:name "api/kv.go" ;
+    code:description "Key-value store API client for distributed configuration and metadata storage" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api/api" ;
+        code:path "./api.go" ;
+        code:relationship "Main API client"
+    ], [
+        code:name "api/session" ;
+        code:path "./session.go" ;
+        code:relationship "Session API for distributed locks"
+    ] ;
+    code:exports :KV, :KVPair, :KVPairs, :Get, :Put, :Delete, :List, :CAS, :Acquire, :Release ;
+    code:tags "api", "client", "kv", "storage", "distributed", "locking" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

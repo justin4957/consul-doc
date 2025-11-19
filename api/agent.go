@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/agent.go
+Agent API client for service registration, health checks, and node operations.
+
+## Linked Modules
+- [api/api](./api.go) - Main API client
+- [agent/agent_endpoint](../agent/agent_endpoint.go) - Server-side agent endpoints
+
+## Tags
+api, client, agent, service-registration, health
+
+## Exports
+Agent, AgentService, AgentCheck, ServiceRegister, CheckRegister
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/agent.go> a code:Module ;
+    code:name "api/agent.go" ;
+    code:description "Agent API client for service registration, health checks, and node operations" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api/api" ;
+        code:path "./api.go" ;
+        code:relationship "Main API client"
+    ], [
+        code:name "agent/agent_endpoint" ;
+        code:path "../agent/agent_endpoint.go" ;
+        code:relationship "Server-side agent endpoints"
+    ] ;
+    code:exports :Agent, :AgentService, :AgentCheck, :ServiceRegister, :CheckRegister ;
+    code:tags "api", "client", "agent", "service-registration", "health" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

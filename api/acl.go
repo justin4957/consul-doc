@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/acl.go
+ACL API client for managing tokens, policies, roles, and auth methods.
+
+## Linked Modules
+- [api/api](./api.go) - Main API client
+- [acl/acl](../acl/acl.go) - Core ACL types and logic
+
+## Tags
+api, client, acl, security, authorization, authentication
+
+## Exports
+ACL, ACLToken, ACLPolicy, ACLRole, ACLAuthMethod, ACLBindingRule, TokenCreate, PolicyCreate, RoleCreate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/acl.go> a code:Module ;
+    code:name "api/acl.go" ;
+    code:description "ACL API client for managing tokens, policies, roles, and auth methods" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api/api" ;
+        code:path "./api.go" ;
+        code:relationship "Main API client"
+    ], [
+        code:name "acl/acl" ;
+        code:path "../acl/acl.go" ;
+        code:relationship "Core ACL types and logic"
+    ] ;
+    code:exports :ACL, :ACLToken, :ACLPolicy, :ACLRole, :ACLAuthMethod, :ACLBindingRule, :TokenCreate, :PolicyCreate, :RoleCreate ;
+    code:tags "api", "client", "acl", "security", "authorization", "authentication" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (
