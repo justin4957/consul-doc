@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/netutil/network.go
+Network module for agent layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+agent
+
+## Exports
+GetAgentBindAddr, GetAgentBindAddrFunc, GetAgentBindAddrWithDTO, GetAgentConfig, GetAgentConfigFunc, GetAgentConfigWithDTO, GetMockGetAgentBindAddrFunc, IPStackRequestDTO, IsDualStack, IsDualStackWithDTO, SetAgentBindAddr
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/netutil/network.go> a code:Module ;
+    code:name "agent/netutil/network.go" ;
+    code:description "Network module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :GetAgentBindAddr, :GetAgentBindAddrFunc, :GetAgentBindAddrWithDTO, :GetAgentConfig, :GetAgentConfigFunc, :GetAgentConfigWithDTO, :GetMockGetAgentBindAddrFunc, :IPStackRequestDTO, :IsDualStack, :IsDualStackWithDTO, :SetAgentBindAddr ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package netutil
 
 import (

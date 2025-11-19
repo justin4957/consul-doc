@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/index/interfaces.go
+Interfaces module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+IndexOption, IndexRequired, Indexer, MultiIndexer, ResourceIterator, SingleIndexer, Txn
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/index/interfaces.go> a code:Module ;
+    code:name "internal/controller/cache/index/interfaces.go" ;
+    code:description "Interfaces module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :IndexOption, :IndexRequired, :Indexer, :MultiIndexer, :ResourceIterator, :SingleIndexer, :Txn ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package index
 
 import "github.com/hashicorp/consul/proto-public/pbresource"

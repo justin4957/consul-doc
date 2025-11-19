@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg-glue/federation_state_list_mesh_gateways.go
+Federation State List Mesh Gateways module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/cache-types](../agent/cache-types)
+- [agent/consul/watch](../agent/consul/watch)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [agent/structs/aclfilter](../agent/structs/aclfilter)
+
+## Tags
+agent, networking, persistence, service-mesh, storage
+
+## Exports
+CacheFederationStateListMeshGateways, ServerFederationStateListMeshGateways
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg-glue/federation_state_list_mesh_gateways.go> a code:Module ;
+    code:name "agent/proxycfg-glue/federation_state_list_mesh_gateways.go" ;
+    code:description "Federation State List Mesh Gateways module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/consul/watch" ;
+        code:path "../agent/consul/watch"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/structs/aclfilter" ;
+        code:path "../agent/structs/aclfilter"
+    ] ;
+    code:exports :CacheFederationStateListMeshGateways, :ServerFederationStateListMeshGateways ;
+    code:tags "agent", "networking", "persistence", "service-mesh", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfgglue
 
 import (

@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/auth/binder.go
+Binder module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/authmethod](../agent/consul/authmethod)
+- [agent/structs](../agent/structs)
+- [lib/template](../lib/template)
+
+## Tags
+agent, authentication, security
+
+## Exports
+Binder, BinderStateStore, Bindings, IsValidBindingRule, NewBinder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/auth/binder.go> a code:Module ;
+    code:name "agent/consul/auth/binder.go" ;
+    code:description "Binder module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/authmethod" ;
+        code:path "../agent/consul/authmethod"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/template" ;
+        code:path "../lib/template"
+    ] ;
+    code:exports :Binder, :BinderStateStore, :Bindings, :IsValidBindingRule, :NewBinder ;
+    code:tags "agent", "authentication", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package auth
 
 import (

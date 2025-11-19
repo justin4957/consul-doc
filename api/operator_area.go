@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/operator_area.go
+Operator Area module for api layer
+
+## Tags
+api, client
+
+## Exports
+Area, AreaJoinResponse, SerfMember
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/operator_area.go> a code:Module ;
+    code:name "api/operator_area.go" ;
+    code:description "Operator Area module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Area, :AreaJoinResponse, :SerfMember ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // The /v1/operator/area endpoints are available only in Consul Enterprise and

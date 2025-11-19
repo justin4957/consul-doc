@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/operator_keyring.go
+Operator Keyring module for api layer
+
+## Tags
+api, client
+
+## Exports
+KeyringResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/operator_keyring.go> a code:Module ;
+    code:name "api/operator_keyring.go" ;
+    code:description "Operator Keyring module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :KeyringResponse ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // keyringRequest is used for performing Keyring operations

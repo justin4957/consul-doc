@@ -7,6 +7,27 @@
 // 	protoc        (unknown)
 // source: private/pbconfig/config.proto
 
+/*
+# Module: proto/private/pbconfig/config.pb.go
+Config.Pb module for internal layer
+
+## Tags
+configuration, internal
+
+## Exports
+ACL, ACLServiceProviderToken, ACLTokens, AutoEncrypt, Config, File, Gossip, GossipEncryption, TLS
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbconfig/config.pb.go> a code:Module ;
+    code:name "proto/private/pbconfig/config.pb.go" ;
+    code:description "Config.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ACL, :ACLServiceProviderToken, :ACLTokens, :AutoEncrypt, :Config, :File, :Gossip, :GossipEncryption, :TLS ;
+    code:tags "configuration", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbconfig
 
 import (

@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/inmem/event_index.go
+Event Index module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/inmem/event_index.go> a code:Module ;
+    code:name "internal/storage/inmem/event_index.go" ;
+    code:description "Event Index module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package inmem
 
 import "github.com/hashicorp/go-memdb"

@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/protocol_trace.go
+Protocol Trace module for agent layer
+
+## Tags
+agent, envoy, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/protocol_trace.go> a code:Module ;
+    code:name "agent/xds/protocol_trace.go" ;
+    code:description "Protocol Trace module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

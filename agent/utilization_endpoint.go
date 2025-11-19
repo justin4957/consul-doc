@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/utilization_endpoint.go
+Utilization Endpoint module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [version](../version)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/utilization_endpoint.go> a code:Module ;
+    code:name "agent/utilization_endpoint.go" ;
+    code:description "Utilization Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

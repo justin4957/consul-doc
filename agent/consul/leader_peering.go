@@ -1,6 +1,66 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/leader_peering.go
+Leader Peering module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/state](../agent/consul/state)
+- [agent/grpc-external/services/peerstream](../agent/grpc-external/services/peerstream)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [logging](../logging)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+- [proto/private/pbpeerstream](../proto/private/pbpeerstream)
+
+## Tags
+agent
+
+## Exports
+LeaderPeeringMetrics
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/leader_peering.go> a code:Module ;
+    code:name "agent/consul/leader_peering.go" ;
+    code:description "Leader Peering module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/grpc-external/services/peerstream" ;
+        code:path "../agent/grpc-external/services/peerstream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ], [
+        code:name "proto/private/pbpeerstream" ;
+        code:path "../proto/private/pbpeerstream"
+    ] ;
+    code:exports :LeaderPeeringMetrics ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

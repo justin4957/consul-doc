@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/configentry/compare.go
+Compare module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, configuration
+
+## Exports
+EqualID, Less, SameHash, SortSlice
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/configentry/compare.go> a code:Module ;
+    code:name "agent/configentry/compare.go" ;
+    code:description "Compare module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :EqualID, :Less, :SameHash, :SortSlice ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package configentry
 
 import (

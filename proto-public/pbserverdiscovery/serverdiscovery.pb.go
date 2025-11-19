@@ -10,6 +10,34 @@
 // 	protoc        (unknown)
 // source: pbserverdiscovery/serverdiscovery.proto
 
+/*
+# Module: proto-public/pbserverdiscovery/serverdiscovery.pb.go
+Serverdiscovery.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+discovery, dns, internal
+
+## Exports
+File, Server, WatchServersRequest, WatchServersResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbserverdiscovery/serverdiscovery.pb.go> a code:Module ;
+    code:name "proto-public/pbserverdiscovery/serverdiscovery.pb.go" ;
+    code:description "Serverdiscovery.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:exports :File, :Server, :WatchServersRequest, :WatchServersResponse ;
+    code:tags "discovery", "dns", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbserverdiscovery
 
 import (

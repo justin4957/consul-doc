@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/router/serf_adapter.go
+Serf Adapter module for agent layer
+
+## Linked Modules
+- [agent/metadata](../agent/metadata)
+- [types](../types)
+
+## Tags
+agent
+
+## Exports
+HandleSerfEvents
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/router/serf_adapter.go> a code:Module ;
+    code:name "agent/router/serf_adapter.go" ;
+    code:description "Serf Adapter module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :HandleSerfEvents ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package router
 
 import (

@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/discovery_chain_endpoint.go
+Discovery Chain Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache-types](../agent/cache-types)
+- [agent/structs](../agent/structs)
+- [lib/decode](../lib/decode)
+
+## Tags
+agent, discovery, dns
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/discovery_chain_endpoint.go> a code:Module ;
+    code:name "agent/discovery_chain_endpoint.go" ;
+    code:description "Discovery Chain Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/decode" ;
+        code:path "../lib/decode"
+    ] ;
+    code:tags "agent", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

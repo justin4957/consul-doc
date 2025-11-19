@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/query.go
+Query module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+AuthMethodQuery, BoolQuery, KeyValueQuery, MultiQuery, Query
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/query.go> a code:Module ;
+    code:name "agent/consul/state/query.go" ;
+    code:description "Query module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :AuthMethodQuery, :BoolQuery, :KeyValueQuery, :MultiQuery, :Query ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

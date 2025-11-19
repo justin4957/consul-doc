@@ -3,6 +3,42 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/grpc-external/services/resource/server_ce.go
+Server Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+Config
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/resource/server_ce.go> a code:Module ;
+    code:name "agent/grpc-external/services/resource/server_ce.go" ;
+    code:description "Server Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Config ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

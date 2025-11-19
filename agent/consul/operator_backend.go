@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/operator_backend.go
+Operator Backend module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/rpc/operator](../agent/rpc/operator)
+- [proto/private/pboperator](../proto/private/pboperator)
+
+## Tags
+agent
+
+## Exports
+NewOperatorBackend, OperatorBackend
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/operator_backend.go> a code:Module ;
+    code:name "agent/consul/operator_backend.go" ;
+    code:description "Operator Backend module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/rpc/operator" ;
+        code:path "../agent/rpc/operator"
+    ], [
+        code:name "proto/private/pboperator" ;
+        code:path "../proto/private/pboperator"
+    ] ;
+    code:exports :NewOperatorBackend, :OperatorBackend ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

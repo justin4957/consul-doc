@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/client/grpc-config.go
+Grpc Config module for cli layer
+
+## Tags
+api, cli, communication, configuration, grpc, networking, user-interface
+
+## Exports
+GRPCConfig, GetDefaultGRPCConfig, LoadGRPCConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/client/grpc-config.go> a code:Module ;
+    code:name "command/resource/client/grpc-config.go" ;
+    code:description "Grpc Config module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :GRPCConfig, :GetDefaultGRPCConfig, :LoadGRPCConfig ;
+    code:tags "api", "cli", "communication", "configuration", "grpc", "networking", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

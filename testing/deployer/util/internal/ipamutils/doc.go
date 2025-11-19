@@ -18,4 +18,22 @@
 // The only changes were to remove dead code from the package that we did not
 // need, and to edit the tests to use github.com/stretchr/testify to avoid an
 // extra dependency.
+
+/*
+# Module: testing/deployer/util/internal/ipamutils/doc.go
+Doc module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/util/internal/ipamutils/doc.go> a code:Module ;
+    code:name "testing/deployer/util/internal/ipamutils/doc.go" ;
+    code:description "Doc module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package ipamutils

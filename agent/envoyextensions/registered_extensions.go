@@ -1,6 +1,62 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/envoyextensions/registered_extensions.go
+Registered Extensions module for agent layer
+
+## Linked Modules
+- [agent/envoyextensions/builtin/aws-lambda](../agent/envoyextensions/builtin/aws-lambda)
+- [agent/envoyextensions/builtin/ext-authz](../agent/envoyextensions/builtin/ext-authz)
+- [agent/envoyextensions/builtin/lua](../agent/envoyextensions/builtin/lua)
+- [agent/envoyextensions/builtin/otel-access-logging](../agent/envoyextensions/builtin/otel-access-logging)
+- [agent/envoyextensions/builtin/property-override](../agent/envoyextensions/builtin/property-override)
+- [agent/envoyextensions/builtin/wasm](../agent/envoyextensions/builtin/wasm)
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+agent
+
+## Exports
+ConstructExtension, ValidateExtensions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/envoyextensions/registered_extensions.go> a code:Module ;
+    code:name "agent/envoyextensions/registered_extensions.go" ;
+    code:description "Registered Extensions module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/envoyextensions/builtin/aws-lambda" ;
+        code:path "../agent/envoyextensions/builtin/aws-lambda"
+    ], [
+        code:name "agent/envoyextensions/builtin/ext-authz" ;
+        code:path "../agent/envoyextensions/builtin/ext-authz"
+    ], [
+        code:name "agent/envoyextensions/builtin/lua" ;
+        code:path "../agent/envoyextensions/builtin/lua"
+    ], [
+        code:name "agent/envoyextensions/builtin/otel-access-logging" ;
+        code:path "../agent/envoyextensions/builtin/otel-access-logging"
+    ], [
+        code:name "agent/envoyextensions/builtin/property-override" ;
+        code:path "../agent/envoyextensions/builtin/property-override"
+    ], [
+        code:name "agent/envoyextensions/builtin/wasm" ;
+        code:path "../agent/envoyextensions/builtin/wasm"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :ConstructExtension, :ValidateExtensions ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package envoyextensions
 
 import (

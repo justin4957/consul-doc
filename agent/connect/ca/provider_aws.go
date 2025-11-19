@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/ca/provider_aws.go
+Provider Aws module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+AWSProvider, NewAWSProvider, ParseAWSCAConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/ca/provider_aws.go> a code:Module ;
+    code:name "agent/connect/ca/provider_aws.go" ;
+    code:description "Provider Aws module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :AWSProvider, :NewAWSProvider, :ParseAWSCAConfig ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package ca
 
 import (

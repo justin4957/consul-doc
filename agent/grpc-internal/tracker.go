@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/tracker.go
+Tracker module for agent layer
+
+## Linked Modules
+- [agent/grpc-internal/balancer](../agent/grpc-internal/balancer)
+- [agent/grpc-internal/resolver](../agent/grpc-internal/resolver)
+- [agent/metadata](../agent/metadata)
+- [types](../types)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+NewTracker, Tracker
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/tracker.go> a code:Module ;
+    code:name "agent/grpc-internal/tracker.go" ;
+    code:description "Tracker module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/grpc-internal/balancer" ;
+        code:path "../agent/grpc-internal/balancer"
+    ], [
+        code:name "agent/grpc-internal/resolver" ;
+        code:path "../agent/grpc-internal/resolver"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :NewTracker, :Tracker ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package internal
 
 import (

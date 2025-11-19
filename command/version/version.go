@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/version/version.go
+Version module for cli layer
+
+## Linked Modules
+- [agent/consul](../agent/consul)
+- [command/flags](../command/flags)
+- [version](../version)
+
+## Tags
+cli, user-interface
+
+## Exports
+New, RPCVersionInfo, VersionInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/version/version.go> a code:Module ;
+    code:name "command/version/version.go" ;
+    code:description "Version module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :New, :RPCVersionInfo, :VersionInfo ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package version
 
 import (

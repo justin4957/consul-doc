@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: agent/envoyextensions/builtin/otel-access-logging/structs.go
+Structs module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+agent, data-model, types
+
+## Exports
+AccessLog, GrpcService, HeaderValue, RetryBackOff, RetryPolicy, Target
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/envoyextensions/builtin/otel-access-logging/structs.go> a code:Module ;
+    code:name "agent/envoyextensions/builtin/otel-access-logging/structs.go" ;
+    code:description "Structs module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :AccessLog, :GrpcService, :HeaderValue, :RetryBackOff, :RetryPolicy, :Target ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package otelaccesslogging
 
 import (

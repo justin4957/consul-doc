@@ -4,6 +4,27 @@
 // The /v1/operator/audit-hash endpoint is available only in Consul Enterprise and
 // interact with its audit logging subsystem.
 
+/*
+# Module: api/operator_audit.go
+Operator Audit module for api layer
+
+## Tags
+api, client
+
+## Exports
+AuditHashRequest, AuditHashResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/operator_audit.go> a code:Module ;
+    code:name "api/operator_audit.go" ;
+    code:description "Operator Audit module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :AuditHashRequest, :AuditHashResponse ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 type AuditHashRequest struct {

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/retry/interface.go
+Interface module for internal layer
+
+## Tags
+internal
+
+## Exports
+TestingTB
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/retry/interface.go> a code:Module ;
+    code:name "sdk/testutil/retry/interface.go" ;
+    code:description "Interface module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :TestingTB ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package retry
 
 import (

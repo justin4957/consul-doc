@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/leafcert/leafcert.go
+Leafcert module for agent layer
+
+## Linked Modules
+- [agent/cacheshim](../agent/cacheshim)
+- [agent/structs](../agent/structs)
+- [lib/ttlcache](../lib/ttlcache)
+
+## Tags
+agent
+
+## Exports
+CertSigner, Config, Deps, Manager, NewManager, RootsReader
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/leafcert/leafcert.go> a code:Module ;
+    code:name "agent/leafcert/leafcert.go" ;
+    code:description "Leafcert module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cacheshim" ;
+        code:path "../agent/cacheshim"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/ttlcache" ;
+        code:path "../lib/ttlcache"
+    ] ;
+    code:exports :CertSigner, :Config, :Deps, :Manager, :NewManager, :RootsReader ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package leafcert
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/session_timers.go
+Session Timers module for agent layer
+
+## Tags
+agent
+
+## Exports
+NewSessionTimers, SessionTimers
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/session_timers.go> a code:Module ;
+    code:name "agent/consul/session_timers.go" ;
+    code:description "Session Timers module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NewSessionTimers, :SessionTimers ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

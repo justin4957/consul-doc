@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/kv/imp/kv_import.go
+Kv Import module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+- [command/kv/impexp](../command/kv/impexp)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/kv/imp/kv_import.go> a code:Module ;
+    code:name "command/kv/imp/kv_import.go" ;
+    code:description "Kv Import module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/kv/impexp" ;
+        code:path "../command/kv/impexp"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package imp
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/connect.go
+Connect module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, data-model, mtls, service-mesh, types
+
+## Exports
+ConnectAuthorizeRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/connect.go> a code:Module ;
+    code:name "agent/structs/connect.go" ;
+    code:description "Connect module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :ConnectAuthorizeRequest ;
+    code:tags "agent", "data-model", "mtls", "service-mesh", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import "github.com/hashicorp/consul/acl"

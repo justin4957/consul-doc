@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/federation_state_list_gateways.go
+Federation State List Gateways module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, persistence, storage, types
+
+## Exports
+FederationStateListMeshGateways, FederationStateListMeshGatewaysName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/federation_state_list_gateways.go> a code:Module ;
+    code:name "agent/cache-types/federation_state_list_gateways.go" ;
+    code:description "Federation State List Gateways module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :FederationStateListMeshGateways, :FederationStateListMeshGatewaysName ;
+    code:tags "agent", "data-model", "persistence", "storage", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

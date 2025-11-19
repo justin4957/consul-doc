@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/manager.go
+Manager module for agent layer
+
+## Linked Modules
+- [agent/hcp/client](../agent/hcp/client)
+- [agent/hcp/config](../agent/hcp/config)
+- [agent/hcp/scada](../agent/hcp/scada)
+- [lib](../lib)
+
+## Tags
+agent
+
+## Exports
+HCPManager, ManagementTokenDeleter, ManagementTokenUpserter, Manager, ManagerConfig, NewManager, StatusCallback
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/manager.go> a code:Module ;
+    code:name "agent/hcp/manager.go" ;
+    code:description "Manager module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/client" ;
+        code:path "../agent/hcp/client"
+    ], [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ], [
+        code:name "agent/hcp/scada" ;
+        code:path "../agent/hcp/scada"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :HCPManager, :ManagementTokenDeleter, :ManagementTokenUpserter, :Manager, :ManagerConfig, :NewManager, :StatusCallback ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package hcp
 
 import (

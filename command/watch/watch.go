@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/watch/watch.go
+Watch module for cli layer
+
+## Linked Modules
+- [agent](../agent)
+- [agent/exec](../agent/exec)
+- [api](../api)
+- [api/watch](../api/watch)
+- [command/flags](../command/flags)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/watch/watch.go> a code:Module ;
+    code:name "command/watch/watch.go" ;
+    code:description "Watch module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent" ;
+        code:path "../agent"
+    ], [
+        code:name "agent/exec" ;
+        code:path "../agent/exec"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "api/watch" ;
+        code:path "../api/watch"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package watch
 
 import (

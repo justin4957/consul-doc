@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/debug/debug.go
+Debug module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, user-interface
+
+## Exports
+New, PortStatus
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/debug/debug.go> a code:Module ;
+    code:name "command/debug/debug.go" ;
+    code:description "Debug module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New, :PortStatus ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package debug
 
 import (

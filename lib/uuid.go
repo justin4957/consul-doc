@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/uuid.go
+Uuid module for internal layer
+
+## Tags
+internal
+
+## Exports
+GenerateUUID, UUIDCheckFunc
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/uuid.go> a code:Module ;
+    code:name "lib/uuid.go" ;
+    code:description "Uuid module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :GenerateUUID, :UUIDCheckFunc ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (

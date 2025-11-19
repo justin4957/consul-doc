@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/telemetry.go
+Telemetry module for internal layer
+
+## Linked Modules
+- [lib/retry](../lib/retry)
+
+## Tags
+internal
+
+## Exports
+InitTelemetry, MetricsConfig, MetricsHandler, TelemetryConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/telemetry.go> a code:Module ;
+    code:name "lib/telemetry.go" ;
+    code:description "Telemetry module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :InitTelemetry, :MetricsConfig, :MetricsHandler, :TelemetryConfig ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (

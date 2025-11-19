@@ -3,6 +3,38 @@
 
 //go:build !consulent
 
+/*
+# Module: proto/private/pbservice/convert_ce.go
+Convert Ce module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+internal
+
+## Exports
+EnterpriseMetaToStructs, NewEnterpriseMetaFromStructs
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbservice/convert_ce.go> a code:Module ;
+    code:name "proto/private/pbservice/convert_ce.go" ;
+    code:description "Convert Ce module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :EnterpriseMetaToStructs, :NewEnterpriseMetaFromStructs ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbservice
 
 import (

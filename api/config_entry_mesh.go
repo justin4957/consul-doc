@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_mesh.go
+Config Entry Mesh module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+MeshConfigEntry, MeshDirectionalHTTPConfig, MeshDirectionalTLSConfig, MeshHTTPConfig, MeshTLSConfig, PeeringMeshConfig, RequestNormalizationMeshConfig, TransparentProxyMeshConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_mesh.go> a code:Module ;
+    code:name "api/config_entry_mesh.go" ;
+    code:description "Config Entry Mesh module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :MeshConfigEntry, :MeshDirectionalHTTPConfig, :MeshDirectionalTLSConfig, :MeshHTTPConfig, :MeshTLSConfig, :PeeringMeshConfig, :RequestNormalizationMeshConfig, :TransparentProxyMeshConfig ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

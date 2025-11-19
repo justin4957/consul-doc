@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/login/aws.go
+Aws module for cli layer
+
+## Linked Modules
+- [agent/consul/authmethod/awsauth](../agent/consul/authmethod/awsauth)
+
+## Tags
+cli, user-interface
+
+## Exports
+AWSLogin
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/login/aws.go> a code:Module ;
+    code:name "command/login/aws.go" ;
+    code:description "Aws module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/consul/authmethod/awsauth" ;
+        code:path "../agent/consul/authmethod/awsauth"
+    ] ;
+    code:exports :AWSLogin ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package login
 
 import (

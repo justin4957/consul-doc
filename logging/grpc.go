@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: logging/grpc.go
+Grpc module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+GRPCLogger, NewGRPCLogger
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/grpc.go> a code:Module ;
+    code:name "logging/grpc.go" ;
+    code:description "Grpc module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :GRPCLogger, :NewGRPCLogger ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

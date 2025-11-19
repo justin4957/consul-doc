@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/gossip/libserf/serf.go
+Serf module for internal layer
+
+## Tags
+internal
+
+## Exports
+DefaultConfig, GetTags, NewReconnectOverride, ReconnectOverride, UpdateTag
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/gossip/libserf/serf.go> a code:Module ;
+    code:name "internal/gossip/libserf/serf.go" ;
+    code:description "Serf module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DefaultConfig, :GetTags, :NewReconnectOverride, :ReconnectOverride, :UpdateTag ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package libserf
 
 import (

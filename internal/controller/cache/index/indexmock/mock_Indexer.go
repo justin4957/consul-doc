@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/cache/index/indexmock/mock_Indexer.go
+Mock Indexer module for internal layer
+
+## Tags
+internal
+
+## Exports
+Indexer, NewIndexer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/index/indexmock/mock_Indexer.go> a code:Module ;
+    code:name "internal/controller/cache/index/indexmock/mock_Indexer.go" ;
+    code:description "Mock Indexer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Indexer, :NewIndexer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package indexmock
 
 import (

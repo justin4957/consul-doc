@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/ca/testing.go
+Testing module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [sdk/freeport](../sdk/freeport)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+CASigningKeyTypeCases, CASigningKeyTypes, CreateVaultTokenWithAttrs, KeyTestCase, KeyTestCases, NewTestVaultServer, SkipIfVaultNotPresent, TestConsulProvider, TestVaultServer, VaultTokenAttributes
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/ca/testing.go> a code:Module ;
+    code:name "agent/connect/ca/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "sdk/freeport" ;
+        code:path "../sdk/freeport"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :CASigningKeyTypeCases, :CASigningKeyTypes, :CreateVaultTokenWithAttrs, :KeyTestCase, :KeyTestCases, :NewTestVaultServer, :SkipIfVaultNotPresent, :TestConsulProvider, :TestVaultServer, :VaultTokenAttributes ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package ca
 
 import (

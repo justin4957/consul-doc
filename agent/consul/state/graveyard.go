@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/graveyard.go
+Graveyard module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+Graveyard, NewGraveyard, Tombstone
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/graveyard.go> a code:Module ;
+    code:name "agent/consul/state/graveyard.go" ;
+    code:description "Graveyard module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :Graveyard, :NewGraveyard, :Tombstone ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

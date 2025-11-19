@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: types/tls.go
+Tls module for internal layer
+
+## Tags
+data-model, encryption, internal, security, types
+
+## Exports
+MarshalEnvoyTLSCipherSuiteStrings, TLSCipherSuite, TLSVersion, TLSVersions, ValidateConsulAgentCipherSuites, ValidateEnvoyCipherSuites, ValidateTLSVersion
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<types/tls.go> a code:Module ;
+    code:name "types/tls.go" ;
+    code:description "Tls module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :MarshalEnvoyTLSCipherSuiteStrings, :TLSCipherSuite, :TLSVersion, :TLSVersions, :ValidateConsulAgentCipherSuites, :ValidateEnvoyCipherSuites, :ValidateTLSVersion ;
+    code:tags "data-model", "encryption", "internal", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package types
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/tls.go
+Tls module for internal layer
+
+## Linked Modules
+- [testing/deployer/sprawl/internal/secrets](../testing/deployer/sprawl/internal/secrets)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+encryption, internal, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/tls.go> a code:Module ;
+    code:name "testing/deployer/sprawl/tls.go" ;
+    code:description "Tls module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/sprawl/internal/secrets" ;
+        code:path "../testing/deployer/sprawl/internal/secrets"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:tags "encryption", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package sprawl
 
 import (

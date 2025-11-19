@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/resourcetest/acls.go
+Acls module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+access-control, authorization, internal, security
+
+## Exports
+ACLTestCase, RunACLTestCase
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/resourcetest/acls.go> a code:Module ;
+    code:name "internal/resource/resourcetest/acls.go" ;
+    code:description "Acls module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :ACLTestCase, :RunACLTestCase ;
+    code:tags "access-control", "authorization", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package resourcetest
 
 import (

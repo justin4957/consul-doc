@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/peerings.go
+Peerings module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, data-model, types
+
+## Exports
+PeeringListName, PeeringListRequest, PeeringLister, Peerings
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/peerings.go> a code:Module ;
+    code:name "agent/cache-types/peerings.go" ;
+    code:description "Peerings module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :PeeringListName, :PeeringListRequest, :PeeringLister, :Peerings ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

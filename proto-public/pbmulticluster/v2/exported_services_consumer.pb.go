@@ -7,6 +7,27 @@
 // 	protoc        (unknown)
 // source: pbmulticluster/v2/exported_services_consumer.proto
 
+/*
+# Module: proto-public/pbmulticluster/v2/exported_services_consumer.pb.go
+Exported Services Consumer.Pb module for internal layer
+
+## Tags
+internal
+
+## Exports
+ExportedServicesConsumer, File
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbmulticluster/v2/exported_services_consumer.pb.go> a code:Module ;
+    code:name "proto-public/pbmulticluster/v2/exported_services_consumer.pb.go" ;
+    code:description "Exported Services Consumer.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ExportedServicesConsumer, :File ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package multiclusterv2
 
 import (

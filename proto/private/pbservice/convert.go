@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/pbservice/convert.go
+Convert module for internal layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+- [types](../types)
+
+## Tags
+internal
+
+## Exports
+CheckIDType, CheckServiceNodeToStructs, CheckTypesToStructs, ConnectProxyConfigPtrToStructs, EnvoyExtensionsFromStructs, EnvoyExtensionsToStructs, ExposePathSliceToStructs, LocalityFromStructs, LocalityToStructs, MapHeadersToStructs, MapStringInterfaceToProtobufTypesStruct, MapStringServiceAddressToStructs, NewCheckServiceNodeFromStructs, NewCheckTypesFromStructs, NewConnectProxyConfigPtrFromStructs, NewExposePathSliceFromStructs, NewMapHeadersFromStructs, NewMapStringServiceAddressFromStructs, NewPortsFromStructs, NewRaftIndexFromStructs
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbservice/convert.go> a code:Module ;
+    code:name "proto/private/pbservice/convert.go" ;
+    code:description "Convert module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :CheckIDType, :CheckServiceNodeToStructs, :CheckTypesToStructs, :ConnectProxyConfigPtrToStructs, :EnvoyExtensionsFromStructs, :EnvoyExtensionsToStructs, :ExposePathSliceToStructs, :LocalityFromStructs, :LocalityToStructs, :MapHeadersToStructs, :MapStringInterfaceToProtobufTypesStruct, :MapStringServiceAddressToStructs, :NewCheckServiceNodeFromStructs, :NewCheckTypesFromStructs, :NewConnectProxyConfigPtrFromStructs, :NewExposePathSliceFromStructs, :NewMapHeadersFromStructs, :NewMapStringServiceAddressFromStructs, :NewPortsFromStructs, :NewRaftIndexFromStructs ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbservice
 
 import (

@@ -10,6 +10,34 @@
 // This package contains fake resource types, which are useful for working on
 // Consul's generic storage APIs.
 
+/*
+# Module: proto/private/pbdemo/v1/demo.pb.go
+Demo.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+Album, Artist, Concept, Executive, File, Genre, RecordLabel
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbdemo/v1/demo.pb.go> a code:Module ;
+    code:name "proto/private/pbdemo/v1/demo.pb.go" ;
+    code:description "Demo.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Album, :Artist, :Concept, :Executive, :File, :Genre, :RecordLabel ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package demov1
 
 import (

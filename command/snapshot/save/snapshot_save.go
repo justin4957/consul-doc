@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/snapshot/save/snapshot_save.go
+Snapshot Save module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+- [snapshot](../snapshot)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/snapshot/save/snapshot_save.go> a code:Module ;
+    code:name "command/snapshot/save/snapshot_save.go" ;
+    code:description "Snapshot Save module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "snapshot" ;
+        code:path "../snapshot"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package save
 
 import (

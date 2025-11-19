@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/dns/buffer_response_writer.go
+Buffer Response Writer module for agent layer
+
+## Tags
+agent, discovery, networking
+
+## Exports
+BufferResponseWriter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/dns/buffer_response_writer.go> a code:Module ;
+    code:name "agent/dns/buffer_response_writer.go" ;
+    code:description "Buffer Response Writer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :BufferResponseWriter ;
+    code:tags "agent", "discovery", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package dns
 
 import (

@@ -7,6 +7,46 @@
 // 	protoc        (unknown)
 // source: private/pbpeerstream/peerstream.proto
 
+/*
+# Module: proto/private/pbpeerstream/peerstream.pb.go
+Peerstream.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+- [proto/private/pbservice](../proto/private/pbservice)
+- [proto/private/pbstatus](../proto/private/pbstatus)
+
+## Tags
+internal
+
+## Exports
+ExchangeSecretRequest, ExchangeSecretResponse, ExportedService, ExportedServiceList, File, LeaderAddress, Operation, ReplicationMessage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbpeerstream/peerstream.pb.go> a code:Module ;
+    code:name "proto/private/pbpeerstream/peerstream.pb.go" ;
+    code:description "Peerstream.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ], [
+        code:name "proto/private/pbservice" ;
+        code:path "../proto/private/pbservice"
+    ], [
+        code:name "proto/private/pbstatus" ;
+        code:path "../proto/private/pbstatus"
+    ] ;
+    code:exports :ExchangeSecretRequest, :ExchangeSecretResponse, :ExportedService, :ExportedServiceList, :File, :LeaderAddress, :Operation, :ReplicationMessage ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbpeerstream
 
 import (

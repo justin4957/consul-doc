@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/cache/index/indexmock/mock_resourceIterable.go
+Mock Resourceiterable module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+NewResourceIterable, ResourceIterable
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/index/indexmock/mock_resourceIterable.go> a code:Module ;
+    code:name "internal/controller/cache/index/indexmock/mock_resourceIterable.go" ;
+    code:description "Mock Resourceiterable module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :NewResourceIterable, :ResourceIterable ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package indexmock
 
 import (

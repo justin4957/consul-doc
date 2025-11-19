@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/flagset.go
+Flagset module for agent layer
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/flagset.go> a code:Module ;
+    code:name "agent/config/flagset.go" ;
+    code:description "Flagset module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

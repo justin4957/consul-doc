@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/fsm/decode_downgrade.go
+Decode Downgrade module for agent layer
+
+## Linked Modules
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent
+
+## Exports
+ErrDroppingTenantedReq, IsEnterpriseData, MakeShadowConfigEntry, ShadowAPIGatewayConfigEntry, ShadowBase, ShadowBoundAPIGatewayConfigEntry, ShadowBoundAPIGatewayListener, ShadowConfigEntryRequest, ShadowConfigentry, ShadowExportedServicesConfigEntry, ShadowFileSystemCertificateConfigEntry, ShadowHTTPRouteConfigEntry, ShadowHTTPRouteRule, ShadowHTTPService, ShadowIngressGatewayConfigEntry, ShadowIngressListener, ShadowIngressService, ShadowInlineCertificateConfigEntry, ShadowJWTProviderConfigEntry, ShadowLinkedService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/fsm/decode_downgrade.go> a code:Module ;
+    code:name "agent/consul/fsm/decode_downgrade.go" ;
+    code:description "Decode Downgrade module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :ErrDroppingTenantedReq, :IsEnterpriseData, :MakeShadowConfigEntry, :ShadowAPIGatewayConfigEntry, :ShadowBase, :ShadowBoundAPIGatewayConfigEntry, :ShadowBoundAPIGatewayListener, :ShadowConfigEntryRequest, :ShadowConfigentry, :ShadowExportedServicesConfigEntry, :ShadowFileSystemCertificateConfigEntry, :ShadowHTTPRouteConfigEntry, :ShadowHTTPRouteRule, :ShadowHTTPService, :ShadowIngressGatewayConfigEntry, :ShadowIngressListener, :ShadowIngressService, :ShadowInlineCertificateConfigEntry, :ShadowJWTProviderConfigEntry, :ShadowLinkedService ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package fsm
 
 import (

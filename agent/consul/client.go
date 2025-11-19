@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/client.go
+Client module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/rate](../agent/consul/rate)
+- [agent/pool](../agent/pool)
+- [agent/router](../agent/router)
+- [agent/structs](../agent/structs)
+- [internal/gossip/librtt](../internal/gossip/librtt)
+- [lib](../lib)
+- [logging](../logging)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent
+
+## Exports
+Client, ClientCounters, NewClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/client.go> a code:Module ;
+    code:name "agent/consul/client.go" ;
+    code:description "Client module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ], [
+        code:name "agent/pool" ;
+        code:path "../agent/pool"
+    ], [
+        code:name "agent/router" ;
+        code:path "../agent/router"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/gossip/librtt" ;
+        code:path "../internal/gossip/librtt"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :Client, :ClientCounters, :NewClient ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

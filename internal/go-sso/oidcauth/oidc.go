@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/go-sso/oidcauth/oidc.go
+Oidc module for internal layer
+
+## Tags
+authentication, internal, security
+
+## Exports
+ProviderLoginFailedError, TokenVerificationFailedError
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/go-sso/oidcauth/oidc.go> a code:Module ;
+    code:name "internal/go-sso/oidcauth/oidc.go" ;
+    code:description "Oidc module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ProviderLoginFailedError, :TokenVerificationFailedError ;
+    code:tags "authentication", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package oidcauth
 
 import (

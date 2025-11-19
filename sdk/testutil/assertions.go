@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/assertions.go
+Assertions module for internal layer
+
+## Tags
+internal
+
+## Exports
+RequireErrorContains, RunStep
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/assertions.go> a code:Module ;
+    code:name "sdk/testutil/assertions.go" ;
+    code:description "Assertions module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :RequireErrorContains, :RunStep ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutil
 
 import (

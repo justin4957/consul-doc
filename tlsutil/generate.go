@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: tlsutil/generate.go
+Generate module for security layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+
+## Tags
+encryption, security
+
+## Exports
+CAOpts, CertOpts, GenerateCA, GenerateCert, GeneratePrivateKey, GenerateSerialNumber, ParseSigner, Verify
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<tlsutil/generate.go> a code:Module ;
+    code:name "tlsutil/generate.go" ;
+    code:description "Generate module for security layer" ;
+    code:language "go" ;
+    code:layer "security" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ] ;
+    code:exports :CAOpts, :CertOpts, :GenerateCA, :GenerateCert, :GeneratePrivateKey, :GenerateSerialNumber, :ParseSigner, :Verify ;
+    code:tags "encryption", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package tlsutil
 
 import (

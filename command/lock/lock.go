@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/lock/lock.go
+Lock module for cli layer
+
+## Linked Modules
+- [agent](../agent)
+- [agent/exec](../agent/exec)
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, user-interface
+
+## Exports
+LockUnlock, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/lock/lock.go> a code:Module ;
+    code:name "command/lock/lock.go" ;
+    code:description "Lock module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent" ;
+        code:path "../agent"
+    ], [
+        code:name "agent/exec" ;
+        code:path "../agent/exec"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :LockUnlock, :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package lock
 
 import (

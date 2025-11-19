@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/cluster/config.go
+Config module for internal layer
+
+## Tags
+configuration, internal
+
+## Exports
+ConfigBuilder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/cluster/config.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/cluster/config.go" ;
+    code:description "Config module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ConfigBuilder ;
+    code:tags "configuration", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cluster
 
 import (

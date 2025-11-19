@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_intentions.go
+Config Entry Intentions module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+IntentionHTTPHeaderPermission, IntentionHTTPPermission, IntentionJWTClaimVerification, IntentionJWTProvider, IntentionJWTRequirement, IntentionPermission, ServiceIntentionsConfigEntry, SourceIntention
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_intentions.go> a code:Module ;
+    code:name "api/config_entry_intentions.go" ;
+    code:description "Config Entry Intentions module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :IntentionHTTPHeaderPermission, :IntentionHTTPPermission, :IntentionJWTClaimVerification, :IntentionJWTProvider, :IntentionJWTRequirement, :IntentionPermission, :ServiceIntentionsConfigEntry, :SourceIntention ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import "time"

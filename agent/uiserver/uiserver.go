@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/uiserver/uiserver.go
+Uiserver module for agent layer
+
+## Linked Modules
+- [agent/config](../agent/config)
+- [logging](../logging)
+
+## Tags
+agent
+
+## Exports
+Handler, NewHandler, UIDataTransform
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/uiserver/uiserver.go> a code:Module ;
+    code:name "agent/uiserver/uiserver.go" ;
+    code:description "Uiserver module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :Handler, :NewHandler, :UIDataTransform ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package uiserver
 
 import (

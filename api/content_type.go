@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/content_type.go
+Content Type module for api layer
+
+## Tags
+api, client
+
+## Exports
+ContentTypeRule, ContentTypeRules, GetContentType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/content_type.go> a code:Module ;
+    code:name "api/content_type.go" ;
+    code:description "Content Type module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :ContentTypeRule, :ContentTypeRules, :GetContentType ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

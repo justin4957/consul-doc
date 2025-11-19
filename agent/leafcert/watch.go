@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/leafcert/watch.go
+Watch module for agent layer
+
+## Linked Modules
+- [agent/cacheshim](../agent/cacheshim)
+- [lib](../lib)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/leafcert/watch.go> a code:Module ;
+    code:name "agent/leafcert/watch.go" ;
+    code:description "Watch module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cacheshim" ;
+        code:path "../agent/cacheshim"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package leafcert
 
 import (

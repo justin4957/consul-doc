@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/acl_rules.go
+Acl Rules module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+access-control, authorization, internal, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/acl_rules.go> a code:Module ;
+    code:name "testing/deployer/sprawl/acl_rules.go" ;
+    code:description "Acl Rules module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:tags "access-control", "authorization", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package sprawl
 
 import (

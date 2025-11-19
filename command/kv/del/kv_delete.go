@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/kv/del/kv_delete.go
+Kv Delete module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/kv/del/kv_delete.go> a code:Module ;
+    code:name "command/kv/del/kv_delete.go" ;
+    code:description "Kv Delete module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package del
 
 import (

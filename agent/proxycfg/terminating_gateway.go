@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/terminating_gateway.go
+Terminating Gateway module for agent layer
+
+## Linked Modules
+- [agent/cache-types](../agent/cache-types)
+- [agent/leafcert](../agent/leafcert)
+- [agent/structs](../agent/structs)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/terminating_gateway.go> a code:Module ;
+    code:name "agent/proxycfg/terminating_gateway.go" ;
+    code:description "Terminating Gateway module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/leafcert" ;
+        code:path "../agent/leafcert"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

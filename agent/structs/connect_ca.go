@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/connect_ca.go
+Connect Ca module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [lib](../lib)
+- [lib/stringslice](../lib/stringslice)
+
+## Tags
+agent, data-model, mtls, service-mesh, types
+
+## Exports
+AWSCAProviderConfig, CAConfiguration, CAConsulProviderState, CALeafOp, CALeafRequest, CAOp, CARequest, CARoot, CARoots, CASignRequest, CommonCAProviderConfig, ConsulCAProviderConfig, IndexedCARoots, IntermediateCertRenewInterval, IssuedCert, MaxLeafCertTTL, MinLeafCertTTL, ParseDurationFunc, Uint8ToString, VaultAuthMethod
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/connect_ca.go> a code:Module ;
+    code:name "agent/structs/connect_ca.go" ;
+    code:description "Connect Ca module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/stringslice" ;
+        code:path "../lib/stringslice"
+    ] ;
+    code:exports :AWSCAProviderConfig, :CAConfiguration, :CAConsulProviderState, :CALeafOp, :CALeafRequest, :CAOp, :CARequest, :CARoot, :CARoots, :CASignRequest, :CommonCAProviderConfig, :ConsulCAProviderConfig, :IndexedCARoots, :IntermediateCertRenewInterval, :IssuedCert, :MaxLeafCertTTL, :MinLeafCertTTL, :ParseDurationFunc, :Uint8ToString, :VaultAuthMethod ;
+    code:tags "agent", "data-model", "mtls", "service-mesh", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

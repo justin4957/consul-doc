@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/telemetry/otel_exporter.go
+Otel Exporter module for agent layer
+
+## Tags
+agent
+
+## Exports
+EndpointProvider, MetricsClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/telemetry/otel_exporter.go> a code:Module ;
+    code:name "agent/hcp/telemetry/otel_exporter.go" ;
+    code:description "Otel Exporter module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :EndpointProvider, :MetricsClient ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package telemetry
 
 import (

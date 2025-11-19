@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/resource/write.go
+Write module for agent layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [internal/storage](../internal/storage)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+EnsureFinalizerRemoved
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/resource/write.go> a code:Module ;
+    code:name "agent/grpc-external/services/resource/write.go" ;
+    code:description "Write module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :EnsureFinalizerRemoved ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

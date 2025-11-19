@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/acl_cache.go
+Acl Cache module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+access-control, agent, authorization, data-model, security, types
+
+## Exports
+ACLCaches, ACLCachesConfig, AuthorizerCacheEntry, IdentityCacheEntry, NewACLCaches, ParsedPolicyCacheEntry, PolicyCacheEntry, RoleCacheEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/acl_cache.go> a code:Module ;
+    code:name "agent/structs/acl_cache.go" ;
+    code:description "Acl Cache module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :ACLCaches, :ACLCachesConfig, :AuthorizerCacheEntry, :IdentityCacheEntry, :NewACLCaches, :ParsedPolicyCacheEntry, :PolicyCacheEntry, :RoleCacheEntry ;
+    code:tags "access-control", "agent", "authorization", "data-model", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

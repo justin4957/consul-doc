@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/exported_peered_services.go
+Exported Peered Services module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, types
+
+## Exports
+ExportedPeeredServices, ExportedPeeredServicesName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/exported_peered_services.go> a code:Module ;
+    code:name "agent/cache-types/exported_peered_services.go" ;
+    code:description "Exported Peered Services module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ExportedPeeredServices, :ExportedPeeredServicesName ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

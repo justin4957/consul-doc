@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/runner.go
+Runner module for internal layer
+
+## Linked Modules
+- [agent/consul/controller/queue](../agent/consul/controller/queue)
+- [internal/controller/cache](../internal/controller/cache)
+- [internal/protoutil](../internal/protoutil)
+- [internal/resource](../internal/resource)
+- [internal/storage](../internal/storage)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+Runtime
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/runner.go> a code:Module ;
+    code:name "internal/controller/runner.go" ;
+    code:description "Runner module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/controller/queue" ;
+        code:path "../agent/consul/controller/queue"
+    ], [
+        code:name "internal/controller/cache" ;
+        code:path "../internal/controller/cache"
+    ], [
+        code:name "internal/protoutil" ;
+        code:path "../internal/protoutil"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Runtime ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 import (

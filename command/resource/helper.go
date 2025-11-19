@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/helper.go
+Helper module for cli layer
+
+## Linked Modules
+- [agent/consul](../agent/consul)
+- [command/helpers](../command/helpers)
+- [command/resource/client](../command/resource/client)
+- [internal/resourcehcl](../internal/resourcehcl)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+cli, user-interface
+
+## Exports
+BuildKindToGVKMap, GVK, GetTypeAndResourceName, ID, InferTypeFromResourceType, JSON, ListResponse, OuterResource, ParseInputParams, ParseResourceFromFile, ParseResourceInput, Resource, Tenancy, Type, WriteRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/helper.go> a code:Module ;
+    code:name "command/resource/helper.go" ;
+    code:description "Helper module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "command/helpers" ;
+        code:path "../command/helpers"
+    ], [
+        code:name "command/resource/client" ;
+        code:path "../command/resource/client"
+    ], [
+        code:name "internal/resourcehcl" ;
+        code:path "../internal/resourcehcl"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :BuildKindToGVKMap, :GVK, :GetTypeAndResourceName, :ID, :InferTypeFromResourceType, :JSON, :ListResponse, :OuterResource, :ParseInputParams, :ParseResourceFromFile, :ParseResourceInput, :Resource, :Tenancy, :Type, :WriteRequest ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

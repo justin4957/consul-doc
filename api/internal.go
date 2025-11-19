@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/internal.go
+Internal module for api layer
+
+## Tags
+api, client
+
+## Exports
+AssignServiceManualVIPsRequest, AssignServiceManualVIPsResponse, Internal, PeeredServiceName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/internal.go> a code:Module ;
+    code:name "api/internal.go" ;
+    code:description "Internal module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :AssignServiceManualVIPsRequest, :AssignServiceManualVIPsResponse, :Internal, :PeeredServiceName ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import "context"

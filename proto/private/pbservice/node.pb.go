@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: private/pbservice/node.proto
 
+/*
+# Module: proto/private/pbservice/node.pb.go
+Node.Pb module for internal layer
+
+## Linked Modules
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+internal
+
+## Exports
+CheckServiceNode, File, IndexedCheckServiceNodes, Node, NodeService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbservice/node.pb.go> a code:Module ;
+    code:name "proto/private/pbservice/node.pb.go" ;
+    code:description "Node.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :CheckServiceNode, :File, :IndexedCheckServiceNodes, :Node, :NodeService ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbservice
 
 import (

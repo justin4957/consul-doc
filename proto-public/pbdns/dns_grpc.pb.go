@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: pbdns/dns.proto
 
+/*
+# Module: proto-public/pbdns/dns_grpc.pb.go
+Dns Grpc.Pb module for internal layer
+
+## Tags
+api, communication, discovery, grpc, internal, networking
+
+## Exports
+DNSService, DNSServiceClient, DNSServiceServer, NewDNSServiceClient, RegisterDNSServiceServer, UnimplementedDNSServiceServer, UnsafeDNSServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbdns/dns_grpc.pb.go> a code:Module ;
+    code:name "proto-public/pbdns/dns_grpc.pb.go" ;
+    code:description "Dns Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DNSService, :DNSServiceClient, :DNSServiceServer, :NewDNSServiceClient, :RegisterDNSServiceServer, :UnimplementedDNSServiceServer, :UnsafeDNSServiceServer ;
+    code:tags "api", "communication", "discovery", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbdns
 
 import (

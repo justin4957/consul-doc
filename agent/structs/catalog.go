@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/catalog.go
+Catalog module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [api](../api)
+- [types](../types)
+
+## Tags
+agent, data-model, discovery, registry, types
+
+## Exports
+AssignServiceManualVIPsRequest, AssignServiceManualVIPsResponse, CatalogContents, CatalogSummary, HealthSummary
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/catalog.go> a code:Module ;
+    code:name "agent/structs/catalog.go" ;
+    code:description "Catalog module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :AssignServiceManualVIPsRequest, :AssignServiceManualVIPsResponse, :CatalogContents, :CatalogSummary, :HealthSummary ;
+    code:tags "agent", "data-model", "discovery", "registry", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

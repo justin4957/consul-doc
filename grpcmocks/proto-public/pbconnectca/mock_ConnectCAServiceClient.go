@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbconnectca/mock_ConnectCAServiceClient.go
+Mock Connectcaserviceclient module for internal layer
+
+## Linked Modules
+- [proto-public/pbconnectca](../proto-public/pbconnectca)
+
+## Tags
+api, communication, grpc, internal, mtls, networking, service-mesh
+
+## Exports
+ConnectCAServiceClient, NewConnectCAServiceClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbconnectca/mock_ConnectCAServiceClient.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbconnectca/mock_ConnectCAServiceClient.go" ;
+    code:description "Mock Connectcaserviceclient module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbconnectca" ;
+        code:path "../proto-public/pbconnectca"
+    ] ;
+    code:exports :ConnectCAServiceClient, :NewConnectCAServiceClient ;
+    code:tags "api", "communication", "grpc", "internal", "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbconnectca
 
 import (

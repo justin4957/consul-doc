@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/usage.go
+Usage module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+ConfigEntryUsage, KVUsage, NodeUsage, PeeringUsage, UsageEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/usage.go> a code:Module ;
+    code:name "agent/consul/state/usage.go" ;
+    code:description "Usage module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ConfigEntryUsage, :KVUsage, :NodeUsage, :PeeringUsage, :UsageEntry ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

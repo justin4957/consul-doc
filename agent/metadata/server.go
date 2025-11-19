@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/metadata/server.go
+Server module for agent layer
+
+## Tags
+agent
+
+## Exports
+AddFeatureFlags, GetIP, IsConsulServer, Key, Server, TagACLs
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/metadata/server.go> a code:Module ;
+    code:name "agent/metadata/server.go" ;
+    code:description "Server module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :AddFeatureFlags, :GetIP, :IsConsulServer, :Key, :Server, :TagACLs ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package metadata
 
 import (

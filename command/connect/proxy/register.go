@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/proxy/register.go
+Register module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, mtls, networking, service-mesh, user-interface
+
+## Exports
+NewRegisterMonitor, RegisterMonitor
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/proxy/register.go> a code:Module ;
+    code:name "command/connect/proxy/register.go" ;
+    code:description "Register module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :NewRegisterMonitor, :RegisterMonitor ;
+    code:tags "cli", "mtls", "networking", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

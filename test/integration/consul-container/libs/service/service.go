@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/service/service.go
+Service module for internal layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+internal
+
+## Exports
+Service
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/service/service.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/service/service.go" ;
+    code:description "Service module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :Service ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package service
 
 import (

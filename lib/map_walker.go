@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/map_walker.go
+Map Walker module for internal layer
+
+## Tags
+internal
+
+## Exports
+MapWalk
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/map_walker.go> a code:Module ;
+    code:name "lib/map_walker.go" ;
+    code:description "Map Walker module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :MapWalk ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (

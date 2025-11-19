@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/catalog/helpers.go
+Helpers module for cli layer
+
+## Tags
+cli, discovery, registry, user-interface
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/catalog/helpers.go> a code:Module ;
+    code:name "command/catalog/helpers.go" ;
+    code:description "Helpers module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:tags "cli", "discovery", "registry", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package catalog
 
 import (

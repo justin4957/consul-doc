@@ -4,6 +4,34 @@
 //go:build example
 // +build example
 
+/*
+# Module: internal/tools/proto-gen-rpc-glue/e2e/source.pb.go
+Source.Pb module for internal layer
+
+## Linked Modules
+- [proto/pbcommon](../proto/pbcommon)
+
+## Tags
+communication, internal, networking
+
+## Exports
+AltExampleDatacenter, AltExampleQueryMeta, AltExampleQueryOptions, AltExampleReadRequest, AltExampleWriteRequest, ExampleDatacenter, ExampleQueryMeta, ExampleQueryOptions, ExampleReadRequest, ExampleWriteRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/proto-gen-rpc-glue/e2e/source.pb.go> a code:Module ;
+    code:name "internal/tools/proto-gen-rpc-glue/e2e/source.pb.go" ;
+    code:description "Source.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto/pbcommon" ;
+        code:path "../proto/pbcommon"
+    ] ;
+    code:exports :AltExampleDatacenter, :AltExampleQueryMeta, :AltExampleQueryOptions, :AltExampleReadRequest, :AltExampleWriteRequest, :ExampleDatacenter, :ExampleQueryMeta, :ExampleQueryOptions, :ExampleReadRequest, :ExampleWriteRequest ;
+    code:tags "communication", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package e2e
 
 import "github.com/hashicorp/consul/proto/pbcommon"

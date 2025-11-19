@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: agent/envoyextensions/builtin/otel-access-logging/otel_access_logging.go
+Otel Access Logging module for agent layer
+
+## Linked Modules
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+agent
+
+## Exports
+Constructor
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/envoyextensions/builtin/otel-access-logging/otel_access_logging.go> a code:Module ;
+    code:name "agent/envoyextensions/builtin/otel-access-logging/otel_access_logging.go" ;
+    code:description "Otel Access Logging module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :Constructor ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package otelaccesslogging
 
 import (

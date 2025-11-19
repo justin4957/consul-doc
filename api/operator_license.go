@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/operator_license.go
+Operator License module for api layer
+
+## Tags
+api, client
+
+## Exports
+License, LicenseReply
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/operator_license.go> a code:Module ;
+    code:name "api/operator_license.go" ;
+    code:description "Operator License module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :License, :LicenseReply ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_sameness_group.go
+Config Entry Sameness Group module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+SamenessGroupConfigEntry, SamenessGroupMember
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_sameness_group.go> a code:Module ;
+    code:name "api/config_entry_sameness_group.go" ;
+    code:description "Config Entry Sameness Group module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :SamenessGroupConfigEntry, :SamenessGroupMember ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 type SamenessGroupConfigEntry struct {

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/response/response.go
+Response module for agent layer
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+CreateResponse, MakeAddress, MakeBoolValue, MakeEnvoyRegexMatch, MakePipeAddress, MakeUint32Value
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/response/response.go> a code:Module ;
+    code:name "agent/xds/response/response.go" ;
+    code:description "Response module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :CreateResponse, :MakeAddress, :MakeBoolValue, :MakeEnvoyRegexMatch, :MakePipeAddress, :MakeUint32Value ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package response
 
 import (

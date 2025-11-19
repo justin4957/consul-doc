@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/pbconnect/connect.go
+Connect module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+internal, mtls, service-mesh
+
+## Exports
+CARootToStructs, CARootsToStructs, EnterpriseMetaFrom, EnterpriseMetaTo, IssuedCertToStructs, NewCARootFromStructs, NewCARootsFromStructs, NewIssuedCertFromStructs, QueryMetaFrom, QueryMetaTo, RaftIndexFrom, RaftIndexTo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbconnect/connect.go> a code:Module ;
+    code:name "proto/private/pbconnect/connect.go" ;
+    code:description "Connect module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :CARootToStructs, :CARootsToStructs, :EnterpriseMetaFrom, :EnterpriseMetaTo, :IssuedCertToStructs, :NewCARootFromStructs, :NewCARootsFromStructs, :NewIssuedCertFromStructs, :QueryMetaFrom, :QueryMetaTo, :RaftIndexFrom, :RaftIndexTo ;
+    code:tags "internal", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbconnect
 
 import (

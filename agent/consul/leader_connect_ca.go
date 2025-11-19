@@ -1,6 +1,62 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/leader_connect_ca.go
+Leader Connect Ca module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/connect](../agent/connect)
+- [agent/connect/ca](../agent/connect/ca)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+- [lib/routine](../lib/routine)
+- [lib/semaphore](../lib/semaphore)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+CAManager, NewCAManager, ValidateConfigUpdater
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/leader_connect_ca.go> a code:Module ;
+    code:name "agent/consul/leader_connect_ca.go" ;
+    code:description "Leader Connect Ca module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/connect/ca" ;
+        code:path "../agent/connect/ca"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/routine" ;
+        code:path "../lib/routine"
+    ], [
+        code:name "lib/semaphore" ;
+        code:path "../lib/semaphore"
+    ] ;
+    code:exports :CAManager, :NewCAManager, :ValidateConfigUpdater ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

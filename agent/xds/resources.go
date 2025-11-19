@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/resources.go
+Resources module for agent layer
+
+## Linked Modules
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/xds/configfetcher](../agent/xds/configfetcher)
+- [envoyextensions/xdscommon](../envoyextensions/xdscommon)
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+NewResourceGenerator, ResourceGenerator
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/resources.go> a code:Module ;
+    code:name "agent/xds/resources.go" ;
+    code:description "Resources module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/xds/configfetcher" ;
+        code:path "../agent/xds/configfetcher"
+    ], [
+        code:name "envoyextensions/xdscommon" ;
+        code:path "../envoyextensions/xdscommon"
+    ] ;
+    code:exports :NewResourceGenerator, :ResourceGenerator ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

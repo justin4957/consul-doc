@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: tools/internal-grpc-proxy/main.go
+Main module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<tools/internal-grpc-proxy/main.go> a code:Module ;
+    code:name "tools/internal-grpc-proxy/main.go" ;
+    code:description "Main module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "api", "communication", "grpc", "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

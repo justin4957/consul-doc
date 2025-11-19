@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: private/pbpeering/peering.proto
 
+/*
+# Module: proto/private/pbpeering/peering_grpc.pb.go
+Peering Grpc.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewPeeringServiceClient, PeeringService, PeeringServiceClient, PeeringServiceServer, RegisterPeeringServiceServer, UnimplementedPeeringServiceServer, UnsafePeeringServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbpeering/peering_grpc.pb.go> a code:Module ;
+    code:name "proto/private/pbpeering/peering_grpc.pb.go" ;
+    code:description "Peering Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewPeeringServiceClient, :PeeringService, :PeeringServiceClient, :PeeringServiceServer, :RegisterPeeringServiceServer, :UnimplementedPeeringServiceServer, :UnsafePeeringServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbpeering
 
 import (

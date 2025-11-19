@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/authmethod/list/authmethod_list.go
+Authmethod List module for cli layer
+
+## Linked Modules
+- [command/acl/authmethod](../command/acl/authmethod)
+- [command/flags](../command/flags)
+
+## Tags
+access-control, authentication, authorization, cli, security, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/authmethod/list/authmethod_list.go> a code:Module ;
+    code:name "command/acl/authmethod/list/authmethod_list.go" ;
+    code:description "Authmethod List module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/acl/authmethod" ;
+        code:path "../command/acl/authmethod"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "access-control", "authentication", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package authmethodlist
 
 import (

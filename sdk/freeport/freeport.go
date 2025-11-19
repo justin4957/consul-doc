@@ -14,6 +14,28 @@
 //
 // Any code that does not accept a net.Listener or can not bind directly to port
 // zero should use freeport to find an unused port.
+
+/*
+# Module: sdk/freeport/freeport.go
+Freeport module for internal layer
+
+## Tags
+internal
+
+## Exports
+Free, Get, GetN, GetOne, GetT, MustTake, Return, Take, TestingT
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/freeport/freeport.go> a code:Module ;
+    code:name "sdk/freeport/freeport.go" ;
+    code:description "Freeport module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Free, :Get, :GetN, :GetOne, :GetT, :MustTake, :Return, :Take, :TestingT ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package freeport
 
 import (

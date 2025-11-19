@@ -3,6 +3,38 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/acl_ce.go
+Acl Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+
+## Tags
+access-control, agent, authorization, security
+
+## Exports
+EnterpriseACLResolverDelegate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/acl_ce.go> a code:Module ;
+    code:name "agent/consul/acl_ce.go" ;
+    code:description "Acl Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :EnterpriseACLResolverDelegate ;
+    code:tags "access-control", "agent", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

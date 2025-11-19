@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/resourcetest/decode.go
+Decode module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+MustDecode, MustDecodeList
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/resourcetest/decode.go> a code:Module ;
+    code:name "internal/resource/resourcetest/decode.go" ;
+    code:description "Decode module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :MustDecode, :MustDecodeList ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resourcetest
 
 import (

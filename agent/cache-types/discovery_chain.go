@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/discovery_chain.go
+Discovery Chain module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, discovery, dns, types
+
+## Exports
+CompiledDiscoveryChain, CompiledDiscoveryChainName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/discovery_chain.go> a code:Module ;
+    code:name "agent/cache-types/discovery_chain.go" ;
+    code:description "Discovery Chain module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :CompiledDiscoveryChain, :CompiledDiscoveryChainName ;
+    code:tags "agent", "data-model", "discovery", "dns", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

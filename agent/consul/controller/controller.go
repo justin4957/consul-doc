@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/controller/controller.go
+Controller module for agent layer
+
+## Linked Modules
+- [agent/consul/controller/queue](../agent/consul/controller/queue)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/structs](../agent/structs)
+- [lib/retry](../lib/retry)
+
+## Tags
+agent
+
+## Exports
+Controller, New, Transformer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/controller/controller.go> a code:Module ;
+    code:name "agent/consul/controller/controller.go" ;
+    code:description "Controller module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/controller/queue" ;
+        code:path "../agent/consul/controller/queue"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :Controller, :New, :Transformer ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 import (

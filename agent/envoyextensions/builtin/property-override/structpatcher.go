@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/envoyextensions/builtin/property-override/structpatcher.go
+Structpatcher module for agent layer
+
+## Tags
+agent
+
+## Exports
+PatchStruct
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/envoyextensions/builtin/property-override/structpatcher.go> a code:Module ;
+    code:name "agent/envoyextensions/builtin/property-override/structpatcher.go" ;
+    code:description "Structpatcher module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :PatchStruct ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package propertyoverride
 
 import (

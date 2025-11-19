@@ -3,6 +3,27 @@
 
 //go:build windows
 
+/*
+# Module: agent/checks/os_service_windows.go
+Os Service Windows module for agent layer
+
+## Tags
+agent, health-checks, monitoring
+
+## Exports
+NewOSServiceClient, OSServiceClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/checks/os_service_windows.go> a code:Module ;
+    code:name "agent/checks/os_service_windows.go" ;
+    code:description "Os Service Windows module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NewOSServiceClient, :OSServiceClient ;
+    code:tags "agent", "health-checks", "monitoring" .
+<!-- End LinkedDoc RDF -->
+*/
 package checks
 
 import (

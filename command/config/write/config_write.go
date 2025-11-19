@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/config/write/config_write.go
+Config Write module for cli layer
+
+## Linked Modules
+- [command/config](../command/config)
+- [command/flags](../command/flags)
+- [command/helpers](../command/helpers)
+
+## Tags
+cli, configuration, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/config/write/config_write.go> a code:Module ;
+    code:name "command/config/write/config_write.go" ;
+    code:description "Config Write module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/config" ;
+        code:path "../command/config"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/helpers" ;
+        code:path "../command/helpers"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "configuration", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package write
 
 import (

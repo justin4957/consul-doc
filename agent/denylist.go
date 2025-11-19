@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/denylist.go
+Denylist module for agent layer
+
+## Tags
+agent
+
+## Exports
+Denylist, NewDenylist
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/denylist.go> a code:Module ;
+    code:name "agent/denylist.go" ;
+    code:description "Denylist module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Denylist, :NewDenylist ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

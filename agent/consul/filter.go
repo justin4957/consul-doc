@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/filter.go
+Filter module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+## Exports
+Filter, FilterDirEnt, FilterEntries, FilterTxnResults
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/filter.go> a code:Module ;
+    code:name "agent/consul/filter.go" ;
+    code:description "Filter module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :Filter, :FilterDirEnt, :FilterEntries, :FilterTxnResults ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

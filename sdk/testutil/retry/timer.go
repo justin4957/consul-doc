@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/retry/timer.go
+Timer module for internal layer
+
+## Tags
+internal
+
+## Exports
+Timer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/retry/timer.go> a code:Module ;
+    code:name "sdk/testutil/retry/timer.go" ;
+    code:description "Timer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Timer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package retry
 
 import "time"

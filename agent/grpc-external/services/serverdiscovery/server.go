@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/serverdiscovery/server.go
+Server module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/consul/stream](../agent/consul/stream)
+- [proto-public/pbserverdiscovery](../proto-public/pbserverdiscovery)
+
+## Tags
+agent, api, communication, discovery, dns, grpc, networking
+
+## Exports
+ACLResolver, Config, EventPublisher, NewServer, Server
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/serverdiscovery/server.go> a code:Module ;
+    code:name "agent/grpc-external/services/serverdiscovery/server.go" ;
+    code:description "Server module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "proto-public/pbserverdiscovery" ;
+        code:path "../proto-public/pbserverdiscovery"
+    ] ;
+    code:exports :ACLResolver, :Config, :EventPublisher, :NewServer, :Server ;
+    code:tags "agent", "api", "communication", "discovery", "dns", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package serverdiscovery
 
 import (

@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/acl_helpers.go
+Acl Helpers module for cli layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [command/helpers](../command/helpers)
+
+## Tags
+access-control, authorization, cli, security, user-interface
+
+## Exports
+ExtractBindVars, ExtractNodeIdentities, ExtractServiceIdentities, ExtractTemplatedPolicies, GetBindingRuleIDFromPartial, GetPolicyByName, GetPolicyIDByName, GetPolicyIDFromPartial, GetRoleIDByName, GetRoleIDFromPartial, GetTokenAccessorIDFromPartial, TestKubernetesJWT
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/acl_helpers.go> a code:Module ;
+    code:name "command/acl/acl_helpers.go" ;
+    code:description "Acl Helpers module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/helpers" ;
+        code:path "../command/helpers"
+    ] ;
+    code:exports :ExtractBindVars, :ExtractNodeIdentities, :ExtractServiceIdentities, :ExtractTemplatedPolicies, :GetBindingRuleIDFromPartial, :GetPolicyByName, :GetPolicyIDByName, :GetPolicyIDFromPartial, :GetRoleIDByName, :GetRoleIDFromPartial, :GetTokenAccessorIDFromPartial, :TestKubernetesJWT ;
+    code:tags "access-control", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

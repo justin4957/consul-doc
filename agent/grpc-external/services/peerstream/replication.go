@@ -1,6 +1,62 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/peerstream/replication.go
+Replication module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache](../agent/cache)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+- [proto/private/pbpeerstream](../proto/private/pbpeerstream)
+- [proto/private/pbservice](../proto/private/pbservice)
+- [proto/private/pbstatus](../proto/private/pbstatus)
+- [types](../types)
+
+## Tags
+agent, api, communication, grpc, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/peerstream/replication.go> a code:Module ;
+    code:name "agent/grpc-external/services/peerstream/replication.go" ;
+    code:description "Replication module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ], [
+        code:name "proto/private/pbpeerstream" ;
+        code:path "../proto/private/pbpeerstream"
+    ], [
+        code:name "proto/private/pbservice" ;
+        code:path "../proto/private/pbservice"
+    ], [
+        code:name "proto/private/pbstatus" ;
+        code:path "../proto/private/pbstatus"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package peerstream
 
 import (

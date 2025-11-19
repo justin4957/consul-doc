@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testrpc/wait.go
+Wait module for internal layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+communication, internal, networking
+
+## Exports
+WaitForACLReplication, WaitForActiveCARoot, WaitForAntiEntropySync, WaitForLeader, WaitForRaftLeader, WaitForServiceIntentions, WaitForTestAgent, WaitUntilNoLeader, WithToken
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testrpc/wait.go> a code:Module ;
+    code:name "testrpc/wait.go" ;
+    code:description "Wait module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :WaitForACLReplication, :WaitForActiveCARoot, :WaitForAntiEntropySync, :WaitForLeader, :WaitForRaftLeader, :WaitForServiceIntentions, :WaitForTestAgent, :WaitUntilNoLeader, :WithToken ;
+    code:tags "communication", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package testrpc
 
 import (

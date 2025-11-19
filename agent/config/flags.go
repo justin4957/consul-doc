@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/flags.go
+Flags module for agent layer
+
+## Tags
+agent, configuration
+
+## Exports
+AddFlags
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/flags.go> a code:Module ;
+    code:name "agent/config/flags.go" ;
+    code:description "Flags module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :AddFlags ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

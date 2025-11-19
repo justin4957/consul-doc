@@ -3,6 +3,30 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/structs/intention_ce.go
+Intention Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, data-model, types
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/intention_ce.go> a code:Module ;
+    code:name "agent/structs/intention_ce.go" ;
+    code:description "Intention Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

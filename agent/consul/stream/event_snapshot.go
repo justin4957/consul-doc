@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/stream/event_snapshot.go
+Event Snapshot module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/stream/event_snapshot.go> a code:Module ;
+    code:name "agent/consul/stream/event_snapshot.go" ;
+    code:description "Event Snapshot module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package stream
 
 // eventSnapshot represents the state of memdb for a given topic and key at some

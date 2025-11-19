@@ -7,6 +7,27 @@
 // 	protoc        (unknown)
 // source: private/pbacl/acl.proto
 
+/*
+# Module: proto/private/pbacl/acl.pb.go
+Acl.Pb module for internal layer
+
+## Tags
+access-control, authorization, internal, security
+
+## Exports
+ACLLink, File
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbacl/acl.pb.go> a code:Module ;
+    code:name "proto/private/pbacl/acl.pb.go" ;
+    code:description "Acl.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ACLLink, :File ;
+    code:tags "access-control", "authorization", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbacl
 
 import (

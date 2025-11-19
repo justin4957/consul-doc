@@ -10,6 +10,24 @@
 //
 // The integrity information is automatically created and checked, and a failure
 // there just looks like an error to the caller.
+
+/*
+# Module: snapshot/archive.go
+Archive module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<snapshot/archive.go> a code:Module ;
+    code:name "snapshot/archive.go" ;
+    code:description "Archive module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package snapshot
 
 import (

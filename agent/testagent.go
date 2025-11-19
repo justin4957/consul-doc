@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/testagent.go
+Testagent module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/config](../agent/config)
+- [agent/connect](../agent/connect)
+- [agent/consul](../agent/consul)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [lib](../lib)
+- [sdk/freeport](../sdk/freeport)
+- [sdk/testutil](../sdk/testutil)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+agent
+
+## Exports
+DefaultTestACLConfigParams, NewTestAgent, NewTestAgentWithConfigFile, NodeID, StartTestAgent, TestACLConfig, TestACLConfigNew, TestACLConfigParams, TestACLConfigWithParams, TestAgent, TestAgentOpts, TestConfig, TestConfigHCL
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/testagent.go> a code:Module ;
+    code:name "agent/testagent.go" ;
+    code:description "Testagent module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "sdk/freeport" ;
+        code:path "../sdk/freeport"
+    ], [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :DefaultTestACLConfigParams, :NewTestAgent, :NewTestAgentWithConfigFile, :NodeID, :StartTestAgent, :TestACLConfig, :TestACLConfigNew, :TestACLConfigParams, :TestACLConfigWithParams, :TestAgent, :TestAgentOpts, :TestConfig, :TestConfigHCL ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/submatview/rpc_materializer.go
+Rpc Materializer module for agent layer
+
+## Linked Modules
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, communication, networking
+
+## Exports
+NewRPCMaterializer, RPCMaterializer, StreamClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/submatview/rpc_materializer.go> a code:Module ;
+    code:name "agent/submatview/rpc_materializer.go" ;
+    code:description "Rpc Materializer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :NewRPCMaterializer, :RPCMaterializer, :StreamClient ;
+    code:tags "agent", "communication", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package submatview
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/uri_signing.go
+Uri Signing module for agent layer
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+SpiffeIDSigning, SpiffeIDSigningForCluster
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/uri_signing.go> a code:Module ;
+    code:name "agent/connect/uri_signing.go" ;
+    code:description "Uri Signing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :SpiffeIDSigning, :SpiffeIDSigningForCluster ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

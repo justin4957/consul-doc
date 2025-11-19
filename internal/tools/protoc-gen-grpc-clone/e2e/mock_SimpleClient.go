@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/tools/protoc-gen-grpc-clone/e2e/mock_SimpleClient.go
+Mock Simpleclient module for internal layer
+
+## Linked Modules
+- [internal/tools/protoc-gen-grpc-clone/e2e/proto](../internal/tools/protoc-gen-grpc-clone/e2e/proto)
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewSimpleClient, SimpleClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/protoc-gen-grpc-clone/e2e/mock_SimpleClient.go> a code:Module ;
+    code:name "internal/tools/protoc-gen-grpc-clone/e2e/mock_SimpleClient.go" ;
+    code:description "Mock Simpleclient module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/tools/protoc-gen-grpc-clone/e2e/proto" ;
+        code:path "../internal/tools/protoc-gen-grpc-clone/e2e/proto"
+    ] ;
+    code:exports :NewSimpleClient, :SimpleClient ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package e2e
 
 import (

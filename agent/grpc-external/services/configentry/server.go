@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/configentry/server.go
+Server module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/blockingquery](../agent/blockingquery)
+- [agent/consul/state](../agent/consul/state)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [proto/private/pbconfigentry](../proto/private/pbconfigentry)
+
+## Tags
+agent, api, communication, configuration, grpc, networking
+
+## Exports
+Backend, Config, NewServer, Server
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/configentry/server.go> a code:Module ;
+    code:name "agent/grpc-external/services/configentry/server.go" ;
+    code:description "Server module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/blockingquery" ;
+        code:path "../agent/blockingquery"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbconfigentry" ;
+        code:path "../proto/private/pbconfigentry"
+    ] ;
+    code:exports :Backend, :Config, :NewServer, :Server ;
+    code:tags "agent", "api", "communication", "configuration", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package configentry
 
 import (

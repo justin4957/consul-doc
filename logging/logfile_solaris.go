@@ -3,6 +3,23 @@
 
 //go:build solaris
 
+/*
+# Module: logging/logfile_solaris.go
+Logfile Solaris module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/logfile_solaris.go> a code:Module ;
+    code:name "logging/logfile_solaris.go" ;
+    code:description "Logfile Solaris module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

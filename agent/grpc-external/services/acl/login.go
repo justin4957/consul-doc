@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/acl/login.go
+Login module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/auth](../agent/consul/auth)
+- [agent/grpc-external](../agent/grpc-external)
+- [proto-public/pbacl](../proto-public/pbacl)
+
+## Tags
+access-control, agent, api, authorization, communication, grpc, networking, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/acl/login.go> a code:Module ;
+    code:name "agent/grpc-external/services/acl/login.go" ;
+    code:description "Login module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/auth" ;
+        code:path "../agent/consul/auth"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "proto-public/pbacl" ;
+        code:path "../proto-public/pbacl"
+    ] ;
+    code:tags "access-control", "agent", "api", "authorization", "communication", "grpc", "networking", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

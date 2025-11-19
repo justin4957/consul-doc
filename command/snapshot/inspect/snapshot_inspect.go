@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/snapshot/inspect/snapshot_inspect.go
+Snapshot Inspect module for cli layer
+
+## Linked Modules
+- [agent/consul/fsm](../agent/consul/fsm)
+- [agent/structs](../agent/structs)
+- [command/flags](../command/flags)
+- [snapshot](../snapshot)
+
+## Tags
+cli, user-interface
+
+## Exports
+MetadataInfo, New, OutputFormat, SnapshotInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/snapshot/inspect/snapshot_inspect.go> a code:Module ;
+    code:name "command/snapshot/inspect/snapshot_inspect.go" ;
+    code:description "Snapshot Inspect module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/consul/fsm" ;
+        code:path "../agent/consul/fsm"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "snapshot" ;
+        code:path "../snapshot"
+    ] ;
+    code:exports :MetadataInfo, :New, :OutputFormat, :SnapshotInfo ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package inspect
 
 import (

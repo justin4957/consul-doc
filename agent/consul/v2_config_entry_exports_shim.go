@@ -1,6 +1,62 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/v2_config_entry_exports_shim.go
+V2 Config Entry Exports Shim module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/controller/queue](../agent/consul/controller/queue)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/structs](../agent/structs)
+- [internal/controller](../internal/controller)
+- [logging](../logging)
+- [proto/private/pbconfigentry](../proto/private/pbconfigentry)
+
+## Tags
+agent, configuration
+
+## Exports
+NewExportedServicesShim
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/v2_config_entry_exports_shim.go> a code:Module ;
+    code:name "agent/consul/v2_config_entry_exports_shim.go" ;
+    code:description "V2 Config Entry Exports Shim module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/controller/queue" ;
+        code:path "../agent/consul/controller/queue"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "proto/private/pbconfigentry" ;
+        code:path "../proto/private/pbconfigentry"
+    ] ;
+    code:exports :NewExportedServicesShim ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

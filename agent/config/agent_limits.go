@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/agent_limits.go
+Agent Limits module for agent layer
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/agent_limits.go> a code:Module ;
+    code:name "agent/config/agent_limits.go" ;
+    code:description "Agent Limits module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

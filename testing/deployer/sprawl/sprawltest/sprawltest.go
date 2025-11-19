@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/sprawltest/sprawltest.go
+Sprawltest module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+- [sdk/testutil](../sdk/testutil)
+- [testing/deployer/sprawl](../testing/deployer/sprawl)
+- [testing/deployer/sprawl/internal/runner](../testing/deployer/sprawl/internal/runner)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+CleanupWorkingDirectories, Launch, MustSetResourceData, SkipIfTerraformNotPresent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/sprawltest/sprawltest.go> a code:Module ;
+    code:name "testing/deployer/sprawl/sprawltest/sprawltest.go" ;
+    code:description "Sprawltest module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ], [
+        code:name "testing/deployer/sprawl" ;
+        code:path "../testing/deployer/sprawl"
+    ], [
+        code:name "testing/deployer/sprawl/internal/runner" ;
+        code:path "../testing/deployer/sprawl/internal/runner"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :CleanupWorkingDirectories, :Launch, :MustSetResourceData, :SkipIfTerraformNotPresent ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package sprawltest
 
 import (

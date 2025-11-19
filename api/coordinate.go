@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/coordinate.go
+Coordinate module for api layer
+
+## Tags
+api, client
+
+## Exports
+Coordinate, CoordinateDatacenterMap, CoordinateEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/coordinate.go> a code:Module ;
+    code:name "api/coordinate.go" ;
+    code:description "Coordinate module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Coordinate, :CoordinateDatacenterMap, :CoordinateEntry ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

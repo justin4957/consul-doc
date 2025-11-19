@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resourcehcl/naming.go
+Naming module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resourcehcl/naming.go> a code:Module ;
+    code:name "internal/resourcehcl/naming.go" ;
+    code:description "Naming module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resourcehcl
 
 import (

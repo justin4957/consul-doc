@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/client.go
+Client module for agent layer
+
+## Linked Modules
+- [agent/grpc-internal/balancer](../agent/grpc-internal/balancer)
+- [agent/grpc-middleware](../agent/grpc-middleware)
+- [agent/metadata](../agent/metadata)
+- [agent/pool](../agent/pool)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+ALPNWrapper, ClientConnPool, ClientConnPoolConfig, NewClientConnPool, ServerLocator, TLSWrapper
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/client.go> a code:Module ;
+    code:name "agent/grpc-internal/client.go" ;
+    code:description "Client module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/grpc-internal/balancer" ;
+        code:path "../agent/grpc-internal/balancer"
+    ], [
+        code:name "agent/grpc-middleware" ;
+        code:path "../agent/grpc-middleware"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "agent/pool" ;
+        code:path "../agent/pool"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :ALPNWrapper, :ClientConnPool, :ClientConnPoolConfig, :NewClientConnPool, :ServerLocator, :TLSWrapper ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package internal
 
 import (

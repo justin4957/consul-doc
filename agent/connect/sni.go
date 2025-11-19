@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/sni.go
+Sni module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+GatewaySNI, PeeredServiceSNI, QuerySNI, ServiceSNI, TargetSNI, TrustDomainForTarget, UpstreamSNI
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/sni.go> a code:Module ;
+    code:name "agent/connect/sni.go" ;
+    code:description "Sni module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :GatewaySNI, :PeeredServiceSNI, :QuerySNI, :ServiceSNI, :TargetSNI, :TrustDomainForTarget, :UpstreamSNI ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

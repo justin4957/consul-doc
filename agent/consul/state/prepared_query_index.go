@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/prepared_query_index.go
+Prepared Query Index module for agent layer
+
+## Linked Modules
+- [agent/consul/prepared_query](../agent/consul/prepared_query)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+PreparedQueryIndex
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/prepared_query_index.go> a code:Module ;
+    code:name "agent/consul/state/prepared_query_index.go" ;
+    code:description "Prepared Query Index module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/prepared_query" ;
+        code:path "../agent/consul/prepared_query"
+    ] ;
+    code:exports :PreparedQueryIndex ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

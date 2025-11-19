@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/translate.go
+Translate module for internal layer
+
+## Tags
+internal
+
+## Exports
+TranslateKeys
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/translate.go> a code:Module ;
+    code:name "lib/translate.go" ;
+    code:description "Translate module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :TranslateKeys ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (

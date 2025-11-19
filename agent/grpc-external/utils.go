@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/utils.go
+Utils module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+ACLResolver, RequireAnyValidACLToken, RequireNotNil, TraceID
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/utils.go> a code:Module ;
+    code:name "agent/grpc-external/utils.go" ;
+    code:description "Utils module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ] ;
+    code:exports :ACLResolver, :RequireAnyValidACLToken, :RequireNotNil, :TraceID ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package external
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/client/client.go
+Client module for agent layer
+
+## Linked Modules
+- [agent/hcp/config](../agent/hcp/config)
+- [version](../version)
+
+## Tags
+agent
+
+## Exports
+BootstrapConfig, CertificateMetadata, Client, Cluster, NewClient, ServerACLInfo, ServerAutopilot, ServerRaft, ServerStatus, ServerTLSInfo, ServerTLSMetadata
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/client/client.go> a code:Module ;
+    code:name "agent/hcp/client/client.go" ;
+    code:description "Client module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :BootstrapConfig, :CertificateMetadata, :Client, :Cluster, :NewClient, :ServerACLInfo, :ServerAutopilot, :ServerRaft, :ServerStatus, :ServerTLSInfo, :ServerTLSMetadata ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

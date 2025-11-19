@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/testserver/main.go
+Main module for agent layer
+
+## Linked Modules
+- [agent/hcp](../agent/hcp)
+- [agent/hcp/bootstrap](../agent/hcp/bootstrap)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/testserver/main.go> a code:Module ;
+    code:name "agent/hcp/testserver/main.go" ;
+    code:description "Main module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp" ;
+        code:path "../agent/hcp"
+    ], [
+        code:name "agent/hcp/bootstrap" ;
+        code:path "../agent/hcp/bootstrap"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

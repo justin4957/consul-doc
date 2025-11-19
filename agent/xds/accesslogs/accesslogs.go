@@ -1,6 +1,38 @@
 // Copyrigh (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/accesslogs/accesslogs.go
+Accesslogs module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+MakeAccessLogs
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/accesslogs/accesslogs.go> a code:Module ;
+    code:name "agent/xds/accesslogs/accesslogs.go" ;
+    code:description "Accesslogs module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :MakeAccessLogs ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package accesslogs
 
 import (

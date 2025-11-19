@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: envoyextensions/xdscommon/proxysupport.go
+Proxysupport module for internal layer
+
+## Tags
+envoy, internal, networking, service-mesh
+
+## Exports
+EnvoyVersions, GetMaxEnvoyMajorVersion, GetMinEnvoyMajorVersion, UnsupportedEnvoyVersions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<envoyextensions/xdscommon/proxysupport.go> a code:Module ;
+    code:name "envoyextensions/xdscommon/proxysupport.go" ;
+    code:description "Proxysupport module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :EnvoyVersions, :GetMaxEnvoyMajorVersion, :GetMinEnvoyMajorVersion, :UnsupportedEnvoyVersions ;
+    code:tags "envoy", "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xdscommon
 
 import (

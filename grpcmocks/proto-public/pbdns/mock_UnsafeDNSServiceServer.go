@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbdns/mock_UnsafeDNSServiceServer.go
+Mock Unsafednsserviceserver module for internal layer
+
+## Tags
+api, communication, discovery, grpc, internal, networking
+
+## Exports
+NewUnsafeDNSServiceServer, UnsafeDNSServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbdns/mock_UnsafeDNSServiceServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbdns/mock_UnsafeDNSServiceServer.go" ;
+    code:description "Mock Unsafednsserviceserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewUnsafeDNSServiceServer, :UnsafeDNSServiceServer ;
+    code:tags "api", "communication", "discovery", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbdns
 
 import (

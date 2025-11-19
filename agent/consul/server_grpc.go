@@ -1,6 +1,66 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/server_grpc.go
+Server Grpc module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/grpc-external/services/acl](../agent/grpc-external/services/acl)
+- [agent/grpc-external/services/configentry](../agent/grpc-external/services/configentry)
+- [agent/grpc-external/services/connectca](../agent/grpc-external/services/connectca)
+- [agent/grpc-external/services/dataplane](../agent/grpc-external/services/dataplane)
+- [agent/grpc-external/services/peerstream](../agent/grpc-external/services/peerstream)
+- [agent/grpc-external/services/resource](../agent/grpc-external/services/resource)
+- [agent/grpc-external/services/serverdiscovery](../agent/grpc-external/services/serverdiscovery)
+- [agent/grpc-internal](../agent/grpc-internal)
+
+## Tags
+agent, api, communication, grpc, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server_grpc.go> a code:Module ;
+    code:name "agent/consul/server_grpc.go" ;
+    code:description "Server Grpc module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/grpc-external/services/acl" ;
+        code:path "../agent/grpc-external/services/acl"
+    ], [
+        code:name "agent/grpc-external/services/configentry" ;
+        code:path "../agent/grpc-external/services/configentry"
+    ], [
+        code:name "agent/grpc-external/services/connectca" ;
+        code:path "../agent/grpc-external/services/connectca"
+    ], [
+        code:name "agent/grpc-external/services/dataplane" ;
+        code:path "../agent/grpc-external/services/dataplane"
+    ], [
+        code:name "agent/grpc-external/services/peerstream" ;
+        code:path "../agent/grpc-external/services/peerstream"
+    ], [
+        code:name "agent/grpc-external/services/resource" ;
+        code:path "../agent/grpc-external/services/resource"
+    ], [
+        code:name "agent/grpc-external/services/serverdiscovery" ;
+        code:path "../agent/grpc-external/services/serverdiscovery"
+    ], [
+        code:name "agent/grpc-internal" ;
+        code:path "../agent/grpc-internal"
+    ] ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

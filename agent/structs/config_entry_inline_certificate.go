@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/config_entry_inline_certificate.go
+Config Entry Inline Certificate module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [version](../version)
+
+## Tags
+agent, configuration, data-model, types
+
+## Exports
+InlineCertificateConfigEntry, MinKeyLength
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/config_entry_inline_certificate.go> a code:Module ;
+    code:name "agent/structs/config_entry_inline_certificate.go" ;
+    code:description "Config Entry Inline Certificate module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :InlineCertificateConfigEntry, :MinKeyLength ;
+    code:tags "agent", "configuration", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

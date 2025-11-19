@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test-integ/topoutil/asserter_blankspace.go
+Asserter Blankspace module for internal layer
+
+## Linked Modules
+- [sdk/testutil/retry](../sdk/testutil/retry)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test-integ/topoutil/asserter_blankspace.go> a code:Module ;
+    code:name "test-integ/topoutil/asserter_blankspace.go" ;
+    code:description "Asserter Blankspace module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topoutil
 
 import (

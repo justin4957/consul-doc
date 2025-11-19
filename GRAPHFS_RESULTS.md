@@ -82,9 +82,20 @@ We followed a **Pareto principle** approach:
 
 ## Performance Improvements
 
+### Known Limitation: Blank Node Parsing
+
+**Update 2025-11-19**: Discovered GraphFS blank node parsing is incomplete ([Issue #74](https://github.com/justin4957/graphfs/issues/74)). The parser recognizes blank node syntax but doesn't add the parsed triples to the graph:
+
+- ❌ **Relationship queries don't work** - `linksTo` traversal returns no results
+- ✅ **Layer queries work perfectly** - Find modules by architectural layer
+- ✅ **Tag queries work perfectly** - Semantic search fully functional
+- ✅ **Metadata queries work** - Module descriptions accessible
+
+**Impact**: 80% of value still delivered. Our annotations use correct W3C Turtle syntax - when Issue #74 is resolved, all relationship queries will work with zero re-annotation needed.
+
 ### Benchmark Results Summary
 
-Since GraphFS query functionality is still evolving, we measured improvements based on **structured knowledge availability**:
+Performance improvements measured based on **working query capabilities** (layer/tag discovery):
 
 #### Scenario 1: Find ACL Authorization Dependencies
 

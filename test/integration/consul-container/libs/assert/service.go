@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/assert/service.go
+Service module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+- [test/integration/consul-container/libs/service](../test/integration/consul-container/libs/service)
+
+## Tags
+internal
+
+## Exports
+AssertContainerState, AssertFortioName, AssertFortioNameWithClient, CatalogNodeDoesNotExist, CatalogNodeExists, CatalogServiceDoesNotExist, CatalogServiceExists, CatalogServiceHasInstanceCount, CatalogServiceIsHealthy, FortioNameWithClient, HTTPServiceEchoes, HTTPServiceEchoesResHeader, HTTPServiceEchoesResHeaderWithClient, HTTPServiceEchoesWithClient, HTTPServiceEchoesWithHeaders, ServiceLogContains, WaitForFortioName, WaitForFortioNameWithClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/assert/service.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/assert/service.go" ;
+    code:description "Service module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ], [
+        code:name "test/integration/consul-container/libs/service" ;
+        code:path "../test/integration/consul-container/libs/service"
+    ] ;
+    code:exports :AssertContainerState, :AssertFortioName, :AssertFortioNameWithClient, :CatalogNodeDoesNotExist, :CatalogNodeExists, :CatalogServiceDoesNotExist, :CatalogServiceExists, :CatalogServiceHasInstanceCount, :CatalogServiceIsHealthy, :FortioNameWithClient, :HTTPServiceEchoes, :HTTPServiceEchoesResHeader, :HTTPServiceEchoesResHeaderWithClient, :HTTPServiceEchoesWithClient, :HTTPServiceEchoesWithHeaders, :ServiceLogContains, :WaitForFortioName, :WaitForFortioNameWithClient ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package assert
 
 import (

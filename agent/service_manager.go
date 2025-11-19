@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/service_manager.go
+Service Manager module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/cache-types](../agent/cache-types)
+- [agent/configentry](../agent/configentry)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+## Exports
+NewServiceManager, ServiceManager
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/service_manager.go> a code:Module ;
+    code:name "agent/service_manager.go" ;
+    code:description "Service Manager module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :NewServiceManager, :ServiceManager ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

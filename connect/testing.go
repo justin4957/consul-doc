@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/testing.go
+Testing module for service-mesh layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+- [sdk/freeport](../sdk/freeport)
+
+## Tags
+mtls, service-mesh
+
+## Exports
+NewTestServer, TestCAPool, TestPeerCertificates, TestServer, TestService, TestSvcKeyPair, TestTLSConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/testing.go> a code:Module ;
+    code:name "connect/testing.go" ;
+    code:description "Testing module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "sdk/freeport" ;
+        code:path "../sdk/freeport"
+    ] ;
+    code:exports :NewTestServer, :TestCAPool, :TestPeerCertificates, :TestServer, :TestService, :TestSvcKeyPair, :TestTLSConfig ;
+    code:tags "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

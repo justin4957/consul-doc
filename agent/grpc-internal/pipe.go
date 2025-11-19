@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/pipe.go
+Pipe module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+ErrPipeClosed, NewPipeListener, PipeListener
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/pipe.go> a code:Module ;
+    code:name "agent/grpc-internal/pipe.go" ;
+    code:description "Pipe module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :ErrPipeClosed, :NewPipeListener, :PipeListener ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package internal
 
 import (

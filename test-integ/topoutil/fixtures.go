@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test-integ/topoutil/fixtures.go
+Fixtures module for internal layer
+
+## Linked Modules
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+ConfigEntryPartition, HashicorpDockerProxy, NewBlankspaceWorkloadWithDefaults, NewFortioWorkloadWithDefaults, NewTopologyMeshGatewaySet, NewTopologyServerSet
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test-integ/topoutil/fixtures.go> a code:Module ;
+    code:name "test-integ/topoutil/fixtures.go" ;
+    code:description "Fixtures module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :ConfigEntryPartition, :HashicorpDockerProxy, :NewBlankspaceWorkloadWithDefaults, :NewFortioWorkloadWithDefaults, :NewTopologyMeshGatewaySet, :NewTopologyServerSet ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topoutil
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/hooks.go
+Hooks module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+AuthorizeReadWithResource, DecodeAndAuthorizeRead, DecodeAndAuthorizeWrite, DecodeAndMutate, DecodeAndValidate, DecodedAuthorizationHook, DecodedMutationHook, DecodedValidationHook, ReadAuthorizationWithResourceHook
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/hooks.go> a code:Module ;
+    code:name "internal/resource/hooks.go" ;
+    code:description "Hooks module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :AuthorizeReadWithResource, :DecodeAndAuthorizeRead, :DecodeAndAuthorizeWrite, :DecodeAndMutate, :DecodeAndValidate, :DecodedAuthorizationHook, :DecodedMutationHook, :DecodedValidationHook, :ReadAuthorizationWithResourceHook ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/resource.go
+Resource module for internal layer
+
+## Linked Modules
+- [internal/dnsutil](../internal/dnsutil)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+AddFinalizer, DeletionTimestampKey, FinalizerKey, GetFinalizers, HasFinalizer, HasFinalizers, IsMarkedForDeletion, MaxNameLength, RemoveFinalizer, ValidateName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/resource.go> a code:Module ;
+    code:name "internal/resource/resource.go" ;
+    code:description "Resource module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/dnsutil" ;
+        code:path "../internal/dnsutil"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :AddFinalizer, :DeletionTimestampKey, :FinalizerKey, :GetFinalizers, :HasFinalizer, :HasFinalizers, :IsMarkedForDeletion, :MaxNameLength, :RemoveFinalizer, :ValidateName ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

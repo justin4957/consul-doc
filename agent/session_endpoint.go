@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/session_endpoint.go
+Session Endpoint module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+- [types](../types)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/session_endpoint.go> a code:Module ;
+    code:name "agent/session_endpoint.go" ;
+    code:description "Session Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

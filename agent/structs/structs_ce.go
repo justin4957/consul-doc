@@ -3,6 +3,38 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/structs/structs_ce.go
+Structs Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [types](../types)
+
+## Tags
+agent, data-model, types
+
+## Exports
+DefaultEnterpriseMetaInDefaultPartition, DefaultEnterpriseMetaInPartition, EnterpriseServiceUsage, NewEnterpriseMetaInDefaultPartition, NewEnterpriseMetaWithPartition, NodeEnterpriseMetaInDefaultPartition, NodeEnterpriseMetaInPartition, NodeNameString, ParseServiceIDString, ParseServiceNameString, ReplicationEnterpriseMeta, ServiceIDFromString, ServiceIDString, ServiceNameFromString, WildcardEnterpriseMetaInDefaultPartition, WildcardEnterpriseMetaInPartition
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/structs_ce.go> a code:Module ;
+    code:name "agent/structs/structs_ce.go" ;
+    code:description "Structs Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :DefaultEnterpriseMetaInDefaultPartition, :DefaultEnterpriseMetaInPartition, :EnterpriseServiceUsage, :NewEnterpriseMetaInDefaultPartition, :NewEnterpriseMetaWithPartition, :NodeEnterpriseMetaInDefaultPartition, :NodeEnterpriseMetaInPartition, :NodeNameString, :ParseServiceIDString, :ParseServiceNameString, :ReplicationEnterpriseMeta, :ServiceIDFromString, :ServiceIDString, :ServiceNameFromString, :WildcardEnterpriseMetaInDefaultPartition, :WildcardEnterpriseMetaInPartition ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

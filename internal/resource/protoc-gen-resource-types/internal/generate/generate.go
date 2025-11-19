@@ -1,3 +1,37 @@
+
+
+/*
+# Module: internal/resource/protoc-gen-resource-types/internal/generate/generate.go
+Generate module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+data-model, internal, types
+
+## Exports
+Generate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/protoc-gen-resource-types/internal/generate/generate.go> a code:Module ;
+    code:name "internal/resource/protoc-gen-resource-types/internal/generate/generate.go" ;
+    code:description "Generate module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Generate ;
+    code:tags "data-model", "internal", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package generate
 
 import (

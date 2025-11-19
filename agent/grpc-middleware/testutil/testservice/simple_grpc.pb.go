@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: simple.proto
 
+/*
+# Module: agent/grpc-middleware/testutil/testservice/simple_grpc.pb.go
+Simple Grpc.Pb module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+NewSimpleClient, RegisterSimpleServer, Simple, SimpleClient, SimpleServer, UnimplementedSimpleServer, UnsafeSimpleServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-middleware/testutil/testservice/simple_grpc.pb.go> a code:Module ;
+    code:name "agent/grpc-middleware/testutil/testservice/simple_grpc.pb.go" ;
+    code:description "Simple Grpc.Pb module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NewSimpleClient, :RegisterSimpleServer, :Simple, :SimpleClient, :SimpleServer, :UnimplementedSimpleServer, :UnsafeSimpleServer ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package testservice
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/controller/queue/queue.go
+Queue module for agent layer
+
+## Tags
+agent
+
+## Exports
+ItemType, RunWorkQueue, WorkQueue
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/controller/queue/queue.go> a code:Module ;
+    code:name "agent/consul/controller/queue/queue.go" ;
+    code:description "Queue module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :ItemType, :RunWorkQueue, :WorkQueue ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package queue
 
 import (

@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/options.go
+Options module for agent layer
+
+## Linked Modules
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/grpc-external/limiter](../agent/grpc-external/limiter)
+- [agent/hcp](../agent/hcp)
+- [agent/leafcert](../agent/leafcert)
+- [agent/pool](../agent/pool)
+- [agent/router](../agent/router)
+- [agent/rpc/middleware](../agent/rpc/middleware)
+- [agent/token](../agent/token)
+- [internal/resource](../internal/resource)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent
+
+## Exports
+Deps, GRPCClientConner, LeaderForwarder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/options.go> a code:Module ;
+    code:name "agent/consul/options.go" ;
+    code:description "Options module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/grpc-external/limiter" ;
+        code:path "../agent/grpc-external/limiter"
+    ], [
+        code:name "agent/hcp" ;
+        code:path "../agent/hcp"
+    ], [
+        code:name "agent/leafcert" ;
+        code:path "../agent/leafcert"
+    ], [
+        code:name "agent/pool" ;
+        code:path "../agent/pool"
+    ], [
+        code:name "agent/router" ;
+        code:path "../agent/router"
+    ], [
+        code:name "agent/rpc/middleware" ;
+        code:path "../agent/rpc/middleware"
+    ], [
+        code:name "agent/token" ;
+        code:path "../agent/token"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :Deps, :GRPCClientConner, :LeaderForwarder ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

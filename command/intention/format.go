@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/intention/format.go
+Format module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, user-interface
+
+## Exports
+FormatDestination, FormatSource
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/intention/format.go> a code:Module ;
+    code:name "command/intention/format.go" ;
+    code:description "Format module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :FormatDestination, :FormatSource ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package intention
 
 import (

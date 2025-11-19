@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/federation_state.go
+Federation State module for agent layer
+
+## Tags
+agent, data-model, persistence, storage, types
+
+## Exports
+FederationState, FederationStateOp, FederationStateQuery, FederationStateRequest, FederationStateResponse, FederationStates, IndexedFederationStates
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/federation_state.go> a code:Module ;
+    code:name "agent/structs/federation_state.go" ;
+    code:description "Federation State module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :FederationState, :FederationStateOp, :FederationStateQuery, :FederationStateRequest, :FederationStateResponse, :FederationStates, :IndexedFederationStates ;
+    code:tags "agent", "data-model", "persistence", "storage", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

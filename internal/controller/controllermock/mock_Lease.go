@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/controllermock/mock_Lease.go
+Mock Lease module for internal layer
+
+## Tags
+internal
+
+## Exports
+Lease, NewLease
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/controllermock/mock_Lease.go> a code:Module ;
+    code:name "internal/controller/controllermock/mock_Lease.go" ;
+    code:description "Mock Lease module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Lease, :NewLease ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controllermock
 
 import (

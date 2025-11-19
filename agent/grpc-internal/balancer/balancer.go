@@ -49,6 +49,28 @@
 //     builder registered with a name that is specified in the "service config".
 //
 //   - Pickers are responsible for deciding which SubConn will be used for an RPC.
+
+/*
+# Module: agent/grpc-internal/balancer/balancer.go
+Balancer module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+Builder, NewBuilder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/balancer/balancer.go> a code:Module ;
+    code:name "agent/grpc-internal/balancer/balancer.go" ;
+    code:description "Balancer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Builder, :NewBuilder ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package balancer
 
 import (

@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/proxy/config.go
+Config module for service-mesh layer
+
+## Linked Modules
+- [agent/netutil](../agent/netutil)
+- [api](../api)
+- [api/watch](../api/watch)
+- [connect](../connect)
+- [ipaddr](../ipaddr)
+- [lib](../lib)
+
+## Tags
+configuration, mtls, networking, service-mesh
+
+## Exports
+AgentConfigWatcher, Config, ConfigWatcher, NewAgentConfigWatcher, NewStaticConfigWatcher, PublicListenerConfig, StaticConfigWatcher, UpstreamConfig, UpstreamResolverFuncFromClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/proxy/config.go> a code:Module ;
+    code:name "connect/proxy/config.go" ;
+    code:description "Config module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "agent/netutil" ;
+        code:path "../agent/netutil"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "api/watch" ;
+        code:path "../api/watch"
+    ], [
+        code:name "connect" ;
+        code:path "../connect"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :AgentConfigWatcher, :Config, :ConfigWatcher, :NewAgentConfigWatcher, :NewStaticConfigWatcher, :PublicListenerConfig, :StaticConfigWatcher, :UpstreamConfig, :UpstreamResolverFuncFromClient ;
+    code:tags "configuration", "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

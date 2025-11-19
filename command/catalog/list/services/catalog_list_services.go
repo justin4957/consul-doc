@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/catalog/list/services/catalog_list_services.go
+Catalog List Services module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, discovery, registry, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/catalog/list/services/catalog_list_services.go> a code:Module ;
+    code:name "command/catalog/list/services/catalog_list_services.go" ;
+    code:description "Catalog List Services module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "discovery", "registry", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package services
 
 import (

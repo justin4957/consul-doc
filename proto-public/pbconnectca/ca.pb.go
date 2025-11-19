@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: pbconnectca/ca.proto
 
+/*
+# Module: proto-public/pbconnectca/ca.pb.go
+Ca.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+internal, mtls, service-mesh
+
+## Exports
+CARoot, File, SignRequest, SignResponse, WatchRootsRequest, WatchRootsResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbconnectca/ca.pb.go> a code:Module ;
+    code:name "proto-public/pbconnectca/ca.pb.go" ;
+    code:description "Ca.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:exports :CARoot, :File, :SignRequest, :SignResponse, :WatchRootsRequest, :WatchRootsResponse ;
+    code:tags "internal", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbconnectca
 
 import (

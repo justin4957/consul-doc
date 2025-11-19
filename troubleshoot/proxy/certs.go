@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/proxy/certs.go
+Certs module for internal layer
+
+## Linked Modules
+- [troubleshoot/validate](../troubleshoot/validate)
+
+## Tags
+internal, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/proxy/certs.go> a code:Module ;
+    code:name "troubleshoot/proxy/certs.go" ;
+    code:description "Certs module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "troubleshoot/validate" ;
+        code:path "../troubleshoot/validate"
+    ] ;
+    code:tags "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package troubleshoot
 
 import (

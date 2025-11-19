@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/intention_upstreams.go
+Intention Upstreams module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, types
+
+## Exports
+IntentionUpstreams, IntentionUpstreamsName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/intention_upstreams.go> a code:Module ;
+    code:name "agent/cache-types/intention_upstreams.go" ;
+    code:description "Intention Upstreams module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :IntentionUpstreams, :IntentionUpstreamsName ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

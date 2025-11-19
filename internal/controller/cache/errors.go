@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/errors.go
+Errors module for internal layer
+
+## Tags
+internal
+
+## Exports
+CacheTypeError, DuplicateIndexError, DuplicateQueryError, IndexError, IndexNotFoundError, QueryNotFoundError
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/errors.go> a code:Module ;
+    code:name "internal/controller/cache/errors.go" ;
+    code:description "Errors module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :CacheTypeError, :DuplicateIndexError, :DuplicateQueryError, :IndexError, :IndexNotFoundError, :QueryNotFoundError ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

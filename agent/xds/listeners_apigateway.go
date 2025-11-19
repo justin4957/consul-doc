@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/listeners_apigateway.go
+Listeners Apigateway module for agent layer
+
+## Linked Modules
+- [agent/consul/discoverychain](../agent/consul/discoverychain)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [agent/xds/naming](../agent/xds/naming)
+- [types](../types)
+
+## Tags
+agent, api, client, envoy, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/listeners_apigateway.go> a code:Module ;
+    code:name "agent/xds/listeners_apigateway.go" ;
+    code:description "Listeners Apigateway module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/discoverychain" ;
+        code:path "../agent/consul/discoverychain"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds/naming" ;
+        code:path "../agent/xds/naming"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:tags "agent", "api", "client", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

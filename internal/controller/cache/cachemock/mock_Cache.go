@@ -2,6 +2,42 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/cache/cachemock/mock_Cache.go
+Mock Cache module for internal layer
+
+## Linked Modules
+- [internal/controller/cache](../internal/controller/cache)
+- [internal/controller/cache/index](../internal/controller/cache/index)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+Cache, NewCache
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/cachemock/mock_Cache.go> a code:Module ;
+    code:name "internal/controller/cache/cachemock/mock_Cache.go" ;
+    code:description "Mock Cache module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller/cache" ;
+        code:path "../internal/controller/cache"
+    ], [
+        code:name "internal/controller/cache/index" ;
+        code:path "../internal/controller/cache/index"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Cache, :NewCache ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachemock
 
 import (

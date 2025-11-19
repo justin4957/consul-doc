@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/submatview/local_materializer.go
+Local Materializer module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+- [lib/retry](../lib/retry)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent
+
+## Exports
+ACLResolver, LocalBackend, LocalMaterializer, LocalMaterializerDeps, NewLocalMaterializer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/submatview/local_materializer.go> a code:Module ;
+    code:name "agent/submatview/local_materializer.go" ;
+    code:description "Local Materializer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :ACLResolver, :LocalBackend, :LocalMaterializer, :LocalMaterializerDeps, :NewLocalMaterializer ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package submatview
 
 import (

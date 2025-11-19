@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/iptables/iptables.go
+Iptables module for internal layer
+
+## Tags
+internal
+
+## Exports
+AdditionalRulesFn, Config, Provider, Setup, SetupWithAdditionalRules, SetupWithAdditionalRulesIPv6
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/iptables/iptables.go> a code:Module ;
+    code:name "sdk/iptables/iptables.go" ;
+    code:description "Iptables module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :AdditionalRulesFn, :Config, :Provider, :Setup, :SetupWithAdditionalRules, :SetupWithAdditionalRulesIPv6 ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package iptables
 
 import (

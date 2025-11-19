@@ -1,6 +1,66 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/config.go
+Config module for agent layer
+
+## Linked Modules
+- [agent/checks](../agent/checks)
+- [agent/consul/rate](../agent/consul/rate)
+- [agent/consul/reporting](../agent/consul/reporting)
+- [agent/hcp/config](../agent/hcp/config)
+- [agent/structs](../agent/structs)
+- [internal/gossip/libserf](../internal/gossip/libserf)
+- [tlsutil](../tlsutil)
+- [types](../types)
+- [version](../version)
+
+## Tags
+agent, configuration
+
+## Exports
+CloneSerfLANConfig, Config, DefaultConfig, License, NetworkSegment, RPCConfig, RaftBoltDBConfig, RaftLogStoreConfig, RaftLogStoreVerificationConfig, ReloadableConfig, Reporting, RequestLimits, WALConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/config.go> a code:Module ;
+    code:name "agent/consul/config.go" ;
+    code:description "Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/checks" ;
+        code:path "../agent/checks"
+    ], [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ], [
+        code:name "agent/consul/reporting" ;
+        code:path "../agent/consul/reporting"
+    ], [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/gossip/libserf" ;
+        code:path "../internal/gossip/libserf"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :CloneSerfLANConfig, :Config, :DefaultConfig, :License, :NetworkSegment, :RPCConfig, :RaftBoltDBConfig, :RaftLogStoreConfig, :RaftLogStoreVerificationConfig, :ReloadableConfig, :Reporting, :RequestLimits, :WALConfig ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

@@ -3,6 +3,51 @@
 
 // Package demo includes fake resource types for working on Consul's generic
 // state storage without having to refer to specific features.
+
+/*
+# Module: internal/resource/demo/demo.go
+Demo module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [proto/private/pbdemo/v1](../proto/private/pbdemo/v1)
+- [proto/private/pbdemo/v2](../proto/private/pbdemo/v2)
+
+## Tags
+internal
+
+## Exports
+GenerateV1Concept, GenerateV1Executive, GenerateV1RecordLabel, GenerateV2Album, GenerateV2Artist, RegisterTypes
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/demo/demo.go> a code:Module ;
+    code:name "internal/resource/demo/demo.go" ;
+    code:description "Demo module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "proto/private/pbdemo/v1" ;
+        code:path "../proto/private/pbdemo/v1"
+    ], [
+        code:name "proto/private/pbdemo/v2" ;
+        code:path "../proto/private/pbdemo/v2"
+    ] ;
+    code:exports :GenerateV1Concept, :GenerateV1Executive, :GenerateV1RecordLabel, :GenerateV2Album, :GenerateV2Artist, :RegisterTypes ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package demo
 
 import (

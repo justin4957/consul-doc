@@ -7,6 +7,28 @@
 // of slots available) can be changed dynamically at runtime without waiting for
 // all existing work to stop. This makes it easier to implement e.g. concurrency
 // limits on certain operations that can be reconfigured at runtime.
+
+/*
+# Module: lib/semaphore/semaphore.go
+Semaphore module for internal layer
+
+## Tags
+internal
+
+## Exports
+Dynamic, NewDynamic
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/semaphore/semaphore.go> a code:Module ;
+    code:name "lib/semaphore/semaphore.go" ;
+    code:description "Semaphore module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Dynamic, :NewDynamic ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package semaphore
 
 import (

@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/stream/event_buffer.go
+Event Buffer module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/stream/event_buffer.go> a code:Module ;
+    code:name "agent/consul/stream/event_buffer.go" ;
+    code:description "Event Buffer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package stream
 
 import (

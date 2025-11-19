@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/testing/golden/golden.go
+Golden module for internal layer
+
+## Tags
+internal
+
+## Exports
+Get, GetBytes, GetBytesAtFilePath
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/testing/golden/golden.go> a code:Module ;
+    code:name "internal/testing/golden/golden.go" ;
+    code:description "Golden module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Get, :GetBytes, :GetBytesAtFilePath ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package golden
 
 import (

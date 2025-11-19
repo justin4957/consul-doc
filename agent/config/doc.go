@@ -82,4 +82,21 @@
 //  * "tlsskipverify" is deprecated in service definitions. Please use "tls_skip_verify" instead.
 //  * "deregistercriticalserviceafter" is deprecated in service definitions. Please use "deregister_critical_service_after" instead.
 
+/*
+# Module: agent/config/doc.go
+Doc module for agent layer
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/doc.go> a code:Module ;
+    code:name "agent/config/doc.go" ;
+    code:description "Doc module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config

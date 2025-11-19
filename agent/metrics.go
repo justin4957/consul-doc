@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/metrics.go
+Metrics module for agent layer
+
+## Linked Modules
+- [agent/consul](../agent/consul)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent
+
+## Exports
+CertExpirationGauges
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/metrics.go> a code:Module ;
+    code:name "agent/metrics.go" ;
+    code:description "Metrics module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :CertExpirationGauges ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

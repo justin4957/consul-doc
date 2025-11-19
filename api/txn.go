@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/txn.go
+Txn module for api layer
+
+## Tags
+api, client
+
+## Exports
+CensusOp, CheckOp, CheckTxnOp, KVOp, KVTxnOp, KVTxnOps, KVTxnResponse, NodeOp, NodeTxnOp, ServiceOp, ServiceTxnOp, SessionOp, SessionTxnOp, Txn, TxnError, TxnErrors, TxnOp, TxnOps, TxnResponse, TxnResult
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/txn.go> a code:Module ;
+    code:name "api/txn.go" ;
+    code:description "Txn module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :CensusOp, :CheckOp, :CheckTxnOp, :KVOp, :KVTxnOp, :KVTxnOps, :KVTxnResponse, :NodeOp, :NodeTxnOp, :ServiceOp, :ServiceTxnOp, :SessionOp, :SessionTxnOp, :Txn, :TxnError, :TxnErrors, :TxnOp, :TxnOps, :TxnResponse, :TxnResult ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

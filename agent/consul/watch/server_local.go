@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/watch/server_local.go
+Server Local module for agent layer
+
+## Linked Modules
+- [lib/retry](../lib/retry)
+
+## Tags
+agent
+
+## Exports
+ServerLocalBlockingQuery, ServerLocalNotify, StateStore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/watch/server_local.go> a code:Module ;
+    code:name "agent/consul/watch/server_local.go" ;
+    code:description "Server Local module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :ServerLocalBlockingQuery, :ServerLocalNotify, :StateStore ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package watch
 
 import (

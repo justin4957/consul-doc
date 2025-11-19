@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/gateway_locator.go
+Gateway Locator module for agent layer
+
+## Linked Modules
+- [agent/blockingquery](../agent/blockingquery)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [ipaddr](../ipaddr)
+- [lib/stringslice](../lib/stringslice)
+- [logging](../logging)
+
+## Tags
+agent
+
+## Exports
+GatewayLocator, NewGatewayLocator
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/gateway_locator.go> a code:Module ;
+    code:name "agent/consul/gateway_locator.go" ;
+    code:description "Gateway Locator module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/blockingquery" ;
+        code:path "../agent/blockingquery"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ], [
+        code:name "lib/stringslice" ;
+        code:path "../lib/stringslice"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :GatewayLocator, :NewGatewayLocator ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

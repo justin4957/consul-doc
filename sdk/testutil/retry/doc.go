@@ -19,4 +19,22 @@
 //
 // WARNING: unlike *testing.T, *retry.R#Fatal and FailNow *do not*
 // fail the test function entirely, only the current run the retry func
+
+/*
+# Module: sdk/testutil/retry/doc.go
+Doc module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/retry/doc.go> a code:Module ;
+    code:name "sdk/testutil/retry/doc.go" ;
+    code:description "Doc module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package retry

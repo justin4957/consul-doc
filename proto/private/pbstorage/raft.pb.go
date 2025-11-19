@@ -10,6 +10,38 @@
 // This package contains types used by the Raft storage backend that lives in
 // the internal/storage/raft Go package.
 
+/*
+# Module: proto/private/pbstorage/raft.pb.go
+Raft.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+consensus, internal, replication
+
+## Exports
+DeleteRequest, File, GroupVersionMismatchErrorDetails, ListRequest, ListResponse, Log, LogResponse, LogType, ReadRequest, ReadResponse, WriteRequest, WriteResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbstorage/raft.pb.go> a code:Module ;
+    code:name "proto/private/pbstorage/raft.pb.go" ;
+    code:description "Raft.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :DeleteRequest, :File, :GroupVersionMismatchErrorDetails, :ListRequest, :ListResponse, :Log, :LogResponse, :LogType, :ReadRequest, :ReadResponse, :WriteRequest, :WriteResponse ;
+    code:tags "consensus", "internal", "replication" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbstorage
 
 import (

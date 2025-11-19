@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: pbdns/dns.proto
 
+/*
+# Module: proto-public/pbdns/dns.pb.go
+Dns.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+discovery, internal, networking
+
+## Exports
+File, Protocol, QueryRequest, QueryResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbdns/dns.pb.go> a code:Module ;
+    code:name "proto-public/pbdns/dns.pb.go" ;
+    code:description "Dns.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:exports :File, :Protocol, :QueryRequest, :QueryResponse ;
+    code:tags "discovery", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbdns
 
 import (

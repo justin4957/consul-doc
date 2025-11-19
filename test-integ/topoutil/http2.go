@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test-integ/topoutil/http2.go
+Http2 module for internal layer
+
+## Tags
+internal
+
+## Exports
+EnableHTTP2
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test-integ/topoutil/http2.go> a code:Module ;
+    code:name "test-integ/topoutil/http2.go" ;
+    code:description "Http2 module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :EnableHTTP2 ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topoutil
 
 import (

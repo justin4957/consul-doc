@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/runtime.go
+Runtime module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/consul](../agent/consul)
+- [agent/consul/rate](../agent/consul/rate)
+- [agent/hcp/config](../agent/hcp/config)
+- [agent/structs](../agent/structs)
+- [agent/token](../agent/token)
+- [api](../api)
+- [lib](../lib)
+- [logging](../logging)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent, configuration
+
+## Exports
+ApplyDefaultQueryOptions, AutoConfig, AutoConfigAuthorizer, LicenseConfig, ReportingConfig, RuntimeConfig, RuntimeSOAConfig, StaticRuntimeConfig, UIConfig, UIMetricsProxy, UIMetricsProxyAddHeader
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/runtime.go> a code:Module ;
+    code:name "agent/config/runtime.go" ;
+    code:description "Runtime module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ], [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/token" ;
+        code:path "../agent/token"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :ApplyDefaultQueryOptions, :AutoConfig, :AutoConfigAuthorizer, :LicenseConfig, :ReportingConfig, :RuntimeConfig, :RuntimeSOAConfig, :StaticRuntimeConfig, :UIConfig, :UIMetricsProxy, :UIMetricsProxyAddHeader ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

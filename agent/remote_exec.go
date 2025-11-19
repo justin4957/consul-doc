@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/remote_exec.go
+Remote Exec module for agent layer
+
+## Linked Modules
+- [agent/exec](../agent/exec)
+- [agent/structs](../agent/structs)
+- [api](../api)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/remote_exec.go> a code:Module ;
+    code:name "agent/remote_exec.go" ;
+    code:description "Remote Exec module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/exec" ;
+        code:path "../agent/exec"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

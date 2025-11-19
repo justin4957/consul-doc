@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/ca/common.go
+Common module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+
+## Tags
+agent, mtls, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/ca/common.go> a code:Module ;
+    code:name "agent/connect/ca/common.go" ;
+    code:description "Common module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ] ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package ca
 
 import (

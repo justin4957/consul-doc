@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-middleware/handshake.go
+Handshake module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+LabelledConn, LabelledListener, NewOptionalTransportCredentials, Protocol
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-middleware/handshake.go> a code:Module ;
+    code:name "agent/grpc-middleware/handshake.go" ;
+    code:description "Handshake module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :LabelledConn, :LabelledListener, :NewOptionalTransportCredentials, :Protocol ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package middleware
 
 import (

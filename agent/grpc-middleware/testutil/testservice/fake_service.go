@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-middleware/testutil/testservice/fake_service.go
+Fake Service module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+Simple, SimplePanic
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-middleware/testutil/testservice/fake_service.go> a code:Module ;
+    code:name "agent/grpc-middleware/testutil/testservice/fake_service.go" ;
+    code:description "Fake Service module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Simple, :SimplePanic ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package testservice
 
 import (

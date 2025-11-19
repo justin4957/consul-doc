@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/discovery_chain.go
+Discovery Chain module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [lib](../lib)
+
+## Tags
+agent, data-model, discovery, dns, types
+
+## Exports
+ChainID, CompiledDiscoveryChain, DiscoveryFailover, DiscoveryGraphNode, DiscoveryPrioritizeByLocality, DiscoveryResolver, DiscoveryRoute, DiscoverySplit, DiscoveryTarget, DiscoveryTargetOpts, MergeDiscoveryTargetOpts, NewDiscoveryTarget
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/discovery_chain.go> a code:Module ;
+    code:name "agent/structs/discovery_chain.go" ;
+    code:description "Discovery Chain module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :ChainID, :CompiledDiscoveryChain, :DiscoveryFailover, :DiscoveryGraphNode, :DiscoveryPrioritizeByLocality, :DiscoveryResolver, :DiscoveryRoute, :DiscoverySplit, :DiscoveryTarget, :DiscoveryTargetOpts, :MergeDiscoveryTargetOpts, :NewDiscoveryTarget ;
+    code:tags "agent", "data-model", "discovery", "dns", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

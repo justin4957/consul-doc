@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: private/pbconfigentry/config_entry.proto
 
+/*
+# Module: proto/private/pbconfigentry/config_entry_grpc.pb.go
+Config Entry Grpc.Pb module for internal layer
+
+## Tags
+api, communication, configuration, grpc, internal, networking
+
+## Exports
+ConfigEntryService, ConfigEntryServiceClient, ConfigEntryServiceServer, NewConfigEntryServiceClient, RegisterConfigEntryServiceServer, UnimplementedConfigEntryServiceServer, UnsafeConfigEntryServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbconfigentry/config_entry_grpc.pb.go> a code:Module ;
+    code:name "proto/private/pbconfigentry/config_entry_grpc.pb.go" ;
+    code:description "Config Entry Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ConfigEntryService, :ConfigEntryServiceClient, :ConfigEntryServiceServer, :NewConfigEntryServiceClient, :RegisterConfigEntryServiceServer, :UnimplementedConfigEntryServiceServer, :UnsafeConfigEntryServiceServer ;
+    code:tags "api", "communication", "configuration", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbconfigentry
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/config/mock_CloudConfig.go
+Mock Cloudconfig module for agent layer
+
+## Tags
+agent, configuration
+
+## Exports
+MockCloudCfg
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/config/mock_CloudConfig.go> a code:Module ;
+    code:name "agent/hcp/config/mock_CloudConfig.go" ;
+    code:description "Mock Cloudconfig module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :MockCloudCfg ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

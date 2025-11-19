@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: private/pbconnect/connect.proto
 
+/*
+# Module: proto/private/pbconnect/connect.pb.go
+Connect.Pb module for internal layer
+
+## Linked Modules
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+internal, mtls, service-mesh
+
+## Exports
+CARoot, CARoots, File, IssuedCert
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbconnect/connect.pb.go> a code:Module ;
+    code:name "proto/private/pbconnect/connect.pb.go" ;
+    code:description "Connect.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :CARoot, :CARoots, :File, :IssuedCert ;
+    code:tags "internal", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbconnect
 
 import (

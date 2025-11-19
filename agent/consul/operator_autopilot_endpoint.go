@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/operator_autopilot_endpoint.go
+Operator Autopilot Endpoint module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/operator_autopilot_endpoint.go> a code:Module ;
+    code:name "agent/consul/operator_autopilot_endpoint.go" ;
+    code:description "Operator Autopilot Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

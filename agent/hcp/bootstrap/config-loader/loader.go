@@ -6,6 +6,47 @@
 // because it has a dependency on agent/config while other components need to be
 // imported and run within the server process in agent/consul and that would create
 // a dependency cycle.
+
+/*
+# Module: agent/hcp/bootstrap/config-loader/loader.go
+Loader module for agent layer
+
+## Linked Modules
+- [agent/config](../agent/config)
+- [agent/hcp/bootstrap](../agent/hcp/bootstrap)
+- [agent/hcp/bootstrap/constants](../agent/hcp/bootstrap/constants)
+- [agent/hcp/client](../agent/hcp/client)
+
+## Tags
+agent, configuration
+
+## Exports
+AddAclPolicyAccessControlHeader, ConfigLoader, LoadConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/bootstrap/config-loader/loader.go> a code:Module ;
+    code:name "agent/hcp/bootstrap/config-loader/loader.go" ;
+    code:description "Loader module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/hcp/bootstrap" ;
+        code:path "../agent/hcp/bootstrap"
+    ], [
+        code:name "agent/hcp/bootstrap/constants" ;
+        code:path "../agent/hcp/bootstrap/constants"
+    ], [
+        code:name "agent/hcp/client" ;
+        code:path "../agent/hcp/client"
+    ] ;
+    code:exports :AddAclPolicyAccessControlHeader, :ConfigLoader, :LoadConfig ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package loader
 
 import (

@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/server_overview.go
+Server Overview module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/usagemetrics](../agent/consul/usagemetrics)
+- [agent/structs](../agent/structs)
+- [api](../api)
+
+## Tags
+agent
+
+## Exports
+NewOverviewManager, OverviewManager
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server_overview.go> a code:Module ;
+    code:name "agent/consul/server_overview.go" ;
+    code:description "Server Overview module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/usagemetrics" ;
+        code:path "../agent/consul/usagemetrics"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :NewOverviewManager, :OverviewManager ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

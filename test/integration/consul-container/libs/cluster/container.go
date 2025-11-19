@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/cluster/container.go
+Container module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+MaxEnvoyOnNode, NewConsulContainer, ServiceUpstreamLocalBindPort, ServiceUpstreamLocalBindPort2
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/cluster/container.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/cluster/container.go" ;
+    code:description "Container module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :MaxEnvoyOnNode, :NewConsulContainer, :ServiceUpstreamLocalBindPort, :ServiceUpstreamLocalBindPort2 ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cluster
 
 import (

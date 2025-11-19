@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/tools/protoc-gen-grpc-clone/main.go
+Main module for internal layer
+
+## Linked Modules
+- [internal/tools/protoc-gen-grpc-clone/internal/generate](../internal/tools/protoc-gen-grpc-clone/internal/generate)
+
+## Tags
+api, communication, grpc, internal, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/protoc-gen-grpc-clone/main.go> a code:Module ;
+    code:name "internal/tools/protoc-gen-grpc-clone/main.go" ;
+    code:description "Main module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/tools/protoc-gen-grpc-clone/internal/generate" ;
+        code:path "../internal/tools/protoc-gen-grpc-clone/internal/generate"
+    ] ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

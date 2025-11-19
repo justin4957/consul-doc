@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/agent.go
+Agent module for internal layer
+
+## Linked Modules
+- [testing/deployer/sprawl/internal/secrets](../testing/deployer/sprawl/internal/secrets)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+HCLBuilder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/agent.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/agent.go" ;
+    code:description "Agent module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/sprawl/internal/secrets" ;
+        code:path "../testing/deployer/sprawl/internal/secrets"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :HCLBuilder ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

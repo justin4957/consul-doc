@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/auto_config_endpoint.go
+Auto Config Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/connect](../agent/connect)
+- [agent/consul/authmethod/ssoauth](../agent/consul/authmethod/ssoauth)
+- [agent/structs](../agent/structs)
+- [internal/dnsutil](../internal/dnsutil)
+- [lib/template](../lib/template)
+- [proto/private/pbautoconf](../proto/private/pbautoconf)
+- [proto/private/pbconfig](../proto/private/pbconfig)
+- [proto/private/pbconnect](../proto/private/pbconnect)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent, configuration
+
+## Exports
+AutoConfig, AutoConfigAuthorizer, AutoConfigBackend, AutoConfigOptions, InvalidNodeName, NewAutoConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/auto_config_endpoint.go> a code:Module ;
+    code:name "agent/consul/auto_config_endpoint.go" ;
+    code:description "Auto Config Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/authmethod/ssoauth" ;
+        code:path "../agent/consul/authmethod/ssoauth"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/dnsutil" ;
+        code:path "../internal/dnsutil"
+    ], [
+        code:name "lib/template" ;
+        code:path "../lib/template"
+    ], [
+        code:name "proto/private/pbautoconf" ;
+        code:path "../proto/private/pbautoconf"
+    ], [
+        code:name "proto/private/pbconfig" ;
+        code:path "../proto/private/pbconfig"
+    ], [
+        code:name "proto/private/pbconnect" ;
+        code:path "../proto/private/pbconnect"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :AutoConfig, :AutoConfigAuthorizer, :AutoConfigBackend, :AutoConfigOptions, :InvalidNodeName, :NewAutoConfig ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/controller/queue/rate.go
+Rate module for agent layer
+
+## Tags
+agent
+
+## Exports
+Limiter, NewRateLimiter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/controller/queue/rate.go> a code:Module ;
+    code:name "agent/consul/controller/queue/rate.go" ;
+    code:description "Rate module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Limiter, :NewRateLimiter ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package queue
 
 import (

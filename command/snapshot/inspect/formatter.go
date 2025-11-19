@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/snapshot/inspect/formatter.go
+Formatter module for cli layer
+
+## Tags
+cli, user-interface
+
+## Exports
+ByteSize, Formatter, GetSupportedFormats, NewFormatter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/snapshot/inspect/formatter.go> a code:Module ;
+    code:name "command/snapshot/inspect/formatter.go" ;
+    code:description "Formatter module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :ByteSize, :Formatter, :GetSupportedFormats, :NewFormatter ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package inspect
 
 import (

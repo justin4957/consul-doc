@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/client/grpc-client.go
+Grpc Client module for cli layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+api, cli, communication, grpc, networking, user-interface
+
+## Exports
+GRPCClient, NewGRPCClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/client/grpc-client.go> a code:Module ;
+    code:name "command/resource/client/grpc-client.go" ;
+    code:description "Grpc Client module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :GRPCClient, :NewGRPCClient ;
+    code:tags "api", "cli", "communication", "grpc", "networking", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

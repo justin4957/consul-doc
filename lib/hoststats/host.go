@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/hoststats/host.go
+Host module for internal layer
+
+## Tags
+internal
+
+## Exports
+CPUStats, DiskStats, HostStats, MemoryStats
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/hoststats/host.go> a code:Module ;
+    code:name "lib/hoststats/host.go" ;
+    code:description "Host module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :CPUStats, :DiskStats, :HostStats, :MemoryStats ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package hoststats
 
 import (

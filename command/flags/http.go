@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/flags/http.go
+Http module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, user-interface
+
+## Exports
+HTTPFlags
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/flags/http.go> a code:Module ;
+    code:name "command/flags/http.go" ;
+    code:description "Http module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :HTTPFlags ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package flags
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/validate/validate.go
+Validate module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+internal
+
+## Exports
+DoEndpointValidation, EndpointValidator, MakeValidate, Message, Messages, Validate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/validate/validate.go> a code:Module ;
+    code:name "troubleshoot/validate/validate.go" ;
+    code:description "Validate module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :DoEndpointValidation, :EndpointValidator, :MakeValidate, :Message, :Messages, :Validate ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package validate
 
 import (

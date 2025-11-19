@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/rtt/rtt.go
+Rtt module for cli layer
+
+## Linked Modules
+- [command/flags](../command/flags)
+- [internal/gossip/librtt](../internal/gossip/librtt)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/rtt/rtt.go> a code:Module ;
+    code:name "command/rtt/rtt.go" ;
+    code:description "Rtt module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "internal/gossip/librtt" ;
+        code:path "../internal/gossip/librtt"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package rtt
 
 import (

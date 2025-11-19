@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/acl_schema.go
+Acl Schema module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [api](../api)
+
+## Tags
+access-control, agent, authorization, persistence, security, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/acl_schema.go> a code:Module ;
+    code:name "agent/consul/state/acl_schema.go" ;
+    code:description "Acl Schema module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:tags "access-control", "agent", "authorization", "persistence", "security", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

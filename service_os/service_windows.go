@@ -3,6 +3,23 @@
 
 //go:build windows
 
+/*
+# Module: service_os/service_windows.go
+Service Windows module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<service_os/service_windows.go> a code:Module ;
+    code:name "service_os/service_windows.go" ;
+    code:description "Service Windows module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package service_os
 
 import (

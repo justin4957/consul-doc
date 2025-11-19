@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/memdb.go
+Memdb module for agent layer
+
+## Linked Modules
+- [agent/consul/stream](../agent/consul/stream)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+AbortTxn, Changes, EventPublisher, ReadDB, ReadTxn, WriteTxn
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/memdb.go> a code:Module ;
+    code:name "agent/consul/state/memdb.go" ;
+    code:description "Memdb module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :AbortTxn, :Changes, :EventPublisher, :ReadDB, :ReadTxn, :WriteTxn ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/uiserver/ui_template_data.go
+Ui Template Data module for agent layer
+
+## Linked Modules
+- [agent/config](../agent/config)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/uiserver/ui_template_data.go> a code:Module ;
+    code:name "agent/uiserver/ui_template_data.go" ;
+    code:description "Ui Template Data module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package uiserver
 
 import (

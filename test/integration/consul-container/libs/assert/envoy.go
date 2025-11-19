@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/assert/envoy.go
+Envoy module for internal layer
+
+## Linked Modules
+- [sdk/testutil/retry](../sdk/testutil/retry)
+- [test/integration/consul-container/libs/cluster](../test/integration/consul-container/libs/cluster)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+AssertEnvoyMetricAtLeast, AssertEnvoyMetricAtMost, AssertEnvoyPresentsCertURI, AssertEnvoyPresentsCertURIWithClient, AssertEnvoyRunning, AssertEnvoyRunningWithClient, AssertServiceHasHealthyInstances, AssertUpstreamEndpointStatus, AssertUpstreamEndpointStatusWithClient, GetEnvoyListenerTCPFilters, GetEnvoyListenerTCPFiltersWithClient, GetEnvoyOutput, GetEnvoyOutputWithClient, ResetEnvoyCounters
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/assert/envoy.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/assert/envoy.go" ;
+    code:description "Envoy module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ], [
+        code:name "test/integration/consul-container/libs/cluster" ;
+        code:path "../test/integration/consul-container/libs/cluster"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :AssertEnvoyMetricAtLeast, :AssertEnvoyMetricAtMost, :AssertEnvoyPresentsCertURI, :AssertEnvoyPresentsCertURIWithClient, :AssertEnvoyRunning, :AssertEnvoyRunningWithClient, :AssertServiceHasHealthyInstances, :AssertUpstreamEndpointStatus, :AssertUpstreamEndpointStatusWithClient, :GetEnvoyListenerTCPFilters, :GetEnvoyListenerTCPFiltersWithClient, :GetEnvoyOutput, :GetEnvoyOutputWithClient, :ResetEnvoyCounters ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package assert
 
 import (

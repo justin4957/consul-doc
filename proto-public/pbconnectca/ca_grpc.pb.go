@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: pbconnectca/ca.proto
 
+/*
+# Module: proto-public/pbconnectca/ca_grpc.pb.go
+Ca Grpc.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, mtls, networking, service-mesh
+
+## Exports
+ConnectCAService, ConnectCAServiceClient, ConnectCAServiceServer, NewConnectCAServiceClient, RegisterConnectCAServiceServer, UnimplementedConnectCAServiceServer, UnsafeConnectCAServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbconnectca/ca_grpc.pb.go> a code:Module ;
+    code:name "proto-public/pbconnectca/ca_grpc.pb.go" ;
+    code:description "Ca Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ConnectCAService, :ConnectCAServiceClient, :ConnectCAServiceServer, :NewConnectCAServiceClient, :RegisterConnectCAServiceServer, :UnimplementedConnectCAServiceServer, :UnsafeConnectCAServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbconnectca
 
 import (

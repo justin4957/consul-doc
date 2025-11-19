@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/discoverychain/compile.go
+Compile module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/configentry](../agent/configentry)
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, discovery, dns
+
+## Exports
+Compile, CompileRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/discoverychain/compile.go> a code:Module ;
+    code:name "agent/consul/discoverychain/compile.go" ;
+    code:description "Compile module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :Compile, :CompileRequest ;
+    code:tags "agent", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package discoverychain
 
 import (

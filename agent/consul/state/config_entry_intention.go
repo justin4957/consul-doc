@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/config_entry_intention.go
+Config Entry Intention module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, configuration, persistence, storage
+
+## Exports
+SamenessGroupMemberIndex, ServiceIntentionLegacyIDIndex, ServiceIntentionSourceIndex, ServiceIntentionSourceSamenessGroupIndex
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/config_entry_intention.go> a code:Module ;
+    code:name "agent/consul/state/config_entry_intention.go" ;
+    code:description "Config Entry Intention module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :SamenessGroupMemberIndex, :ServiceIntentionLegacyIDIndex, :ServiceIntentionSourceIndex, :ServiceIntentionSourceSamenessGroupIndex ;
+    code:tags "agent", "configuration", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/cache/index/indexmock/mock_MultiIndexer.go
+Mock Multiindexer module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+MultiIndexer, NewMultiIndexer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/index/indexmock/mock_MultiIndexer.go> a code:Module ;
+    code:name "internal/controller/cache/index/indexmock/mock_MultiIndexer.go" ;
+    code:description "Mock Multiindexer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :MultiIndexer, :NewMultiIndexer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package indexmock
 
 import (

@@ -5,6 +5,28 @@
 Package decode provides tools for customizing the decoding of configuration,
 into structures using mapstructure.
 */
+
+/*
+# Module: lib/decode/decode.go
+Decode module for internal layer
+
+## Tags
+internal
+
+## Exports
+HookTranslateKeys, HookWeakDecodeFromSlice
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/decode/decode.go> a code:Module ;
+    code:name "lib/decode/decode.go" ;
+    code:description "Decode module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :HookTranslateKeys, :HookWeakDecodeFromSlice ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package decode
 
 import (

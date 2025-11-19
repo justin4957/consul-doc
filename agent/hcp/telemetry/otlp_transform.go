@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/telemetry/otlp_transform.go
+Otlp Transform module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/telemetry/otlp_transform.go> a code:Module ;
+    code:name "agent/hcp/telemetry/otlp_transform.go" ;
+    code:description "Otlp Transform module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package telemetry
 
 import (

@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: acl/enterprisemeta_ce.go
+Enterprisemeta Ce module for acl layer
+
+## Tags
+access-control, acl, authorization, security
+
+## Exports
+DefaultEnterpriseMeta, EnterpriseMeta, EqualNamespaces, EqualPartitions, IsDefaultPartition, NamespaceOrDefault, NewEnterpriseMetaWithPartition, NormalizeNamespace, PartitionOrDefault, WildcardEnterpriseMeta
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/enterprisemeta_ce.go> a code:Module ;
+    code:name "acl/enterprisemeta_ce.go" ;
+    code:description "Enterprisemeta Ce module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :DefaultEnterpriseMeta, :EnterpriseMeta, :EqualNamespaces, :EqualPartitions, :IsDefaultPartition, :NamespaceOrDefault, :NewEnterpriseMetaWithPartition, :NormalizeNamespace, :PartitionOrDefault, :WildcardEnterpriseMeta ;
+    code:tags "access-control", "acl", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import "hash"

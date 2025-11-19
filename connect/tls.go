@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/tls.go
+Tls module for service-mesh layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [api](../api)
+
+## Tags
+encryption, mtls, security, service-mesh
+
+## Exports
+CertURIFromConn
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/tls.go> a code:Module ;
+    code:name "connect/tls.go" ;
+    code:description "Tls module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :CertURIFromConn ;
+    code:tags "encryption", "mtls", "security", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

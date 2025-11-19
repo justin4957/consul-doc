@@ -1,6 +1,66 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/multicluster/internal/controllers/v1compat/controller.go
+Controller module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+- [internal/controller](../internal/controller)
+- [internal/controller/cache](../internal/controller/cache)
+- [internal/controller/cache/index](../internal/controller/cache/index)
+- [internal/multicluster/internal/types](../internal/multicluster/internal/types)
+- [internal/resource](../internal/resource)
+- [proto-public/pbmulticluster/v2](../proto-public/pbmulticluster/v2)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+AggregatedConfig, Controller
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/multicluster/internal/controllers/v1compat/controller.go> a code:Module ;
+    code:name "internal/multicluster/internal/controllers/v1compat/controller.go" ;
+    code:description "Controller module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "internal/controller/cache" ;
+        code:path "../internal/controller/cache"
+    ], [
+        code:name "internal/controller/cache/index" ;
+        code:path "../internal/controller/cache/index"
+    ], [
+        code:name "internal/multicluster/internal/types" ;
+        code:path "../internal/multicluster/internal/types"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbmulticluster/v2" ;
+        code:path "../proto-public/pbmulticluster/v2"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :AggregatedConfig, :Controller ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package v1compat
 
 import (

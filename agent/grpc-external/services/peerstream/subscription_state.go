@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/peerstream/subscription_state.go
+Subscription State module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/structs](../agent/structs)
+- [proto/private/pbservice](../proto/private/pbservice)
+
+## Tags
+agent, api, communication, grpc, networking, persistence, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/peerstream/subscription_state.go> a code:Module ;
+    code:name "agent/grpc-external/services/peerstream/subscription_state.go" ;
+    code:description "Subscription State module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbservice" ;
+        code:path "../proto/private/pbservice"
+    ] ;
+    code:tags "agent", "api", "communication", "grpc", "networking", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package peerstream
 
 import (

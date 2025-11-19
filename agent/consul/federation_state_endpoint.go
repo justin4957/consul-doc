@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/federation_state_endpoint.go
+Federation State Endpoint module for agent layer
+
+## Linked Modules
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+FederationState, FederationStateSummaries
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/federation_state_endpoint.go> a code:Module ;
+    code:name "agent/consul/federation_state_endpoint.go" ;
+    code:description "Federation State Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :FederationState, :FederationStateSummaries ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/bindingrule/update/bindingrule_update.go
+Bindingrule Update module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/acl](../command/acl)
+- [command/acl/bindingrule](../command/acl/bindingrule)
+- [command/flags](../command/flags)
+
+## Tags
+access-control, authorization, cli, security, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/bindingrule/update/bindingrule_update.go> a code:Module ;
+    code:name "command/acl/bindingrule/update/bindingrule_update.go" ;
+    code:description "Bindingrule Update module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/acl" ;
+        code:path "../command/acl"
+    ], [
+        code:name "command/acl/bindingrule" ;
+        code:path "../command/acl/bindingrule"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "access-control", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package bindingruleupdate
 
 import (

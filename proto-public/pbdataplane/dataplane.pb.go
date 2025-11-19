@@ -9,6 +9,34 @@
 // 	protoc        (unknown)
 // source: pbdataplane/dataplane.proto
 
+/*
+# Module: proto-public/pbdataplane/dataplane.pb.go
+Dataplane.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+internal
+
+## Exports
+DataplaneFeatureSupport, DataplaneFeatures, File, GetEnvoyBootstrapParamsRequest, GetEnvoyBootstrapParamsResponse, GetSupportedDataplaneFeaturesRequest, GetSupportedDataplaneFeaturesResponse, ServiceKind
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbdataplane/dataplane.pb.go> a code:Module ;
+    code:name "proto-public/pbdataplane/dataplane.pb.go" ;
+    code:description "Dataplane.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:exports :DataplaneFeatureSupport, :DataplaneFeatures, :File, :GetEnvoyBootstrapParamsRequest, :GetEnvoyBootstrapParamsResponse, :GetSupportedDataplaneFeaturesRequest, :GetSupportedDataplaneFeaturesResponse, :ServiceKind ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbdataplane
 
 import (

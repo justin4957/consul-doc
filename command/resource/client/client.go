@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: command/resource/client/client.go
+Client module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, user-interface
+
+## Exports
+Client, CloseResponseBody, Config, DecodeBody, DefaultConfig, DefaultConfigWithLogger, DefaultNonPooledConfig, HttpBasicAuth, NewClient, NewHttpClient, QueryMeta, QueryOptions, RequireHttpCodes, RequireOK, StatusError, TLSConfig, WriteMeta, WriteOptions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/client/client.go> a code:Module ;
+    code:name "command/resource/client/client.go" ;
+    code:description "Client module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :Client, :CloseResponseBody, :Config, :DecodeBody, :DefaultConfig, :DefaultConfigWithLogger, :DefaultNonPooledConfig, :HttpBasicAuth, :NewClient, :NewHttpClient, :QueryMeta, :QueryOptions, :RequireHttpCodes, :RequireOK, :StatusError, :TLSConfig, :WriteMeta, :WriteOptions ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

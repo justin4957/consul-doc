@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg-glue/health_blocking.go
+Health Blocking module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/watch](../agent/consul/watch)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [agent/structs/aclfilter](../agent/structs/aclfilter)
+
+## Tags
+agent, health-checks, monitoring, networking, service-mesh
+
+## Exports
+ServerHealthBlocking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg-glue/health_blocking.go> a code:Module ;
+    code:name "agent/proxycfg-glue/health_blocking.go" ;
+    code:description "Health Blocking module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/watch" ;
+        code:path "../agent/consul/watch"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/structs/aclfilter" ;
+        code:path "../agent/structs/aclfilter"
+    ] ;
+    code:exports :ServerHealthBlocking ;
+    code:tags "agent", "health-checks", "monitoring", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfgglue
 
 import (

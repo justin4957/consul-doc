@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg-sources/local/config_source.go
+Config Source module for agent layer
+
+## Linked Modules
+- [agent/grpc-external/limiter](../agent/grpc-external/limiter)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, configuration, networking, service-mesh
+
+## Exports
+ConfigSource, NewConfigSource
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg-sources/local/config_source.go> a code:Module ;
+    code:name "agent/proxycfg-sources/local/config_source.go" ;
+    code:description "Config Source module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/grpc-external/limiter" ;
+        code:path "../agent/grpc-external/limiter"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ConfigSource, :NewConfigSource ;
+    code:tags "agent", "configuration", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package local
 
 import (

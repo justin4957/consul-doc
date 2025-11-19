@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbresource/mock_ResourceService_WatchListServer.go
+Mock Resourceservice Watchlistserver module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewResourceService, ResourceService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbresource/mock_ResourceService_WatchListServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbresource/mock_ResourceService_WatchListServer.go" ;
+    code:description "Mock Resourceservice Watchlistserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :NewResourceService, :ResourceService ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbresource
 
 import (

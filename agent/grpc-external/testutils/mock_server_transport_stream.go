@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/testutils/mock_server_transport_stream.go
+Mock Server Transport Stream module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+MockServerTransportStream
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/testutils/mock_server_transport_stream.go> a code:Module ;
+    code:name "agent/grpc-external/testutils/mock_server_transport_stream.go" ;
+    code:description "Mock Server Transport Stream module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :MockServerTransportStream ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutils
 
 import "google.golang.org/grpc/metadata"

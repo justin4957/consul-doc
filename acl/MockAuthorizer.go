@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/MockAuthorizer.go
+Mockauthorizer module for acl layer
+
+## Tags
+access-control, acl, authentication, authorization, security
+
+## Exports
+MockAuthorizer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/MockAuthorizer.go> a code:Module ;
+    code:name "acl/MockAuthorizer.go" ;
+    code:description "Mockauthorizer module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :MockAuthorizer ;
+    code:tags "access-control", "acl", "authentication", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import "github.com/stretchr/testify/mock"

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/file_watcher.go
+File Watcher module for agent layer
+
+## Tags
+agent, configuration
+
+## Exports
+FileWatcherEvent, NewFileWatcher, Watcher
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/file_watcher.go> a code:Module ;
+    code:name "agent/config/file_watcher.go" ;
+    code:description "File Watcher module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :FileWatcherEvent, :NewFileWatcher, :Watcher ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

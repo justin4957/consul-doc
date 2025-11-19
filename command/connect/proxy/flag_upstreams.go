@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/proxy/flag_upstreams.go
+Flag Upstreams module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [connect/proxy](../connect/proxy)
+
+## Tags
+cli, mtls, networking, service-mesh, user-interface
+
+## Exports
+FlagUpstreams
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/proxy/flag_upstreams.go> a code:Module ;
+    code:name "command/connect/proxy/flag_upstreams.go" ;
+    code:description "Flag Upstreams module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "connect/proxy" ;
+        code:path "../connect/proxy"
+    ] ;
+    code:exports :FlagUpstreams ;
+    code:tags "cli", "mtls", "networking", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

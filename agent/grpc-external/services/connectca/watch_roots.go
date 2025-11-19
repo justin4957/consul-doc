@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/connectca/watch_roots.go
+Watch Roots module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/connect](../agent/connect)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [proto-public/pbconnectca](../proto-public/pbconnectca)
+
+## Tags
+agent, api, communication, grpc, mtls, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/connectca/watch_roots.go> a code:Module ;
+    code:name "agent/grpc-external/services/connectca/watch_roots.go" ;
+    code:description "Watch Roots module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto-public/pbconnectca" ;
+        code:path "../proto-public/pbconnectca"
+    ] ;
+    code:tags "agent", "api", "communication", "grpc", "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connectca
 
 import (

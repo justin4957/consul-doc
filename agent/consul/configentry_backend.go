@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/configentry_backend.go
+Configentry Backend module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/grpc-external/services/configentry](../agent/grpc-external/services/configentry)
+
+## Tags
+agent, configuration
+
+## Exports
+ConfigEntryBackend, NewConfigEntryBackend
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/configentry_backend.go> a code:Module ;
+    code:name "agent/consul/configentry_backend.go" ;
+    code:description "Configentry Backend module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/grpc-external/services/configentry" ;
+        code:path "../agent/grpc-external/services/configentry"
+    ] ;
+    code:exports :ConfigEntryBackend, :NewConfigEntryBackend ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

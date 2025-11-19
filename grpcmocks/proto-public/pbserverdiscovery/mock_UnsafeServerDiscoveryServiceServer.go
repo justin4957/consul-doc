@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbserverdiscovery/mock_UnsafeServerDiscoveryServiceServer.go
+Mock Unsafeserverdiscoveryserviceserver module for internal layer
+
+## Tags
+api, communication, discovery, dns, grpc, internal, networking
+
+## Exports
+NewUnsafeServerDiscoveryServiceServer, UnsafeServerDiscoveryServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbserverdiscovery/mock_UnsafeServerDiscoveryServiceServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbserverdiscovery/mock_UnsafeServerDiscoveryServiceServer.go" ;
+    code:description "Mock Unsafeserverdiscoveryserviceserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewUnsafeServerDiscoveryServiceServer, :UnsafeServerDiscoveryServiceServer ;
+    code:tags "api", "communication", "discovery", "dns", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbserverdiscovery
 
 import (

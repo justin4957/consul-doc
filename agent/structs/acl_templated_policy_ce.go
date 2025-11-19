@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/structs/acl_templated_policy_ce.go
+Acl Templated Policy Ce module for agent layer
+
+## Tags
+access-control, agent, authorization, data-model, security, types
+
+## Exports
+ACLTemplatedPolicyAPIGateway, ACLTemplatedPolicyDNS, ACLTemplatedPolicyNode, ACLTemplatedPolicyNomadClient, ACLTemplatedPolicyNomadServer, ACLTemplatedPolicyService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/acl_templated_policy_ce.go> a code:Module ;
+    code:name "agent/structs/acl_templated_policy_ce.go" ;
+    code:description "Acl Templated Policy Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :ACLTemplatedPolicyAPIGateway, :ACLTemplatedPolicyDNS, :ACLTemplatedPolicyNode, :ACLTemplatedPolicyNomadClient, :ACLTemplatedPolicyNomadServer, :ACLTemplatedPolicyService ;
+    code:tags "access-control", "agent", "authorization", "data-model", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import _ "embed"

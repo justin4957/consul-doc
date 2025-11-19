@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/uri.go
+Uri module for agent layer
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+CertURI, ParseCertURI, ParseCertURIFromString
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/uri.go> a code:Module ;
+    code:name "agent/connect/uri.go" ;
+    code:description "Uri module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :CertURI, :ParseCertURI, :ParseCertURIFromString ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

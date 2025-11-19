@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/operator/autopilot/state/formatter.go
+Formatter module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, persistence, storage, user-interface
+
+## Exports
+Formatter, GetSupportedFormats, NewFormatter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/operator/autopilot/state/formatter.go> a code:Module ;
+    code:name "command/operator/autopilot/state/formatter.go" ;
+    code:description "Formatter module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :Formatter, :GetSupportedFormats, :NewFormatter ;
+    code:tags "cli", "persistence", "storage", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

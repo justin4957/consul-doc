@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/index/iterator.go
+Iterator module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/index/iterator.go> a code:Module ;
+    code:name "internal/controller/cache/index/iterator.go" ;
+    code:description "Iterator module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package index
 
 import "github.com/hashicorp/consul/proto-public/pbresource"

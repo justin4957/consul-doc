@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/testing_connect_proxy.go
+Testing Connect Proxy module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/connect](../agent/connect)
+- [agent/consul/discoverychain](../agent/consul/discoverychain)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [types](../types)
+
+## Tags
+agent, mtls, networking, service-mesh
+
+## Exports
+TestConfigSnapshot, TestConfigSnapshotDiscoveryChain, TestConfigSnapshotExposeChecks, TestConfigSnapshotExposeChecksGRPC, TestConfigSnapshotExposeChecksWithBindOverride, TestConfigSnapshotExposeConfig, TestConfigSnapshotGRPCExposeHTTP1, TestConfigSnapshotTelemetryCollector
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/testing_connect_proxy.go> a code:Module ;
+    code:name "agent/proxycfg/testing_connect_proxy.go" ;
+    code:description "Testing Connect Proxy module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/discoverychain" ;
+        code:path "../agent/consul/discoverychain"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :TestConfigSnapshot, :TestConfigSnapshotDiscoveryChain, :TestConfigSnapshotExposeChecks, :TestConfigSnapshotExposeChecksGRPC, :TestConfigSnapshotExposeChecksWithBindOverride, :TestConfigSnapshotExposeConfig, :TestConfigSnapshotGRPCExposeHTTP1, :TestConfigSnapshotTelemetryCollector ;
+    code:tags "agent", "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

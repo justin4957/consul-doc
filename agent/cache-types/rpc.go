@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/rpc.go
+Rpc module for agent layer
+
+## Tags
+agent, communication, data-model, networking, types
+
+## Exports
+RPC
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/rpc.go> a code:Module ;
+    code:name "agent/cache-types/rpc.go" ;
+    code:description "Rpc module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :RPC ;
+    code:tags "agent", "communication", "data-model", "networking", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import "context"

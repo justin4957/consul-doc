@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/protohcl/well_known_types.go
+Well Known Types module for internal layer
+
+## Tags
+data-model, internal, types
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/protohcl/well_known_types.go> a code:Module ;
+    code:name "internal/protohcl/well_known_types.go" ;
+    code:description "Well Known Types module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "data-model", "internal", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package protohcl
 
 import (

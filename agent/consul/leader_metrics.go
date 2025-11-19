@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/leader_metrics.go
+Leader Metrics module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [logging](../logging)
+
+## Tags
+agent
+
+## Exports
+CertExpirationMonitor, LeaderCertExpirationGauges
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/leader_metrics.go> a code:Module ;
+    code:name "agent/consul/leader_metrics.go" ;
+    code:description "Leader Metrics module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :CertExpirationMonitor, :LeaderCertExpirationGauges ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

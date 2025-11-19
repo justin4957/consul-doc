@@ -3,6 +3,27 @@
 
 //go:build windows
 
+/*
+# Module: agent/exec/exec_windows.go
+Exec Windows module for agent layer
+
+## Tags
+agent
+
+## Exports
+KillCommandSubtree, Script, SetSysProcAttr
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/exec/exec_windows.go> a code:Module ;
+    code:name "agent/exec/exec_windows.go" ;
+    code:description "Exec Windows module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :KillCommandSubtree, :Script, :SetSysProcAttr ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package exec
 
 import (

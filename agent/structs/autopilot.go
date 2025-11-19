@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/autopilot.go
+Autopilot module for agent layer
+
+## Tags
+agent, data-model, types
+
+## Exports
+AutopilotConfig, AutopilotHealthReply, AutopilotServerHealth, RaftStats
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/autopilot.go> a code:Module ;
+    code:name "agent/structs/autopilot.go" ;
+    code:description "Autopilot module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :AutopilotConfig, :AutopilotHealthReply, :AutopilotServerHealth, :RaftStats ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

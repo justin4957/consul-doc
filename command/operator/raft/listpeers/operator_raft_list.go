@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/operator/raft/listpeers/operator_raft_list.go
+Operator Raft List module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, consensus, replication, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/operator/raft/listpeers/operator_raft_list.go> a code:Module ;
+    code:name "command/operator/raft/listpeers/operator_raft_list.go" ;
+    code:description "Operator Raft List module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "consensus", "replication", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package listpeers
 
 import (

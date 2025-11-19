@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/router/serf_flooder.go
+Serf Flooder module for agent layer
+
+## Linked Modules
+- [agent/metadata](../agent/metadata)
+
+## Tags
+agent
+
+## Exports
+FloodAddrFn, FloodJoins
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/router/serf_flooder.go> a code:Module ;
+    code:name "agent/router/serf_flooder.go" ;
+    code:description "Serf Flooder module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ] ;
+    code:exports :FloodAddrFn, :FloodJoins ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package router
 
 import (

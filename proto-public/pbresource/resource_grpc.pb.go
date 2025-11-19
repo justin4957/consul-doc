@@ -9,6 +9,27 @@
 
 // For more information, see: https://github.com/hashicorp/consul/tree/main/docs/resources
 
+/*
+# Module: proto-public/pbresource/resource_grpc.pb.go
+Resource Grpc.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewResourceServiceClient, RegisterResourceServiceServer, ResourceService, ResourceServiceClient, ResourceServiceServer, UnimplementedResourceServiceServer, UnsafeResourceServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbresource/resource_grpc.pb.go> a code:Module ;
+    code:name "proto-public/pbresource/resource_grpc.pb.go" ;
+    code:description "Resource Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewResourceServiceClient, :RegisterResourceServiceServer, :ResourceService, :ResourceServiceClient, :ResourceServiceServer, :UnimplementedResourceServiceServer, :UnsafeResourceServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbresource
 
 import (

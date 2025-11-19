@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/state.go
+State module for agent layer
+
+## Linked Modules
+- [agent/cache-types](../agent/cache-types)
+- [agent/proxycfg/internal/watch](../agent/proxycfg/internal/watch)
+- [agent/structs](../agent/structs)
+- [logging](../logging)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, networking, persistence, service-mesh, storage
+
+## Exports
+DNSConfig, ServerSNIFunc
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/state.go> a code:Module ;
+    code:name "agent/proxycfg/state.go" ;
+    code:description "State module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/proxycfg/internal/watch" ;
+        code:path "../agent/proxycfg/internal/watch"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :DNSConfig, :ServerSNIFunc ;
+    code:tags "agent", "networking", "persistence", "service-mesh", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

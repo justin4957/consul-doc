@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/cluster/agent.go
+Agent module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [lib/decode](../lib/decode)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+Agent, AgentInfo, Config
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/cluster/agent.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/cluster/agent.go" ;
+    code:description "Agent module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib/decode" ;
+        code:path "../lib/decode"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :Agent, :AgentInfo, :Config ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cluster
 
 import (

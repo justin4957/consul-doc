@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: envoyextensions/extensioncommon/basic_extension_adapter.go
+Basic Extension Adapter module for internal layer
+
+## Tags
+internal
+
+## Exports
+BasicExtensionAdapter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<envoyextensions/extensioncommon/basic_extension_adapter.go> a code:Module ;
+    code:name "envoyextensions/extensioncommon/basic_extension_adapter.go" ;
+    code:description "Basic Extension Adapter module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :BasicExtensionAdapter ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package extensioncommon
 
 import (

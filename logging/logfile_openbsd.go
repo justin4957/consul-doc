@@ -3,6 +3,23 @@
 
 //go:build openbsd
 
+/*
+# Module: logging/logfile_openbsd.go
+Logfile Openbsd module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/logfile_openbsd.go> a code:Module ;
+    code:name "logging/logfile_openbsd.go" ;
+    code:description "Logfile Openbsd module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

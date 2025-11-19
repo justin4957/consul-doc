@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/service_checks.go
+Service Checks module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache](../agent/cache)
+- [agent/local](../agent/local)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, health-checks, monitoring, types
+
+## Exports
+Agent, ServiceHTTPChecks, ServiceHTTPChecksName, ServiceHTTPChecksRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/service_checks.go> a code:Module ;
+    code:name "agent/cache-types/service_checks.go" ;
+    code:description "Service Checks module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/local" ;
+        code:path "../agent/local"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :Agent, :ServiceHTTPChecks, :ServiceHTTPChecksName, :ServiceHTTPChecksRequest ;
+    code:tags "agent", "data-model", "health-checks", "monitoring", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

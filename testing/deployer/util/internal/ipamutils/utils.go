@@ -2,6 +2,28 @@
 // SPDX-License-Identifier: BUSL-1.1
 
 // Package ipamutils provides utility functions for ipam management
+
+/*
+# Module: testing/deployer/util/internal/ipamutils/utils.go
+Utils module for internal layer
+
+## Tags
+internal
+
+## Exports
+ConfigGlobalScopeDefaultNetworks, GetGlobalScopeDefaultNetworks, GetLocalScopeDefaultNetworks, NetworkToSplit, SplitNetworks
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/util/internal/ipamutils/utils.go> a code:Module ;
+    code:name "testing/deployer/util/internal/ipamutils/utils.go" ;
+    code:description "Utils module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ConfigGlobalScopeDefaultNetworks, :GetGlobalScopeDefaultNetworks, :GetLocalScopeDefaultNetworks, :NetworkToSplit, :SplitNetworks ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package ipamutils
 
 import (

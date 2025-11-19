@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/server_lookup.go
+Server Lookup module for agent layer
+
+## Linked Modules
+- [agent/metadata](../agent/metadata)
+
+## Tags
+agent
+
+## Exports
+NewServerLookup, ServerLookup
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server_lookup.go> a code:Module ;
+    code:name "agent/consul/server_lookup.go" ;
+    code:description "Server Lookup module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ] ;
+    code:exports :NewServerLookup, :ServerLookup ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-middleware/stats.go
+Stats module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+NewActiveStreamCounter, NewStatsHandler, StatsCounters, StatsGauges
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-middleware/stats.go> a code:Module ;
+    code:name "agent/grpc-middleware/stats.go" ;
+    code:description "Stats module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NewActiveStreamCounter, :NewStatsHandler, :StatsCounters, :StatsGauges ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package middleware
 
 import (

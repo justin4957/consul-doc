@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/dependency/cache.go
+Cache module for internal layer
+
+## Linked Modules
+- [internal/controller](../internal/controller)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+CacheGetMapper, CacheIDModifier, CacheListMapper, CacheListTransform, CacheParentsMapper, ReplaceCacheIDType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/dependency/cache.go> a code:Module ;
+    code:name "internal/controller/dependency/cache.go" ;
+    code:description "Cache module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :CacheGetMapper, :CacheIDModifier, :CacheListMapper, :CacheListTransform, :CacheParentsMapper, :ReplaceCacheIDType ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package dependency
 
 import (

@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/delta.go
+Delta module for agent layer
+
+## Linked Modules
+- [agent/envoyextensions](../agent/envoyextensions)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/grpc-external/limiter](../agent/grpc-external/limiter)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [agent/xds/configfetcher](../agent/xds/configfetcher)
+- [agent/xds/extensionruntime](../agent/xds/extensionruntime)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+- [envoyextensions/xdscommon](../envoyextensions/xdscommon)
+- [logging](../logging)
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+ADSDeltaStream, PendingUpdate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/delta.go> a code:Module ;
+    code:name "agent/xds/delta.go" ;
+    code:description "Delta module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/envoyextensions" ;
+        code:path "../agent/envoyextensions"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/grpc-external/limiter" ;
+        code:path "../agent/grpc-external/limiter"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds/configfetcher" ;
+        code:path "../agent/xds/configfetcher"
+    ], [
+        code:name "agent/xds/extensionruntime" ;
+        code:path "../agent/xds/extensionruntime"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ], [
+        code:name "envoyextensions/xdscommon" ;
+        code:path "../envoyextensions/xdscommon"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :ADSDeltaStream, :PendingUpdate ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

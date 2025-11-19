@@ -3,6 +3,30 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/state/peering_ce.go
+Peering Ce module for agent layer
+
+## Linked Modules
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, persistence, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/peering_ce.go> a code:Module ;
+    code:name "agent/consul/state/peering_ce.go" ;
+    code:description "Peering Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

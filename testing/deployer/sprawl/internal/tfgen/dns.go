@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/dns.go
+Dns module for internal layer
+
+## Linked Modules
+- [testing/deployer/topology](../testing/deployer/topology)
+- [testing/deployer/util](../testing/deployer/util)
+
+## Tags
+discovery, internal, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/dns.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/dns.go" ;
+    code:description "Dns module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ], [
+        code:name "testing/deployer/util" ;
+        code:path "../testing/deployer/util"
+    ] ;
+    code:tags "discovery", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

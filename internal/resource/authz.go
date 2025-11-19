@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/authz.go
+Authz module for internal layer
+
+## Tags
+authentication, internal, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/authz.go> a code:Module ;
+    code:name "internal/resource/authz.go" ;
+    code:description "Authz module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "authentication", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 func peerNameV2ToV1(peer string) string {

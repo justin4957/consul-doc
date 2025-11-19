@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/connect_ca.go
+Connect Ca module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, mtls, persistence, service-mesh, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/connect_ca.go> a code:Module ;
+    code:name "agent/consul/state/connect_ca.go" ;
+    code:description "Connect Ca module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "agent", "mtls", "persistence", "service-mesh", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

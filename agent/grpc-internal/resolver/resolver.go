@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/resolver/resolver.go
+Resolver module for agent layer
+
+## Linked Modules
+- [agent/metadata](../agent/metadata)
+- [types](../types)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+Config, DCPrefix, NewServerResolverBuilder, ServerResolverBuilder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/resolver/resolver.go> a code:Module ;
+    code:name "agent/grpc-internal/resolver/resolver.go" ;
+    code:description "Resolver module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :Config, :DCPrefix, :NewServerResolverBuilder, :ServerResolverBuilder ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package resolver
 
 import (

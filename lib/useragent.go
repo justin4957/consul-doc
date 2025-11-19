@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/useragent.go
+Useragent module for internal layer
+
+## Linked Modules
+- [version](../version)
+
+## Tags
+internal
+
+## Exports
+UserAgent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/useragent.go> a code:Module ;
+    code:name "lib/useragent.go" ;
+    code:description "Useragent module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :UserAgent ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (

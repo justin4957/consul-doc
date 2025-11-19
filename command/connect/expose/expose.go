@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/expose/expose.go
+Expose module for cli layer
+
+## Linked Modules
+- [agent](../agent)
+- [api](../api)
+- [command/flags](../command/flags)
+- [command/intention](../command/intention)
+
+## Tags
+cli, mtls, service-mesh, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/expose/expose.go> a code:Module ;
+    code:name "command/connect/expose/expose.go" ;
+    code:description "Expose module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent" ;
+        code:path "../agent"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/intention" ;
+        code:path "../command/intention"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "mtls", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package expose
 
 import (

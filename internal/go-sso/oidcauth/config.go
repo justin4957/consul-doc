@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/go-sso/oidcauth/config.go
+Config module for internal layer
+
+## Tags
+authentication, configuration, internal, security
+
+## Exports
+Config, OIDCClientAssertion, OIDCClientAssertionKey
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/go-sso/oidcauth/config.go> a code:Module ;
+    code:name "internal/go-sso/oidcauth/config.go" ;
+    code:description "Config module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Config, :OIDCClientAssertion, :OIDCClientAssertionKey ;
+    code:tags "authentication", "configuration", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package oidcauth
 
 import (

@@ -1,6 +1,62 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/snapshot.go
+Snapshot module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/connect](../agent/connect)
+- [agent/consul/discoverychain](../agent/consul/discoverychain)
+- [agent/proxycfg/internal/watch](../agent/proxycfg/internal/watch)
+- [agent/structs](../agent/structs)
+- [agent/xds/config](../agent/xds/config)
+- [lib](../lib)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+APIGatewayListenerKey, APIGatewayListenerKeyFromListener, ConfigSnapshot, ConfigSnapshotUpstreams, GatewayKey, IngressListenerKey, IngressListenerKeyFromGWService, IngressListenerKeyFromListener, PeerServersValue, PeeringServiceValue
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/snapshot.go> a code:Module ;
+    code:name "agent/proxycfg/snapshot.go" ;
+    code:description "Snapshot module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/discoverychain" ;
+        code:path "../agent/consul/discoverychain"
+    ], [
+        code:name "agent/proxycfg/internal/watch" ;
+        code:path "../agent/proxycfg/internal/watch"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds/config" ;
+        code:path "../agent/xds/config"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :APIGatewayListenerKey, :APIGatewayListenerKeyFromListener, :ConfigSnapshot, :ConfigSnapshotUpstreams, :GatewayKey, :IngressListenerKey, :IngressListenerKeyFromGWService, :IngressListenerKeyFromListener, :PeerServersValue, :PeeringServiceValue ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

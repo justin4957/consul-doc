@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/leader_federation_state_ae.go
+Leader Federation State Ae module for agent layer
+
+## Linked Modules
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, persistence, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/leader_federation_state_ae.go> a code:Module ;
+    code:name "agent/consul/leader_federation_state_ae.go" ;
+    code:description "Leader Federation State Ae module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

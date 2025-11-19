@@ -1,6 +1,66 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/listeners.go
+Listeners module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/connect](../agent/connect)
+- [agent/netutil](../agent/netutil)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [agent/xds/accesslogs](../agent/xds/accesslogs)
+- [agent/xds/config](../agent/xds/config)
+- [agent/xds/naming](../agent/xds/naming)
+- [agent/xds/platform](../agent/xds/platform)
+- [agent/xds/response](../agent/xds/response)
+
+## Tags
+agent, envoy, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/listeners.go> a code:Module ;
+    code:name "agent/xds/listeners.go" ;
+    code:description "Listeners module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/netutil" ;
+        code:path "../agent/netutil"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds/accesslogs" ;
+        code:path "../agent/xds/accesslogs"
+    ], [
+        code:name "agent/xds/config" ;
+        code:path "../agent/xds/config"
+    ], [
+        code:name "agent/xds/naming" ;
+        code:path "../agent/xds/naming"
+    ], [
+        code:name "agent/xds/platform" ;
+        code:path "../agent/xds/platform"
+    ], [
+        code:name "agent/xds/response" ;
+        code:path "../agent/xds/response"
+    ] ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

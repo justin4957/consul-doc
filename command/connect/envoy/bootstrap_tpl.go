@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/envoy/bootstrap_tpl.go
+Bootstrap Tpl module for cli layer
+
+## Tags
+cli, mtls, service-mesh, user-interface
+
+## Exports
+BootstrapTplArgs, GRPC
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/envoy/bootstrap_tpl.go> a code:Module ;
+    code:name "command/connect/envoy/bootstrap_tpl.go" ;
+    code:description "Bootstrap Tpl module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :BootstrapTplArgs, :GRPC ;
+    code:tags "cli", "mtls", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package envoy
 
 // BootstrapTplArgs is the set of arguments that may be interpolated into the

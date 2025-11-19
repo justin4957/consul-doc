@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/testing/errors/errors.go
+Errors module for internal layer
+
+## Linked Modules
+- [internal/testing/golden](../internal/testing/golden)
+
+## Tags
+internal
+
+## Exports
+TestErrorStrings, TestErrorUnwrap, UnwrapErrorTestCase
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/testing/errors/errors.go> a code:Module ;
+    code:name "internal/testing/errors/errors.go" ;
+    code:description "Errors module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/testing/golden" ;
+        code:path "../internal/testing/golden"
+    ] ;
+    code:exports :TestErrorStrings, :TestErrorUnwrap, :UnwrapErrorTestCase ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package errors
 
 import (

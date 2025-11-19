@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/envoy/bootstrap_config.go
+Bootstrap Config module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, configuration, mtls, service-mesh, user-interface
+
+## Exports
+BootstrapConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/envoy/bootstrap_config.go> a code:Module ;
+    code:name "command/connect/envoy/bootstrap_config.go" ;
+    code:description "Bootstrap Config module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :BootstrapConfig ;
+    code:tags "cli", "configuration", "mtls", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package envoy
 
 import (

@@ -2,6 +2,51 @@
 // SPDX-License-Identifier: BUSL-1.1
 
 // Package bootstrap handles bootstrapping an agent's config from HCP.
+
+/*
+# Module: agent/hcp/bootstrap/bootstrap.go
+Bootstrap module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/hcp/bootstrap/constants](../agent/hcp/bootstrap/constants)
+- [agent/hcp/client](../agent/hcp/client)
+- [lib](../lib)
+- [lib/retry](../lib/retry)
+
+## Tags
+agent
+
+## Exports
+FetchBootstrapConfig, LoadCerts, LoadManagementToken, LoadPersistedBootstrapConfig, RawBootstrapConfig, UI, ValidateTLSCerts
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/bootstrap/bootstrap.go> a code:Module ;
+    code:name "agent/hcp/bootstrap/bootstrap.go" ;
+    code:description "Bootstrap module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/hcp/bootstrap/constants" ;
+        code:path "../agent/hcp/bootstrap/constants"
+    ], [
+        code:name "agent/hcp/client" ;
+        code:path "../agent/hcp/client"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :FetchBootstrapConfig, :LoadCerts, :LoadManagementToken, :LoadPersistedBootstrapConfig, :RawBootstrapConfig, :UI, :ValidateTLSCerts ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package bootstrap
 
 import (

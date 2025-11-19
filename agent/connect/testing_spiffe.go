@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/testing_spiffe.go
+Testing Spiffe module for agent layer
+
+## Linked Modules
+- [sdk/testutil](../sdk/testutil)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+TestSpiffeIDService, TestSpiffeIDServiceWithHost, TestSpiffeIDServiceWithHostDC
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/testing_spiffe.go> a code:Module ;
+    code:name "agent/connect/testing_spiffe.go" ;
+    code:description "Testing Spiffe module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ] ;
+    code:exports :TestSpiffeIDService, :TestSpiffeIDServiceWithHost, :TestSpiffeIDServiceWithHostDC ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import "github.com/hashicorp/consul/sdk/testutil"

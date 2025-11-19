@@ -7,6 +7,27 @@
 // 	protoc        (unknown)
 // source: private/pbcommon/common.proto
 
+/*
+# Module: proto/private/pbcommon/common.pb.go
+Common.Pb module for internal layer
+
+## Tags
+internal
+
+## Exports
+EnterpriseMeta, EnvoyExtension, File, Locality, QueryMeta, QueryOptions, RaftIndex, ReadRequest, TargetDatacenter, WriteRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbcommon/common.pb.go> a code:Module ;
+    code:name "proto/private/pbcommon/common.pb.go" ;
+    code:description "Common.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :EnterpriseMeta, :EnvoyExtension, :File, :Locality, :QueryMeta, :QueryOptions, :RaftIndex, :ReadRequest, :TargetDatacenter, :WriteRequest ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbcommon
 
 import (

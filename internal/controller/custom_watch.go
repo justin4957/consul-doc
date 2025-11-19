@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/custom_watch.go
+Custom Watch module for internal layer
+
+## Linked Modules
+- [agent/consul/controller/queue](../agent/consul/controller/queue)
+
+## Tags
+internal
+
+## Exports
+CustomDependencyMapper, Event, Source
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/custom_watch.go> a code:Module ;
+    code:name "internal/controller/custom_watch.go" ;
+    code:description "Custom Watch module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/controller/queue" ;
+        code:path "../agent/consul/controller/queue"
+    ] ;
+    code:exports :CustomDependencyMapper, :Event, :Source ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 import (

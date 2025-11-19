@@ -3,6 +3,38 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/proxycfg/naming_ce.go
+Naming Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+UpstreamIDString
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/naming_ce.go> a code:Module ;
+    code:name "agent/proxycfg/naming_ce.go" ;
+    code:description "Naming Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :UpstreamIDString ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/dns.go
+Dns module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache-types](../agent/cache-types)
+- [agent/config](../agent/config)
+- [agent/dns](../agent/dns)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [internal/dnsutil](../internal/dnsutil)
+- [ipaddr](../ipaddr)
+- [lib](../lib)
+- [logging](../logging)
+
+## Tags
+agent, discovery, networking
+
+## Exports
+DNSServer, NewDNSServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/dns.go> a code:Module ;
+    code:name "agent/dns.go" ;
+    code:description "Dns module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/dns" ;
+        code:path "../agent/dns"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "internal/dnsutil" ;
+        code:path "../internal/dnsutil"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :DNSServer, :NewDNSServer ;
+    code:tags "agent", "discovery", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

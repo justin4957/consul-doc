@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/go-sso/oidcauth/util.go
+Util module for internal layer
+
+## Linked Modules
+- [internal/go-sso/oidcauth/internal/strutil](../internal/go-sso/oidcauth/internal/strutil)
+
+## Tags
+authentication, internal, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/go-sso/oidcauth/util.go> a code:Module ;
+    code:name "internal/go-sso/oidcauth/util.go" ;
+    code:description "Util module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/go-sso/oidcauth/internal/strutil" ;
+        code:path "../internal/go-sso/oidcauth/internal/strutil"
+    ] ;
+    code:tags "authentication", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package oidcauth
 
 import (

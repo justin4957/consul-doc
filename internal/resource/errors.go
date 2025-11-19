@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/errors.go
+Errors module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+ConstError, ErrDataParse, ErrInvalidField, ErrInvalidFields, ErrInvalidListElement, ErrInvalidMapKey, ErrInvalidMapValue, ErrInvalidReferenceType, ErrOwnerTenantInvalid, ErrOwnerTypeInvalid, NewConstError, NewErrDataParse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/errors.go> a code:Module ;
+    code:name "internal/resource/errors.go" ;
+    code:description "Errors module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :ConstError, :ErrDataParse, :ErrInvalidField, :ErrInvalidFields, :ErrInvalidListElement, :ErrInvalidMapKey, :ErrInvalidMapValue, :ErrInvalidReferenceType, :ErrOwnerTenantInvalid, :ErrOwnerTypeInvalid, :NewConstError, :NewErrDataParse ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

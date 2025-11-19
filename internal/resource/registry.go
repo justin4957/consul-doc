@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/registry.go
+Registry module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [internal/storage](../internal/storage)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+ACLAuthorizeListHook, ACLAuthorizeReadHook, ACLAuthorizeWriteHook, ACLHooks, ErrNeedResource, MutationHook, NewRegistry, ParseGVK, Registry, ToGVK, TypeRegistry, ValidationHook
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/registry.go> a code:Module ;
+    code:name "internal/resource/registry.go" ;
+    code:description "Registry module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :ACLAuthorizeListHook, :ACLAuthorizeReadHook, :ACLAuthorizeWriteHook, :ACLHooks, :ErrNeedResource, :MutationHook, :NewRegistry, :ParseGVK, :Registry, :ToGVK, :TypeRegistry, :ValidationHook ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

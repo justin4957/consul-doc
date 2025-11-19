@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/agent/startup_logger.go
+Startup Logger module for cli layer
+
+## Tags
+cli, user-interface
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/agent/startup_logger.go> a code:Module ;
+    code:name "command/agent/startup_logger.go" ;
+    code:description "Startup Logger module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

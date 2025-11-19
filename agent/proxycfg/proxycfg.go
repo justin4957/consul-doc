@@ -53,4 +53,22 @@
 //	7. It registers the service with the proxycfg manager.
 //		  7a. See: 2a.
 //	8. xDS server receives snapshots of configuration data whenever it changes.
+
+/*
+# Module: agent/proxycfg/proxycfg.go
+Proxycfg module for agent layer
+
+## Tags
+agent, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/proxycfg.go> a code:Module ;
+    code:name "agent/proxycfg/proxycfg.go" ;
+    code:description "Proxycfg module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg

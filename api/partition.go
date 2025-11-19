@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/partition.go
+Partition module for api layer
+
+## Tags
+api, client
+
+## Exports
+Partition, PartitionDefaultName, Partitions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/partition.go> a code:Module ;
+    code:name "api/partition.go" ;
+    code:description "Partition module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Partition, :PartitionDefaultName, :Partitions ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/operator_usage_endpoint.go
+Operator Usage Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/operator_usage_endpoint.go> a code:Module ;
+    code:name "agent/consul/operator_usage_endpoint.go" ;
+    code:description "Operator Usage Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

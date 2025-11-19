@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/telemetry/otel_sink.go
+Otel Sink module for agent layer
+
+## Linked Modules
+- [agent/hcp/telemetry](../agent/hcp/telemetry)
+
+## Tags
+agent
+
+## Exports
+ConfigProvider, Disabled, NewOTELReader, NewOTELSink, OTELSink, OTELSinkOpts
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/telemetry/otel_sink.go> a code:Module ;
+    code:name "agent/hcp/telemetry/otel_sink.go" ;
+    code:description "Otel Sink module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/telemetry" ;
+        code:path "../agent/hcp/telemetry"
+    ] ;
+    code:exports :ConfigProvider, :Disabled, :NewOTELReader, :NewOTELSink, :OTELSink, :OTELSinkOpts ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package telemetry
 
 import (

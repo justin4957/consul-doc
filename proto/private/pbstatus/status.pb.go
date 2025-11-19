@@ -18,6 +18,27 @@
 // 	protoc        (unknown)
 // source: private/pbstatus/status.proto
 
+/*
+# Module: proto/private/pbstatus/status.pb.go
+Status.Pb module for internal layer
+
+## Tags
+internal
+
+## Exports
+File, Status
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbstatus/status.pb.go> a code:Module ;
+    code:name "proto/private/pbstatus/status.pb.go" ;
+    code:description "Status.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :File, :Status ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbstatus
 
 import (

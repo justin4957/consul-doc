@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/operator.go
+Operator module for agent layer
+
+## Tags
+agent, data-model, types
+
+## Exports
+AutopilotSetConfigRequest, NetworkSegment, RaftConfigurationResponse, RaftRemovePeerRequest, RaftServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/operator.go> a code:Module ;
+    code:name "agent/structs/operator.go" ;
+    code:description "Operator module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :AutopilotSetConfigRequest, :NetworkSegment, :RaftConfigurationResponse, :RaftRemovePeerRequest, :RaftServer ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

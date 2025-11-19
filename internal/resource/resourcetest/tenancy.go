@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/resourcetest/tenancy.go
+Tenancy module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [version/versiontest](../version/versiontest)
+
+## Tags
+internal
+
+## Exports
+AppendTenancyInfo, AppendTenancyInfoSubtest, DefaultTenancyForType, RunWithTenancies, Tenancy, TestTenancies, ToPartitionScoped
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/resourcetest/tenancy.go> a code:Module ;
+    code:name "internal/resource/resourcetest/tenancy.go" ;
+    code:description "Tenancy module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "version/versiontest" ;
+        code:path "../version/versiontest"
+    ] ;
+    code:exports :AppendTenancyInfo, :AppendTenancyInfoSubtest, :DefaultTenancyForType, :RunWithTenancies, :Tenancy, :TestTenancies, :ToPartitionScoped ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resourcetest
 
 import (

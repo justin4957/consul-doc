@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/testing.go
+Testing module for agent layer
+
+## Tags
+agent
+
+## Exports
+MockHCPServer, NewMockHCPServer, TestEndpoint
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/testing.go> a code:Module ;
+    code:name "agent/hcp/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :MockHCPServer, :NewMockHCPServer, :TestEndpoint ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package hcp
 
 import (

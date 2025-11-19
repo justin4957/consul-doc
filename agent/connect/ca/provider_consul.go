@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/ca/provider_consul.go
+Provider Consul module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+ConsulProvider, ConsulProviderStateDelegate, NewConsulProvider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/ca/provider_consul.go> a code:Module ;
+    code:name "agent/connect/ca/provider_consul.go" ;
+    code:description "Provider Consul module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ConsulProvider, :ConsulProviderStateDelegate, :NewConsulProvider ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package ca
 
 import (

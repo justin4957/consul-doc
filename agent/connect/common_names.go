@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/common_names.go
+Common Names module for agent layer
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+CACN, CompactUID
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/common_names.go> a code:Module ;
+    code:name "agent/connect/common_names.go" ;
+    code:description "Common Names module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :CACN, :CompactUID ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

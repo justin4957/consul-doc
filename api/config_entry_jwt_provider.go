@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_jwt_provider.go
+Config Entry Jwt Provider module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+ClusterDiscoveryType, JSONWebKeySet, JWKSCluster, JWKSRetryPolicy, JWKSTLSCertProviderInstance, JWKSTLSCertTrustedCA, JWKSTLSCertificate, JWTCacheConfig, JWTForwardingConfig, JWTLocation, JWTLocationCookie, JWTLocationHeader, JWTLocationQueryParam, JWTProviderConfigEntry, LocalJWKS, RemoteJWKS, RetryPolicyBackOff
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_jwt_provider.go> a code:Module ;
+    code:name "api/config_entry_jwt_provider.go" ;
+    code:description "Config Entry Jwt Provider module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :ClusterDiscoveryType, :JSONWebKeySet, :JWKSCluster, :JWKSRetryPolicy, :JWKSTLSCertProviderInstance, :JWKSTLSCertTrustedCA, :JWKSTLSCertificate, :JWTCacheConfig, :JWTForwardingConfig, :JWTLocation, :JWTLocationCookie, :JWTLocationHeader, :JWTLocationQueryParam, :JWTProviderConfigEntry, :LocalJWKS, :RemoteJWKS, :RetryPolicyBackOff ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

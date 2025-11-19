@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/conformance/conformance.go
+Conformance module for internal layer
+
+## Linked Modules
+- [internal/storage](../internal/storage)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [proto/private/prototest](../proto/private/prototest)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+internal
+
+## Exports
+Test, TestOptions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/conformance/conformance.go> a code:Module ;
+    code:name "internal/storage/conformance/conformance.go" ;
+    code:description "Conformance module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "proto/private/prototest" ;
+        code:path "../proto/private/prototest"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :Test, :TestOptions ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package conformance
 
 import (

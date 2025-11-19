@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/clone.go
+Clone module for internal layer
+
+## Linked Modules
+- [internal/protoutil](../internal/protoutil)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+NewCloningReadOnlyCache
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/clone.go> a code:Module ;
+    code:name "internal/controller/cache/clone.go" ;
+    code:description "Clone module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/protoutil" ;
+        code:path "../internal/protoutil"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :NewCloningReadOnlyCache ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

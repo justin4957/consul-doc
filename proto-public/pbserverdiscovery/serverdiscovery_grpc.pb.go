@@ -10,6 +10,27 @@
 // - protoc             (unknown)
 // source: pbserverdiscovery/serverdiscovery.proto
 
+/*
+# Module: proto-public/pbserverdiscovery/serverdiscovery_grpc.pb.go
+Serverdiscovery Grpc.Pb module for internal layer
+
+## Tags
+api, communication, discovery, dns, grpc, internal, networking
+
+## Exports
+NewServerDiscoveryServiceClient, RegisterServerDiscoveryServiceServer, ServerDiscoveryService, ServerDiscoveryServiceClient, ServerDiscoveryServiceServer, UnimplementedServerDiscoveryServiceServer, UnsafeServerDiscoveryServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbserverdiscovery/serverdiscovery_grpc.pb.go> a code:Module ;
+    code:name "proto-public/pbserverdiscovery/serverdiscovery_grpc.pb.go" ;
+    code:description "Serverdiscovery Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewServerDiscoveryServiceClient, :RegisterServerDiscoveryServiceServer, :ServerDiscoveryService, :ServerDiscoveryServiceClient, :ServerDiscoveryServiceServer, :UnimplementedServerDiscoveryServiceServer, :UnsafeServerDiscoveryServiceServer ;
+    code:tags "api", "communication", "discovery", "dns", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbserverdiscovery
 
 import (

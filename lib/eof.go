@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/eof.go
+Eof module for internal layer
+
+## Tags
+internal
+
+## Exports
+IsErrEOF
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/eof.go> a code:Module ;
+    code:name "lib/eof.go" ;
+    code:description "Eof module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :IsErrEOF ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/proxy/upstreams.go
+Upstreams module for internal layer
+
+## Linked Modules
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+internal, networking, service-mesh
+
+## Exports
+UpstreamIP
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/proxy/upstreams.go> a code:Module ;
+    code:name "troubleshoot/proxy/upstreams.go" ;
+    code:description "Upstreams module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :UpstreamIP ;
+    code:tags "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package troubleshoot
 
 import (

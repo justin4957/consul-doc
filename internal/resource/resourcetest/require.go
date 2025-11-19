@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/resourcetest/require.go
+Require module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [proto/private/prototest](../proto/private/prototest)
+
+## Tags
+internal
+
+## Exports
+CompareErrorString, RequireError, RequireOwner, RequireReconciledCurrentGen, RequireResourceMeta, RequireStatusCondition, RequireStatusConditionForCurrentGen, RequireVersionChanged, RequireVersionUnchanged
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/resourcetest/require.go> a code:Module ;
+    code:name "internal/resource/resourcetest/require.go" ;
+    code:description "Require module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "proto/private/prototest" ;
+        code:path "../proto/private/prototest"
+    ] ;
+    code:exports :CompareErrorString, :RequireError, :RequireOwner, :RequireReconciledCurrentGen, :RequireResourceMeta, :RequireStatusCondition, :RequireStatusConditionForCurrentGen, :RequireVersionChanged, :RequireVersionUnchanged ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resourcetest
 
 import (

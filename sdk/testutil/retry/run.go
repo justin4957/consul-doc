@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/retry/run.go
+Run module for internal layer
+
+## Tags
+internal
+
+## Exports
+Option, Run, RunWith, WithFullOutput, WithImmediateCleanup, WithRetryer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/retry/run.go> a code:Module ;
+    code:name "sdk/testutil/retry/run.go" ;
+    code:description "Run module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Option, :Run, :RunWith, :WithFullOutput, :WithImmediateCleanup, :WithRetryer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package retry
 
 type Option func(r *R)

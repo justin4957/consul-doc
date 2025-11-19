@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/snapshot.go
+Snapshot module for api layer
+
+## Tags
+api, client
+
+## Exports
+Snapshot
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/snapshot.go> a code:Module ;
+    code:name "api/snapshot.go" ;
+    code:description "Snapshot module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Snapshot ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_status.go
+Config Entry Status module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+Condition, ConfigEntryStatus, GatewayConditionReason, GatewayConditionType, ResourceReference, RouteConditionReason, RouteConditionType, ValidateGatewayConditionReason, ValidateRouteConditionReason
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_status.go> a code:Module ;
+    code:name "api/config_entry_status.go" ;
+    code:description "Config Entry Status module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Condition, :ConfigEntryStatus, :GatewayConditionReason, :GatewayConditionType, :ResourceReference, :RouteConditionReason, :RouteConditionType, :ValidateGatewayConditionReason, :ValidateRouteConditionReason ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

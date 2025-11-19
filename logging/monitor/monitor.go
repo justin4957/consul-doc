@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: logging/monitor/monitor.go
+Monitor module for internal layer
+
+## Tags
+internal
+
+## Exports
+Config, Monitor, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/monitor/monitor.go> a code:Module ;
+    code:name "logging/monitor/monitor.go" ;
+    code:description "Monitor module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Config, :Monitor, :New ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package monitor
 
 import (

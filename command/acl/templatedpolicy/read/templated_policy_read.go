@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/templatedpolicy/read/templated_policy_read.go
+Templated Policy Read module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/acl/templatedpolicy](../command/acl/templatedpolicy)
+- [command/flags](../command/flags)
+
+## Tags
+access-control, authorization, cli, security, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/templatedpolicy/read/templated_policy_read.go> a code:Module ;
+    code:name "command/acl/templatedpolicy/read/templated_policy_read.go" ;
+    code:description "Templated Policy Read module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/acl/templatedpolicy" ;
+        code:path "../command/acl/templatedpolicy"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "access-control", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package templatedpolicyread
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/decode.go
+Decode module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+Decode, DecodeList, DecodedResource, GetDecodedResource, ListDecodedResource
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/decode.go> a code:Module ;
+    code:name "internal/resource/decode.go" ;
+    code:description "Decode module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Decode, :DecodeList, :DecodedResource, :GetDecodedResource, :ListDecodedResource ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

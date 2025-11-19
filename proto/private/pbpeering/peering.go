@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/pbpeering/peering.go
+Peering module for internal layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [lib](../lib)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+internal
+
+## Exports
+LocalityFromAPI, LocalityFromStructs, LocalityToAPI, LocalityToStructs, NewEstablishRequestFromAPI, NewGenerateTokenRequestFromAPI, PeeringStateFromAPI, PeeringStateToAPI, StreamStatusFromAPI, StreamStatusToAPI, TimePtrFromProto, TimePtrToProto
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbpeering/peering.go> a code:Module ;
+    code:name "proto/private/pbpeering/peering.go" ;
+    code:description "Peering module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :LocalityFromAPI, :LocalityFromStructs, :LocalityToAPI, :LocalityToStructs, :NewEstablishRequestFromAPI, :NewGenerateTokenRequestFromAPI, :PeeringStateFromAPI, :PeeringStateToAPI, :StreamStatusFromAPI, :StreamStatusToAPI, :TimePtrFromProto, :TimePtrToProto ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbpeering
 
 import (

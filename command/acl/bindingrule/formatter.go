@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/bindingrule/formatter.go
+Formatter module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+access-control, authorization, cli, security, user-interface
+
+## Exports
+Formatter, GetSupportedFormats, NewFormatter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/bindingrule/formatter.go> a code:Module ;
+    code:name "command/acl/bindingrule/formatter.go" ;
+    code:description "Formatter module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :Formatter, :GetSupportedFormats, :NewFormatter ;
+    code:tags "access-control", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package bindingrule
 
 import (

@@ -2,6 +2,23 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbdataplane/mock_isGetEnvoyBootstrapParamsRequest_NodeSpec.go
+Mock Isgetenvoybootstrapparamsrequest Nodespec module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbdataplane/mock_isGetEnvoyBootstrapParamsRequest_NodeSpec.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbdataplane/mock_isGetEnvoyBootstrapParamsRequest_NodeSpec.go" ;
+    code:description "Mock Isgetenvoybootstrapparamsrequest Nodespec module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbdataplane
 
 import (

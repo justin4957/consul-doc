@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/authmethod/ssoauth/sso.go
+Sso module for agent layer
+
+## Linked Modules
+- [agent/consul/authmethod](../agent/consul/authmethod)
+- [agent/structs](../agent/structs)
+- [internal/go-sso/oidcauth](../internal/go-sso/oidcauth)
+
+## Tags
+agent, authentication, security
+
+## Exports
+Config, NewValidator, Validator
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/authmethod/ssoauth/sso.go> a code:Module ;
+    code:name "agent/consul/authmethod/ssoauth/sso.go" ;
+    code:description "Sso module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/authmethod" ;
+        code:path "../agent/consul/authmethod"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/go-sso/oidcauth" ;
+        code:path "../internal/go-sso/oidcauth"
+    ] ;
+    code:exports :Config, :NewValidator, :Validator ;
+    code:tags "agent", "authentication", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package ssoauth
 
 import (

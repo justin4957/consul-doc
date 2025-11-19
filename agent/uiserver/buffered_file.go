@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/uiserver/buffered_file.go
+Buffered File module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/uiserver/buffered_file.go> a code:Module ;
+    code:name "agent/uiserver/buffered_file.go" ;
+    code:description "Buffered File module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package uiserver
 
 import (

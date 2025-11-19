@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/discoverychain/testing.go
+Testing module for agent layer
+
+## Linked Modules
+- [agent/configentry](../agent/configentry)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, discovery, dns
+
+## Exports
+TestCompileConfigEntries
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/discoverychain/testing.go> a code:Module ;
+    code:name "agent/consul/discoverychain/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :TestCompileConfigEntries ;
+    code:tags "agent", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package discoverychain
 
 import (

@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/controllertest/builder.go
+Builder module for internal layer
+
+## Linked Modules
+- [agent/grpc-external/services/resource](../agent/grpc-external/services/resource)
+- [agent/grpc-external/services/resource/testing](../agent/grpc-external/services/resource/testing)
+- [internal/controller](../internal/controller)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [sdk/testutil](../sdk/testutil)
+
+## Tags
+internal
+
+## Exports
+Builder, NewControllerTestBuilder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/controllertest/builder.go> a code:Module ;
+    code:name "internal/controller/controllertest/builder.go" ;
+    code:description "Builder module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/grpc-external/services/resource" ;
+        code:path "../agent/grpc-external/services/resource"
+    ], [
+        code:name "agent/grpc-external/services/resource/testing" ;
+        code:path "../agent/grpc-external/services/resource/testing"
+    ], [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ] ;
+    code:exports :Builder, :NewControllerTestBuilder ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controllertest
 
 import (

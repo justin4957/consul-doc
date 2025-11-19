@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/auto-config/config.go
+Config module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/config](../agent/config)
+- [agent/leafcert](../agent/leafcert)
+- [agent/metadata](../agent/metadata)
+- [agent/structs](../agent/structs)
+- [agent/token](../agent/token)
+- [lib/retry](../lib/retry)
+
+## Tags
+agent, configuration
+
+## Exports
+Cache, Config, DirectRPC, LeafCertManager, ServerProvider, TLSConfigurator, TokenStore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/auto-config/config.go> a code:Module ;
+    code:name "agent/auto-config/config.go" ;
+    code:description "Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/leafcert" ;
+        code:path "../agent/leafcert"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/token" ;
+        code:path "../agent/token"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :Cache, :Config, :DirectRPC, :LeafCertManager, :ServerProvider, :TLSConfigurator, :TokenStore ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package autoconf
 
 import (

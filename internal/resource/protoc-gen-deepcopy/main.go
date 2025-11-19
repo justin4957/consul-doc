@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/protoc-gen-deepcopy/main.go
+Main module for internal layer
+
+## Linked Modules
+- [internal/resource/protoc-gen-deepcopy/internal/generate](../internal/resource/protoc-gen-deepcopy/internal/generate)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/protoc-gen-deepcopy/main.go> a code:Module ;
+    code:name "internal/resource/protoc-gen-deepcopy/main.go" ;
+    code:description "Main module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource/protoc-gen-deepcopy/internal/generate" ;
+        code:path "../internal/resource/protoc-gen-deepcopy/internal/generate"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

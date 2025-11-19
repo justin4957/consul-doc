@@ -6,6 +6,39 @@
 // client's perspective (i.e. a list of servers that a client talks with for
 // RPCs).  The servers package does not provide any API guarantees and should
 // be called only by `hashicorp/consul`.
+
+/*
+# Module: agent/router/manager.go
+Manager module for agent layer
+
+## Linked Modules
+- [agent/metadata](../agent/metadata)
+- [logging](../logging)
+
+## Tags
+agent
+
+## Exports
+Manager, ManagerSerfCluster, New, Pinger
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/router/manager.go> a code:Module ;
+    code:name "agent/router/manager.go" ;
+    code:description "Manager module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :Manager, :ManagerSerfCluster, :New, :Pinger ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package router
 
 import (

@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/dependency/higher_order.go
+Higher Order module for internal layer
+
+## Linked Modules
+- [internal/controller](../internal/controller)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+MultiMapper, WrapAndReplaceType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/dependency/higher_order.go> a code:Module ;
+    code:name "internal/controller/dependency/higher_order.go" ;
+    code:description "Higher Order module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :MultiMapper, :WrapAndReplaceType ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package dependency
 
 import (

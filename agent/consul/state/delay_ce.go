@@ -3,6 +3,34 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/state/delay_ce.go
+Delay Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+Delay, NewDelay
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/delay_ce.go> a code:Module ;
+    code:name "agent/consul/state/delay_ce.go" ;
+    code:description "Delay Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :Delay, :NewDelay ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

@@ -3,6 +3,23 @@
 
 //go:build !windows
 
+/*
+# Module: agent/config/limits.go
+Limits module for agent layer
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/limits.go> a code:Module ;
+    code:name "agent/config/limits.go" ;
+    code:description "Limits module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import "golang.org/x/sys/unix"

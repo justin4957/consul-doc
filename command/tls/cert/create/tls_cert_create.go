@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/tls/cert/create/tls_cert_create.go
+Tls Cert Create module for cli layer
+
+## Linked Modules
+- [command/flags](../command/flags)
+- [command/tls](../command/tls)
+- [lib/file](../lib/file)
+- [tlsutil](../tlsutil)
+
+## Tags
+cli, encryption, security, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/tls/cert/create/tls_cert_create.go> a code:Module ;
+    code:name "command/tls/cert/create/tls_cert_create.go" ;
+    code:description "Tls Cert Create module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/tls" ;
+        code:path "../command/tls"
+    ], [
+        code:name "lib/file" ;
+        code:path "../lib/file"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "encryption", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package create
 
 import (

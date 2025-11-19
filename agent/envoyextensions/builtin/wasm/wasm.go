@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/envoyextensions/builtin/wasm/wasm.go
+Wasm module for agent layer
+
+## Linked Modules
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+agent
+
+## Exports
+Constructor
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/envoyextensions/builtin/wasm/wasm.go> a code:Module ;
+    code:name "agent/envoyextensions/builtin/wasm/wasm.go" ;
+    code:description "Wasm module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :Constructor ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package wasm
 
 import (

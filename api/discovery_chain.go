@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/discovery_chain.go
+Discovery Chain module for api layer
+
+## Tags
+api, client, discovery, dns
+
+## Exports
+CompiledDiscoveryChain, DiscoveryChain, DiscoveryChainOptions, DiscoveryChainResponse, DiscoveryFailover, DiscoveryGraphNode, DiscoveryResolver, DiscoveryRoute, DiscoverySplit, DiscoveryTarget
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/discovery_chain.go> a code:Module ;
+    code:name "api/discovery_chain.go" ;
+    code:description "Discovery Chain module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :CompiledDiscoveryChain, :DiscoveryChain, :DiscoveryChainOptions, :DiscoveryChainResponse, :DiscoveryFailover, :DiscoveryGraphNode, :DiscoveryResolver, :DiscoveryRoute, :DiscoverySplit, :DiscoveryTarget ;
+    code:tags "api", "client", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

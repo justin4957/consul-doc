@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/decoded.go
+Decoded module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+DecodedResourceIterator, GetDecoded, ListDecoded, ListIteratorDecoded, ParentsDecoded, ParentsIteratorDecoded, QueryDecoded
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/decoded.go> a code:Module ;
+    code:name "internal/controller/cache/decoded.go" ;
+    code:description "Decoded module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :DecodedResourceIterator, :GetDecoded, :ListDecoded, :ListIteratorDecoded, :ParentsDecoded, :ParentsIteratorDecoded, :QueryDecoded ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

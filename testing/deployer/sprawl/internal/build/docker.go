@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/build/docker.go
+Docker module for internal layer
+
+## Linked Modules
+- [testing/deployer/sprawl/internal/runner](../testing/deployer/sprawl/internal/runner)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+DockerImages
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/build/docker.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/build/docker.go" ;
+    code:description "Docker module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/sprawl/internal/runner" ;
+        code:path "../testing/deployer/sprawl/internal/runner"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :DockerImages ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package build
 
 import (

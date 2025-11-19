@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/assert/grpc.go
+Grpc module for internal layer
+
+## Linked Modules
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+GRPCPing
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/assert/grpc.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/assert/grpc.go" ;
+    code:description "Grpc module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :GRPCPing ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package assert
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/server_wrapper.go
+Server Wrapper module for internal layer
+
+## Tags
+internal
+
+## Exports
+WrappedServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/server_wrapper.go> a code:Module ;
+    code:name "sdk/testutil/server_wrapper.go" ;
+    code:description "Server Wrapper module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :WrappedServer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutil
 
 import "testing"

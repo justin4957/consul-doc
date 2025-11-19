@@ -3,6 +3,30 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/operator_endpoint_ce.go
+Operator Endpoint Ce module for agent layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/operator_endpoint_ce.go> a code:Module ;
+    code:name "agent/operator_endpoint_ce.go" ;
+    code:description "Operator Endpoint Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/blockingquery/blockingquery.go
+Blockingquery module for agent layer
+
+## Linked Modules
+- [agent/consul/state](../agent/consul/state)
+- [lib](../lib)
+
+## Tags
+agent
+
+## Exports
+FSMServer, Query, QueryFn, RequestOptions, ResponseMeta
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/blockingquery/blockingquery.go> a code:Module ;
+    code:name "agent/blockingquery/blockingquery.go" ;
+    code:description "Blockingquery module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :FSMServer, :Query, :QueryFn, :RequestOptions, :ResponseMeta ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package blockingquery
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/notify.go
+Notify module for agent layer
+
+## Tags
+agent
+
+## Exports
+NotifyGroup
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/notify.go> a code:Module ;
+    code:name "agent/notify.go" ;
+    code:description "Notify module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NotifyGroup ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

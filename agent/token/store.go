@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/token/store.go
+Store module for agent layer
+
+## Tags
+agent
+
+## Exports
+Notifier, Store, TokenKind, TokenSource
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/token/store.go> a code:Module ;
+    code:name "agent/token/store.go" ;
+    code:description "Store module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Notifier, :Store, :TokenKind, :TokenSource ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package token
 
 import (

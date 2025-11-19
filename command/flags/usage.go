@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/flags/usage.go
+Usage module for cli layer
+
+## Tags
+cli, user-interface
+
+## Exports
+Usage, Usager
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/flags/usage.go> a code:Module ;
+    code:name "command/flags/usage.go" ;
+    code:description "Usage module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :Usage, :Usager ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package flags
 
 import (

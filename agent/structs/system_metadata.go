@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/system_metadata.go
+System Metadata module for agent layer
+
+## Tags
+agent, data-model, types
+
+## Exports
+SystemMetadataEntry, SystemMetadataOp, SystemMetadataRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/system_metadata.go> a code:Module ;
+    code:name "agent/structs/system_metadata.go" ;
+    code:description "System Metadata module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :SystemMetadataEntry, :SystemMetadataOp, :SystemMetadataRequest ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 // SystemMetadataOp is the operation for a request related to system metadata.

@@ -3,6 +3,42 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/state/config_entry_exported_services_ce.go
+Config Entry Exported Services Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/configentry](../agent/configentry)
+- [agent/structs](../agent/structs)
+- [proto/private/pbconfigentry](../proto/private/pbconfigentry)
+
+## Tags
+agent, configuration, persistence, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/config_entry_exported_services_ce.go> a code:Module ;
+    code:name "agent/consul/state/config_entry_exported_services_ce.go" ;
+    code:description "Config Entry Exported Services Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbconfigentry" ;
+        code:path "../proto/private/pbconfigentry"
+    ] ;
+    code:tags "agent", "configuration", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

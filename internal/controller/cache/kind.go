@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/kind.go
+Kind module for internal layer
+
+## Linked Modules
+- [internal/controller/cache/index](../internal/controller/cache/index)
+- [internal/controller/cache/indexers](../internal/controller/cache/indexers)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+IDIndex
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/kind.go> a code:Module ;
+    code:name "internal/controller/cache/kind.go" ;
+    code:description "Kind module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller/cache/index" ;
+        code:path "../internal/controller/cache/index"
+    ], [
+        code:name "internal/controller/cache/indexers" ;
+        code:path "../internal/controller/cache/indexers"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :IDIndex ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

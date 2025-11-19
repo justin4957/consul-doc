@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/prepared_query.go
+Prepared Query module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache](../agent/cache)
+- [types](../types)
+
+## Tags
+agent, data-model, types
+
+## Exports
+IndexedPreparedQueries, PreparedQueries, PreparedQuery, PreparedQueryExecuteRemoteRequest, PreparedQueryExecuteRequest, PreparedQueryExecuteResponse, PreparedQueryExplainResponse, PreparedQueryOp, PreparedQueryRequest, PreparedQuerySpecificRequest, QueryDNSOptions, QueryFailoverOptions, QueryFailoverTarget, QueryTemplateOptions, ServiceQuery
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/prepared_query.go> a code:Module ;
+    code:name "agent/structs/prepared_query.go" ;
+    code:description "Prepared Query module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :IndexedPreparedQueries, :PreparedQueries, :PreparedQuery, :PreparedQueryExecuteRemoteRequest, :PreparedQueryExecuteRequest, :PreparedQueryExecuteResponse, :PreparedQueryExplainResponse, :PreparedQueryOp, :PreparedQueryRequest, :PreparedQuerySpecificRequest, :QueryDNSOptions, :QueryFailoverOptions, :QueryFailoverTarget, :QueryTemplateOptions, :ServiceQuery ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

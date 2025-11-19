@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/leafcert/structs.go
+Structs module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cacheshim](../agent/cacheshim)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, types
+
+## Exports
+ConnectCALeafRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/leafcert/structs.go> a code:Module ;
+    code:name "agent/leafcert/structs.go" ;
+    code:description "Structs module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cacheshim" ;
+        code:path "../agent/cacheshim"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ConnectCALeafRequest ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package leafcert
 
 import (

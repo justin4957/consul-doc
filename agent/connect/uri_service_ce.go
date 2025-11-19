@@ -3,6 +3,30 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/connect/uri_service_ce.go
+Uri Service Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, mtls, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/uri_service_ce.go> a code:Module ;
+    code:name "agent/connect/uri_service_ce.go" ;
+    code:description "Uri Service Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

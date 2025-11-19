@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/operator_autopilot.go
+Operator Autopilot module for api layer
+
+## Tags
+api, client
+
+## Exports
+AutopilotConfiguration, AutopilotServer, AutopilotServerStatus, AutopilotServerType, AutopilotState, AutopilotUpgrade, AutopilotUpgradeStatus, AutopilotZone, AutopilotZoneUpgradeVersions, NewAutopilotConfiguration, NewReadableDuration, OperatorHealthReply, ReadableDuration, ServerHealth
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/operator_autopilot.go> a code:Module ;
+    code:name "api/operator_autopilot.go" ;
+    code:description "Operator Autopilot module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :AutopilotConfiguration, :AutopilotServer, :AutopilotServerStatus, :AutopilotServerType, :AutopilotState, :AutopilotUpgrade, :AutopilotUpgradeStatus, :AutopilotZone, :AutopilotZoneUpgradeVersions, :NewAutopilotConfiguration, :NewReadableDuration, :OperatorHealthReply, :ReadableDuration, :ServerHealth ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

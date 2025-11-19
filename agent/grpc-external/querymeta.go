@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/querymeta.go
+Querymeta module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+GRPCMetadataFromQueryMeta, QueryMetaFromGRPCMeta, StringToQueryBackendDecodeHookFunc
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/querymeta.go> a code:Module ;
+    code:name "agent/grpc-external/querymeta.go" ;
+    code:description "Querymeta module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :GRPCMetadataFromQueryMeta, :QueryMetaFromGRPCMeta, :StringToQueryBackendDecodeHookFunc ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package external
 
 import (

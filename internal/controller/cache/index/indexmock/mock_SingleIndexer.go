@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/cache/index/indexmock/mock_SingleIndexer.go
+Mock Singleindexer module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+NewSingleIndexer, SingleIndexer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/index/indexmock/mock_SingleIndexer.go> a code:Module ;
+    code:name "internal/controller/cache/index/indexmock/mock_SingleIndexer.go" ;
+    code:description "Mock Singleindexer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :NewSingleIndexer, :SingleIndexer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package indexmock
 
 import (

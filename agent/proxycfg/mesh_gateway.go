@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/mesh_gateway.go
+Mesh Gateway module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache-types](../agent/cache-types)
+- [agent/leafcert](../agent/leafcert)
+- [agent/proxycfg/internal/watch](../agent/proxycfg/internal/watch)
+- [agent/structs](../agent/structs)
+- [lib/maps](../lib/maps)
+- [logging](../logging)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/mesh_gateway.go> a code:Module ;
+    code:name "agent/proxycfg/mesh_gateway.go" ;
+    code:description "Mesh Gateway module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/leafcert" ;
+        code:path "../agent/leafcert"
+    ], [
+        code:name "agent/proxycfg/internal/watch" ;
+        code:path "../agent/proxycfg/internal/watch"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/maps" ;
+        code:path "../lib/maps"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

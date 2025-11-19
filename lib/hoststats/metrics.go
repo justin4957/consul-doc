@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/hoststats/metrics.go
+Metrics module for internal layer
+
+## Tags
+internal
+
+## Exports
+Gauges, Metrics
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/hoststats/metrics.go> a code:Module ;
+    code:name "lib/hoststats/metrics.go" ;
+    code:description "Metrics module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Gauges, :Metrics ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package hoststats
 
 import (

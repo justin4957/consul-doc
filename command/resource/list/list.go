@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/list/list.go
+List module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+- [command/resource](../command/resource)
+- [command/resource/client](../command/resource/client)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/list/list.go> a code:Module ;
+    code:name "command/resource/list/list.go" ;
+    code:description "List module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/resource" ;
+        code:path "../command/resource"
+    ], [
+        code:name "command/resource/client" ;
+        code:path "../command/resource/client"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package list
 
 import (

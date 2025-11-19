@@ -5,6 +5,39 @@
 Package stream provides a publish/subscribe system for events produced by changes
 to the state store.
 */
+
+/*
+# Module: agent/consul/stream/event.go
+Event module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent
+
+## Exports
+Event, NewCloseSubscriptionEvent, Payload, PayloadEvents, Subject, Topic
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/stream/event.go> a code:Module ;
+    code:name "agent/consul/stream/event.go" ;
+    code:description "Event module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :Event, :NewCloseSubscriptionEvent, :Payload, :PayloadEvents, :Subject, :Topic ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package stream
 
 import (

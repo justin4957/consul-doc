@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/peering.go
+Peering module for api layer
+
+## Tags
+api, client
+
+## Exports
+Locality, Peering, PeeringEstablishRequest, PeeringEstablishResponse, PeeringGenerateTokenRequest, PeeringGenerateTokenResponse, PeeringListRequest, PeeringReadResponse, PeeringRemoteInfo, PeeringState, PeeringStreamStatus, Peerings
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/peering.go> a code:Module ;
+    code:name "api/peering.go" ;
+    code:description "Peering module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Locality, :Peering, :PeeringEstablishRequest, :PeeringEstablishResponse, :PeeringGenerateTokenRequest, :PeeringGenerateTokenResponse, :PeeringListRequest, :PeeringReadResponse, :PeeringRemoteInfo, :PeeringState, :PeeringStreamStatus, :Peerings ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

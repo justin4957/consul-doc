@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbacl/mock_UnsafeACLServiceServer.go
+Mock Unsafeaclserviceserver module for internal layer
+
+## Tags
+access-control, api, authorization, communication, grpc, internal, networking, security
+
+## Exports
+NewUnsafeACLServiceServer, UnsafeACLServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbacl/mock_UnsafeACLServiceServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbacl/mock_UnsafeACLServiceServer.go" ;
+    code:description "Mock Unsafeaclserviceserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewUnsafeACLServiceServer, :UnsafeACLServiceServer ;
+    code:tags "access-control", "api", "authorization", "communication", "grpc", "internal", "networking", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbacl
 
 import (

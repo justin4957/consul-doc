@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache/watch.go
+Watch module for agent layer
+
+## Linked Modules
+- [agent/cacheshim](../agent/cacheshim)
+- [lib](../lib)
+
+## Tags
+agent
+
+## Exports
+Callback, UpdateEvent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache/watch.go> a code:Module ;
+    code:name "agent/cache/watch.go" ;
+    code:description "Watch module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cacheshim" ;
+        code:path "../agent/cacheshim"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :Callback, :UpdateEvent ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

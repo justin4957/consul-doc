@@ -3,6 +3,30 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/leader_connect_ca_ce.go
+Leader Connect Ca Ce module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+
+## Tags
+agent, mtls, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/leader_connect_ca_ce.go> a code:Module ;
+    code:name "agent/consul/leader_connect_ca_ce.go" ;
+    code:description "Leader Connect Ca Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ] ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

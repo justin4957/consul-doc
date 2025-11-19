@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/troubleshoot/upstreams/troubleshoot_upstreams.go
+Troubleshoot Upstreams module for cli layer
+
+## Linked Modules
+- [command/cli](../command/cli)
+- [command/flags](../command/flags)
+- [troubleshoot/proxy](../troubleshoot/proxy)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/troubleshoot/upstreams/troubleshoot_upstreams.go> a code:Module ;
+    code:name "command/troubleshoot/upstreams/troubleshoot_upstreams.go" ;
+    code:description "Troubleshoot Upstreams module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/cli" ;
+        code:path "../command/cli"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "troubleshoot/proxy" ;
+        code:path "../troubleshoot/proxy"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package upstreams
 
 import (

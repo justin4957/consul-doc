@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/rpcclient/configentry/view.go
+View module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+- [agent/submatview](../agent/submatview)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+- [proto/private/pbconfigentry](../proto/private/pbconfigentry)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, communication, configuration, networking
+
+## Exports
+ConfigEntryListView, ConfigEntryView, NewConfigEntryListView
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/rpcclient/configentry/view.go> a code:Module ;
+    code:name "agent/rpcclient/configentry/view.go" ;
+    code:description "View module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/submatview" ;
+        code:path "../agent/submatview"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ], [
+        code:name "proto/private/pbconfigentry" ;
+        code:path "../proto/private/pbconfigentry"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :ConfigEntryListView, :ConfigEntryView, :NewConfigEntryListView ;
+    code:tags "agent", "communication", "configuration", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package configentry
 
 import (

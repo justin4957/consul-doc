@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/gen.go
+Gen module for internal layer
+
+## Linked Modules
+- [testing/deployer/sprawl/internal/runner](../testing/deployer/sprawl/internal/runner)
+- [testing/deployer/sprawl/internal/secrets](../testing/deployer/sprawl/internal/secrets)
+- [testing/deployer/topology](../testing/deployer/topology)
+- [testing/deployer/util](../testing/deployer/util)
+
+## Tags
+internal
+
+## Exports
+Generator, NewGenerator, NodeOutput, Outputs, Step
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/gen.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/gen.go" ;
+    code:description "Gen module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/sprawl/internal/runner" ;
+        code:path "../testing/deployer/sprawl/internal/runner"
+    ], [
+        code:name "testing/deployer/sprawl/internal/secrets" ;
+        code:path "../testing/deployer/sprawl/internal/secrets"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ], [
+        code:name "testing/deployer/util" ;
+        code:path "../testing/deployer/util"
+    ] ;
+    code:exports :Generator, :NewGenerator, :NodeOutput, :Outputs, :Step ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

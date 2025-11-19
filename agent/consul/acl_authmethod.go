@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/acl_authmethod.go
+Acl Authmethod module for agent layer
+
+## Linked Modules
+- [agent/consul/authmethod](../agent/consul/authmethod)
+- [agent/consul/authmethod/awsauth](../agent/consul/authmethod/awsauth)
+- [agent/consul/authmethod/kubeauth](../agent/consul/authmethod/kubeauth)
+- [agent/consul/authmethod/ssoauth](../agent/consul/authmethod/ssoauth)
+- [agent/structs](../agent/structs)
+
+## Tags
+access-control, agent, authentication, authorization, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/acl_authmethod.go> a code:Module ;
+    code:name "agent/consul/acl_authmethod.go" ;
+    code:description "Acl Authmethod module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/authmethod" ;
+        code:path "../agent/consul/authmethod"
+    ], [
+        code:name "agent/consul/authmethod/awsauth" ;
+        code:path "../agent/consul/authmethod/awsauth"
+    ], [
+        code:name "agent/consul/authmethod/kubeauth" ;
+        code:path "../agent/consul/authmethod/kubeauth"
+    ], [
+        code:name "agent/consul/authmethod/ssoauth" ;
+        code:path "../agent/consul/authmethod/ssoauth"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "access-control", "agent", "authentication", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

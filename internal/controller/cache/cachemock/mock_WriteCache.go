@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/cache/cachemock/mock_WriteCache.go
+Mock Writecache module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+NewWriteCache, WriteCache
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/cachemock/mock_WriteCache.go> a code:Module ;
+    code:name "internal/controller/cache/cachemock/mock_WriteCache.go" ;
+    code:description "Mock Writecache module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :NewWriteCache, :WriteCache ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachemock
 
 import (

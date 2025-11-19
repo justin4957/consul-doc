@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/uri_agent.go
+Uri Agent module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+SpiffeIDAgent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/uri_agent.go> a code:Module ;
+    code:name "agent/connect/uri_agent.go" ;
+    code:description "Uri Agent module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :SpiffeIDAgent ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

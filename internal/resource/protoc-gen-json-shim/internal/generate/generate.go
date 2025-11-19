@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/protoc-gen-json-shim/internal/generate/generate.go
+Generate module for internal layer
+
+## Tags
+internal
+
+## Exports
+FileName, Generate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/protoc-gen-json-shim/internal/generate/generate.go> a code:Module ;
+    code:name "internal/resource/protoc-gen-json-shim/internal/generate/generate.go" ;
+    code:description "Generate module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :FileName, :Generate ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package generate
 
 import (

@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/service/helpers.go
+Helpers module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [test/integration/consul-container/libs/cluster](../test/integration/consul-container/libs/cluster)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+Checks, ClientsCreate, ConnectProxy, CreateAndRegisterCustomServiceAndSidecar, CreateAndRegisterStaticClientSidecar, CreateAndRegisterStaticServerAndSidecar, CreateAndRegisterStaticServerAndSidecarWithChecks, CreateAndRegisterStaticServerAndSidecarWithCustomContainerConfig, ServiceCreate, ServiceHealthBlockingQuery, ServiceOpts, SidecarService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/service/helpers.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/service/helpers.go" ;
+    code:description "Helpers module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "test/integration/consul-container/libs/cluster" ;
+        code:path "../test/integration/consul-container/libs/cluster"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :Checks, :ClientsCreate, :ConnectProxy, :CreateAndRegisterCustomServiceAndSidecar, :CreateAndRegisterStaticClientSidecar, :CreateAndRegisterStaticServerAndSidecar, :CreateAndRegisterStaticServerAndSidecarWithChecks, :CreateAndRegisterStaticServerAndSidecarWithCustomContainerConfig, :ServiceCreate, :ServiceHealthBlockingQuery, :ServiceOpts, :SidecarService ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package service
 
 import (

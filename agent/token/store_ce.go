@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/token/store_ce.go
+Store Ce module for agent layer
+
+## Tags
+agent
+
+## Exports
+EnterpriseConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/token/store_ce.go> a code:Module ;
+    code:name "agent/token/store_ce.go" ;
+    code:description "Store Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :EnterpriseConfig ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package token
 
 type EnterpriseConfig struct {

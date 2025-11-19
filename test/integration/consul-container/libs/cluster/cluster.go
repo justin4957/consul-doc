@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/cluster/cluster.go
+Cluster module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+Cluster, LongFailer, New, NewN, TestingT, WaitForLeader, WaitForMembers
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/cluster/cluster.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/cluster/cluster.go" ;
+    code:description "Cluster module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :Cluster, :LongFailer, :New, :NewN, :TestingT, :WaitForLeader, :WaitForMembers ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cluster
 
 import (

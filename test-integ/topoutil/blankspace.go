@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test-integ/topoutil/blankspace.go
+Blankspace module for internal layer
+
+## Tags
+internal
+
+## Exports
+GetBlankspaceNameViaGRPC, GetBlankspaceNameViaHTTP, GetBlankspaceNameViaTCP
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test-integ/topoutil/blankspace.go> a code:Module ;
+    code:name "test-integ/topoutil/blankspace.go" ;
+    code:description "Blankspace module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :GetBlankspaceNameViaGRPC, :GetBlankspaceNameViaHTTP, :GetBlankspaceNameViaTCP ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topoutil
 
 import (

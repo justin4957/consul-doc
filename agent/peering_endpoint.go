@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/peering_endpoint.go
+Peering Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [lib](../lib)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/peering_endpoint.go> a code:Module ;
+    code:name "agent/peering_endpoint.go" ;
+    code:description "Peering Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

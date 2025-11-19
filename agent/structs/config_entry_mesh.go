@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/config_entry_mesh.go
+Config Entry Mesh module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [types](../types)
+
+## Tags
+agent, configuration, data-model, types
+
+## Exports
+HeadersWithUnderscoresAction, HeadersWithUnderscoresActionStrings, MeshConfigEntry, MeshDirectionalHTTPConfig, MeshDirectionalTLSConfig, MeshHTTPConfig, MeshTLSConfig, PathWithEscapedSlashesAction, PathWithEscapedSlashesActionStrings, PeeringMeshConfig, RequestNormalizationMeshConfig, TransparentProxyMeshConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/config_entry_mesh.go> a code:Module ;
+    code:name "agent/structs/config_entry_mesh.go" ;
+    code:description "Config Entry Mesh module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :HeadersWithUnderscoresAction, :HeadersWithUnderscoresActionStrings, :MeshConfigEntry, :MeshDirectionalHTTPConfig, :MeshDirectionalTLSConfig, :MeshHTTPConfig, :MeshTLSConfig, :PathWithEscapedSlashesAction, :PathWithEscapedSlashesActionStrings, :PeeringMeshConfig, :RequestNormalizationMeshConfig, :TransparentProxyMeshConfig ;
+    code:tags "agent", "configuration", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

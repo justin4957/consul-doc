@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbserverdiscovery/mock_ServerDiscoveryService_WatchServersClient.go
+Mock Serverdiscoveryservice Watchserversclient module for internal layer
+
+## Linked Modules
+- [proto-public/pbserverdiscovery](../proto-public/pbserverdiscovery)
+
+## Tags
+api, communication, discovery, dns, grpc, internal, networking
+
+## Exports
+NewServerDiscoveryService, ServerDiscoveryService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbserverdiscovery/mock_ServerDiscoveryService_WatchServersClient.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbserverdiscovery/mock_ServerDiscoveryService_WatchServersClient.go" ;
+    code:description "Mock Serverdiscoveryservice Watchserversclient module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbserverdiscovery" ;
+        code:path "../proto-public/pbserverdiscovery"
+    ] ;
+    code:exports :NewServerDiscoveryService, :ServerDiscoveryService ;
+    code:tags "api", "communication", "discovery", "dns", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbserverdiscovery
 
 import (
