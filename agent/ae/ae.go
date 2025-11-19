@@ -18,6 +18,7 @@ StateSyncer, SyncState, scaleFactor, Trigger
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/ae/ae.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/ae/ae.go" ;
     code:description "Anti-entropy engine for state synchronization between agent and servers" ;
     code:layer "agent" ;

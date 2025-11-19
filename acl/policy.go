@@ -19,6 +19,7 @@ Policy, PolicyRules, AccessLevel, AgentRule, KeyRule, NodeRule, ServiceRule, Ses
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <acl/policy.go> a code:Module ;
+    code:language "go" ;
     code:name "acl/policy.go" ;
     code:description "ACL policy definitions, parsing, and validation for rule-based access control" ;
     code:layer "acl" ;

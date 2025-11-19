@@ -20,6 +20,7 @@ Server, ADSStream, DeltaAggregatedResources
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/xds/server.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/xds/server.go" ;
     code:description "Envoy xDS (Discovery Service) API server for service mesh proxy configuration" ;
     code:layer "service-mesh" ;

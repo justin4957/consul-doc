@@ -19,6 +19,7 @@ Config, ExportFetcher, ExportedServices, AnonymousTokenID, WildcardName, AliasIf
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <acl/acl.go> a code:Module ;
+    code:language "go" ;
     code:name "acl/acl.go" ;
     code:description "Core ACL configuration and types for access control in Consul" ;
     code:layer "acl" ;

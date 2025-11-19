@@ -23,6 +23,7 @@ Agent, AgentDelegate, ServiceManager, LocalState
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/agent.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/agent.go" ;
     code:description "Main Consul agent implementation managing lifecycle, services, checks, and coordination" ;
     code:layer "agent" ;

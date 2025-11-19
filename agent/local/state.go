@@ -20,6 +20,7 @@ State, Config, ServiceState, CheckState, SyncChanges
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/local/state.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/local/state.go" ;
     code:description "Local agent state management and synchronization with catalog servers" ;
     code:layer "agent" ;

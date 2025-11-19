@@ -21,6 +21,7 @@ Authorizer, AllowAuthorizer, EnforcementDecision, Resource, Enforce, NewAuthoriz
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <acl/authorizer.go> a code:Module ;
+    code:language "go" ;
     code:name "acl/authorizer.go" ;
     code:description "Authorization interface and enforcement implementations for ACL policy evaluation" ;
     code:layer "acl" ;
