@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/acl_endpoint.go
+ACL RPC endpoint for managing tokens, policies, roles, and auth methods.
+
+## Linked Modules
+- [agent/consul/server](./server.go) - Server RPC framework
+- [agent/consul/state](./state/state_store.go) - ACL state storage
+- [acl](../../acl/acl.go) - Core ACL logic
+- [api/acl](../../api/acl.go) - Client-side ACL API
+
+## Tags
+rpc, endpoint, acl, security, authorization, authentication
+
+## Exports
+ACL, TokenRead, TokenCreate, TokenUpdate, TokenDelete, PolicyCreate, RoleCreate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/acl_endpoint.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/consul/acl_endpoint.go" ;
+    code:description "ACL RPC endpoint for managing tokens, policies, roles, and auth methods" ;
+    code:layer "rpc" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "./server.go" ;
+        code:relationship "Server RPC framework"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "./state/state_store.go" ;
+        code:relationship "ACL state storage"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "Core ACL logic"
+    ], [
+        code:name "api/acl" ;
+        code:path "../../api/acl.go" ;
+        code:relationship "Client-side ACL API"
+    ] ;
+    code:exports :ACL, :TokenRead, :TokenCreate, :TokenUpdate, :TokenDelete, :PolicyCreate, :RoleCreate ;
+    code:tags "rpc", "endpoint", "acl", "security", "authorization", "authentication" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

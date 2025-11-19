@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/state_store.go
+In-memory state store for Consul cluster data using memdb for MVCC transactions.
+
+## Linked Modules
+- [agent/consul/fsm](../fsm/fsm.go) - FSM applies log entries to state store
+- [agent/consul/server](../server.go) - Server queries state store
+- [agent/structs](../../structs/structs.go) - Data structures
+
+## Tags
+storage, state, memdb, transactions, indexing
+
+## Exports
+Store, NewStateStore, EnsureRegistration, Catalog, ACLTokenSet, SessionCreate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/state_store.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/consul/state/state_store.go" ;
+    code:description "In-memory state store for Consul cluster data using memdb for MVCC transactions" ;
+    code:layer "storage" ;
+    code:linksTo [
+        code:name "agent/consul/fsm" ;
+        code:path "../fsm/fsm.go" ;
+        code:relationship "FSM applies log entries to state store"
+    ], [
+        code:name "agent/consul/server" ;
+        code:path "../server.go" ;
+        code:relationship "Server queries state store"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../../structs/structs.go" ;
+        code:relationship "Data structures"
+    ] ;
+    code:exports :Store, :NewStateStore, :EnsureRegistration, :Catalog, :ACLTokenSet, :SessionCreate ;
+    code:tags "storage", "state", "memdb", "transactions", "indexing" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

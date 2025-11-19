@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/leader.go
+Leader election and leadership duties for Consul servers in a Raft cluster.
+
+## Linked Modules
+- [agent/consul/server](./server.go) - Main server implementation
+- [agent/consul/state](./state/state_store.go) - State store operations
+- [acl](../../acl/acl.go) - ACL token and policy initialization
+
+## Tags
+consensus, raft, leader-election, cluster-coordination
+
+## Exports
+monitorLeadership, establishLeadership, revokeLeadership
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/leader.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/consul/leader.go" ;
+    code:description "Leader election and leadership duties for Consul servers in a Raft cluster" ;
+    code:layer "consensus" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "./server.go" ;
+        code:relationship "Main server implementation"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "./state/state_store.go" ;
+        code:relationship "State store operations"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL token and policy initialization"
+    ] ;
+    code:exports :monitorLeadership, :establishLeadership, :revokeLeadership ;
+    code:tags "consensus", "raft", "leader-election", "cluster-coordination" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/health_endpoint.go
+Health RPC endpoint for querying service and node health check status.
+
+## Linked Modules
+- [agent/consul/server](./server.go) - Server RPC framework
+- [agent/consul/state](./state/state_store.go) - Health check state storage
+- [api/health](../../api/health.go) - Client-side health API
+
+## Tags
+rpc, endpoint, health, monitoring, service-discovery
+
+## Exports
+Health, ChecksInState, NodeChecks, ServiceChecks, ServiceNodes
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/health_endpoint.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/consul/health_endpoint.go" ;
+    code:description "Health RPC endpoint for querying service and node health check status" ;
+    code:layer "rpc" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "./server.go" ;
+        code:relationship "Server RPC framework"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "./state/state_store.go" ;
+        code:relationship "Health check state storage"
+    ], [
+        code:name "api/health" ;
+        code:path "../../api/health.go" ;
+        code:relationship "Client-side health API"
+    ] ;
+    code:exports :Health, :ChecksInState, :NodeChecks, :ServiceChecks, :ServiceNodes ;
+    code:tags "rpc", "endpoint", "health", "monitoring", "service-discovery" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (
