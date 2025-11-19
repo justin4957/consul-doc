@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/agent/agent.go
+CLI command for running the Consul agent (server or client mode).
+
+## Linked Modules
+- [agent/agent](../../agent/agent.go) - Agent implementation
+- [agent/config](../../agent/config/config.go) - Agent configuration
+- [command/registry](../registry.go) - Command registry
+
+## Tags
+cli, agent, server, client, operations
+
+## Exports
+New, cmd, Run
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/agent/agent.go> a code:Module ;
+    code:language "go" ;
+    code:name "command/agent/agent.go" ;
+    code:description "CLI command for running the Consul agent (server or client mode)" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/agent" ;
+        code:path "../../agent/agent.go" ;
+        code:relationship "Agent implementation"
+    ], [
+        code:name "agent/config" ;
+        code:path "../../agent/config/config.go" ;
+        code:relationship "Agent configuration"
+    ], [
+        code:name "command/registry" ;
+        code:path "../registry.go" ;
+        code:relationship "Command registry"
+    ] ;
+    code:exports :New, :cmd, :Run ;
+    code:tags "cli", "agent", "server", "client", "operations" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

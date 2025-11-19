@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/registry.go
+CLI command registry for all Consul commands and subcommands.
+
+## Linked Modules
+- [command/agent](./agent/agent.go) - Agent command
+- [command/services](./services/services.go) - Service commands
+- [command/acl](./acl/acl.go) - ACL commands
+
+## Tags
+cli, commands, registry, operations
+
+## Exports
+RegisteredCommands, initializeCommands
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/registry.go> a code:Module ;
+    code:language "go" ;
+    code:name "command/registry.go" ;
+    code:description "CLI command registry for all Consul commands and subcommands" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/agent" ;
+        code:path "./agent/agent.go" ;
+        code:relationship "Agent command"
+    ], [
+        code:name "command/services" ;
+        code:path "./services/services.go" ;
+        code:relationship "Service commands"
+    ], [
+        code:name "command/acl" ;
+        code:path "./acl/acl.go" ;
+        code:relationship "ACL commands"
+    ] ;
+    code:exports :RegisteredCommands, :initializeCommands ;
+    code:tags "cli", "commands", "registry", "operations" .
+<!-- End LinkedDoc RDF -->
+*/
 package command
 
 import (

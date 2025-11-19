@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/catalog/list/nodes/catalog_list_nodes.go
+CLI command for listing nodes registered in the catalog.
+
+## Linked Modules
+- [api/catalog](../../../../api/catalog.go) - Catalog API client
+- [command/catalog](../../catalog.go) - Catalog command utilities
+- [command/registry](../../../registry.go) - Command registry
+
+## Tags
+cli, catalog, nodes, discovery, operations
+
+## Exports
+New, cmd, Run
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/catalog/list/nodes/catalog_list_nodes.go> a code:Module ;
+    code:language "go" ;
+    code:name "command/catalog/list/nodes/catalog_list_nodes.go" ;
+    code:description "CLI command for listing nodes registered in the catalog" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api/catalog" ;
+        code:path "../../../../api/catalog.go" ;
+        code:relationship "Catalog API client"
+    ], [
+        code:name "command/catalog" ;
+        code:path "../../catalog.go" ;
+        code:relationship "Catalog command utilities"
+    ], [
+        code:name "command/registry" ;
+        code:path "../../../registry.go" ;
+        code:relationship "Command registry"
+    ] ;
+    code:exports :New, :cmd, :Run ;
+    code:tags "cli", "catalog", "nodes", "discovery", "operations" .
+<!-- End LinkedDoc RDF -->
+*/
 package nodes
 
 import (

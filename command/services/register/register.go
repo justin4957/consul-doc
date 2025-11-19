@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/services/register/register.go
+CLI command for registering services with the Consul agent.
+
+## Linked Modules
+- [api/agent](../../../api/agent.go) - Agent API client
+- [command/services](../services.go) - Service command utilities
+- [command/registry](../../registry.go) - Command registry
+
+## Tags
+cli, services, registration, management
+
+## Exports
+New, cmd, Run
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/services/register/register.go> a code:Module ;
+    code:language "go" ;
+    code:name "command/services/register/register.go" ;
+    code:description "CLI command for registering services with the Consul agent" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api/agent" ;
+        code:path "../../../api/agent.go" ;
+        code:relationship "Agent API client"
+    ], [
+        code:name "command/services" ;
+        code:path "../services.go" ;
+        code:relationship "Service command utilities"
+    ], [
+        code:name "command/registry" ;
+        code:path "../../registry.go" ;
+        code:relationship "Command registry"
+    ] ;
+    code:exports :New, :cmd, :Run ;
+    code:tags "cli", "services", "registration", "management" .
+<!-- End LinkedDoc RDF -->
+*/
 package register
 
 import (
