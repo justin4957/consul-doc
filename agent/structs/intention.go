@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/intention.go
+Service intention structures for Connect authorization between services.
+
+## Linked Modules
+- [agent/consul/state](../consul/state/intention.go) - Intention state store operations
+- [agent/structs/config_entry](./config_entry.go) - Service intentions config entry
+- [api/connect](../../api/connect.go) - API intention types
+- [acl](../../acl/acl.go) - ACL authorization for intentions
+
+## Tags
+structures, data-model, api, intentions, connect, service-mesh, authorization
+
+## Exports
+Intention, IntentionAction, IntentionPermission, IntentionMatch
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/intention.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/structs/intention.go" ;
+    code:description "Service intention structures for Connect authorization between services" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../consul/state/intention.go" ;
+        code:relationship "Intention state store operations"
+    ], [
+        code:name "agent/structs/config_entry" ;
+        code:path "./config_entry.go" ;
+        code:relationship "Service intentions config entry"
+    ], [
+        code:name "api/connect" ;
+        code:path "../../api/connect.go" ;
+        code:relationship "API intention types"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL authorization for intentions"
+    ] ;
+    code:exports :Intention, :IntentionAction, :IntentionPermission, :IntentionMatch ;
+    code:tags "structures", "data-model", "api", "intentions", "connect", "service-mesh", "authorization" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

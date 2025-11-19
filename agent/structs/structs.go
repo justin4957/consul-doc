@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/structs.go
+Core data structures and types including Node, Service, HealthCheck, and Raft message types.
+
+## Linked Modules
+- [agent/consul/state](../consul/state/state_store.go) - State store that persists these structures
+- [agent/consul/fsm](../consul/fsm/fsm.go) - FSM that applies operations on these structures
+- [api](../../api/api.go) - API types that map to these structures
+- [acl](../../acl/acl.go) - ACL integration for authorization
+
+## Tags
+structures, data-model, api, nodes, services, health-checks, raft
+
+## Exports
+Node, NodeService, HealthCheck, CheckServiceNode, MessageType, RaftIndex, QueryOptions, WriteRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/structs.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/structs/structs.go" ;
+    code:description "Core data structures and types including Node, Service, HealthCheck, and Raft message types" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../consul/state/state_store.go" ;
+        code:relationship "State store that persists these structures"
+    ], [
+        code:name "agent/consul/fsm" ;
+        code:path "../consul/fsm/fsm.go" ;
+        code:relationship "FSM that applies operations on these structures"
+    ], [
+        code:name "api" ;
+        code:path "../../api/api.go" ;
+        code:relationship "API types that map to these structures"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL integration for authorization"
+    ] ;
+    code:exports :Node, :NodeService, :HealthCheck, :CheckServiceNode, :MessageType, :RaftIndex, :QueryOptions, :WriteRequest ;
+    code:tags "structures", "data-model", "api", "nodes", "services", "health-checks", "raft" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

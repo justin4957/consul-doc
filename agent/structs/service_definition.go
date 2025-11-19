@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/service_definition.go
+Service definition structures for JSON decoding and service registration.
+
+## Linked Modules
+- [agent/structs](./structs.go) - Core NodeService structure
+- [agent/structs/connect](./connect.go) - Connect proxy configuration
+- [api/agent](../../api/agent.go) - Agent API service registration
+- [acl](../../acl/acl.go) - ACL enterprise metadata
+
+## Tags
+structures, data-model, api, services, registration
+
+## Exports
+ServiceDefinition, NodeService, CheckTypes
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/service_definition.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/structs/service_definition.go" ;
+    code:description "Service definition structures for JSON decoding and service registration" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "./structs.go" ;
+        code:relationship "Core NodeService structure"
+    ], [
+        code:name "agent/structs/connect" ;
+        code:path "./connect.go" ;
+        code:relationship "Connect proxy configuration"
+    ], [
+        code:name "api/agent" ;
+        code:path "../../api/agent.go" ;
+        code:relationship "Agent API service registration"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL enterprise metadata"
+    ] ;
+    code:exports :ServiceDefinition, :NodeService, :CheckTypes ;
+    code:tags "structures", "data-model", "api", "services", "registration" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (
