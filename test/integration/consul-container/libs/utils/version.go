@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/utils/version.go
+Version module for internal layer
+
+## Linked Modules
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+DockerImage, GetLatestImageName, GetTargetImageName, IsEnterprise, LatestImages, SideCarVersion, TargetImages, VersionGTE, VersionLT
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/utils/version.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/utils/version.go" ;
+    code:description "Version module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :DockerImage, :GetLatestImageName, :GetTargetImageName, :IsEnterprise, :LatestImages, :SideCarVersion, :TargetImages, :VersionGTE, :VersionLT ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package utils
 
 import (

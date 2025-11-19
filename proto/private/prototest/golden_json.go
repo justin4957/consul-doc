@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/prototest/golden_json.go
+Golden Json module for internal layer
+
+## Tags
+internal
+
+## Exports
+ProtoToJSON
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/prototest/golden_json.go> a code:Module ;
+    code:name "proto/private/prototest/golden_json.go" ;
+    code:description "Golden Json module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ProtoToJSON ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package prototest
 
 import (

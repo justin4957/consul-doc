@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/intention/helpers.go
+Helpers module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, user-interface
+
+## Exports
+GetFromArgs, ParseIntentionTarget
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/intention/helpers.go> a code:Module ;
+    code:name "command/intention/helpers.go" ;
+    code:description "Helpers module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :GetFromArgs, :ParseIntentionTarget ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package intention
 
 import (

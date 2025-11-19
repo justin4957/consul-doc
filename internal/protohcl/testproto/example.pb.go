@@ -7,6 +7,27 @@
 // 	protoc        (unknown)
 // source: example.proto
 
+/*
+# Module: internal/protohcl/testproto/example.pb.go
+Example.Pb module for internal layer
+
+## Tags
+internal
+
+## Exports
+DynamicWellKnown, File, NestedAndCollections, NonDynamicWellKnown, OneOf, Primitives, Protocol, Wrappers
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/protohcl/testproto/example.pb.go> a code:Module ;
+    code:name "internal/protohcl/testproto/example.pb.go" ;
+    code:description "Example.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DynamicWellKnown, :File, :NestedAndCollections, :NonDynamicWellKnown, :OneOf, :Primitives, :Protocol, :Wrappers ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package testproto
 
 import (

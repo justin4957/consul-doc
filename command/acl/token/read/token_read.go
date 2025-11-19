@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/token/read/token_read.go
+Token Read module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/acl](../command/acl)
+- [command/acl/token](../command/acl/token)
+- [command/flags](../command/flags)
+
+## Tags
+access-control, authorization, cli, security, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/token/read/token_read.go> a code:Module ;
+    code:name "command/acl/token/read/token_read.go" ;
+    code:description "Token Read module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/acl" ;
+        code:path "../command/acl"
+    ], [
+        code:name "command/acl/token" ;
+        code:path "../command/acl/token"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "access-control", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package tokenread
 
 import (

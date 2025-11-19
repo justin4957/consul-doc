@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/util.go
+Util module for agent layer
+
+## Linked Modules
+- [types](../types)
+
+## Tags
+agent
+
+## Exports
+ForwardSignals, NewDurationFixer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/util.go> a code:Module ;
+    code:name "agent/util.go" ;
+    code:description "Util module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :ForwardSignals, :NewDurationFixer ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: pbacl/acl.proto
 
+/*
+# Module: proto-public/pbacl/acl_grpc.pb.go
+Acl Grpc.Pb module for internal layer
+
+## Tags
+access-control, api, authorization, communication, grpc, internal, networking, security
+
+## Exports
+ACLService, ACLServiceClient, ACLServiceServer, NewACLServiceClient, RegisterACLServiceServer, UnimplementedACLServiceServer, UnsafeACLServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbacl/acl_grpc.pb.go> a code:Module ;
+    code:name "proto-public/pbacl/acl_grpc.pb.go" ;
+    code:description "Acl Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ACLService, :ACLServiceClient, :ACLServiceServer, :NewACLServiceClient, :RegisterACLServiceServer, :UnimplementedACLServiceServer, :UnsafeACLServiceServer ;
+    code:tags "access-control", "api", "authorization", "communication", "grpc", "internal", "networking", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbacl
 
 import (

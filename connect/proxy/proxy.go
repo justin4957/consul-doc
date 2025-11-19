@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/proxy/proxy.go
+Proxy module for service-mesh layer
+
+## Linked Modules
+- [api](../api)
+- [connect](../connect)
+- [lib](../lib)
+
+## Tags
+mtls, networking, service-mesh
+
+## Exports
+New, Proxy
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/proxy/proxy.go> a code:Module ;
+    code:name "connect/proxy/proxy.go" ;
+    code:description "Proxy module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "connect" ;
+        code:path "../connect"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :New, :Proxy ;
+    code:tags "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

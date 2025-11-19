@@ -36,6 +36,31 @@
 // The protobuf.sh script (invoked by make proto) runs our postprocess script
 // which reads all of the .ratelimit.tmp files in proto and proto-public and
 // generates a single Go map in agent/grpc-middleware/rate_limit_mappings.gen.go
+
+/*
+# Module: internal/tools/protoc-gen-consul-rate-limit/main.go
+Main module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/protoc-gen-consul-rate-limit/main.go> a code:Module ;
+    code:name "internal/tools/protoc-gen-consul-rate-limit/main.go" ;
+    code:description "Main module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

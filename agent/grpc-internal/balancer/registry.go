@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/balancer/registry.go
+Registry module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+BuilderName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/balancer/registry.go> a code:Module ;
+    code:name "agent/grpc-internal/balancer/registry.go" ;
+    code:description "Registry module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :BuilderName ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package balancer
 
 import (

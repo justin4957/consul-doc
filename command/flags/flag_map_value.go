@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/flags/flag_map_value.go
+Flag Map Value module for cli layer
+
+## Tags
+cli, user-interface
+
+## Exports
+FlagMapValue
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/flags/flag_map_value.go> a code:Module ;
+    code:name "command/flags/flag_map_value.go" ;
+    code:description "Flag Map Value module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :FlagMapValue ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package flags
 
 import (

@@ -6,6 +6,28 @@ Package ttlcache provides an ExpiryHeap that can be used by a cache to track the
 expiration time of its entries. When an expiry is reached the Timer will fire
 and the entry can be removed.
 */
+
+/*
+# Module: lib/ttlcache/eviction.go
+Eviction module for internal layer
+
+## Tags
+internal
+
+## Exports
+Entry, ExpiryHeap, NewExpiryHeap, NotIndexed, Timer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/ttlcache/eviction.go> a code:Module ;
+    code:name "lib/ttlcache/eviction.go" ;
+    code:description "Eviction module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Entry, :ExpiryHeap, :NewExpiryHeap, :NotIndexed, :Timer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package ttlcache
 
 import (

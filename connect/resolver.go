@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/resolver.go
+Resolver module for service-mesh layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [api](../api)
+- [ipaddr](../ipaddr)
+
+## Tags
+mtls, service-mesh
+
+## Exports
+ConsulResolver, ConsulResolverFromAddrFunc, Resolver, StaticResolver
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/resolver.go> a code:Module ;
+    code:name "connect/resolver.go" ;
+    code:description "Resolver module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ] ;
+    code:exports :ConsulResolver, :ConsulResolverFromAddrFunc, :Resolver, :StaticResolver ;
+    code:tags "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

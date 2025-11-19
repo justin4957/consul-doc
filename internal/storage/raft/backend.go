@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/raft/backend.go
+Backend module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [internal/storage](../internal/storage)
+- [internal/storage/inmem](../internal/storage/inmem)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [proto/private/pbstorage](../proto/private/pbstorage)
+
+## Tags
+consensus, internal, replication
+
+## Exports
+Backend, Handle, NewBackend, Restoration, Snapshot
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/raft/backend.go> a code:Module ;
+    code:name "internal/storage/raft/backend.go" ;
+    code:description "Backend module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "internal/storage/inmem" ;
+        code:path "../internal/storage/inmem"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "proto/private/pbstorage" ;
+        code:path "../proto/private/pbstorage"
+    ] ;
+    code:exports :Backend, :Handle, :NewBackend, :Restoration, :Snapshot ;
+    code:tags "consensus", "internal", "replication" .
+<!-- End LinkedDoc RDF -->
+*/
 package raft
 
 import (

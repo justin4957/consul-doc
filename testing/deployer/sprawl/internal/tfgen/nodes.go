@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/nodes.go
+Nodes module for internal layer
+
+## Linked Modules
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/nodes.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/nodes.go" ;
+    code:description "Nodes module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

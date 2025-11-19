@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/connectca/server.go
+Server module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/structs](../agent/structs)
+- [proto-public/pbconnectca](../proto-public/pbconnectca)
+
+## Tags
+agent, api, communication, grpc, mtls, networking, service-mesh
+
+## Exports
+ACLResolver, CAManager, Config, EventPublisher, NewServer, Server, StateStore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/connectca/server.go> a code:Module ;
+    code:name "agent/grpc-external/services/connectca/server.go" ;
+    code:description "Server module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto-public/pbconnectca" ;
+        code:path "../proto-public/pbconnectca"
+    ] ;
+    code:exports :ACLResolver, :CAManager, :Config, :EventPublisher, :NewServer, :Server, :StateStore ;
+    code:tags "agent", "api", "communication", "grpc", "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connectca
 
 import (

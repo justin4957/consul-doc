@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/testing_catalog.go
+Testing Catalog module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, data-model, discovery, registry, types
+
+## Exports
+TestCheckNodeServiceWithNameInPeer, TestNodeService, TestNodeServiceAPIGateway, TestNodeServiceExpose, TestNodeServiceIngressGateway, TestNodeServiceMeshGateway, TestNodeServiceMeshGatewayWithAddrs, TestNodeServiceProxy, TestNodeServiceProxyInPartition, TestNodeServiceSidecar, TestNodeServiceTerminatingGateway, TestNodeServiceWithName, TestRegisterIngressGateway, TestRegisterRequest, TestRegisterRequestProxy
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/testing_catalog.go> a code:Module ;
+    code:name "agent/structs/testing_catalog.go" ;
+    code:description "Testing Catalog module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :TestCheckNodeServiceWithNameInPeer, :TestNodeService, :TestNodeServiceAPIGateway, :TestNodeServiceExpose, :TestNodeServiceIngressGateway, :TestNodeServiceMeshGateway, :TestNodeServiceMeshGatewayWithAddrs, :TestNodeServiceProxy, :TestNodeServiceProxyInPartition, :TestNodeServiceSidecar, :TestNodeServiceTerminatingGateway, :TestNodeServiceWithName, :TestRegisterIngressGateway, :TestRegisterRequest, :TestRegisterRequestProxy ;
+    code:tags "agent", "data-model", "discovery", "registry", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

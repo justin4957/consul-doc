@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/radix/radix.go
+Radix module for internal layer
+
+## Tags
+internal
+
+## Exports
+New, NewFromMap, Tree, WalkFn
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/radix/radix.go> a code:Module ;
+    code:name "internal/radix/radix.go" ;
+    code:description "Radix module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :New, :NewFromMap, :Tree, :WalkFn ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package radix
 
 import (

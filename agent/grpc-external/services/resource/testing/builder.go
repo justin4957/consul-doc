@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/resource/testing/builder.go
+Builder module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/grpc-external/services/resource](../agent/grpc-external/services/resource)
+- [agent/grpc-external/testutils](../agent/grpc-external/testutils)
+- [internal/resource](../internal/resource)
+- [internal/storage/inmem](../internal/storage/inmem)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [sdk/testutil](../sdk/testutil)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+NewResourceServiceBuilder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/resource/testing/builder.go> a code:Module ;
+    code:name "agent/grpc-external/services/resource/testing/builder.go" ;
+    code:description "Builder module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/grpc-external/services/resource" ;
+        code:path "../agent/grpc-external/services/resource"
+    ], [
+        code:name "agent/grpc-external/testutils" ;
+        code:path "../agent/grpc-external/testutils"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "internal/storage/inmem" ;
+        code:path "../internal/storage/inmem"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ] ;
+    code:exports :NewResourceServiceBuilder ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package testing
 
 import (

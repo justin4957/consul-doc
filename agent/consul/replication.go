@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/replication.go
+Replication module for agent layer
+
+## Linked Modules
+- [lib/retry](../lib/retry)
+- [logging](../logging)
+
+## Tags
+agent
+
+## Exports
+FunctionReplicator, IndexReplicator, IndexReplicatorDelegate, IndexReplicatorDiff, NewReplicator, ReplicationGauges, Replicator, ReplicatorConfig, ReplicatorDelegate, ReplicatorFunc
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/replication.go> a code:Module ;
+    code:name "agent/consul/replication.go" ;
+    code:description "Replication module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :FunctionReplicator, :IndexReplicator, :IndexReplicatorDelegate, :IndexReplicatorDiff, :NewReplicator, :ReplicationGauges, :Replicator, :ReplicatorConfig, :ReplicatorDelegate, :ReplicatorFunc ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

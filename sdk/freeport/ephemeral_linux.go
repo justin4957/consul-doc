@@ -3,6 +3,23 @@
 
 //go:build linux
 
+/*
+# Module: sdk/freeport/ephemeral_linux.go
+Ephemeral Linux module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/freeport/ephemeral_linux.go> a code:Module ;
+    code:name "sdk/freeport/ephemeral_linux.go" ;
+    code:description "Ephemeral Linux module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package freeport
 
 import (

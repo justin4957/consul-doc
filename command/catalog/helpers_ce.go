@@ -3,6 +3,34 @@
 
 //go:build !consulent
 
+/*
+# Module: command/catalog/helpers_ce.go
+Helpers Ce module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, discovery, registry, user-interface
+
+## Exports
+NodeRow, NodesHeader
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/catalog/helpers_ce.go> a code:Module ;
+    code:name "command/catalog/helpers_ce.go" ;
+    code:description "Helpers Ce module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :NodeRow, :NodesHeader ;
+    code:tags "cli", "discovery", "registry", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package catalog
 
 import (

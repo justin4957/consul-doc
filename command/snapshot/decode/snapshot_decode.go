@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/snapshot/decode/snapshot_decode.go
+Snapshot Decode module for cli layer
+
+## Linked Modules
+- [agent/consul/fsm](../agent/consul/fsm)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [command/flags](../command/flags)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+- [snapshot](../snapshot)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/snapshot/decode/snapshot_decode.go> a code:Module ;
+    code:name "command/snapshot/decode/snapshot_decode.go" ;
+    code:description "Snapshot Decode module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/consul/fsm" ;
+        code:path "../agent/consul/fsm"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ], [
+        code:name "snapshot" ;
+        code:path "../snapshot"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package decode
 
 import (

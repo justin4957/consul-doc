@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/reference.go
+Reference module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+IDFromReference, Reference, ReferenceFromReferenceOrID, ReferenceOrID, ReplaceType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/reference.go> a code:Module ;
+    code:name "internal/resource/reference.go" ;
+    code:description "Reference module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :IDFromReference, :Reference, :ReferenceFromReferenceOrID, :ReferenceOrID, :ReplaceType ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import "github.com/hashicorp/consul/proto-public/pbresource"

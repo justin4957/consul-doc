@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/setup.go
+Setup module for agent layer
+
+## Linked Modules
+- [agent/auto-config](../agent/auto-config)
+- [agent/cache](../agent/cache)
+- [agent/config](../agent/config)
+- [agent/consul](../agent/consul)
+- [agent/consul/fsm](../agent/consul/fsm)
+- [agent/consul/rate](../agent/consul/rate)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/consul/usagemetrics](../agent/consul/usagemetrics)
+- [agent/consul/xdscapacity](../agent/consul/xdscapacity)
+- [agent/grpc-external/limiter](../agent/grpc-external/limiter)
+
+## Tags
+agent
+
+## Exports
+BaseDeps, ConfigLoader, LazyNetRPC, NetRPC, NewBaseDeps
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/setup.go> a code:Module ;
+    code:name "agent/setup.go" ;
+    code:description "Setup module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/auto-config" ;
+        code:path "../agent/auto-config"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/consul/fsm" ;
+        code:path "../agent/consul/fsm"
+    ], [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/consul/usagemetrics" ;
+        code:path "../agent/consul/usagemetrics"
+    ], [
+        code:name "agent/consul/xdscapacity" ;
+        code:path "../agent/consul/xdscapacity"
+    ], [
+        code:name "agent/grpc-external/limiter" ;
+        code:path "../agent/grpc-external/limiter"
+    ] ;
+    code:exports :BaseDeps, :ConfigLoader, :LazyNetRPC, :NetRPC, :NewBaseDeps ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

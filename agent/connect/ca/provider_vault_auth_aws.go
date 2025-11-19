@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/ca/provider_vault_auth_aws.go
+Provider Vault Auth Aws module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, authentication, mtls, security, service-mesh
+
+## Exports
+AWSLoginDataGenerator, NewAWSAuthClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/ca/provider_vault_auth_aws.go> a code:Module ;
+    code:name "agent/connect/ca/provider_vault_auth_aws.go" ;
+    code:description "Provider Vault Auth Aws module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :AWSLoginDataGenerator, :NewAWSAuthClient ;
+    code:tags "agent", "authentication", "mtls", "security", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package ca
 
 import (

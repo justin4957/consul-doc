@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/inmem/store.go
+Store module for internal layer
+
+## Linked Modules
+- [agent/consul/stream](../agent/consul/stream)
+- [internal/storage](../internal/storage)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+NewStore, Store
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/inmem/store.go> a code:Module ;
+    code:name "internal/storage/inmem/store.go" ;
+    code:description "Store module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :NewStore, :Store ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package inmem
 
 import (

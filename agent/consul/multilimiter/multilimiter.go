@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/multilimiter/multilimiter.go
+Multilimiter module for agent layer
+
+## Tags
+agent
+
+## Exports
+Config, Key, KeyType, LimitedEntity, Limiter, LimiterConfig, MultiLimiter, NewMultiLimiter, RateLimiter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/multilimiter/multilimiter.go> a code:Module ;
+    code:name "agent/consul/multilimiter/multilimiter.go" ;
+    code:description "Multilimiter module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Config, :Key, :KeyType, :LimitedEntity, :Limiter, :LimiterConfig, :MultiLimiter, :NewMultiLimiter, :RateLimiter ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package multilimiter
 
 import (

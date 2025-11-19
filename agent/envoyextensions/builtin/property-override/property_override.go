@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/envoyextensions/builtin/property-override/property_override.go
+Property Override module for agent layer
+
+## Linked Modules
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+- [lib/decode](../lib/decode)
+
+## Tags
+agent
+
+## Exports
+Constructor, Op, Ops, Patch, ResourceFilter, ResourceType, ResourceTypes, ServiceName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/envoyextensions/builtin/property-override/property_override.go> a code:Module ;
+    code:name "agent/envoyextensions/builtin/property-override/property_override.go" ;
+    code:description "Property Override module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ], [
+        code:name "lib/decode" ;
+        code:path "../lib/decode"
+    ] ;
+    code:exports :Constructor, :Op, :Ops, :Patch, :ResourceFilter, :ResourceType, :ResourceTypes, :ServiceName ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package propertyoverride
 
 import (

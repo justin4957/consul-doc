@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/config/delete/config_delete.go
+Config Delete module for cli layer
+
+## Linked Modules
+- [command/flags](../command/flags)
+- [command/helpers](../command/helpers)
+
+## Tags
+cli, configuration, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/config/delete/config_delete.go> a code:Module ;
+    code:name "command/config/delete/config_delete.go" ;
+    code:description "Config Delete module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/helpers" ;
+        code:path "../command/helpers"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "configuration", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package delete
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/testing.go
+Testing module for agent layer
+
+## Tags
+agent, data-model, types
+
+## Exports
+TestMsgpackEncodeDecode, TestingOldPre1dot7MsgpackHandle
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/testing.go> a code:Module ;
+    code:name "agent/structs/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :TestMsgpackEncodeDecode, :TestingOldPre1dot7MsgpackHandle ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

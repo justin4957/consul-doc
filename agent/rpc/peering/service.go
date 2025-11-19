@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/rpc/peering/service.go
+Service module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/blockingquery](../agent/blockingquery)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/grpc-external/services/peerstream](../agent/grpc-external/services/peerstream)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+- [lib/retry](../lib/retry)
+
+## Tags
+agent, communication, networking
+
+## Exports
+Backend, Config, NewServer, Server, Store
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/rpc/peering/service.go> a code:Module ;
+    code:name "agent/rpc/peering/service.go" ;
+    code:description "Service module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/blockingquery" ;
+        code:path "../agent/blockingquery"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/grpc-external/services/peerstream" ;
+        code:path "../agent/grpc-external/services/peerstream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :Backend, :Config, :NewServer, :Server, :Store ;
+    code:tags "agent", "communication", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package peering
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/testlog.go
+Testlog module for internal layer
+
+## Tags
+internal
+
+## Exports
+Logger, LoggerWithOutput, NewLogBuffer, TestLogLevel, TestLogLevelWithDefault
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/testlog.go> a code:Module ;
+    code:name "sdk/testutil/testlog.go" ;
+    code:description "Testlog module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Logger, :LoggerWithOutput, :NewLogBuffer, :TestLogLevel, :TestLogLevelWithDefault ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutil
 
 import (

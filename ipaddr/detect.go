@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: ipaddr/detect.go
+Detect module for internal layer
+
+## Tags
+internal
+
+## Exports
+GetPrivateIPv4, GetPublicIPv6
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<ipaddr/detect.go> a code:Module ;
+    code:name "ipaddr/detect.go" ;
+    code:description "Detect module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :GetPrivateIPv4, :GetPublicIPv6 ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package ipaddr
 
 import (

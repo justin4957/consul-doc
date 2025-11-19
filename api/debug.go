@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/debug.go
+Debug module for api layer
+
+## Tags
+api, client
+
+## Exports
+Debug
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/debug.go> a code:Module ;
+    code:name "api/debug.go" ;
+    code:description "Debug module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Debug ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/runner/exec.go
+Exec module for internal layer
+
+## Tags
+internal
+
+## Exports
+ExecError, Load, Runner
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/runner/exec.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/runner/exec.go" ;
+    code:description "Exec module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ExecError, :Load, :Runner ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package runner
 
 import (

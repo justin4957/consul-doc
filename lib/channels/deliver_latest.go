@@ -1,5 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
+
+/*
+# Module: lib/channels/deliver_latest.go
+Deliver Latest module for internal layer
+
+## Tags
+internal
+
+## Exports
+DeliverLatest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/channels/deliver_latest.go> a code:Module ;
+    code:name "lib/channels/deliver_latest.go" ;
+    code:description "Deliver Latest module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DeliverLatest ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package channels
 
 import "fmt"

@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/peering_backend.go
+Peering Backend module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/connect](../agent/connect)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/grpc-external/services/peerstream](../agent/grpc-external/services/peerstream)
+- [agent/rpc/peering](../agent/rpc/peering)
+- [agent/structs](../agent/structs)
+- [ipaddr](../ipaddr)
+- [lib](../lib)
+
+## Tags
+agent
+
+## Exports
+NewPeeringBackend, PeeringBackend
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/peering_backend.go> a code:Module ;
+    code:name "agent/consul/peering_backend.go" ;
+    code:description "Peering Backend module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/grpc-external/services/peerstream" ;
+        code:path "../agent/grpc-external/services/peerstream"
+    ], [
+        code:name "agent/rpc/peering" ;
+        code:path "../agent/rpc/peering"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :NewPeeringBackend, :PeeringBackend ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

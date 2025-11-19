@@ -3,6 +3,34 @@
 
 //go:build !consulent
 
+/*
+# Module: proto/private/pbcommon/common_ce.go
+Common Ce module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+internal
+
+## Exports
+DefaultEnterpriseMeta, EnterpriseMetaFromStructs, EnterpriseMetaToStructs, NewEnterpriseMetaFromStructs
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbcommon/common_ce.go> a code:Module ;
+    code:name "proto/private/pbcommon/common_ce.go" ;
+    code:description "Common Ce module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :DefaultEnterpriseMeta, :EnterpriseMetaFromStructs, :EnterpriseMetaToStructs, :NewEnterpriseMetaFromStructs ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbcommon
 
 import "github.com/hashicorp/consul/acl"

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: version/version.go
+Version module for internal layer
+
+## Tags
+internal
+
+## Exports
+BuildInfo, GetBuildInfo, GetHumanVersion, IsEnterprise
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<version/version.go> a code:Module ;
+    code:name "version/version.go" ;
+    code:description "Version module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :BuildInfo, :GetBuildInfo, :GetHumanVersion, :IsEnterprise ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package version
 
 import (

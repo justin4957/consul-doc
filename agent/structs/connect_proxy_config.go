@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/connect_proxy_config.go
+Connect Proxy Config module for agent layer
+
+## Linked Modules
+- [api](../api)
+- [lib](../lib)
+
+## Tags
+agent, configuration, data-model, mtls, networking, service-mesh, types
+
+## Exports
+AccessLogsConfig, ConnectProxyConfig, ExposeConfig, ExposePath, LogSinkType, MeshGatewayConfig, MeshGatewayMode, ProxyMode, TransparentProxyConfig, Upstream, UpstreamFromAPI, UpstreamKey, Upstreams, UpstreamsFromAPI, ValidateMeshGatewayMode, ValidateProxyMode
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/connect_proxy_config.go> a code:Module ;
+    code:name "agent/structs/connect_proxy_config.go" ;
+    code:description "Connect Proxy Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :AccessLogsConfig, :ConnectProxyConfig, :ExposeConfig, :ExposePath, :LogSinkType, :MeshGatewayConfig, :MeshGatewayMode, :ProxyMode, :TransparentProxyConfig, :Upstream, :UpstreamFromAPI, :UpstreamKey, :Upstreams, :UpstreamsFromAPI, :ValidateMeshGatewayMode, :ValidateProxyMode ;
+    code:tags "agent", "configuration", "data-model", "mtls", "networking", "service-mesh", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

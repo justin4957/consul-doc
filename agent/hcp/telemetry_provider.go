@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/telemetry_provider.go
+Telemetry Provider module for agent layer
+
+## Linked Modules
+- [agent/hcp/client](../agent/hcp/client)
+- [agent/hcp/config](../agent/hcp/config)
+- [agent/hcp/telemetry](../agent/hcp/telemetry)
+- [version](../version)
+
+## Tags
+agent
+
+## Exports
+HCPProviderCfg, NewHCPProvider, TelemetryProvider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/telemetry_provider.go> a code:Module ;
+    code:name "agent/hcp/telemetry_provider.go" ;
+    code:description "Telemetry Provider module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/client" ;
+        code:path "../agent/hcp/client"
+    ], [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ], [
+        code:name "agent/hcp/telemetry" ;
+        code:path "../agent/hcp/telemetry"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :HCPProviderCfg, :NewHCPProvider, :TelemetryProvider ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package hcp
 
 import (

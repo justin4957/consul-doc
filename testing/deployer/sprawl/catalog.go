@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/catalog.go
+Catalog module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [testing/deployer/topology](../testing/deployer/topology)
+- [testing/deployer/util](../testing/deployer/util)
+
+## Tags
+discovery, internal, registry
+
+## Exports
+Resource
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/catalog.go> a code:Module ;
+    code:name "testing/deployer/sprawl/catalog.go" ;
+    code:description "Catalog module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ], [
+        code:name "testing/deployer/util" ;
+        code:path "../testing/deployer/util"
+    ] ;
+    code:exports :Resource ;
+    code:tags "discovery", "internal", "registry" .
+<!-- End LinkedDoc RDF -->
+*/
 package sprawl
 
 import (

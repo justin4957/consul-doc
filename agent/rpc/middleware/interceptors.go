@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/rpc/middleware/interceptors.go
+Interceptors module for agent layer
+
+## Linked Modules
+- [agent/consul/rate](../agent/consul/rate)
+
+## Tags
+agent, communication, networking
+
+## Exports
+ChainedRPCPreBodyInterceptor, GetNetRPCInterceptor, GetNetRPCRateLimitingInterceptor, NewRequestRecorder, OneTwelveRPCSummary, RPCTypeInternal, RPCTypeNetRPC, RequestRecorder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/rpc/middleware/interceptors.go> a code:Module ;
+    code:name "agent/rpc/middleware/interceptors.go" ;
+    code:description "Interceptors module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ] ;
+    code:exports :ChainedRPCPreBodyInterceptor, :GetNetRPCInterceptor, :GetNetRPCRateLimitingInterceptor, :NewRequestRecorder, :OneTwelveRPCSummary, :RPCTypeInternal, :RPCTypeNetRPC, :RequestRecorder ;
+    code:tags "agent", "communication", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package middleware
 
 import (

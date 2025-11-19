@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/session_endpoint.go
+Session Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+## Exports
+Session, SessionEndpointSummaries
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/session_endpoint.go> a code:Module ;
+    code:name "agent/consul/session_endpoint.go" ;
+    code:description "Session Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :Session, :SessionEndpointSummaries ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

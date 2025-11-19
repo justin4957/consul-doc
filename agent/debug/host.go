@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/debug/host.go
+Host module for agent layer
+
+## Tags
+agent
+
+## Exports
+CollectHostInfo, HostInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/debug/host.go> a code:Module ;
+    code:name "agent/debug/host.go" ;
+    code:description "Host module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :CollectHostInfo, :HostInfo ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package debug
 
 import (

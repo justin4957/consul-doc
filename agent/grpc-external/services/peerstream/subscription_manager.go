@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/peerstream/subscription_manager.go
+Subscription Manager module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache](../agent/cache)
+- [agent/connect](../agent/connect)
+- [agent/consul/autopilotevents](../agent/consul/autopilotevents)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/structs](../agent/structs)
+- [agent/submatview](../agent/submatview)
+- [api](../api)
+- [ipaddr](../ipaddr)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+MaterializedViewStore, SubscriptionBackend
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/peerstream/subscription_manager.go> a code:Module ;
+    code:name "agent/grpc-external/services/peerstream/subscription_manager.go" ;
+    code:description "Subscription Manager module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/autopilotevents" ;
+        code:path "../agent/consul/autopilotevents"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/submatview" ;
+        code:path "../agent/submatview"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ] ;
+    code:exports :MaterializedViewStore, :SubscriptionBackend ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package peerstream
 
 import (

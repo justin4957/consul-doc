@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: private/pboperator/operator.proto
 
+/*
+# Module: proto/private/pboperator/operator.pb.go
+Operator.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+internal
+
+## Exports
+File, TransferLeaderRequest, TransferLeaderResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pboperator/operator.pb.go> a code:Module ;
+    code:name "proto/private/pboperator/operator.pb.go" ;
+    code:description "Operator.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:exports :File, :TransferLeaderRequest, :TransferLeaderResponse ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pboperator
 
 import (

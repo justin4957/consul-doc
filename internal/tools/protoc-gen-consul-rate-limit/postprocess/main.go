@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/tools/protoc-gen-consul-rate-limit/postprocess/main.go
+Main module for internal layer
+
+## Linked Modules
+- [agent/consul/rate](../agent/consul/rate)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/protoc-gen-consul-rate-limit/postprocess/main.go> a code:Module ;
+    code:name "internal/tools/protoc-gen-consul-rate-limit/postprocess/main.go" ;
+    code:description "Main module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

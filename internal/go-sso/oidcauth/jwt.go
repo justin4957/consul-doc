@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/go-sso/oidcauth/jwt.go
+Jwt module for internal layer
+
+## Tags
+authentication, internal, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/go-sso/oidcauth/jwt.go> a code:Module ;
+    code:name "internal/go-sso/oidcauth/jwt.go" ;
+    code:description "Jwt module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "authentication", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package oidcauth
 
 import (

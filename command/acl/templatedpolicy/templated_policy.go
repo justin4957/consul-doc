@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/templatedpolicy/templated_policy.go
+Templated Policy module for cli layer
+
+## Linked Modules
+- [command/flags](../command/flags)
+
+## Tags
+access-control, authorization, cli, security, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/templatedpolicy/templated_policy.go> a code:Module ;
+    code:name "command/acl/templatedpolicy/templated_policy.go" ;
+    code:description "Templated Policy module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "access-control", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package templatedpolicy
 
 import (

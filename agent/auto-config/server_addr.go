@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/auto-config/server_addr.go
+Server Addr module for agent layer
+
+## Linked Modules
+- [lib](../lib)
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/auto-config/server_addr.go> a code:Module ;
+    code:name "agent/auto-config/server_addr.go" ;
+    code:description "Server Addr module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package autoconf
 
 import (

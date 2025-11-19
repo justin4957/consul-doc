@@ -3,6 +3,42 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/dns_ce.go
+Dns Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/config](../agent/config)
+- [agent/dns](../agent/dns)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, discovery, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/dns_ce.go> a code:Module ;
+    code:name "agent/dns_ce.go" ;
+    code:description "Dns Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/dns" ;
+        code:path "../agent/dns"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "agent", "discovery", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

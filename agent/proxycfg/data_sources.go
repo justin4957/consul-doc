@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/data_sources.go
+Data Sources module for agent layer
+
+## Linked Modules
+- [agent/cache-types](../agent/cache-types)
+- [agent/leafcert](../agent/leafcert)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+CARoots, CompiledDiscoveryChain, ConfigEntry, ConfigEntryList, DataSources, Datacenters, ExportedPeeredServices, FederationStateListMeshGateways, GatewayServices, HTTPChecks, Health, IntentionUpstreams, Intentions, InternalServiceDump, IsTerminalError, LeafCertificate, PeeredUpstreams, PeeringList, PreparedQuery, ResolvedServiceConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/data_sources.go> a code:Module ;
+    code:name "agent/proxycfg/data_sources.go" ;
+    code:description "Data Sources module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/leafcert" ;
+        code:path "../agent/leafcert"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :CARoots, :CompiledDiscoveryChain, :ConfigEntry, :ConfigEntryList, :DataSources, :Datacenters, :ExportedPeeredServices, :FederationStateListMeshGateways, :GatewayServices, :HTTPChecks, :Health, :IntentionUpstreams, :Intentions, :InternalServiceDump, :IsTerminalError, :LeafCertificate, :PeeredUpstreams, :PeeringList, :PreparedQuery, :ResolvedServiceConfig ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

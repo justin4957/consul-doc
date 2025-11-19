@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_discoverychain.go
+Config Entry Discoverychain module for api layer
+
+## Tags
+api, client, configuration, discovery, dns
+
+## Exports
+CookieConfig, HTTPHeaderModifiers, HashPolicy, LeastRequestConfig, LoadBalancer, RingHashConfig, ServiceResolverConfigEntry, ServiceResolverFailover, ServiceResolverFailoverPolicy, ServiceResolverFailoverTarget, ServiceResolverPrioritizeByLocality, ServiceResolverRedirect, ServiceResolverSubset, ServiceRoute, ServiceRouteDestination, ServiceRouteHTTPMatch, ServiceRouteHTTPMatchHeader, ServiceRouteHTTPMatchQueryParam, ServiceRouteMatch, ServiceRouterConfigEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_discoverychain.go> a code:Module ;
+    code:name "api/config_entry_discoverychain.go" ;
+    code:description "Config Entry Discoverychain module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :CookieConfig, :HTTPHeaderModifiers, :HashPolicy, :LeastRequestConfig, :LoadBalancer, :RingHashConfig, :ServiceResolverConfigEntry, :ServiceResolverFailover, :ServiceResolverFailoverPolicy, :ServiceResolverFailoverTarget, :ServiceResolverPrioritizeByLocality, :ServiceResolverRedirect, :ServiceResolverSubset, :ServiceRoute, :ServiceRouteDestination, :ServiceRouteHTTPMatch, :ServiceRouteHTTPMatchHeader, :ServiceRouteHTTPMatchQueryParam, :ServiceRouteMatch, :ServiceRouterConfigEntry ;
+    code:tags "api", "client", "configuration", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

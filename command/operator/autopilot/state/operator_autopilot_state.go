@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/operator/autopilot/state/operator_autopilot_state.go
+Operator Autopilot State module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, persistence, storage, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/operator/autopilot/state/operator_autopilot_state.go> a code:Module ;
+    code:name "command/operator/autopilot/state/operator_autopilot_state.go" ;
+    code:description "Operator Autopilot State module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "persistence", "storage", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

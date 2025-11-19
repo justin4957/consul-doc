@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: pbacl/acl.proto
 
+/*
+# Module: proto-public/pbacl/acl.pb.go
+Acl.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+access-control, authorization, internal, security
+
+## Exports
+File, LoginRequest, LoginResponse, LoginToken, LogoutRequest, LogoutResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbacl/acl.pb.go> a code:Module ;
+    code:name "proto-public/pbacl/acl.pb.go" ;
+    code:description "Acl.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:exports :File, :LoginRequest, :LoginResponse, :LoginToken, :LogoutRequest, :LogoutResponse ;
+    code:tags "access-control", "authorization", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbacl
 
 import (

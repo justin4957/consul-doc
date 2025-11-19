@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/tenancy.go
+Tenancy module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+DefaultClusteredTenancy, DefaultIDTenancy, DefaultNamespacedTenancy, DefaultPartitionedTenancy, DefaultReferenceTenancy, Scope, TenancyBridge
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/tenancy.go> a code:Module ;
+    code:name "internal/resource/tenancy.go" ;
+    code:description "Tenancy module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :DefaultClusteredTenancy, :DefaultIDTenancy, :DefaultNamespacedTenancy, :DefaultPartitionedTenancy, :DefaultReferenceTenancy, :Scope, :TenancyBridge ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

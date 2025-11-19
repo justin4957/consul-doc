@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache/request.go
+Request module for agent layer
+
+## Linked Modules
+- [agent/cacheshim](../agent/cacheshim)
+
+## Tags
+agent
+
+## Exports
+Request, RequestInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache/request.go> a code:Module ;
+    code:name "agent/cache/request.go" ;
+    code:description "Request module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cacheshim" ;
+        code:path "../agent/cacheshim"
+    ] ;
+    code:exports :Request, :RequestInfo ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/hoststats/collector.go
+Collector module for internal layer
+
+## Tags
+internal
+
+## Exports
+Collector, CollectorOption, NewCollector, WithBaseLabels, WithMetrics
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/hoststats/collector.go> a code:Module ;
+    code:name "lib/hoststats/collector.go" ;
+    code:description "Collector module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Collector, :CollectorOption, :NewCollector, :WithBaseLabels, :WithMetrics ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package hoststats
 
 import (

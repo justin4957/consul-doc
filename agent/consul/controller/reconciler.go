@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/controller/reconciler.go
+Reconciler module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent
+
+## Exports
+Reconciler, Request, RequeueAfter, RequeueAfterError, RequeueNow
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/controller/reconciler.go> a code:Module ;
+    code:name "agent/consul/controller/reconciler.go" ;
+    code:description "Reconciler module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :Reconciler, :Request, :RequeueAfter, :RequeueAfterError, :RequeueNow ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 import (

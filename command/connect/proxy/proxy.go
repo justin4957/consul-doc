@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/proxy/proxy.go
+Proxy module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+- [connect/proxy](../connect/proxy)
+- [logging](../logging)
+
+## Tags
+cli, mtls, networking, service-mesh, user-interface
+
+## Exports
+LookupGatewayProxy, LookupServiceForSidecar, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/proxy/proxy.go> a code:Module ;
+    code:name "command/connect/proxy/proxy.go" ;
+    code:description "Proxy module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "connect/proxy" ;
+        code:path "../connect/proxy"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :LookupGatewayProxy, :LookupServiceForSidecar, :New ;
+    code:tags "cli", "mtls", "networking", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

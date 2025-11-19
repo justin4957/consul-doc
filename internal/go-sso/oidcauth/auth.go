@@ -8,6 +8,28 @@
 // NOTE: This was roughly forked from hashicorp/vault-plugin-auth-jwt
 // originally at commit 825c85535e3832d254a74253a8e9ae105357778b with later
 // backports of behavior in 0e93b06cecb0477d6ee004e44b04832d110096cf
+
+/*
+# Module: internal/go-sso/oidcauth/auth.go
+Auth module for internal layer
+
+## Tags
+authentication, internal, security
+
+## Exports
+Authenticator, Claims, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/go-sso/oidcauth/auth.go> a code:Module ;
+    code:name "internal/go-sso/oidcauth/auth.go" ;
+    code:description "Auth module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Authenticator, :Claims, :New ;
+    code:tags "authentication", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package oidcauth
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/gossip/librtt/rtt.go
+Rtt module for internal layer
+
+## Tags
+internal
+
+## Exports
+ComputeDistance, CoordinateSet, GenerateCoordinate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/gossip/librtt/rtt.go> a code:Module ;
+    code:name "internal/gossip/librtt/rtt.go" ;
+    code:description "Rtt module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ComputeDistance, :CoordinateSet, :GenerateCoordinate ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package librtt
 
 import (

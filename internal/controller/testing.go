@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/testing.go
+Testing module for internal layer
+
+## Linked Modules
+- [internal/controller/cache](../internal/controller/cache)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+NewTestController, TestController
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/testing.go> a code:Module ;
+    code:name "internal/controller/testing.go" ;
+    code:description "Testing module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller/cache" ;
+        code:path "../internal/controller/cache"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :NewTestController, :TestController ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 import (

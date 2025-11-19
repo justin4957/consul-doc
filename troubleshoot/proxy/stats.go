@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/proxy/stats.go
+Stats module for internal layer
+
+## Linked Modules
+- [troubleshoot/validate](../troubleshoot/validate)
+
+## Tags
+internal, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/proxy/stats.go> a code:Module ;
+    code:name "troubleshoot/proxy/stats.go" ;
+    code:description "Stats module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "troubleshoot/validate" ;
+        code:path "../troubleshoot/validate"
+    ] ;
+    code:tags "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package troubleshoot
 
 import (

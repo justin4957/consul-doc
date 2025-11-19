@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/intentions_endpoint.go
+Intentions Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache-types](../agent/cache-types)
+- [agent/consul](../agent/consul)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/intentions_endpoint.go> a code:Module ;
+    code:name "agent/intentions_endpoint.go" ;
+    code:description "Intentions Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

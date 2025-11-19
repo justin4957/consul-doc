@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/prototest/testing.go
+Testing module for internal layer
+
+## Tags
+internal
+
+## Exports
+AssertContainsElement, AssertDeepEqual, AssertElementsMatch, TestingT
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/prototest/testing.go> a code:Module ;
+    code:name "proto/private/prototest/testing.go" ;
+    code:description "Testing module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :AssertContainsElement, :AssertDeepEqual, :AssertElementsMatch, :TestingT ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package prototest
 
 import (

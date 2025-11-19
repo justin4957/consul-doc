@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/file/atomic.go
+Atomic module for internal layer
+
+## Tags
+internal
+
+## Exports
+WriteAtomic, WriteAtomicWithPerms
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/file/atomic.go> a code:Module ;
+    code:name "lib/file/atomic.go" ;
+    code:description "Atomic module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :WriteAtomic, :WriteAtomicWithPerms ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package file
 
 import (

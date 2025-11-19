@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/policy_merger.go
+Policy Merger module for acl layer
+
+## Tags
+access-control, acl, authorization, security
+
+## Exports
+MergePolicies, PolicyMerger
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/policy_merger.go> a code:Module ;
+    code:name "acl/policy_merger.go" ;
+    code:description "Policy Merger module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :MergePolicies, :PolicyMerger ;
+    code:tags "access-control", "acl", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 type policyRulesMergeContext struct {

@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg-sources/catalog/config_source.go
+Config Source module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/configentry](../agent/configentry)
+- [agent/grpc-external/limiter](../agent/grpc-external/limiter)
+- [agent/local](../agent/local)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, configuration, discovery, networking, registry, service-mesh
+
+## Exports
+Config, ConfigManager, ConfigSource, NewConfigSource, SessionLimiter, Store, Watcher
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg-sources/catalog/config_source.go> a code:Module ;
+    code:name "agent/proxycfg-sources/catalog/config_source.go" ;
+    code:description "Config Source module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/grpc-external/limiter" ;
+        code:path "../agent/grpc-external/limiter"
+    ], [
+        code:name "agent/local" ;
+        code:path "../agent/local"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :Config, :ConfigManager, :ConfigSource, :NewConfigSource, :SessionLimiter, :Store, :Watcher ;
+    code:tags "agent", "configuration", "discovery", "networking", "registry", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package catalog
 
 import (

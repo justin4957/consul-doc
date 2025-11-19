@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test-integ/topoutil/asserter.go
+Asserter module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [sdk/testutil](../sdk/testutil)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+- [test/integration/consul-container/libs/assert](../test/integration/consul-container/libs/assert)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+Asserter, AuditEntry, Auth, NewAsserter, Payload, Request, Response, SprawlLite
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test-integ/topoutil/asserter.go> a code:Module ;
+    code:name "test-integ/topoutil/asserter.go" ;
+    code:description "Asserter module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ], [
+        code:name "test/integration/consul-container/libs/assert" ;
+        code:path "../test/integration/consul-container/libs/assert"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :Asserter, :AuditEntry, :Auth, :NewAsserter, :Payload, :Request, :Response, :SprawlLite ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topoutil
 
 import (

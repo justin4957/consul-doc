@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/watch/funcs.go
+Funcs module for api layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+api, client
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/watch/funcs.go> a code:Module ;
+    code:name "api/watch/funcs.go" ;
+    code:description "Funcs module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package watch
 
 import (

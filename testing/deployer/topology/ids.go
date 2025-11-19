@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/topology/ids.go
+Ids module for internal layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+internal
+
+## Exports
+DefaultToEmpty, ID, NamespaceOrDefault, NewID, NewNodeID, NodeID, PartitionOrDefault, PartitionQueryOptions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/topology/ids.go> a code:Module ;
+    code:name "testing/deployer/topology/ids.go" ;
+    code:description "Ids module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :DefaultToEmpty, :ID, :NamespaceOrDefault, :NewID, :NewNodeID, :NodeID, :PartitionOrDefault, :PartitionQueryOptions ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topology
 
 import (

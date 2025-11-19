@@ -76,4 +76,21 @@
 // | FieldMask              | String        |         | Each string of the FieldMask will be joined with a '.'                          |
 //
 
+/*
+# Module: internal/protohcl/doc.go
+Doc module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/protohcl/doc.go> a code:Module ;
+    code:name "internal/protohcl/doc.go" ;
+    code:description "Doc module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package protohcl

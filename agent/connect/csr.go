@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/csr.go
+Csr module for agent layer
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+CreateCACSR, CreateCAExtension, CreateCSR, InvalidCSRError, IsInvalidCSRError, SigAlgoForKey, SigAlgoForKeyType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/csr.go> a code:Module ;
+    code:name "agent/connect/csr.go" ;
+    code:description "Csr module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :CreateCACSR, :CreateCAExtension, :CreateCSR, :InvalidCSRError, :IsInvalidCSRError, :SigAlgoForKey, :SigAlgoForKeyType ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

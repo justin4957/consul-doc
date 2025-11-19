@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/rbac.go
+Rbac module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+- [agent/xds/response](../agent/xds/response)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+JWTInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/rbac.go> a code:Module ;
+    code:name "agent/xds/rbac.go" ;
+    code:description "Rbac module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds/response" ;
+        code:path "../agent/xds/response"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :JWTInfo ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

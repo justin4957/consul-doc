@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/service/examples.go
+Examples module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [test/integration/consul-container/libs/cluster](../test/integration/consul-container/libs/cluster)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+NewCustomService, NewExampleService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/service/examples.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/service/examples.go" ;
+    code:description "Examples module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "test/integration/consul-container/libs/cluster" ;
+        code:path "../test/integration/consul-container/libs/cluster"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :NewCustomService, :NewExampleService ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package service
 
 import (

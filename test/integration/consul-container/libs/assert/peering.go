@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/assert/peering.go
+Peering module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+internal
+
+## Exports
+PeeringExports, PeeringExportsOpts, PeeringStatus, PeeringStatusOpts
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/assert/peering.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/assert/peering.go" ;
+    code:description "Peering module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :PeeringExports, :PeeringExportsOpts, :PeeringStatus, :PeeringStatusOpts ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package assert
 
 import (

@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/peering.go
+Peering module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/configentry](../agent/configentry)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+- [lib/maps](../lib/maps)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, persistence, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/peering.go> a code:Module ;
+    code:name "agent/consul/state/peering.go" ;
+    code:description "Peering module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/maps" ;
+        code:path "../lib/maps"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

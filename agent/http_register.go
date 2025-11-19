@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/http_register.go
+Http Register module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/http_register.go> a code:Module ;
+    code:name "agent/http_register.go" ;
+    code:description "Http Register module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 func init() {

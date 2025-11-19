@@ -10,6 +10,27 @@
 // This package contains types used by the Raft storage backend that lives in
 // the internal/storage/raft Go package.
 
+/*
+# Module: proto/private/pbstorage/raft_grpc.pb.go
+Raft Grpc.Pb module for internal layer
+
+## Tags
+api, communication, consensus, grpc, internal, networking, replication
+
+## Exports
+ForwardingService, ForwardingServiceClient, ForwardingServiceServer, NewForwardingServiceClient, RegisterForwardingServiceServer, UnimplementedForwardingServiceServer, UnsafeForwardingServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbstorage/raft_grpc.pb.go> a code:Module ;
+    code:name "proto/private/pbstorage/raft_grpc.pb.go" ;
+    code:description "Raft Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ForwardingService, :ForwardingServiceClient, :ForwardingServiceServer, :NewForwardingServiceClient, :RegisterForwardingServiceServer, :UnimplementedForwardingServiceServer, :UnsafeForwardingServiceServer ;
+    code:tags "api", "communication", "consensus", "grpc", "internal", "networking", "replication" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbstorage
 
 import (

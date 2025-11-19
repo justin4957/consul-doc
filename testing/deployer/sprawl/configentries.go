@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/configentries.go
+Configentries module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+configuration, internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/configentries.go> a code:Module ;
+    code:name "testing/deployer/sprawl/configentries.go" ;
+    code:description "Configentries module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:tags "configuration", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package sprawl
 
 import (

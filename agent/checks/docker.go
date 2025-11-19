@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/checks/docker.go
+Docker module for agent layer
+
+## Tags
+agent, health-checks, monitoring
+
+## Exports
+DockerClient, NewDockerClient, ParseHost
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/checks/docker.go> a code:Module ;
+    code:name "agent/checks/docker.go" ;
+    code:description "Docker module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :DockerClient, :NewDockerClient, :ParseHost ;
+    code:tags "agent", "health-checks", "monitoring" .
+<!-- End LinkedDoc RDF -->
+*/
 package checks
 
 import (

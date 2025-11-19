@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/pool/peek.go
+Peek module for agent layer
+
+## Tags
+agent
+
+## Exports
+PeekFirstByte, PeekForTLS
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/pool/peek.go> a code:Module ;
+    code:name "agent/pool/peek.go" ;
+    code:description "Peek module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :PeekFirstByte, :PeekForTLS ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package pool
 
 import (

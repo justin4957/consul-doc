@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/client/http_client.go
+Http Client module for agent layer
+
+## Tags
+agent
+
+## Exports
+NewHTTPClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/client/http_client.go> a code:Module ;
+    code:name "agent/hcp/client/http_client.go" ;
+    code:description "Http Client module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NewHTTPClient ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

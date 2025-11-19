@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/config/config.go
+Config module for agent layer
+
+## Linked Modules
+- [types](../types)
+
+## Tags
+agent, configuration
+
+## Exports
+CloudConfig, CloudConfigurer, Merge
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/config/config.go> a code:Module ;
+    code:name "agent/hcp/config/config.go" ;
+    code:description "Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :CloudConfig, :CloudConfigurer, :Merge ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

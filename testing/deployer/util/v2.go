@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/util/v2.go
+V2 module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+EqualType, IDToString, IsTypePartitionScoped, ReferenceToString, TenancyToString, ToGVK, TypeToString
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/util/v2.go> a code:Module ;
+    code:name "testing/deployer/util/v2.go" ;
+    code:description "V2 module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :EqualType, :IDToString, :IsTypePartitionScoped, :ReferenceToString, :TenancyToString, :ToGVK, :TypeToString ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package util
 
 import (

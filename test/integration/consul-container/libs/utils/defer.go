@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/utils/defer.go
+Defer module for internal layer
+
+## Tags
+internal
+
+## Exports
+ResettableDefer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/utils/defer.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/utils/defer.go" ;
+    code:description "Defer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :ResettableDefer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package utils
 
 // ResettableDefer is a way to capture a series of cleanup functions and

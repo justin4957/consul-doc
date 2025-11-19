@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_routes.go
+Config Entry Routes module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+HTTPFilters, HTTPHeaderFilter, HTTPHeaderMatch, HTTPHeaderMatchType, HTTPMatch, HTTPMatchMethod, HTTPPathMatch, HTTPPathMatchType, HTTPQueryMatch, HTTPQueryMatchType, HTTPResponseFilters, HTTPRouteConfigEntry, HTTPRouteRule, HTTPService, JWTFilter, RetryFilter, TCPRouteConfigEntry, TCPService, TimeoutFilter, URLRewrite
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_routes.go> a code:Module ;
+    code:name "api/config_entry_routes.go" ;
+    code:description "Config Entry Routes module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :HTTPFilters, :HTTPHeaderFilter, :HTTPHeaderMatch, :HTTPHeaderMatchType, :HTTPMatch, :HTTPMatchMethod, :HTTPPathMatch, :HTTPPathMatchType, :HTTPQueryMatch, :HTTPQueryMatchType, :HTTPResponseFilters, :HTTPRouteConfigEntry, :HTTPRouteRule, :HTTPService, :JWTFilter, :RetryFilter, :TCPRouteConfigEntry, :TCPService, :TimeoutFilter, :URLRewrite ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import "time"

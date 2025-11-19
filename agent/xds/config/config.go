@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/config/config.go
+Config module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [lib/decode](../lib/decode)
+
+## Tags
+agent, configuration, envoy, service-mesh
+
+## Exports
+GatewayConfig, ParseGatewayConfig, ParseProxyConfig, ParseXDSCommonConfig, ProxyConfig, ToOutlierDetection, XDSCommonConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/config/config.go> a code:Module ;
+    code:name "agent/xds/config/config.go" ;
+    code:description "Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/decode" ;
+        code:path "../lib/decode"
+    ] ;
+    code:exports :GatewayConfig, :ParseGatewayConfig, :ParseProxyConfig, :ParseXDSCommonConfig, :ProxyConfig, :ToOutlierDetection, :XDSCommonConfig ;
+    code:tags "agent", "configuration", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

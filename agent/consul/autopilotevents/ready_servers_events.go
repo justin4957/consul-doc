@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/autopilotevents/ready_servers_events.go
+Ready Servers Events module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/structs](../agent/structs)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+- [types](../types)
+
+## Tags
+agent
+
+## Exports
+Config, EventPayloadReadyServers, ExtractEventPayload, IsServerReady, NewReadyServersEventPublisher, Publisher, ReadyServerInfo, ReadyServersEventPublisher, StateStore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/autopilotevents/ready_servers_events.go> a code:Module ;
+    code:name "agent/consul/autopilotevents/ready_servers_events.go" ;
+    code:description "Ready Servers Events module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :Config, :EventPayloadReadyServers, :ExtractEventPayload, :IsServerReady, :NewReadyServersEventPublisher, :Publisher, :ReadyServerInfo, :ReadyServersEventPublisher, :StateStore ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package autopilotevents
 
 import (

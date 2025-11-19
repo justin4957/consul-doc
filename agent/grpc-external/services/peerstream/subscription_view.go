@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/peerstream/subscription_view.go
+Subscription View module for agent layer
+
+## Linked Modules
+- [acl/resolver](../acl/resolver)
+- [agent/cache](../agent/cache)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/structs](../agent/structs)
+- [agent/submatview](../agent/submatview)
+- [proto/private/pbservice](../proto/private/pbservice)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+Subscriber
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/peerstream/subscription_view.go> a code:Module ;
+    code:name "agent/grpc-external/services/peerstream/subscription_view.go" ;
+    code:description "Subscription View module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/submatview" ;
+        code:path "../agent/submatview"
+    ], [
+        code:name "proto/private/pbservice" ;
+        code:path "../proto/private/pbservice"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :Subscriber ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package peerstream
 
 import (

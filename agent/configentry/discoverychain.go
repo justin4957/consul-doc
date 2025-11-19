@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/configentry/discoverychain.go
+Discoverychain module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, configuration, discovery, dns
+
+## Exports
+DiscoveryChainSet, NewDiscoveryChainSet
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/configentry/discoverychain.go> a code:Module ;
+    code:name "agent/configentry/discoverychain.go" ;
+    code:description "Discoverychain module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :DiscoveryChainSet, :NewDiscoveryChainSet ;
+    code:tags "agent", "configuration", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package configentry
 
 import (

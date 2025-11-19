@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/connect_ca_root.go
+Connect Ca Root module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/cacheshim](../agent/cacheshim)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, mtls, service-mesh, types
+
+## Exports
+ConnectCARoot, ConnectCARootName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/connect_ca_root.go> a code:Module ;
+    code:name "agent/cache-types/connect_ca_root.go" ;
+    code:description "Connect Ca Root module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/cacheshim" ;
+        code:path "../agent/cacheshim"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ConnectCARoot, :ConnectCARootName ;
+    code:tags "agent", "data-model", "mtls", "service-mesh", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/prepared_query.go
+Prepared Query module for api layer
+
+## Tags
+api, client
+
+## Exports
+PreparedQuery, PreparedQueryDefinition, PreparedQueryExecuteResponse, QueryDNSOptions, QueryDatacenterOptions, QueryFailoverOptions, QueryFailoverTarget, QueryTemplate, ServiceQuery
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/prepared_query.go> a code:Module ;
+    code:name "api/prepared_query.go" ;
+    code:description "Prepared Query module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :PreparedQuery, :PreparedQueryDefinition, :PreparedQueryExecuteResponse, :QueryDNSOptions, :QueryDatacenterOptions, :QueryFailoverOptions, :QueryFailoverTarget, :QueryTemplate, :ServiceQuery ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // QueryFailoverOptions sets options about how we fail over if there are no

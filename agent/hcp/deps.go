@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/deps.go
+Deps module for agent layer
+
+## Linked Modules
+- [agent/hcp/client](../agent/hcp/client)
+- [agent/hcp/config](../agent/hcp/config)
+- [agent/hcp/scada](../agent/hcp/scada)
+- [agent/hcp/telemetry](../agent/hcp/telemetry)
+
+## Tags
+agent
+
+## Exports
+Deps, NewDeps
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/deps.go> a code:Module ;
+    code:name "agent/hcp/deps.go" ;
+    code:description "Deps module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/client" ;
+        code:path "../agent/hcp/client"
+    ], [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ], [
+        code:name "agent/hcp/scada" ;
+        code:path "../agent/hcp/scada"
+    ], [
+        code:name "agent/hcp/telemetry" ;
+        code:path "../agent/hcp/telemetry"
+    ] ;
+    code:exports :Deps, :NewDeps ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package hcp
 
 import (

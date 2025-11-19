@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/telemetry/gauge_store.go
+Gauge Store module for agent layer
+
+## Tags
+agent
+
+## Exports
+NewGaugeStore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/telemetry/gauge_store.go> a code:Module ;
+    code:name "agent/hcp/telemetry/gauge_store.go" ;
+    code:description "Gauge Store module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NewGaugeStore ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package telemetry
 
 import (

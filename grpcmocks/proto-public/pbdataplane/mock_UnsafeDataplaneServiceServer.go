@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbdataplane/mock_UnsafeDataplaneServiceServer.go
+Mock Unsafedataplaneserviceserver module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewUnsafeDataplaneServiceServer, UnsafeDataplaneServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbdataplane/mock_UnsafeDataplaneServiceServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbdataplane/mock_UnsafeDataplaneServiceServer.go" ;
+    code:description "Mock Unsafedataplaneserviceserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewUnsafeDataplaneServiceServer, :UnsafeDataplaneServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbdataplane
 
 import (

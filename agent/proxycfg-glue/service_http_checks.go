@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg-glue/service_http_checks.go
+Service Http Checks module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/cache-types](../agent/cache-types)
+- [agent/local](../agent/local)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, health-checks, monitoring, networking, service-mesh
+
+## Exports
+CacheHTTPChecks, ServerHTTPChecks
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg-glue/service_http_checks.go> a code:Module ;
+    code:name "agent/proxycfg-glue/service_http_checks.go" ;
+    code:description "Service Http Checks module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/local" ;
+        code:path "../agent/local"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :CacheHTTPChecks, :ServerHTTPChecks ;
+    code:tags "agent", "health-checks", "monitoring", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfgglue
 
 import (

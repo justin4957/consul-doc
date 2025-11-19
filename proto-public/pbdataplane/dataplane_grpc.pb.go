@@ -9,6 +9,27 @@
 // - protoc             (unknown)
 // source: pbdataplane/dataplane.proto
 
+/*
+# Module: proto-public/pbdataplane/dataplane_grpc.pb.go
+Dataplane Grpc.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+DataplaneService, DataplaneServiceClient, DataplaneServiceServer, NewDataplaneServiceClient, RegisterDataplaneServiceServer, UnimplementedDataplaneServiceServer, UnsafeDataplaneServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbdataplane/dataplane_grpc.pb.go> a code:Module ;
+    code:name "proto-public/pbdataplane/dataplane_grpc.pb.go" ;
+    code:description "Dataplane Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DataplaneService, :DataplaneServiceClient, :DataplaneServiceServer, :NewDataplaneServiceClient, :RegisterDataplaneServiceServer, :UnimplementedDataplaneServiceServer, :UnsafeDataplaneServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbdataplane
 
 import (

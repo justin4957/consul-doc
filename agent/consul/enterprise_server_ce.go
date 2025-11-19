@@ -3,6 +3,42 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/enterprise_server_ce.go
+Enterprise Server Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/pool](../agent/pool)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+## Exports
+EnterpriseServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/enterprise_server_ce.go> a code:Module ;
+    code:name "agent/consul/enterprise_server_ce.go" ;
+    code:description "Enterprise Server Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/pool" ;
+        code:path "../agent/pool"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :EnterpriseServer ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

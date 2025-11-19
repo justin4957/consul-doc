@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/mock/notify.go
+Notify module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+## Exports
+NewNotify, NewNotifyChan, Notify
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/mock/notify.go> a code:Module ;
+    code:name "agent/mock/notify.go" ;
+    code:description "Notify module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :NewNotify, :NewNotifyChan, :Notify ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package mock
 
 import (

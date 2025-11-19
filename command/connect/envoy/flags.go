@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/envoy/flags.go
+Flags module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, mtls, service-mesh, user-interface
+
+## Exports
+ServiceAddressMapValue, ServiceAddressValue
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/envoy/flags.go> a code:Module ;
+    code:name "command/connect/envoy/flags.go" ;
+    code:description "Flags module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :ServiceAddressMapValue, :ServiceAddressValue ;
+    code:tags "cli", "mtls", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package envoy
 
 import (

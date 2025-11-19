@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache/type.go
+Type module for agent layer
+
+## Tags
+agent
+
+## Exports
+FetchOptions, FetchResult, Type
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache/type.go> a code:Module ;
+    code:name "agent/cache/type.go" ;
+    code:description "Type module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :FetchOptions, :FetchResult, :Type ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

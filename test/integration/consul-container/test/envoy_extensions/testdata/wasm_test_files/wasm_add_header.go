@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/test/envoy_extensions/testdata/wasm_test_files/wasm_add_header.go
+Wasm Add Header module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/test/envoy_extensions/testdata/wasm_test_files/wasm_add_header.go> a code:Module ;
+    code:name "test/integration/consul-container/test/envoy_extensions/testdata/wasm_test_files/wasm_add_header.go" ;
+    code:description "Wasm Add Header module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

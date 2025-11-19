@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg-glue/config_entry.go
+Config Entry module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/cache-types](../agent/cache-types)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/rpcclient/configentry](../agent/rpcclient/configentry)
+- [agent/structs](../agent/structs)
+- [agent/submatview](../agent/submatview)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, configuration, networking, service-mesh
+
+## Exports
+CacheConfigEntry, CacheConfigEntryList, ServerConfigEntry, ServerConfigEntryList
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg-glue/config_entry.go> a code:Module ;
+    code:name "agent/proxycfg-glue/config_entry.go" ;
+    code:description "Config Entry module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/rpcclient/configentry" ;
+        code:path "../agent/rpcclient/configentry"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/submatview" ;
+        code:path "../agent/submatview"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :CacheConfigEntry, :CacheConfigEntryList, :ServerConfigEntry, :ServerConfigEntryList ;
+    code:tags "agent", "configuration", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfgglue
 
 import (

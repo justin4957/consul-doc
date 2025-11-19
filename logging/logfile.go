@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: logging/logfile.go
+Logfile module for internal layer
+
+## Tags
+internal
+
+## Exports
+LogFile
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/logfile.go> a code:Module ;
+    code:name "logging/logfile.go" ;
+    code:description "Logfile module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :LogFile ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

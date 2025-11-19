@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/topology/topology.go
+Topology module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+Address, Cluster, Config, Network, NetworkArea, NetworkSegment, Node, NodeKind, Partition, PeerCluster, Peering, Topology, Upstream, Workload
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/topology/topology.go> a code:Module ;
+    code:name "testing/deployer/topology/topology.go" ;
+    code:description "Topology module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Address, :Cluster, :Config, :Network, :NetworkArea, :NetworkSegment, :Node, :NodeKind, :Partition, :PeerCluster, :Peering, :Topology, :Upstream, :Workload ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topology
 
 import (

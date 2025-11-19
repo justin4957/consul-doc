@@ -3,6 +3,50 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/agent_ce.go
+Agent Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/config](../agent/config)
+- [agent/consul](../agent/consul)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [api](../api)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/agent_ce.go> a code:Module ;
+    code:name "agent/agent_ce.go" ;
+    code:description "Agent Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

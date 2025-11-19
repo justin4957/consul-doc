@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/operator/utilization/utilization.go
+Utilization module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/cli](../command/cli)
+- [command/flags](../command/flags)
+- [version](../version)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/operator/utilization/utilization.go> a code:Module ;
+    code:name "command/operator/utilization/utilization.go" ;
+    code:description "Utilization module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/cli" ;
+        code:path "../command/cli"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package utilization
 
 import (

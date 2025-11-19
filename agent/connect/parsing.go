@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/parsing.go
+Parsing module for agent layer
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+CalculateCertFingerprint, CertSubjects, EncodeSerialNumber, EncodeSigningKeyID, HexString, IsHexString, KeyId, KeyInfoFromCert, ParseCSR, ParseCert, ParseLeafCerts, ParseSigner
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/parsing.go> a code:Module ;
+    code:name "agent/connect/parsing.go" ;
+    code:description "Parsing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :CalculateCertFingerprint, :CertSubjects, :EncodeSerialNumber, :EncodeSigningKeyID, :HexString, :IsHexString, :KeyId, :KeyInfoFromCert, :ParseCSR, :ParseCert, :ParseLeafCerts, :ParseSigner ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

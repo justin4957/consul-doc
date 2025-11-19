@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/json.go
+Json module for internal layer
+
+## Tags
+internal
+
+## Exports
+DecodeJSON, UnmarshalJSON
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/json.go> a code:Module ;
+    code:name "lib/json.go" ;
+    code:description "Json module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DecodeJSON, :UnmarshalJSON ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (

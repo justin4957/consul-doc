@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/cluster/log.go
+Log module for internal layer
+
+## Tags
+internal
+
+## Exports
+LogConsumer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/cluster/log.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/cluster/log.go" ;
+    code:description "Log module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :LogConsumer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cluster
 
 import (

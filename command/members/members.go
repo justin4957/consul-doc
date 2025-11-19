@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/members/members.go
+Members module for cli layer
+
+## Linked Modules
+- [acl](../acl)
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, user-interface
+
+## Exports
+ByMemberNamePartitionAndSegment, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/members/members.go> a code:Module ;
+    code:name "command/members/members.go" ;
+    code:description "Members module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :ByMemberNamePartitionAndSegment, :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package members
 
 import (

@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: acl/acl_ce.go
+Acl Ce module for acl layer
+
+## Tags
+access-control, acl, authorization, security
+
+## Exports
+EnterpriseConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/acl_ce.go> a code:Module ;
+    code:name "acl/acl_ce.go" ;
+    code:description "Acl Ce module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :EnterpriseConfig ;
+    code:tags "access-control", "acl", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 const (

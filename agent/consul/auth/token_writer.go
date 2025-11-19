@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/auth/token_writer.go
+Token Writer module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+
+## Tags
+agent, authentication, security
+
+## Exports
+ACLCache, ErrCannotWriteGlobalToken, NewTokenWriter, RaftApplyFn, TokenWriter, TokenWriterConfig, TokenWriterStore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/auth/token_writer.go> a code:Module ;
+    code:name "agent/consul/auth/token_writer.go" ;
+    code:description "Token Writer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :ACLCache, :ErrCannotWriteGlobalToken, :NewTokenWriter, :RaftApplyFn, :TokenWriter, :TokenWriterConfig, :TokenWriterStore ;
+    code:tags "agent", "authentication", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package auth
 
 import (

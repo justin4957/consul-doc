@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/troubleshoot/proxy/troubleshoot_proxy.go
+Troubleshoot Proxy module for cli layer
+
+## Linked Modules
+- [command/cli](../command/cli)
+- [command/flags](../command/flags)
+- [troubleshoot/proxy](../troubleshoot/proxy)
+
+## Tags
+cli, networking, service-mesh, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/troubleshoot/proxy/troubleshoot_proxy.go> a code:Module ;
+    code:name "command/troubleshoot/proxy/troubleshoot_proxy.go" ;
+    code:description "Troubleshoot Proxy module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/cli" ;
+        code:path "../command/cli"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "troubleshoot/proxy" ;
+        code:path "../troubleshoot/proxy"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "networking", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

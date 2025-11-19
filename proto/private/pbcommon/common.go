@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/pbcommon/common.go
+Common module for internal layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+internal
+
+## Exports
+LocalityFromProto, LocalityToProto
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbcommon/common.go> a code:Module ;
+    code:name "proto/private/pbcommon/common.go" ;
+    code:description "Common module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :LocalityFromProto, :LocalityToProto ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbcommon
 
 import (

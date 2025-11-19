@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: logging/syslog.go
+Syslog module for internal layer
+
+## Tags
+internal
+
+## Exports
+SyslogWrapper
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/syslog.go> a code:Module ;
+    code:name "logging/syslog.go" ;
+    code:description "Syslog module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :SyslogWrapper ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

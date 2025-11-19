@@ -10,6 +10,27 @@
 // 	protoc        (unknown)
 // source: service.proto
 
+/*
+# Module: internal/tools/protoc-gen-grpc-clone/e2e/proto/service.pb.go
+Service.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+File, Req, Resp
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/protoc-gen-grpc-clone/e2e/proto/service.pb.go> a code:Module ;
+    code:name "internal/tools/protoc-gen-grpc-clone/e2e/proto/service.pb.go" ;
+    code:description "Service.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :File, :Req, :Resp ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package proto
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/ports/troubleshoot_ports.go
+Troubleshoot Ports module for internal layer
+
+## Tags
+internal
+
+## Exports
+TroubleShootCustomPorts, TroubleshootDefaultPorts
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/ports/troubleshoot_ports.go> a code:Module ;
+    code:name "troubleshoot/ports/troubleshoot_ports.go" ;
+    code:description "Troubleshoot Ports module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :TroubleShootCustomPorts, :TroubleshootDefaultPorts ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package ports
 
 import (

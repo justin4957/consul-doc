@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/controller/queue/defer.go
+Defer module for agent layer
+
+## Tags
+agent
+
+## Exports
+DeferQueue, NewDeferQueue
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/controller/queue/defer.go> a code:Module ;
+    code:name "agent/consul/controller/queue/defer.go" ;
+    code:description "Defer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :DeferQueue, :NewDeferQueue ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package queue
 
 import (

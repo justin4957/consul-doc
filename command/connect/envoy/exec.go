@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/envoy/exec.go
+Exec module for cli layer
+
+## Tags
+cli, mtls, service-mesh, user-interface
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/envoy/exec.go> a code:Module ;
+    code:name "command/connect/envoy/exec.go" ;
+    code:description "Exec module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:tags "cli", "mtls", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package envoy
 
 import (

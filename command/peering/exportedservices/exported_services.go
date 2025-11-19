@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/peering/exportedservices/exported_services.go
+Exported Services module for cli layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [command/flags](../command/flags)
+- [command/peering](../command/peering)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/peering/exportedservices/exported_services.go> a code:Module ;
+    code:name "command/peering/exportedservices/exported_services.go" ;
+    code:description "Exported Services module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/peering" ;
+        code:path "../command/peering"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package exportedservices
 
 import (

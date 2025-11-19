@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/equality.go
+Equality module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+EqualCondition, EqualID, EqualReference, EqualStatus, EqualStatusMap, EqualTenancy, EqualType, ReferenceOrIDMatch
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/equality.go> a code:Module ;
+    code:name "internal/resource/equality.go" ;
+    code:description "Equality module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :EqualCondition, :EqualID, :EqualReference, :EqualStatus, :EqualStatusMap, :EqualTenancy, :EqualType, :ReferenceOrIDMatch ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import "github.com/hashicorp/consul/proto-public/pbresource"

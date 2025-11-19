@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/proxy/testing.go
+Testing module for service-mesh layer
+
+## Linked Modules
+- [connect](../connect)
+
+## Tags
+mtls, networking, service-mesh
+
+## Exports
+NewTestTCPServer, TestEchoConn, TestLocalAddr, TestStaticUpstreamResolverFunc, TestTCPServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/proxy/testing.go> a code:Module ;
+    code:name "connect/proxy/testing.go" ;
+    code:description "Testing module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "connect" ;
+        code:path "../connect"
+    ] ;
+    code:exports :NewTestTCPServer, :TestEchoConn, :TestLocalAddr, :TestStaticUpstreamResolverFunc, :TestTCPServer ;
+    code:tags "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

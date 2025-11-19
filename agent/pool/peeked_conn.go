@@ -15,6 +15,23 @@
 // Originally from: https://github.com/google/tcpproxy/blob/master/tcpproxy.go
 // at f5c09fbedceb69e4b238dec52cdf9f2fe9a815e2
 
+/*
+# Module: agent/pool/peeked_conn.go
+Peeked Conn module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/pool/peeked_conn.go> a code:Module ;
+    code:name "agent/pool/peeked_conn.go" ;
+    code:description "Peeked Conn module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package pool
 
 import "net"

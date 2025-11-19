@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/inmem/snapshot.go
+Snapshot module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+Restoration, Snapshot
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/inmem/snapshot.go> a code:Module ;
+    code:name "internal/storage/inmem/snapshot.go" ;
+    code:description "Snapshot module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Restoration, :Snapshot ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package inmem
 
 import (

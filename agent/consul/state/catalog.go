@@ -1,6 +1,66 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/catalog.go
+Catalog module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/configentry](../agent/configentry)
+- [agent/netutil](../agent/netutil)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [lib](../lib)
+- [lib/maps](../lib/maps)
+- [lib/stringslice](../lib/stringslice)
+- [types](../types)
+
+## Tags
+agent, discovery, persistence, registry, storage
+
+## Exports
+GatewayServiceKind, NodeServiceQuery
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/catalog.go> a code:Module ;
+    code:name "agent/consul/state/catalog.go" ;
+    code:description "Catalog module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/netutil" ;
+        code:path "../agent/netutil"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/maps" ;
+        code:path "../lib/maps"
+    ], [
+        code:name "lib/stringslice" ;
+        code:path "../lib/stringslice"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :GatewayServiceKind, :NodeServiceQuery ;
+    code:tags "agent", "discovery", "persistence", "registry", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

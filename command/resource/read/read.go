@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/read/read.go
+Read module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+- [command/resource](../command/resource)
+- [command/resource/client](../command/resource/client)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/read/read.go> a code:Module ;
+    code:name "command/resource/read/read.go" ;
+    code:description "Read module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/resource" ;
+        code:path "../command/resource"
+    ], [
+        code:name "command/resource/client" ;
+        code:path "../command/resource/client"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package read
 
 import (

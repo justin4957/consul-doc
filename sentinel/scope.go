@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: sentinel/scope.go
+Scope module for internal layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+internal
+
+## Exports
+ScopeCatalogUpsert, ScopeFn, ScopeKVUpsert
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sentinel/scope.go> a code:Module ;
+    code:name "sentinel/scope.go" ;
+    code:description "Scope module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :ScopeCatalogUpsert, :ScopeFn, :ScopeKVUpsert ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package sentinel
 
 import (

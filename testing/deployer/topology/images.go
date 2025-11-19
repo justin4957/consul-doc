@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/topology/images.go
+Images module for internal layer
+
+## Tags
+internal
+
+## Exports
+DefaultImages, Images
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/topology/images.go> a code:Module ;
+    code:name "testing/deployer/topology/images.go" ;
+    code:description "Images module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DefaultImages, :Images ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topology
 
 import (

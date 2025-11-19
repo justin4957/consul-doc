@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/services/subscribe/logger.go
+Logger module for agent layer
+
+## Linked Modules
+- [agent/consul/stream](../agent/consul/stream)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, api, communication, grpc, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/services/subscribe/logger.go> a code:Module ;
+    code:name "agent/grpc-internal/services/subscribe/logger.go" ;
+    code:description "Logger module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package subscribe
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/deprecated.go
+Deprecated module for agent layer
+
+## Linked Modules
+- [agent/consul](../agent/consul)
+- [types](../types)
+
+## Tags
+agent, configuration
+
+## Exports
+DeprecatedConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/deprecated.go> a code:Module ;
+    code:name "agent/config/deprecated.go" ;
+    code:description "Deprecated module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :DeprecatedConfig ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

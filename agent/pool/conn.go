@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/pool/conn.go
+Conn module for agent layer
+
+## Tags
+agent
+
+## Exports
+RPCNextProtos, RPCType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/pool/conn.go> a code:Module ;
+    code:name "agent/pool/conn.go" ;
+    code:description "Conn module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :RPCNextProtos, :RPCType ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package pool
 
 type RPCType byte

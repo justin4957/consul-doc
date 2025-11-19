@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/res.go
+Res module for internal layer
+
+## Tags
+internal
+
+## Exports
+Embed, Eval, File, FileResource, HCL, Resource, StringTemplate, Text
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/res.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/res.go" ;
+    code:description "Res module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Embed, :Eval, :File, :FileResource, :HCL, :Resource, :StringTemplate, :Text ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/nodeid.go
+Nodeid module for agent layer
+
+## Linked Modules
+- [agent/config](../agent/config)
+- [lib](../lib)
+- [types](../types)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/nodeid.go> a code:Module ;
+    code:name "agent/nodeid.go" ;
+    code:description "Nodeid module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

@@ -2,6 +2,39 @@
 // SPDX-License-Identifier: BUSL-1.1
 
 // Package rate implements server-side RPC rate limiting.
+
+/*
+# Module: agent/consul/rate/handler.go
+Handler module for agent layer
+
+## Linked Modules
+- [agent/consul/multilimiter](../agent/consul/multilimiter)
+- [agent/metadata](../agent/metadata)
+
+## Tags
+agent
+
+## Exports
+GlobalLimitConfig, Handler, HandlerConfig, Mode, ModeFromName, NewHandler, NewHandlerWithLimiter, NullRequestLimitsHandler, Operation, OperationCategory, OperationSpec, OperationType, ReadWriteConfig, RequestLimitsHandler, RequestLimitsModeFromName, RequestLimitsModeFromNameWithDefault, ServersStatusProvider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/rate/handler.go> a code:Module ;
+    code:name "agent/consul/rate/handler.go" ;
+    code:description "Handler module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/multilimiter" ;
+        code:path "../agent/consul/multilimiter"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ] ;
+    code:exports :GlobalLimitConfig, :Handler, :HandlerConfig, :Mode, :ModeFromName, :NewHandler, :NewHandlerWithLimiter, :NullRequestLimitsHandler, :Operation, :OperationCategory, :OperationSpec, :OperationType, :ReadWriteConfig, :RequestLimitsHandler, :RequestLimitsModeFromName, :RequestLimitsModeFromNameWithDefault, :ServersStatusProvider ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package rate
 
 import (

@@ -29,6 +29,39 @@
 //
 // NOTE: THIS IS A QUIRK OF OPENSSL; in Connect we distribute the roots alone
 // and stable intermediates like the XC cert to the _leaf_.
+
+/*
+# Module: connect/certgen/certgen.go
+Certgen module for service-mesh layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+- [connect/certgen](../connect/certgen)
+
+## Tags
+mtls, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/certgen/certgen.go> a code:Module ;
+    code:name "connect/certgen/certgen.go" ;
+    code:description "Certgen module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "connect/certgen" ;
+        code:path "../connect/certgen"
+    ] ;
+    code:tags "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package main // import "github.com/hashicorp/consul/connect/certgen"
 
 import (

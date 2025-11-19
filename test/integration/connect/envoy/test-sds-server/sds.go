@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/connect/envoy/test-sds-server/sds.go
+Sds module for service-mesh layer
+
+## Linked Modules
+- [logging](../logging)
+
+## Tags
+mtls, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/connect/envoy/test-sds-server/sds.go> a code:Module ;
+    code:name "test/integration/connect/envoy/test-sds-server/sds.go" ;
+    code:description "Sds module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:tags "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/types.go
+Types module for internal layer
+
+## Tags
+data-model, internal, types
+
+## Exports
+TestingTB
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/types.go> a code:Module ;
+    code:name "sdk/testutil/types.go" ;
+    code:description "Types module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :TestingTB ;
+    code:tags "data-model", "internal", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutil
 
 import (

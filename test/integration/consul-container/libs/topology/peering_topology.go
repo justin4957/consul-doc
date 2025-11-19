@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/topology/peering_topology.go
+Peering Topology module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [test/integration/consul-container/libs/assert](../test/integration/consul-container/libs/assert)
+- [test/integration/consul-container/libs/cluster](../test/integration/consul-container/libs/cluster)
+- [test/integration/consul-container/libs/service](../test/integration/consul-container/libs/service)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+BasicPeeringTwoClustersSetup, BuiltCluster, ClusterConfig, NewCluster, NewClusterWithConfig, PeeringClusterSize, TestLogConsumer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/topology/peering_topology.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/topology/peering_topology.go" ;
+    code:description "Peering Topology module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "test/integration/consul-container/libs/assert" ;
+        code:path "../test/integration/consul-container/libs/assert"
+    ], [
+        code:name "test/integration/consul-container/libs/cluster" ;
+        code:path "../test/integration/consul-container/libs/cluster"
+    ], [
+        code:name "test/integration/consul-container/libs/service" ;
+        code:path "../test/integration/consul-container/libs/service"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :BasicPeeringTwoClustersSetup, :BuiltCluster, :ClusterConfig, :NewCluster, :NewClusterWithConfig, :PeeringClusterSize, :TestLogConsumer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topology
 
 import (

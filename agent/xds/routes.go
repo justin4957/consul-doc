@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/routes.go
+Routes module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/consul/discoverychain](../agent/consul/discoverychain)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [agent/xds/config](../agent/xds/config)
+- [agent/xds/response](../agent/xds/response)
+
+## Tags
+agent, envoy, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/routes.go> a code:Module ;
+    code:name "agent/xds/routes.go" ;
+    code:description "Routes module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/discoverychain" ;
+        code:path "../agent/consul/discoverychain"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds/config" ;
+        code:path "../agent/xds/config"
+    ], [
+        code:name "agent/xds/response" ;
+        code:path "../agent/xds/response"
+    ] ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

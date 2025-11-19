@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/proxy/validateupstream.go
+Validateupstream module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+- [envoyextensions/xdscommon](../envoyextensions/xdscommon)
+- [troubleshoot/validate](../troubleshoot/validate)
+
+## Tags
+internal, networking, service-mesh
+
+## Exports
+ParseClusters, ParseConfigDump, ProxyConfigDumpToIndexedResources, Validate
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/proxy/validateupstream.go> a code:Module ;
+    code:name "troubleshoot/proxy/validateupstream.go" ;
+    code:description "Validateupstream module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ], [
+        code:name "envoyextensions/xdscommon" ;
+        code:path "../envoyextensions/xdscommon"
+    ], [
+        code:name "troubleshoot/validate" ;
+        code:path "../troubleshoot/validate"
+    ] ;
+    code:exports :ParseClusters, :ParseConfigDump, :ProxyConfigDumpToIndexedResources, :Validate ;
+    code:tags "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package troubleshoot
 
 import (

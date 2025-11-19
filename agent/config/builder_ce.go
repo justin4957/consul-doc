@@ -3,6 +3,23 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/config/builder_ce.go
+Builder Ce module for agent layer
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/builder_ce.go> a code:Module ;
+    code:name "agent/config/builder_ce.go" ;
+    code:description "Builder Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

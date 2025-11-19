@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/peerstream/stream_resources.go
+Stream Resources module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+- [proto/private/pbpeerstream](../proto/private/pbpeerstream)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+BidirectionalStream, HandleStreamRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/peerstream/stream_resources.go> a code:Module ;
+    code:name "agent/grpc-external/services/peerstream/stream_resources.go" ;
+    code:description "Stream Resources module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ], [
+        code:name "proto/private/pbpeerstream" ;
+        code:path "../proto/private/pbpeerstream"
+    ] ;
+    code:exports :BidirectionalStream, :HandleStreamRequest ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package peerstream
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/connect_ca.go
+Connect Ca module for api layer
+
+## Tags
+api, client, mtls, service-mesh
+
+## Exports
+CAConfig, CARoot, CARootList, CommonCAProviderConfig, ConsulCAProviderConfig, LeafCert, ParseConsulCAConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/connect_ca.go> a code:Module ;
+    code:name "api/connect_ca.go" ;
+    code:description "Connect Ca module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :CAConfig, :CARoot, :CARootList, :CommonCAProviderConfig, :ConsulCAProviderConfig, :LeafCert, :ParseConsulCAConfig ;
+    code:tags "api", "client", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

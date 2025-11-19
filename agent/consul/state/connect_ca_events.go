@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/connect_ca_events.go
+Connect Ca Events module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/structs](../agent/structs)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, mtls, persistence, service-mesh, storage
+
+## Exports
+EventPayloadCARoots, EventTopicCARoots
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/connect_ca_events.go> a code:Module ;
+    code:name "agent/consul/state/connect_ca_events.go" ;
+    code:description "Connect Ca Events module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :EventPayloadCARoots, :EventTopicCARoots ;
+    code:tags "agent", "mtls", "persistence", "service-mesh", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/context.go
+Context module for agent layer
+
+## Tags
+agent
+
+## Exports
+ContextWithRemoteAddr, RemoteAddrFromContext
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/context.go> a code:Module ;
+    code:name "agent/consul/context.go" ;
+    code:description "Context module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :ContextWithRemoteAddr, :RemoteAddrFromContext ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

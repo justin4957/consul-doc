@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/retry_join.go
+Retry Join module for agent layer
+
+## Linked Modules
+- [agent/hcp/discover](../agent/hcp/discover)
+- [lib](../lib)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/retry_join.go> a code:Module ;
+    code:name "agent/retry_join.go" ;
+    code:description "Retry Join module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/discover" ;
+        code:path "../agent/hcp/discover"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

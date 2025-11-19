@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/indexers/id_indexer.go
+Id Indexer module for internal layer
+
+## Linked Modules
+- [internal/controller/cache/index](../internal/controller/cache/index)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+GetSingleRefOrID, IDIndex, OwnerIndex, SingleIDOrRefIndex
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/indexers/id_indexer.go> a code:Module ;
+    code:name "internal/controller/cache/indexers/id_indexer.go" ;
+    code:description "Id Indexer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller/cache/index" ;
+        code:path "../internal/controller/cache/index"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :GetSingleRefOrID, :IDIndex, :OwnerIndex, :SingleIDOrRefIndex ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package indexers
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/acl_replication_types.go
+Acl Replication Types module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [agent/structs/aclfilter](../agent/structs/aclfilter)
+
+## Tags
+access-control, agent, authorization, data-model, security, types
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/acl_replication_types.go> a code:Module ;
+    code:name "agent/consul/acl_replication_types.go" ;
+    code:description "Acl Replication Types module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/structs/aclfilter" ;
+        code:path "../agent/structs/aclfilter"
+    ] ;
+    code:tags "access-control", "agent", "authorization", "data-model", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

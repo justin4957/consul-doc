@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/ui_endpoint.go
+Ui Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/config](../agent/config)
+- [agent/consul](../agent/consul)
+- [agent/metadata](../agent/metadata)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [logging](../logging)
+
+## Tags
+agent
+
+## Exports
+AgentMembersMapAddrVer, GatewayConfig, ServiceListingSummary, ServiceSummary, ServiceTopology, ServiceTopologySummary
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/ui_endpoint.go> a code:Module ;
+    code:name "agent/ui_endpoint.go" ;
+    code:description "Ui Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :AgentMembersMapAddrVer, :GatewayConfig, :ServiceListingSummary, :ServiceSummary, :ServiceTopology, :ServiceTopologySummary ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

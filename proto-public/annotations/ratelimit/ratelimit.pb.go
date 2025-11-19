@@ -7,6 +7,27 @@
 // 	protoc        (unknown)
 // source: annotations/ratelimit/ratelimit.proto
 
+/*
+# Module: proto-public/annotations/ratelimit/ratelimit.pb.go
+Ratelimit.Pb module for internal layer
+
+## Tags
+internal
+
+## Exports
+File, OperationCategory, OperationType, Spec
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/annotations/ratelimit/ratelimit.pb.go> a code:Module ;
+    code:name "proto-public/annotations/ratelimit/ratelimit.pb.go" ;
+    code:description "Ratelimit.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :File, :OperationCategory, :OperationType, :Spec ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package ratelimit
 
 import (

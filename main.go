@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: main.go
+Main module for internal layer
+
+## Linked Modules
+- [command](../command)
+- [command/cli](../command/cli)
+- [command/version](../command/version)
+- [service_os](../service_os)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<main.go> a code:Module ;
+    code:name "main.go" ;
+    code:description "Main module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "command" ;
+        code:path "../command"
+    ], [
+        code:name "command/cli" ;
+        code:path "../command/cli"
+    ], [
+        code:name "command/version" ;
+        code:path "../command/version"
+    ], [
+        code:name "service_os" ;
+        code:path "../service_os"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

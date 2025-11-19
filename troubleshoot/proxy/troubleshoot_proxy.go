@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/proxy/troubleshoot_proxy.go
+Troubleshoot Proxy module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [troubleshoot/validate](../troubleshoot/validate)
+
+## Tags
+internal, networking, service-mesh
+
+## Exports
+NewTroubleshoot, Troubleshoot, TroubleshootInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/proxy/troubleshoot_proxy.go> a code:Module ;
+    code:name "troubleshoot/proxy/troubleshoot_proxy.go" ;
+    code:description "Troubleshoot Proxy module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "troubleshoot/validate" ;
+        code:path "../troubleshoot/validate"
+    ] ;
+    code:exports :NewTroubleshoot, :Troubleshoot, :TroubleshootInfo ;
+    code:tags "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package troubleshoot
 
 import (

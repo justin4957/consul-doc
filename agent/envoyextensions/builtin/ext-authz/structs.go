@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/envoyextensions/builtin/ext-authz/structs.go
+Structs module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+agent, authentication, data-model, security, types
+
+## Exports
+AuthorizationRequest, AuthorizationResponse, BufferSettings, GrpcService, HeaderValue, HttpService, ListStringMatcher, StringMatcher, Target
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/envoyextensions/builtin/ext-authz/structs.go> a code:Module ;
+    code:name "agent/envoyextensions/builtin/ext-authz/structs.go" ;
+    code:description "Structs module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :AuthorizationRequest, :AuthorizationResponse, :BufferSettings, :GrpcService, :HeaderValue, :HttpService, :ListStringMatcher, :StringMatcher, :Target ;
+    code:tags "agent", "authentication", "data-model", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package extauthz
 
 import (

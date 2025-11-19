@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/proxy.go
+Proxy module for internal layer
+
+## Linked Modules
+- [testing/deployer/topology](../testing/deployer/topology)
+- [testing/deployer/util](../testing/deployer/util)
+
+## Tags
+internal, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/proxy.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/proxy.go" ;
+    code:description "Proxy module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ], [
+        code:name "testing/deployer/util" ;
+        code:path "../testing/deployer/util"
+    ] ;
+    code:tags "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

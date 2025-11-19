@@ -8,6 +8,43 @@
 //
 // This also includes a SnapshotRPC() function, which acts as a lightweight
 // client that knows the details of the stream protocol.
+
+/*
+# Module: agent/consul/snapshot_endpoint.go
+Snapshot Endpoint module for agent layer
+
+## Linked Modules
+- [agent/pool](../agent/pool)
+- [agent/structs](../agent/structs)
+- [snapshot](../snapshot)
+
+## Tags
+agent
+
+## Exports
+SnapshotRPC
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/snapshot_endpoint.go> a code:Module ;
+    code:name "agent/consul/snapshot_endpoint.go" ;
+    code:description "Snapshot Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/pool" ;
+        code:path "../agent/pool"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "snapshot" ;
+        code:path "../snapshot"
+    ] ;
+    code:exports :SnapshotRPC ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

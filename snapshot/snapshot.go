@@ -4,6 +4,28 @@
 // snapshot manages the interactions between Consul and Raft in order to take
 // and restore snapshots for disaster recovery. The internal format of a
 // snapshot is simply a tar file, as described in archive.go.
+
+/*
+# Module: snapshot/snapshot.go
+Snapshot module for internal layer
+
+## Tags
+internal
+
+## Exports
+New, Read, Restore, Snapshot, Verify
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<snapshot/snapshot.go> a code:Module ;
+    code:name "snapshot/snapshot.go" ;
+    code:description "Snapshot module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :New, :Read, :Restore, :Snapshot, :Verify ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package snapshot
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: envoyextensions/extensioncommon/resources.go
+Resources module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [envoyextensions/xdscommon](../envoyextensions/xdscommon)
+
+## Tags
+internal
+
+## Exports
+ClusterLoadAssignmentPayload, ClusterPayload, FilterClusterNames, FilterPayload, GetHTTPConnectionManager, GetListenerEnvoyID, GetTCPProxy, InsertHTTPFilter, InsertLocation, InsertNetworkFilter, InsertOptions, IsInboundPublicListener, IsLocalAppCluster, IsLocalAppClusterLoadAssignment, IsOutboundTProxyListener, IsRouteToLocalAppCluster, ListenerPayload, MakeEnvoyHTTPFilter, MakeFilter, MakeTransportSocket
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<envoyextensions/extensioncommon/resources.go> a code:Module ;
+    code:name "envoyextensions/extensioncommon/resources.go" ;
+    code:description "Resources module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/xdscommon" ;
+        code:path "../envoyextensions/xdscommon"
+    ] ;
+    code:exports :ClusterLoadAssignmentPayload, :ClusterPayload, :FilterClusterNames, :FilterPayload, :GetHTTPConnectionManager, :GetListenerEnvoyID, :GetTCPProxy, :InsertHTTPFilter, :InsertLocation, :InsertNetworkFilter, :InsertOptions, :IsInboundPublicListener, :IsLocalAppCluster, :IsLocalAppClusterLoadAssignment, :IsOutboundTProxyListener, :IsRouteToLocalAppCluster, :ListenerPayload, :MakeEnvoyHTTPFilter, :MakeFilter, :MakeTransportSocket ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package extensioncommon
 
 import (

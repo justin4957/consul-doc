@@ -6,6 +6,35 @@
 //
 // When the package is loaded it will randomly generate an ECDSA signing
 // keypair used to sign JWTs both via the Server and the SignJWT method.
+
+/*
+# Module: internal/go-sso/oidcauth/oidcauthtest/testing.go
+Testing module for internal layer
+
+## Linked Modules
+- [internal/go-sso/oidcauth/internal/strutil](../internal/go-sso/oidcauth/internal/strutil)
+
+## Tags
+authentication, internal, security
+
+## Exports
+GenerateKey, Server, SignJWT, SigningKeys, Start, TestingT
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/go-sso/oidcauth/oidcauthtest/testing.go> a code:Module ;
+    code:name "internal/go-sso/oidcauth/oidcauthtest/testing.go" ;
+    code:description "Testing module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/go-sso/oidcauth/internal/strutil" ;
+        code:path "../internal/go-sso/oidcauth/internal/strutil"
+    ] ;
+    code:exports :GenerateKey, :Server, :SignJWT, :SigningKeys, :Start, :TestingT ;
+    code:tags "authentication", "internal", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package oidcauthtest
 
 import (

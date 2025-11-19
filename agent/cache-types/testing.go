@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/testing.go
+Testing module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+
+## Tags
+agent, data-model, types
+
+## Exports
+TestFetchCh, TestFetchChResult, TestRPC
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/testing.go> a code:Module ;
+    code:name "agent/cache-types/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ] ;
+    code:exports :TestFetchCh, :TestFetchChResult, :TestRPC ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

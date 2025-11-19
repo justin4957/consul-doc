@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/pbautoconf/auto_config.go
+Auto Config module for internal layer
+
+## Tags
+configuration, internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbautoconf/auto_config.go> a code:Module ;
+    code:name "proto/private/pbautoconf/auto_config.go" ;
+    code:description "Auto Config module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "configuration", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbautoconf
 
 import "time"

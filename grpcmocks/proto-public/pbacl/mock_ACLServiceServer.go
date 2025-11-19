@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbacl/mock_ACLServiceServer.go
+Mock Aclserviceserver module for internal layer
+
+## Linked Modules
+- [proto-public/pbacl](../proto-public/pbacl)
+
+## Tags
+access-control, api, authorization, communication, grpc, internal, networking, security
+
+## Exports
+ACLServiceServer, NewACLServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbacl/mock_ACLServiceServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbacl/mock_ACLServiceServer.go" ;
+    code:description "Mock Aclserviceserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbacl" ;
+        code:path "../proto-public/pbacl"
+    ] ;
+    code:exports :ACLServiceServer, :NewACLServiceServer ;
+    code:tags "access-control", "api", "authorization", "communication", "grpc", "internal", "networking", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbacl
 
 import (

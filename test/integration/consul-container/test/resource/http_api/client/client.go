@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: test/integration/consul-container/test/resource/http_api/client/client.go
+Client module for internal layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+api, client, internal
+
+## Exports
+CloseResponseBody, DecodeBody, HttpClient, NewClient, NewHttpClient, QueryOptions, RequireHttpCodes, RequireOK, StatusError
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/test/resource/http_api/client/client.go> a code:Module ;
+    code:name "test/integration/consul-container/test/resource/http_api/client/client.go" ;
+    code:description "Client module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :CloseResponseBody, :DecodeBody, :HttpClient, :NewClient, :NewHttpClient, :QueryOptions, :RequireHttpCodes, :RequireOK, :StatusError ;
+    code:tags "api", "client", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

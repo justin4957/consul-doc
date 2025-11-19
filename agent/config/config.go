@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/config.go
+Config module for agent layer
+
+## Linked Modules
+- [lib/decode](../lib/decode)
+
+## Tags
+agent, configuration
+
+## Exports
+ACL, Addresses, AdvertiseAddrsConfig, Audit, AuditSink, AutoConfigAuthorizationRaw, AutoConfigAuthorizerRaw, AutoConfigRaw, AutoEncrypt, Autopilot, Cache, CheckDefinition, CloudConfigRaw, Config, ConfigEntries, Connect, Consul, DNS, DeprecatedTokens, ErrNoData
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/config.go> a code:Module ;
+    code:name "agent/config/config.go" ;
+    code:description "Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "lib/decode" ;
+        code:path "../lib/decode"
+    ] ;
+    code:exports :ACL, :Addresses, :AdvertiseAddrsConfig, :Audit, :AuditSink, :AutoConfigAuthorizationRaw, :AutoConfigAuthorizerRaw, :AutoConfigRaw, :AutoEncrypt, :Autopilot, :Cache, :CheckDefinition, :CloudConfigRaw, :Config, :ConfigEntries, :Connect, :Consul, :DNS, :DeprecatedTokens, :ErrNoData ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/exported_services.go
+Exported Services module for api layer
+
+## Tags
+api, client
+
+## Exports
+ResolvedConsumers, ResolvedExportedService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/exported_services.go> a code:Module ;
+    code:name "api/exported_services.go" ;
+    code:description "Exported Services module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :ResolvedConsumers, :ResolvedExportedService ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 type ResolvedExportedService struct {

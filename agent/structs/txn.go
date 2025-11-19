@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/txn.go
+Txn module for agent layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+agent, data-model, types
+
+## Exports
+TxnCheckOp, TxnCheckResult, TxnError, TxnErrors, TxnIntentionOp, TxnKVOp, TxnKVResult, TxnNodeOp, TxnNodeResult, TxnOp, TxnOps, TxnReadRequest, TxnReadResponse, TxnRequest, TxnResponse, TxnResult, TxnResults, TxnServiceOp, TxnServiceResult, TxnSessionOp
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/txn.go> a code:Module ;
+    code:name "agent/structs/txn.go" ;
+    code:description "Txn module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :TxnCheckOp, :TxnCheckResult, :TxnError, :TxnErrors, :TxnIntentionOp, :TxnKVOp, :TxnKVResult, :TxnNodeOp, :TxnNodeResult, :TxnOp, :TxnOps, :TxnReadRequest, :TxnReadResponse, :TxnRequest, :TxnResponse, :TxnResult, :TxnResults, :TxnServiceOp, :TxnServiceResult, :TxnSessionOp ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

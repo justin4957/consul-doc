@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: private/pbservice/healthcheck.proto
 
+/*
+# Module: proto/private/pbservice/healthcheck.pb.go
+Healthcheck.Pb module for internal layer
+
+## Linked Modules
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+health-checks, internal, monitoring
+
+## Exports
+CheckType, File, HeaderValue, HealthCheck, HealthCheckDefinition
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbservice/healthcheck.pb.go> a code:Module ;
+    code:name "proto/private/pbservice/healthcheck.pb.go" ;
+    code:description "Healthcheck.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :CheckType, :File, :HeaderValue, :HealthCheck, :HealthCheckDefinition ;
+    code:tags "health-checks", "internal", "monitoring" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbservice
 
 import (

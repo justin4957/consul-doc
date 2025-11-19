@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/cli/cli.go
+Cli module for cli layer
+
+## Tags
+cli, user-interface
+
+## Exports
+BasicUI, Command, Ui
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/cli/cli.go> a code:Module ;
+    code:name "command/cli/cli.go" ;
+    code:description "Cli module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :BasicUI, :Command, :Ui ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package cli
 
 import (

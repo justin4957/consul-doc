@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbresource/mock_UnsafeResourceServiceServer.go
+Mock Unsaferesourceserviceserver module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewUnsafeResourceServiceServer, UnsafeResourceServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbresource/mock_UnsafeResourceServiceServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbresource/mock_UnsafeResourceServiceServer.go" ;
+    code:description "Mock Unsaferesourceserviceserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewUnsafeResourceServiceServer, :UnsafeResourceServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbresource
 
 import (

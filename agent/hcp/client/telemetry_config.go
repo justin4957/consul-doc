@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/client/telemetry_config.go
+Telemetry Config module for agent layer
+
+## Linked Modules
+- [agent/hcp/config](../agent/hcp/config)
+
+## Tags
+agent, configuration
+
+## Exports
+MetricsConfig, RefreshConfig, TelemetryConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/client/telemetry_config.go> a code:Module ;
+    code:name "agent/hcp/client/telemetry_config.go" ;
+    code:description "Telemetry Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ] ;
+    code:exports :MetricsConfig, :RefreshConfig, :TelemetryConfig ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

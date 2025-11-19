@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: envoyextensions/xdscommon/envoy_versioning.go
+Envoy Versioning module for internal layer
+
+## Tags
+envoy, internal, service-mesh
+
+## Exports
+DetermineEnvoyVersionFromNode, DetermineSupportedProxyFeatures, DetermineSupportedProxyFeaturesFromString, SupportedProxyFeatures
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<envoyextensions/xdscommon/envoy_versioning.go> a code:Module ;
+    code:name "envoyextensions/xdscommon/envoy_versioning.go" ;
+    code:description "Envoy Versioning module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DetermineEnvoyVersionFromNode, :DetermineSupportedProxyFeatures, :DetermineSupportedProxyFeaturesFromString, :SupportedProxyFeatures ;
+    code:tags "envoy", "internal", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xdscommon
 
 import (

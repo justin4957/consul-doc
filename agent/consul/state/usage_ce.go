@@ -3,6 +3,34 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/state/usage_ce.go
+Usage Ce module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+EnterpriseConfigEntryUsage, EnterpriseKVUsage, EnterpriseNodeUsage, EnterprisePeeringUsage, EnterpriseServiceUsage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/usage_ce.go> a code:Module ;
+    code:name "agent/consul/state/usage_ce.go" ;
+    code:description "Usage Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :EnterpriseConfigEntryUsage, :EnterpriseKVUsage, :EnterpriseNodeUsage, :EnterprisePeeringUsage, :EnterpriseServiceUsage ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

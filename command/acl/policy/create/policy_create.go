@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/acl/policy/create/policy_create.go
+Policy Create module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/acl/policy](../command/acl/policy)
+- [command/flags](../command/flags)
+- [command/helpers](../command/helpers)
+
+## Tags
+access-control, authorization, cli, security, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/acl/policy/create/policy_create.go> a code:Module ;
+    code:name "command/acl/policy/create/policy_create.go" ;
+    code:description "Policy Create module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/acl/policy" ;
+        code:path "../command/acl/policy"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/helpers" ;
+        code:path "../command/helpers"
+    ] ;
+    code:exports :New ;
+    code:tags "access-control", "authorization", "cli", "security", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package policycreate
 
 import (

@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/rpcclient/common.go
+Common module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/structs](../agent/structs)
+- [agent/submatview](../agent/submatview)
+
+## Tags
+agent, communication, networking
+
+## Exports
+CacheGetter, Client, MaterializedViewStore, MaterializerDeps, NetRPC
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/rpcclient/common.go> a code:Module ;
+    code:name "agent/rpcclient/common.go" ;
+    code:description "Common module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/submatview" ;
+        code:path "../agent/submatview"
+    ] ;
+    code:exports :CacheGetter, :Client, :MaterializedViewStore, :MaterializerDeps, :NetRPC ;
+    code:tags "agent", "communication", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package rpcclient
 
 import (

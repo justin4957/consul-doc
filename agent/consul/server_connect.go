@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/server_connect.go
+Server Connect module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+
+## Tags
+agent, mtls, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server_connect.go> a code:Module ;
+    code:name "agent/consul/server_connect.go" ;
+    code:description "Server Connect module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

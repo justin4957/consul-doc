@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/dataplane/get_envoy_bootstrap_params.go
+Get Envoy Bootstrap Params module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/configentry](../agent/configentry)
+- [agent/consul/state](../agent/consul/state)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [agent/xds/accesslogs](../agent/xds/accesslogs)
+- [proto-public/pbdataplane](../proto-public/pbdataplane)
+
+## Tags
+agent, api, communication, grpc, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/dataplane/get_envoy_bootstrap_params.go> a code:Module ;
+    code:name "agent/grpc-external/services/dataplane/get_envoy_bootstrap_params.go" ;
+    code:description "Get Envoy Bootstrap Params module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds/accesslogs" ;
+        code:path "../agent/xds/accesslogs"
+    ], [
+        code:name "proto-public/pbdataplane" ;
+        code:path "../proto-public/pbdataplane"
+    ] ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package dataplane
 
 import (

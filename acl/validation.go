@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/validation.go
+Validation module for acl layer
+
+## Tags
+access-control, acl, authorization, security
+
+## Exports
+IsValidAuthMethodName, IsValidNodeIdentityName, IsValidPolicyName, IsValidRoleName, IsValidServiceIdentityName, ValidatePolicyName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/validation.go> a code:Module ;
+    code:name "acl/validation.go" ;
+    code:description "Validation module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :IsValidAuthMethodName, :IsValidNodeIdentityName, :IsValidPolicyName, :IsValidRoleName, :IsValidServiceIdentityName, :ValidatePolicyName ;
+    code:tags "access-control", "acl", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

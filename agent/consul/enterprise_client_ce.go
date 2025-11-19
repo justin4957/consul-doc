@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/enterprise_client_ce.go
+Enterprise Client Ce module for agent layer
+
+## Tags
+agent
+
+## Exports
+EnterpriseClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/enterprise_client_ce.go> a code:Module ;
+    code:name "agent/consul/enterprise_client_ce.go" ;
+    code:description "Enterprise Client Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :EnterpriseClient ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

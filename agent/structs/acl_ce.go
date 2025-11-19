@@ -3,6 +3,34 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/structs/acl_ce.go
+Acl Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+access-control, agent, authorization, data-model, security, types
+
+## Exports
+ACLAuthMethodEnterpriseFields, ACLAuthMethodEnterpriseMeta, IsValidPartitionAndDatacenter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/acl_ce.go> a code:Module ;
+    code:name "agent/structs/acl_ce.go" ;
+    code:description "Acl Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :ACLAuthMethodEnterpriseFields, :ACLAuthMethodEnterpriseMeta, :IsValidPartitionAndDatacenter ;
+    code:tags "access-control", "agent", "authorization", "data-model", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

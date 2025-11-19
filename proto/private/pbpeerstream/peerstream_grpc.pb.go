@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: private/pbpeerstream/peerstream.proto
 
+/*
+# Module: proto/private/pbpeerstream/peerstream_grpc.pb.go
+Peerstream Grpc.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewPeerStreamServiceClient, PeerStreamService, PeerStreamServiceClient, PeerStreamServiceServer, RegisterPeerStreamServiceServer, UnimplementedPeerStreamServiceServer, UnsafePeerStreamServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbpeerstream/peerstream_grpc.pb.go> a code:Module ;
+    code:name "proto/private/pbpeerstream/peerstream_grpc.pb.go" ;
+    code:description "Peerstream Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewPeerStreamServiceClient, :PeerStreamService, :PeerStreamServiceClient, :PeerStreamServiceServer, :RegisterPeerStreamServiceServer, :UnimplementedPeerStreamServiceServer, :UnsafePeerStreamServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbpeerstream
 
 import (

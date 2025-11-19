@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/stringslice/stringslice.go
+Stringslice module for internal layer
+
+## Tags
+internal
+
+## Exports
+CloneStringSlice, Contains, Equal, EqualMapKeys, MergeSorted
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/stringslice/stringslice.go> a code:Module ;
+    code:name "lib/stringslice/stringslice.go" ;
+    code:description "Stringslice module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :CloneStringSlice, :Contains, :Equal, :EqualMapKeys, :MergeSorted ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package stringslice
 
 // StrContains => Contains

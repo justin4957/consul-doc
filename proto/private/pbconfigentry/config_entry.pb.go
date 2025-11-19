@@ -7,6 +7,38 @@
 // 	protoc        (unknown)
 // source: private/pbconfigentry/config_entry.proto
 
+/*
+# Module: proto/private/pbconfigentry/config_entry.pb.go
+Config Entry.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+configuration, internal
+
+## Exports
+APIGateway, APIGatewayJWTClaimVerification, APIGatewayJWTProvider, APIGatewayJWTRequirement, APIGatewayListener, APIGatewayListenerProtocol, APIGatewayPolicy, APIGatewayTLSConfiguration, BoundAPIGateway, BoundAPIGatewayListener, Condition, ConfigEntry, Consumers, CookieConfig, DestinationConfig, ExportedServices, ExportedServicesConsumer, ExportedServicesService, ExposeConfig, ExposePath
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbconfigentry/config_entry.pb.go> a code:Module ;
+    code:name "proto/private/pbconfigentry/config_entry.pb.go" ;
+    code:description "Config Entry.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :APIGateway, :APIGatewayJWTClaimVerification, :APIGatewayJWTProvider, :APIGatewayJWTRequirement, :APIGatewayListener, :APIGatewayListenerProtocol, :APIGatewayPolicy, :APIGatewayTLSConfiguration, :BoundAPIGateway, :BoundAPIGatewayListener, :Condition, :ConfigEntry, :Consumers, :CookieConfig, :DestinationConfig, :ExportedServices, :ExportedServicesConsumer, :ExportedServicesService, :ExposeConfig, :ExposePath ;
+    code:tags "configuration", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbconfigentry
 
 import (

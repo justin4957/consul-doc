@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/serf_filter.go
+Serf Filter module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent
+
+## Exports
+LANMemberFilter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/serf_filter.go> a code:Module ;
+    code:name "agent/consul/serf_filter.go" ;
+    code:description "Serf Filter module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :LANMemberFilter ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

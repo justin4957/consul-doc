@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/errors.go
+Errors module for acl layer
+
+## Tags
+access-control, acl, authorization, security
+
+## Exports
+ACLResourceNotExistError, IsErrDisabled, IsErrNotFound, IsErrPermissionDenied, IsErrRootDenied, PermissionDenied, PermissionDeniedByACL, PermissionDeniedByACLUnnamed, PermissionDeniedError
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/errors.go> a code:Module ;
+    code:name "acl/errors.go" ;
+    code:description "Errors module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :ACLResourceNotExistError, :IsErrDisabled, :IsErrNotFound, :IsErrPermissionDenied, :IsErrRootDenied, :PermissionDenied, :PermissionDeniedByACL, :PermissionDeniedByACLUnnamed, :PermissionDeniedError ;
+    code:tags "access-control", "acl", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

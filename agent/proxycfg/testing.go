@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/testing.go
+Testing module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/cache-types](../agent/cache-types)
+- [agent/connect](../agent/connect)
+- [agent/leafcert](../agent/leafcert)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+ControllableCacheType, NewControllableCacheType, NewTestDataSource, NewTestDataSources, TestCerts, TestCertsForMeshGateway, TestDataSource, TestDataSources, TestGatewayNodesDC1, TestGatewayNodesDC2, TestGatewayNodesDC3, TestGatewayNodesDC4Hostname, TestGatewayNodesDC5Hostname, TestGatewayNodesDC6Hostname, TestGatewayServiceGroupBarDC1, TestGatewayServiceGroupFooDC1, TestIntentions, TestLeafForCA, TestMeshGatewayLeafForCA, TestPeerTrustBundles
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/testing.go> a code:Module ;
+    code:name "agent/proxycfg/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/leafcert" ;
+        code:path "../agent/leafcert"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :ControllableCacheType, :NewControllableCacheType, :NewTestDataSource, :NewTestDataSources, :TestCerts, :TestCertsForMeshGateway, :TestDataSource, :TestDataSources, :TestGatewayNodesDC1, :TestGatewayNodesDC2, :TestGatewayNodesDC3, :TestGatewayNodesDC4Hostname, :TestGatewayNodesDC5Hostname, :TestGatewayNodesDC6Hostname, :TestGatewayServiceGroupBarDC1, :TestGatewayServiceGroupFooDC1, :TestIntentions, :TestLeafForCA, :TestMeshGatewayLeafForCA, :TestPeerTrustBundles ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

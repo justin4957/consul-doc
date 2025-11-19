@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/inmem/watch.go
+Watch module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/stream](../agent/consul/stream)
+- [internal/storage](../internal/storage)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+internal
+
+## Exports
+Watch
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/inmem/watch.go> a code:Module ;
+    code:name "internal/storage/inmem/watch.go" ;
+    code:description "Watch module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :Watch ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package inmem
 
 import (

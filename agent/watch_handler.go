@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/watch_handler.go
+Watch Handler module for agent layer
+
+## Linked Modules
+- [agent/exec](../agent/exec)
+- [api/watch](../api/watch)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/watch_handler.go> a code:Module ;
+    code:name "agent/watch_handler.go" ;
+    code:description "Watch Handler module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/exec" ;
+        code:path "../agent/exec"
+    ], [
+        code:name "api/watch" ;
+        code:path "../api/watch"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

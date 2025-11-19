@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/translate_addr.go
+Translate Addr module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [internal/dnsutil](../internal/dnsutil)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/translate_addr.go> a code:Module ;
+    code:name "agent/translate_addr.go" ;
+    code:description "Translate Addr module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/dnsutil" ;
+        code:path "../internal/dnsutil"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

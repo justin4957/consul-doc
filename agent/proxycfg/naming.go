@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/naming.go
+Naming module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+NewUpstreamID, NewUpstreamIDFromPeeredServiceName, NewUpstreamIDFromServiceID, NewUpstreamIDFromServiceName, NewUpstreamIDFromTargetID, NewWildcardUID, ParseUpstreamIDString, PeerName, UpstreamID, UpstreamIDFromString, UpstreamsToMap
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/naming.go> a code:Module ;
+    code:name "agent/proxycfg/naming.go" ;
+    code:description "Naming module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :NewUpstreamID, :NewUpstreamIDFromPeeredServiceName, :NewUpstreamIDFromServiceID, :NewUpstreamIDFromServiceName, :NewUpstreamIDFromTargetID, :NewWildcardUID, :ParseUpstreamIDString, :PeerName, :UpstreamID, :UpstreamIDFromString, :UpstreamsToMap ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

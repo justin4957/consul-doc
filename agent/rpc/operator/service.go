@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/rpc/operator/service.go
+Service module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [proto/private/pboperator](../proto/private/pboperator)
+
+## Tags
+agent, communication, networking
+
+## Exports
+Backend, Config, NewServer, Server
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/rpc/operator/service.go> a code:Module ;
+    code:name "agent/rpc/operator/service.go" ;
+    code:description "Service module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pboperator" ;
+        code:path "../proto/private/pboperator"
+    ] ;
+    code:exports :Backend, :Config, :NewServer, :Server ;
+    code:tags "agent", "communication", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package operator
 
 import (

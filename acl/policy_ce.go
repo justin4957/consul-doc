@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: acl/policy_ce.go
+Policy Ce module for acl layer
+
+## Tags
+access-control, acl, authorization, security
+
+## Exports
+EnterprisePolicyMeta, EnterprisePolicyRules, EnterpriseRule
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/policy_ce.go> a code:Module ;
+    code:name "acl/policy_ce.go" ;
+    code:description "Policy Ce module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :EnterprisePolicyMeta, :EnterprisePolicyRules, :EnterpriseRule ;
+    code:tags "access-control", "acl", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

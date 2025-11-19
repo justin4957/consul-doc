@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/authmethod/testing.go
+Testing module for agent layer
+
+## Tags
+agent, authentication, security
+
+## Exports
+RequireIdentityMatch
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/authmethod/testing.go> a code:Module ;
+    code:name "agent/consul/authmethod/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :RequireIdentityMatch ;
+    code:tags "agent", "authentication", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package authmethod
 
 import (

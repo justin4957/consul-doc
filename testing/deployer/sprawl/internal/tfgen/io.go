@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/io.go
+Io module for internal layer
+
+## Tags
+internal
+
+## Exports
+UpdateFileIfDifferent, UpdateResult, WriteHCLResourceFile
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/io.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/io.go" ;
+    code:description "Io module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :UpdateFileIfDifferent, :UpdateResult, :WriteHCLResourceFile ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

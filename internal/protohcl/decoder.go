@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/protohcl/decoder.go
+Decoder module for internal layer
+
+## Tags
+internal
+
+## Exports
+FieldIterator, IterField, MessageDecoder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/protohcl/decoder.go> a code:Module ;
+    code:name "internal/protohcl/decoder.go" ;
+    code:description "Decoder module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :FieldIterator, :IterField, :MessageDecoder ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package protohcl
 
 import (

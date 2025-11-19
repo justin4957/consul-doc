@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: envoyextensions/xdscommon/xdscommon.go
+Xdscommon module for internal layer
+
+## Tags
+envoy, internal, service-mesh
+
+## Exports
+Clone, EmptyIndexedResources, GetResourceName, IndexResources, IndexedResources
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<envoyextensions/xdscommon/xdscommon.go> a code:Module ;
+    code:name "envoyextensions/xdscommon/xdscommon.go" ;
+    code:description "Xdscommon module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Clone, :EmptyIndexedResources, :GetResourceName, :IndexResources, :IndexedResources ;
+    code:tags "envoy", "internal", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xdscommon
 
 import (

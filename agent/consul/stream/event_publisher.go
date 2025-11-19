@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/stream/event_publisher.go
+Event Publisher module for agent layer
+
+## Tags
+agent
+
+## Exports
+EventPublisher, NewEventPublisher, SnapshotAppender, SnapshotFunc, SnapshotHandlers
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/stream/event_publisher.go> a code:Module ;
+    code:name "agent/consul/stream/event_publisher.go" ;
+    code:description "Event Publisher module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :EventPublisher, :NewEventPublisher, :SnapshotAppender, :SnapshotFunc, :SnapshotHandlers ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package stream
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/cache/index/builder.go
+Builder module for internal layer
+
+## Tags
+internal
+
+## Exports
+Builder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/index/builder.go> a code:Module ;
+    code:name "internal/controller/cache/index/builder.go" ;
+    code:description "Builder module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Builder ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package index
 
 import (

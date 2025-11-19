@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/operator_raft.go
+Operator Raft module for api layer
+
+## Tags
+api, client, consensus, replication
+
+## Exports
+RaftConfiguration, RaftServer, TransferLeaderResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/operator_raft.go> a code:Module ;
+    code:name "api/operator_raft.go" ;
+    code:description "Operator Raft module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :RaftConfiguration, :RaftServer, :TransferLeaderResponse ;
+    code:tags "api", "client", "consensus", "replication" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // RaftServer has information about a server in the Raft configuration.

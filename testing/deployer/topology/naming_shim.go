@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/topology/naming_shim.go
+Naming Shim module for internal layer
+
+## Tags
+internal
+
+## Exports
+Destination, NewServiceID, Service, ServiceID
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/topology/naming_shim.go> a code:Module ;
+    code:name "testing/deployer/topology/naming_shim.go" ;
+    code:description "Naming Shim module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Destination, :NewServiceID, :Service, :ServiceID ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topology
 
 // Deprecated: SortedWorkloads

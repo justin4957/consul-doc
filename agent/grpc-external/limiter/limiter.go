@@ -3,6 +3,28 @@
 
 // package limiter provides primatives for limiting the number of concurrent
 // operations in-flight.
+
+/*
+# Module: agent/grpc-external/limiter/limiter.go
+Limiter module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+ErrCapacityReached, NewSessionLimiter, Session, SessionLimiter, SessionTerminatedChan, Unlimited
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/limiter/limiter.go> a code:Module ;
+    code:name "agent/grpc-external/limiter/limiter.go" ;
+    code:description "Limiter module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :ErrCapacityReached, :NewSessionLimiter, :Session, :SessionLimiter, :SessionTerminatedChan, :Unlimited ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package limiter
 
 import (

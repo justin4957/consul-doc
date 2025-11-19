@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: command/troubleshoot/ports/troubleshoot_ports.go
+Troubleshoot Ports module for cli layer
+
+## Linked Modules
+- [command/cli](../command/cli)
+- [command/flags](../command/flags)
+- [troubleshoot/ports](../troubleshoot/ports)
+
+## Tags
+cli, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/troubleshoot/ports/troubleshoot_ports.go> a code:Module ;
+    code:name "command/troubleshoot/ports/troubleshoot_ports.go" ;
+    code:description "Troubleshoot Ports module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/cli" ;
+        code:path "../command/cli"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "troubleshoot/ports" ;
+        code:path "../troubleshoot/ports"
+    ] ;
+    code:exports :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package ports
 
 import (

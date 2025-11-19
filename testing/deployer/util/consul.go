@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/util/consul.go
+Consul module for internal layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+internal
+
+## Exports
+DialExposedGRPCConn, ProxyAPIClient, ProxyHTTPTransport, ProxyNotPooledAPIClient, ProxyNotPooledHTTPTransport
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/util/consul.go> a code:Module ;
+    code:name "testing/deployer/util/consul.go" ;
+    code:description "Consul module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :DialExposedGRPCConn, :ProxyAPIClient, :ProxyHTTPTransport, :ProxyNotPooledAPIClient, :ProxyNotPooledHTTPTransport ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package util
 
 import (

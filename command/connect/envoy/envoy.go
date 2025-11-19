@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/connect/envoy/envoy.go
+Envoy module for cli layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/netutil](../agent/netutil)
+- [agent/structs](../agent/structs)
+- [agent/xds](../agent/xds)
+- [agent/xds/accesslogs](../agent/xds/accesslogs)
+- [api](../api)
+- [command/connect/proxy](../command/connect/proxy)
+- [command/flags](../command/flags)
+- [envoyextensions/xdscommon](../envoyextensions/xdscommon)
+- [ipaddr](../ipaddr)
+
+## Tags
+cli, mtls, service-mesh, user-interface
+
+## Exports
+DefaultAdminAccessLogPath, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/envoy/envoy.go> a code:Module ;
+    code:name "command/connect/envoy/envoy.go" ;
+    code:description "Envoy module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/netutil" ;
+        code:path "../agent/netutil"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/xds" ;
+        code:path "../agent/xds"
+    ], [
+        code:name "agent/xds/accesslogs" ;
+        code:path "../agent/xds/accesslogs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/connect/proxy" ;
+        code:path "../command/connect/proxy"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "envoyextensions/xdscommon" ;
+        code:path "../envoyextensions/xdscommon"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ] ;
+    code:exports :DefaultAdminAccessLogPath, :New ;
+    code:tags "cli", "mtls", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package envoy
 
 import (

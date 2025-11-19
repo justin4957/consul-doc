@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/helpers/helpers.go
+Helpers module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [lib/decode](../lib/decode)
+
+## Tags
+cli, user-interface
+
+## Exports
+LoadDataSource, LoadDataSourceNoRaw, LoadFromFile, ParseConfigEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/helpers/helpers.go> a code:Module ;
+    code:name "command/helpers/helpers.go" ;
+    code:description "Helpers module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib/decode" ;
+        code:path "../lib/decode"
+    ] ;
+    code:exports :LoadDataSource, :LoadDataSourceNoRaw, :LoadFromFile, :ParseConfigEntry ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package helpers
 
 import (

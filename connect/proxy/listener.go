@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/proxy/listener.go
+Listener module for service-mesh layer
+
+## Linked Modules
+- [api](../api)
+- [connect](../connect)
+- [ipaddr](../ipaddr)
+
+## Tags
+mtls, networking, service-mesh
+
+## Exports
+Listener, NewPublicListener, NewUpstreamListener
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/proxy/listener.go> a code:Module ;
+    code:name "connect/proxy/listener.go" ;
+    code:description "Listener module for service-mesh layer" ;
+    code:language "go" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "connect" ;
+        code:path "../connect"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ] ;
+    code:exports :Listener, :NewPublicListener, :NewUpstreamListener ;
+    code:tags "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxy
 
 import (

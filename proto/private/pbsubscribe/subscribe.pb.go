@@ -16,6 +16,46 @@
 // the rpc method dispatch and editing it naively would break backwards
 // compatibility.
 
+/*
+# Module: proto/private/pbsubscribe/subscribe.pb.go
+Subscribe.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+- [proto/private/pbconfigentry](../proto/private/pbconfigentry)
+- [proto/private/pbservice](../proto/private/pbservice)
+
+## Tags
+internal
+
+## Exports
+CatalogOp, ConfigEntryUpdate, Event, EventBatch, File, NamedSubject, ServiceHealthUpdate, ServiceListUpdate, SubscribeRequest, Topic
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbsubscribe/subscribe.pb.go> a code:Module ;
+    code:name "proto/private/pbsubscribe/subscribe.pb.go" ;
+    code:description "Subscribe.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ], [
+        code:name "proto/private/pbconfigentry" ;
+        code:path "../proto/private/pbconfigentry"
+    ], [
+        code:name "proto/private/pbservice" ;
+        code:path "../proto/private/pbservice"
+    ] ;
+    code:exports :CatalogOp, :ConfigEntryUpdate, :Event, :EventBatch, :File, :NamedSubject, :ServiceHealthUpdate, :ServiceListUpdate, :SubscribeRequest, :Topic ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbsubscribe
 
 import (

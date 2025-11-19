@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/stream/subscription.go
+Subscription module for agent layer
+
+## Tags
+agent
+
+## Exports
+ErrACLChanged, ErrShuttingDown, ErrSubForceClosed, SubscribeRequest, Subscription
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/stream/subscription.go> a code:Module ;
+    code:name "agent/consul/stream/subscription.go" ;
+    code:description "Subscription module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :ErrACLChanged, :ErrShuttingDown, :ErrSubForceClosed, :SubscribeRequest, :Subscription ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package stream
 
 import (

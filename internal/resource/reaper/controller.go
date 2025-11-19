@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/reaper/controller.go
+Controller module for internal layer
+
+## Linked Modules
+- [internal/controller](../internal/controller)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+RegisterControllers
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/reaper/controller.go> a code:Module ;
+    code:name "internal/resource/reaper/controller.go" ;
+    code:description "Controller module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :RegisterControllers ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package reaper
 
 import (

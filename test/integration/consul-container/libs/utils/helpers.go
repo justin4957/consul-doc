@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/utils/helpers.go
+Helpers module for internal layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+internal
+
+## Exports
+ApplyDefaultProxySettings, GenerateKey, NewJWKS, SignJWT
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/utils/helpers.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/utils/helpers.go" ;
+    code:description "Helpers module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :ApplyDefaultProxySettings, :GenerateKey, :NewJWKS, :SignJWT ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package utils
 
 import (

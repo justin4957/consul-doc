@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/submatview/materializer.go
+Materializer module for agent layer
+
+## Linked Modules
+- [agent/consul/stream](../agent/consul/stream)
+- [lib/retry](../lib/retry)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent
+
+## Exports
+Deps, Result, View
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/submatview/materializer.go> a code:Module ;
+    code:name "agent/submatview/materializer.go" ;
+    code:description "Materializer module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :Deps, :Result, :View ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package submatview
 
 import (

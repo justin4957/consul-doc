@@ -3,6 +3,23 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/tenancy_bridge_ce.go
+Tenancy Bridge Ce module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/tenancy_bridge_ce.go> a code:Module ;
+    code:name "agent/consul/tenancy_bridge_ce.go" ;
+    code:description "Tenancy Bridge Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 func (b *V1TenancyBridge) PartitionExists(partition string) (bool, error) {

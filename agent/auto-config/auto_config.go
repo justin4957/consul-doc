@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/auto-config/auto_config.go
+Auto Config module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/config](../agent/config)
+- [agent/token](../agent/token)
+- [lib/retry](../lib/retry)
+- [logging](../logging)
+- [proto/private/pbautoconf](../proto/private/pbautoconf)
+
+## Tags
+agent, configuration
+
+## Exports
+AutoConfig, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/auto-config/auto_config.go> a code:Module ;
+    code:name "agent/auto-config/auto_config.go" ;
+    code:description "Auto Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/token" ;
+        code:path "../agent/token"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "proto/private/pbautoconf" ;
+        code:path "../proto/private/pbautoconf"
+    ] ;
+    code:exports :AutoConfig, :New ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package autoconf
 
 import (

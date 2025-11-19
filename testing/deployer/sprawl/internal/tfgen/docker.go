@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/internal/tfgen/docker.go
+Docker module for internal layer
+
+## Tags
+internal
+
+## Exports
+DockerImage, DockerImageResourceName, DockerNetwork, DockerVolume
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/internal/tfgen/docker.go> a code:Module ;
+    code:name "testing/deployer/sprawl/internal/tfgen/docker.go" ;
+    code:description "Docker module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DockerImage, :DockerImageResourceName, :DockerNetwork, :DockerVolume ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package tfgen
 
 import (

@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/list-grpc/list.go
+List module for cli layer
+
+## Linked Modules
+- [command/flags](../command/flags)
+- [command/resource](../command/resource)
+- [command/resource/client](../command/resource/client)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+api, cli, communication, grpc, networking, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/list-grpc/list.go> a code:Module ;
+    code:name "command/resource/list-grpc/list.go" ;
+    code:description "List module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ], [
+        code:name "command/resource" ;
+        code:path "../command/resource"
+    ], [
+        code:name "command/resource/client" ;
+        code:path "../command/resource/client"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :New ;
+    code:tags "api", "cli", "communication", "grpc", "networking", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package list
 
 import (

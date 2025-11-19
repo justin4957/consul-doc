@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/rpcclient/configentry/configentry.go
+Configentry module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/rpcclient](../agent/rpcclient)
+- [agent/structs](../agent/structs)
+- [agent/submatview](../agent/submatview)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, communication, configuration, networking
+
+## Exports
+Client
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/rpcclient/configentry/configentry.go> a code:Module ;
+    code:name "agent/rpcclient/configentry/configentry.go" ;
+    code:description "Configentry module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/rpcclient" ;
+        code:path "../agent/rpcclient"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/submatview" ;
+        code:path "../agent/submatview"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :Client ;
+    code:tags "agent", "communication", "configuration", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package configentry
 
 import (

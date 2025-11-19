@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/mappers/bimapper/bimapper.go
+Bimapper module for internal layer
+
+## Linked Modules
+- [internal/controller](../internal/controller)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+internal
+
+## Exports
+Mapper, New, NewWithWildcardLinkType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/mappers/bimapper/bimapper.go> a code:Module ;
+    code:name "internal/resource/mappers/bimapper/bimapper.go" ;
+    code:description "Bimapper module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :Mapper, :New, :NewWithWildcardLinkType ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package bimapper
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/envoy_extension.go
+Envoy Extension module for agent layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+agent, data-model, types
+
+## Exports
+EnvoyExtension, EnvoyExtensions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/envoy_extension.go> a code:Module ;
+    code:name "agent/structs/envoy_extension.go" ;
+    code:description "Envoy Extension module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :EnvoyExtension, :EnvoyExtensions ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

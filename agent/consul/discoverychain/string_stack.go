@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/discoverychain/string_stack.go
+String Stack module for agent layer
+
+## Tags
+agent, discovery, dns
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/discoverychain/string_stack.go> a code:Module ;
+    code:name "agent/consul/discoverychain/string_stack.go" ;
+    code:description "String Stack module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package discoverychain
 
 type stringStack []string

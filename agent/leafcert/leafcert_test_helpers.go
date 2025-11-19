@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/leafcert/leafcert_test_helpers.go
+Leafcert Test Helpers module for agent layer
+
+## Linked Modules
+- [agent/cacheshim](../agent/cacheshim)
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+- [sdk/testutil](../sdk/testutil)
+
+## Tags
+agent
+
+## Exports
+NewTestManager, ReplyWithExpiredCert, TestSigner
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/leafcert/leafcert_test_helpers.go> a code:Module ;
+    code:name "agent/leafcert/leafcert_test_helpers.go" ;
+    code:description "Leafcert Test Helpers module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cacheshim" ;
+        code:path "../agent/cacheshim"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ] ;
+    code:exports :NewTestManager, :ReplyWithExpiredCert, :TestSigner ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package leafcert
 
 import (

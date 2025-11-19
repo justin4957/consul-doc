@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/uri_server.go
+Uri Server module for agent layer
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+PeeringServerSAN, SpiffeIDServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/uri_server.go> a code:Module ;
+    code:name "agent/connect/uri_server.go" ;
+    code:description "Uri Server module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :PeeringServerSAN, :SpiffeIDServer ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (

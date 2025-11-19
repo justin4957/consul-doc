@@ -16,6 +16,27 @@
 // the rpc method dispatch and editing it naively would break backwards
 // compatibility.
 
+/*
+# Module: proto/private/pbsubscribe/subscribe_grpc.pb.go
+Subscribe Grpc.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewStateChangeSubscriptionClient, RegisterStateChangeSubscriptionServer, StateChangeSubscription, StateChangeSubscriptionClient, StateChangeSubscriptionServer, UnimplementedStateChangeSubscriptionServer, UnsafeStateChangeSubscriptionServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbsubscribe/subscribe_grpc.pb.go> a code:Module ;
+    code:name "proto/private/pbsubscribe/subscribe_grpc.pb.go" ;
+    code:description "Subscribe Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewStateChangeSubscriptionClient, :RegisterStateChangeSubscriptionServer, :StateChangeSubscription, :StateChangeSubscriptionClient, :StateChangeSubscriptionServer, :UnimplementedStateChangeSubscriptionServer, :UnsafeStateChangeSubscriptionServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbsubscribe
 
 import (

@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache/entry.go
+Entry module for agent layer
+
+## Linked Modules
+- [lib/ttlcache](../lib/ttlcache)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache/entry.go> a code:Module ;
+    code:name "agent/cache/entry.go" ;
+    code:description "Entry module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "lib/ttlcache" ;
+        code:path "../lib/ttlcache"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package cache
 
 import (

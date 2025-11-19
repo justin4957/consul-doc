@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/multicluster/internal/types/helpers.go
+Helpers module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [proto-public/pbmulticluster/v2](../proto-public/pbmulticluster/v2)
+- [proto-public/pbresource](../proto-public/pbresource)
+
+## Tags
+data-model, internal, types
+
+## Exports
+ValidateComputedExportedServices, ValidateExportedServices, ValidateNamespaceExportedServices, ValidatePartitionExportedServices
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/multicluster/internal/types/helpers.go> a code:Module ;
+    code:name "internal/multicluster/internal/types/helpers.go" ;
+    code:description "Helpers module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbmulticluster/v2" ;
+        code:path "../proto-public/pbmulticluster/v2"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ] ;
+    code:exports :ValidateComputedExportedServices, :ValidateExportedServices, :ValidateNamespaceExportedServices, :ValidatePartitionExportedServices ;
+    code:tags "data-model", "internal", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package types
 
 import (

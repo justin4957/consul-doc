@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/dnsutil/dns.go
+Dns module for internal layer
+
+## Tags
+discovery, internal, networking
+
+## Exports
+IPFromARPA, InvalidNameRe, IsValidLabel, TranslateAddressAccept, ValidateLabel
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/dnsutil/dns.go> a code:Module ;
+    code:name "internal/dnsutil/dns.go" ;
+    code:description "Dns module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :IPFromARPA, :InvalidNameRe, :IsValidLabel, :TranslateAddressAccept, :ValidateLabel ;
+    code:tags "discovery", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package dnsutil
 
 import (

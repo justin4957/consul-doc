@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/flags/config.go
+Config module for cli layer
+
+## Tags
+cli, configuration, user-interface
+
+## Exports
+BoolToBoolValueFunc, BoolValue, ConfigDecodeHook, DurationValue, Float64ToUintValueFunc, StringToDurationValueFunc, StringToStringValueFunc, StringValue, UintValue, Visit, VisitFn
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/flags/config.go> a code:Module ;
+    code:name "command/flags/config.go" ;
+    code:description "Config module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :BoolToBoolValueFunc, :BoolValue, :ConfigDecodeHook, :DurationValue, :Float64ToUintValueFunc, :StringToDurationValueFunc, :StringToStringValueFunc, :StringValue, :UintValue, :Visit, :VisitFn ;
+    code:tags "cli", "configuration", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package flags
 
 import (

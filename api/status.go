@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/status.go
+Status module for api layer
+
+## Tags
+api, client
+
+## Exports
+Status
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/status.go> a code:Module ;
+    code:name "api/status.go" ;
+    code:description "Status module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Status ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // Status can be used to query the Status endpoints

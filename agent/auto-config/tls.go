@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/auto-config/tls.go
+Tls module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/cache-types](../agent/cache-types)
+- [agent/connect](../agent/connect)
+- [agent/leafcert](../agent/leafcert)
+- [agent/structs](../agent/structs)
+- [proto/private/pbautoconf](../proto/private/pbautoconf)
+- [proto/private/pbconnect](../proto/private/pbconnect)
+
+## Tags
+agent, configuration, encryption, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/auto-config/tls.go> a code:Module ;
+    code:name "agent/auto-config/tls.go" ;
+    code:description "Tls module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../agent/cache-types"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/leafcert" ;
+        code:path "../agent/leafcert"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbautoconf" ;
+        code:path "../proto/private/pbautoconf"
+    ], [
+        code:name "proto/private/pbconnect" ;
+        code:path "../proto/private/pbconnect"
+    ] ;
+    code:tags "agent", "configuration", "encryption", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package autoconf
 
 import (

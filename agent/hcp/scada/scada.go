@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/scada/scada.go
+Scada module for agent layer
+
+## Linked Modules
+- [agent/hcp/config](../agent/hcp/config)
+
+## Tags
+agent
+
+## Exports
+IsCapability, New, Provider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/scada/scada.go> a code:Module ;
+    code:name "agent/hcp/scada/scada.go" ;
+    code:description "Scada module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ] ;
+    code:exports :IsCapability, :New, :Provider ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package scada
 
 import (

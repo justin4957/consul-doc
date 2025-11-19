@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/test/resource/http_api/helper.go
+Helper module for internal layer
+
+## Linked Modules
+- [test/integration/consul-container/libs/cluster](../test/integration/consul-container/libs/cluster)
+- [test/integration/consul-container/libs/topology](../test/integration/consul-container/libs/topology)
+- [test/integration/consul-container/test/resource/http_api/client](../test/integration/consul-container/test/resource/http_api/client)
+
+## Tags
+api, client, internal
+
+## Exports
+GVK, ListResponse, Resource, SetupClusterAndClient, Terminate, WriteRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/test/resource/http_api/helper.go> a code:Module ;
+    code:name "test/integration/consul-container/test/resource/http_api/helper.go" ;
+    code:description "Helper module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "test/integration/consul-container/libs/cluster" ;
+        code:path "../test/integration/consul-container/libs/cluster"
+    ], [
+        code:name "test/integration/consul-container/libs/topology" ;
+        code:path "../test/integration/consul-container/libs/topology"
+    ], [
+        code:name "test/integration/consul-container/test/resource/http_api/client" ;
+        code:path "../test/integration/consul-container/test/resource/http_api/client"
+    ] ;
+    code:exports :GVK, :ListResponse, :Resource, :SetupClusterAndClient, :Terminate, :WriteRequest ;
+    code:tags "api", "client", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (

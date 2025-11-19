@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/discover/discover.go
+Discover module for agent layer
+
+## Linked Modules
+- [agent/hcp/client](../agent/hcp/client)
+- [agent/hcp/config](../agent/hcp/config)
+
+## Tags
+agent
+
+## Exports
+Provider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/discover/discover.go> a code:Module ;
+    code:name "agent/hcp/discover/discover.go" ;
+    code:description "Discover module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/client" ;
+        code:path "../agent/hcp/client"
+    ], [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ] ;
+    code:exports :Provider ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package discover
 
 import (

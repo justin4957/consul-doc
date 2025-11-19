@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/default.go
+Default module for agent layer
+
+## Linked Modules
+- [agent/checks](../agent/checks)
+- [agent/consul](../agent/consul)
+- [version](../version)
+
+## Tags
+agent, configuration
+
+## Exports
+DefaultConsulSource, DefaultSource, DevConsulSource, DevSource, NonUserSource
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/default.go> a code:Module ;
+    code:name "agent/config/default.go" ;
+    code:description "Default module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/checks" ;
+        code:path "../agent/checks"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :DefaultConsulSource, :DefaultSource, :DevConsulSource, :DevSource, :NonUserSource ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

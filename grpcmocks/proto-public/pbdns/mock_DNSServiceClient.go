@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbdns/mock_DNSServiceClient.go
+Mock Dnsserviceclient module for internal layer
+
+## Linked Modules
+- [proto-public/pbdns](../proto-public/pbdns)
+
+## Tags
+api, communication, discovery, grpc, internal, networking
+
+## Exports
+DNSServiceClient, NewDNSServiceClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbdns/mock_DNSServiceClient.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbdns/mock_DNSServiceClient.go" ;
+    code:description "Mock Dnsserviceclient module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbdns" ;
+        code:path "../proto-public/pbdns"
+    ] ;
+    code:exports :DNSServiceClient, :NewDNSServiceClient ;
+    code:tags "api", "communication", "discovery", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbdns
 
 import (

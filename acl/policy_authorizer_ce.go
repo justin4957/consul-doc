@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: acl/policy_authorizer_ce.go
+Policy Authorizer Ce module for acl layer
+
+## Tags
+access-control, acl, authentication, authorization, security
+
+## Exports
+NewPolicyAuthorizer, NewPolicyAuthorizerWithDefaults
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/policy_authorizer_ce.go> a code:Module ;
+    code:name "acl/policy_authorizer_ce.go" ;
+    code:description "Policy Authorizer Ce module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :NewPolicyAuthorizer, :NewPolicyAuthorizerWithDefaults ;
+    code:tags "access-control", "acl", "authentication", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 // enterprisePolicyAuthorizer stub

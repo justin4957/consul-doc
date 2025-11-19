@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/ratelimited_file_watcher.go
+Ratelimited File Watcher module for agent layer
+
+## Tags
+agent, configuration
+
+## Exports
+NewRateLimitedFileWatcher
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/ratelimited_file_watcher.go> a code:Module ;
+    code:name "agent/config/ratelimited_file_watcher.go" ;
+    code:description "Ratelimited File Watcher module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :NewRateLimitedFileWatcher ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/testing_peering.go
+Testing Peering module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [proto/private/pbpeering](../proto/private/pbpeering)
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+TestConfigSnapshotPeering, TestConfigSnapshotPeeringLocalMeshGateway, TestConfigSnapshotPeeringTProxy, TestConfigSnapshotPeeringWithEscapeOverrides, TestConfigSnapshotPeeringWithHTTP2
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/testing_peering.go> a code:Module ;
+    code:name "agent/proxycfg/testing_peering.go" ;
+    code:description "Testing Peering module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbpeering" ;
+        code:path "../proto/private/pbpeering"
+    ] ;
+    code:exports :TestConfigSnapshotPeering, :TestConfigSnapshotPeeringLocalMeshGateway, :TestConfigSnapshotPeeringTProxy, :TestConfigSnapshotPeeringWithEscapeOverrides, :TestConfigSnapshotPeeringWithHTTP2 ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

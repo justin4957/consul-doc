@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/metrics/testing.go
+Testing module for agent layer
+
+## Tags
+agent
+
+## Exports
+AssertCounter, AssertGauge, TestSetupMetrics
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/metrics/testing.go> a code:Module ;
+    code:name "agent/metrics/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :AssertCounter, :AssertGauge, :TestSetupMetrics ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package metrics
 
 import (

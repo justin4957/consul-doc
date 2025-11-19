@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_exports.go
+Config Entry Exports module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+ExportedService, ExportedServicesConfigEntry, ServiceConsumer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_exports.go> a code:Module ;
+    code:name "api/config_entry_exports.go" ;
+    code:description "Config Entry Exports module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :ExportedService, :ExportedServicesConfigEntry, :ServiceConsumer ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

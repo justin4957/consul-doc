@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/log-drop/log-drop.go
+Log Drop module for agent layer
+
+## Tags
+agent
+
+## Exports
+Log, Logger, NewLogDropSink
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/log-drop/log-drop.go> a code:Module ;
+    code:name "agent/log-drop/log-drop.go" ;
+    code:description "Log Drop module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Log, :Logger, :NewLogDropSink ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package logdrop
 
 import (

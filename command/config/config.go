@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/config/config.go
+Config module for cli layer
+
+## Linked Modules
+- [api](../api)
+- [command/flags](../command/flags)
+
+## Tags
+cli, configuration, user-interface
+
+## Exports
+KindSpecificWriteWarning, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/config/config.go> a code:Module ;
+    code:name "command/config/config.go" ;
+    code:description "Config module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :KindSpecificWriteWarning, :New ;
+    code:tags "cli", "configuration", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

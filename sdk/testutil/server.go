@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/server.go
+Server module for internal layer
+
+## Linked Modules
+- [sdk/freeport](../sdk/freeport)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+internal
+
+## Exports
+Locality, NewTestServerConfigT, ServerConfigCallback, TestACLs, TestAddressConfig, TestAuditConfig, TestAutopilotConfig, TestCheck, TestKVResponse, TestNetworkSegment, TestPeeringConfig, TestPerformanceConfig, TestPortConfig, TestServer, TestServerConfig, TestService, TestTokens
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/server.go> a code:Module ;
+    code:name "sdk/testutil/server.go" ;
+    code:description "Server module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "sdk/freeport" ;
+        code:path "../sdk/freeport"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :Locality, :NewTestServerConfigT, :ServerConfigCallback, :TestACLs, :TestAddressConfig, :TestAuditConfig, :TestAutopilotConfig, :TestCheck, :TestKVResponse, :TestNetworkSegment, :TestPeeringConfig, :TestPerformanceConfig, :TestPortConfig, :TestServer, :TestServerConfig, :TestService, :TestTokens ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutil
 
 // TestServer is a test helper. It uses a fork/exec model to create

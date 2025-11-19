@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/serverdiscovery/watch_servers.go
+Watch Servers module for agent layer
+
+## Linked Modules
+- [agent/consul/autopilotevents](../agent/consul/autopilotevents)
+- [agent/consul/stream](../agent/consul/stream)
+- [agent/grpc-external](../agent/grpc-external)
+- [agent/structs](../agent/structs)
+- [proto-public/pbserverdiscovery](../proto-public/pbserverdiscovery)
+
+## Tags
+agent, api, communication, discovery, dns, grpc, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/serverdiscovery/watch_servers.go> a code:Module ;
+    code:name "agent/grpc-external/services/serverdiscovery/watch_servers.go" ;
+    code:description "Watch Servers module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/autopilotevents" ;
+        code:path "../agent/consul/autopilotevents"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ], [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto-public/pbserverdiscovery" ;
+        code:path "../proto-public/pbserverdiscovery"
+    ] ;
+    code:tags "agent", "api", "communication", "discovery", "dns", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package serverdiscovery
 
 import (

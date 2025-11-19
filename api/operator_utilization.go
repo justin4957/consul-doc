@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/operator_utilization.go
+Operator Utilization module for api layer
+
+## Tags
+api, client
+
+## Exports
+Census, UtilizationBundleRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/operator_utilization.go> a code:Module ;
+    code:name "api/operator_utilization.go" ;
+    code:description "Operator Utilization module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Census, :UtilizationBundleRequest ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

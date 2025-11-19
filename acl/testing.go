@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/testing.go
+Testing module for acl layer
+
+## Tags
+access-control, acl, authorization, security
+
+## Exports
+RequirePermissionDeniedError, RequirePermissionDeniedMessage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/testing.go> a code:Module ;
+    code:name "acl/testing.go" ;
+    code:description "Testing module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :RequirePermissionDeniedError, :RequirePermissionDeniedMessage ;
+    code:tags "access-control", "acl", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

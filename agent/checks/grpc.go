@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/checks/grpc.go
+Grpc module for agent layer
+
+## Tags
+agent, api, communication, grpc, health-checks, monitoring, networking
+
+## Exports
+GrpcHealthProbe, NewGrpcHealthProbe
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/checks/grpc.go> a code:Module ;
+    code:name "agent/checks/grpc.go" ;
+    code:description "Grpc module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :GrpcHealthProbe, :NewGrpcHealthProbe ;
+    code:tags "agent", "api", "communication", "grpc", "health-checks", "monitoring", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package checks
 
 import (

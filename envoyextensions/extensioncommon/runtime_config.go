@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: envoyextensions/extensioncommon/runtime_config.go
+Runtime Config module for internal layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+configuration, internal
+
+## Exports
+RuntimeConfig, UpstreamData
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<envoyextensions/extensioncommon/runtime_config.go> a code:Module ;
+    code:name "envoyextensions/extensioncommon/runtime_config.go" ;
+    code:description "Runtime Config module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :RuntimeConfig, :UpstreamData ;
+    code:tags "configuration", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package extensioncommon
 
 import "github.com/hashicorp/consul/api"

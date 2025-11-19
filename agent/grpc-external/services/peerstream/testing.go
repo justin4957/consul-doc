@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/peerstream/testing.go
+Testing module for agent layer
+
+## Linked Modules
+- [proto/private/pbpeerstream](../proto/private/pbpeerstream)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+MockClient, MockStream, NewMockClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/peerstream/testing.go> a code:Module ;
+    code:name "agent/grpc-external/services/peerstream/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "proto/private/pbpeerstream" ;
+        code:path "../proto/private/pbpeerstream"
+    ] ;
+    code:exports :MockClient, :MockStream, :NewMockClient ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package peerstream
 
 import (

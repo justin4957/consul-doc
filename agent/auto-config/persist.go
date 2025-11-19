@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/auto-config/persist.go
+Persist module for agent layer
+
+## Linked Modules
+- [proto/private/pbautoconf](../proto/private/pbautoconf)
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/auto-config/persist.go> a code:Module ;
+    code:name "agent/auto-config/persist.go" ;
+    code:description "Persist module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "proto/private/pbautoconf" ;
+        code:path "../proto/private/pbautoconf"
+    ] ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package autoconf
 
 import (

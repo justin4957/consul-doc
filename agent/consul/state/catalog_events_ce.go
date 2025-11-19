@@ -3,6 +3,30 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/state/catalog_events_ce.go
+Catalog Events Ce module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, discovery, persistence, registry, storage
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/catalog_events_ce.go> a code:Module ;
+    code:name "agent/consul/state/catalog_events_ce.go" ;
+    code:description "Catalog Events Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "agent", "discovery", "persistence", "registry", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

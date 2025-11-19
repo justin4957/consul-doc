@@ -7,6 +7,38 @@
 // 	protoc        (unknown)
 // source: private/pbautoconf/auto_config.proto
 
+/*
+# Module: proto/private/pbautoconf/auto_config.pb.go
+Auto Config.Pb module for internal layer
+
+## Linked Modules
+- [proto/private/pbconfig](../proto/private/pbconfig)
+- [proto/private/pbconnect](../proto/private/pbconnect)
+
+## Tags
+configuration, internal
+
+## Exports
+AutoConfigRequest, AutoConfigResponse, File
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbautoconf/auto_config.pb.go> a code:Module ;
+    code:name "proto/private/pbautoconf/auto_config.pb.go" ;
+    code:description "Auto Config.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto/private/pbconfig" ;
+        code:path "../proto/private/pbconfig"
+    ], [
+        code:name "proto/private/pbconnect" ;
+        code:path "../proto/private/pbconnect"
+    ] ;
+    code:exports :AutoConfigRequest, :AutoConfigResponse, :File ;
+    code:tags "configuration", "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbautoconf
 
 import (

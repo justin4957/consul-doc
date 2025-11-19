@@ -3,6 +3,23 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/xds/failover_policy_ce.go
+Failover Policy Ce module for agent layer
+
+## Tags
+agent, envoy, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/failover_policy_ce.go> a code:Module ;
+    code:name "agent/xds/failover_policy_ce.go" ;
+    code:description "Failover Policy Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

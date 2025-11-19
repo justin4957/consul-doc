@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/acl_templated_policy.go
+Acl Templated Policy module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [api](../api)
+- [lib/stringslice](../lib/stringslice)
+
+## Tags
+access-control, agent, authorization, data-model, security, types
+
+## Exports
+ACLTemplatedPolicies, ACLTemplatedPolicy, ACLTemplatedPolicyAPIGatewaySchema, ACLTemplatedPolicyBase, ACLTemplatedPolicyNodeSchema, ACLTemplatedPolicyServiceSchema, ACLTemplatedPolicyVariables, GetACLTemplatedPolicyBase, GetACLTemplatedPolicyList
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/acl_templated_policy.go> a code:Module ;
+    code:name "agent/structs/acl_templated_policy.go" ;
+    code:description "Acl Templated Policy module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib/stringslice" ;
+        code:path "../lib/stringslice"
+    ] ;
+    code:exports :ACLTemplatedPolicies, :ACLTemplatedPolicy, :ACLTemplatedPolicyAPIGatewaySchema, :ACLTemplatedPolicyBase, :ACLTemplatedPolicyNodeSchema, :ACLTemplatedPolicyServiceSchema, :ACLTemplatedPolicyVariables, :GetACLTemplatedPolicyBase, :GetACLTemplatedPolicyList ;
+    code:tags "access-control", "agent", "authorization", "data-model", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

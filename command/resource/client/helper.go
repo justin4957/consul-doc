@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/client/helper.go
+Helper module for cli layer
+
+## Tags
+cli, user-interface
+
+## Exports
+SetupTLSConfig, TValue
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/client/helper.go> a code:Module ;
+    code:name "command/resource/client/helper.go" ;
+    code:description "Helper module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :SetupTLSConfig, :TValue ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

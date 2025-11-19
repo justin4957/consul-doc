@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/grpc.go
+Grpc module for internal layer
+
+## Linked Modules
+- [testing/deployer/sprawl/internal/secrets](../testing/deployer/sprawl/internal/secrets)
+- [testing/deployer/topology](../testing/deployer/topology)
+- [testing/deployer/util](../testing/deployer/util)
+
+## Tags
+api, communication, grpc, internal, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/grpc.go> a code:Module ;
+    code:name "testing/deployer/sprawl/grpc.go" ;
+    code:description "Grpc module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "testing/deployer/sprawl/internal/secrets" ;
+        code:path "../testing/deployer/sprawl/internal/secrets"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ], [
+        code:name "testing/deployer/util" ;
+        code:path "../testing/deployer/util"
+    ] ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package sprawl
 
 import (

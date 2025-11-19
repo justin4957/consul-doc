@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/discoverychain/gateway.go
+Gateway module for agent layer
+
+## Linked Modules
+- [agent/configentry](../agent/configentry)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, discovery, dns
+
+## Exports
+ConsolidateHTTPRoutes, GatewayChainSynthesizer, NewGatewayChainSynthesizer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/discoverychain/gateway.go> a code:Module ;
+    code:name "agent/consul/discoverychain/gateway.go" ;
+    code:description "Gateway module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ConsolidateHTTPRoutes, :GatewayChainSynthesizer, :NewGatewayChainSynthesizer ;
+    code:tags "agent", "discovery", "dns" .
+<!-- End LinkedDoc RDF -->
+*/
 package discoverychain
 
 import (

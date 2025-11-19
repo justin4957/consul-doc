@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/template/hil.go
+Hil module for internal layer
+
+## Tags
+internal
+
+## Exports
+InterpolateHIL
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/template/hil.go> a code:Module ;
+    code:name "lib/template/hil.go" ;
+    code:description "Hil module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :InterpolateHIL ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package template
 
 import (

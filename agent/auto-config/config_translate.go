@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/auto-config/config_translate.go
+Config Translate module for agent layer
+
+## Linked Modules
+- [agent/config](../agent/config)
+- [agent/structs](../agent/structs)
+- [proto/private/pbautoconf](../proto/private/pbautoconf)
+- [proto/private/pbconfig](../proto/private/pbconfig)
+- [proto/private/pbconnect](../proto/private/pbconnect)
+- [types](../types)
+
+## Tags
+agent, configuration
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/auto-config/config_translate.go> a code:Module ;
+    code:name "agent/auto-config/config_translate.go" ;
+    code:description "Config Translate module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "proto/private/pbautoconf" ;
+        code:path "../proto/private/pbautoconf"
+    ], [
+        code:name "proto/private/pbconfig" ;
+        code:path "../proto/private/pbconfig"
+    ], [
+        code:name "proto/private/pbconnect" ;
+        code:path "../proto/private/pbconnect"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package autoconf
 
 import (

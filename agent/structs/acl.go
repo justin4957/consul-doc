@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/acl.go
+Acl module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [api](../api)
+- [lib](../lib)
+- [lib/stringslice](../lib/stringslice)
+
+## Tags
+access-control, agent, authorization, data-model, security, types
+
+## Exports
+ACLAuthMethod, ACLAuthMethodBatchDeleteRequest, ACLAuthMethodBatchSetRequest, ACLAuthMethodDeleteRequest, ACLAuthMethodGetRequest, ACLAuthMethodListRequest, ACLAuthMethodListResponse, ACLAuthMethodListStub, ACLAuthMethodListStubs, ACLAuthMethodResponse, ACLAuthMethodSetRequest, ACLAuthMethods, ACLAuthorizationRequest, ACLAuthorizationResponse, ACLBindingRule, ACLBindingRuleBatchDeleteRequest, ACLBindingRuleBatchSetRequest, ACLBindingRuleDeleteRequest, ACLBindingRuleGetRequest, ACLBindingRuleListRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/acl.go> a code:Module ;
+    code:name "agent/structs/acl.go" ;
+    code:description "Acl module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/stringslice" ;
+        code:path "../lib/stringslice"
+    ] ;
+    code:exports :ACLAuthMethod, :ACLAuthMethodBatchDeleteRequest, :ACLAuthMethodBatchSetRequest, :ACLAuthMethodDeleteRequest, :ACLAuthMethodGetRequest, :ACLAuthMethodListRequest, :ACLAuthMethodListResponse, :ACLAuthMethodListStub, :ACLAuthMethodListStubs, :ACLAuthMethodResponse, :ACLAuthMethodSetRequest, :ACLAuthMethods, :ACLAuthorizationRequest, :ACLAuthorizationResponse, :ACLBindingRule, :ACLBindingRuleBatchDeleteRequest, :ACLBindingRuleBatchSetRequest, :ACLBindingRuleDeleteRequest, :ACLBindingRuleGetRequest, :ACLBindingRuleListRequest ;
+    code:tags "access-control", "agent", "authorization", "data-model", "security", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

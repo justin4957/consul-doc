@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/resourcetest/builder.go
+Builder module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+- [internal/storage](../internal/storage)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [sdk/testutil](../sdk/testutil)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+
+## Tags
+internal
+
+## Exports
+Resource, ResourceID
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/resourcetest/builder.go> a code:Module ;
+    code:name "internal/resource/resourcetest/builder.go" ;
+    code:description "Builder module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "sdk/testutil" ;
+        code:path "../sdk/testutil"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ] ;
+    code:exports :Resource, :ResourceID ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package resourcetest
 
 import (

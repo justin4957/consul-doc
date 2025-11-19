@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/tools/proto-gen-rpc-glue/e2e/consul/proto/pbcommon/common.go
+Common module for internal layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+communication, internal, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/proto-gen-rpc-glue/e2e/consul/proto/pbcommon/common.go> a code:Module ;
+    code:name "internal/tools/proto-gen-rpc-glue/e2e/consul/proto/pbcommon/common.go" ;
+    code:description "Common module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:tags "communication", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbcommon
 
 import (

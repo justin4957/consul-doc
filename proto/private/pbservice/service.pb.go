@@ -7,6 +7,34 @@
 // 	protoc        (unknown)
 // source: private/pbservice/service.proto
 
+/*
+# Module: proto/private/pbservice/service.pb.go
+Service.Pb module for internal layer
+
+## Linked Modules
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+internal
+
+## Exports
+AccessLogsConfig, ConnectProxyConfig, ExposeConfig, ExposePath, File, MeshGatewayConfig, PeeringServiceMeta, ServiceAddress, ServiceConnect, ServiceDefinition, ServicePort, TransparentProxyConfig, Upstream, Weights
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbservice/service.pb.go> a code:Module ;
+    code:name "proto/private/pbservice/service.pb.go" ;
+    code:description "Service.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :AccessLogsConfig, :ConnectProxyConfig, :ExposeConfig, :ExposePath, :File, :MeshGatewayConfig, :PeeringServiceMeta, :ServiceAddress, :ServiceConnect, :ServiceDefinition, :ServicePort, :TransparentProxyConfig, :Upstream, :Weights ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbservice
 
 import (

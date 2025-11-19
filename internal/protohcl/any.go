@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/protohcl/any.go
+Any module for internal layer
+
+## Tags
+internal
+
+## Exports
+AnyTypeProvider, AnyTypeURLProvider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/protohcl/any.go> a code:Module ;
+    code:name "internal/protohcl/any.go" ;
+    code:description "Any module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :AnyTypeProvider, :AnyTypeURLProvider ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package protohcl
 
 import (

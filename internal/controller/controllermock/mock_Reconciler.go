@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/controllermock/mock_Reconciler.go
+Mock Reconciler module for internal layer
+
+## Linked Modules
+- [internal/controller](../internal/controller)
+
+## Tags
+internal
+
+## Exports
+NewReconciler, Reconciler
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/controllermock/mock_Reconciler.go> a code:Module ;
+    code:name "internal/controller/controllermock/mock_Reconciler.go" ;
+    code:description "Mock Reconciler module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ] ;
+    code:exports :NewReconciler, :Reconciler ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controllermock
 
 import (

@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test/integration/consul-container/libs/service/gateway.go
+Gateway module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [test/integration/consul-container/libs/cluster](../test/integration/consul-container/libs/cluster)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+
+## Tags
+internal
+
+## Exports
+GatewayConfig, NewGatewayService, NewGatewayServiceReg
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test/integration/consul-container/libs/service/gateway.go> a code:Module ;
+    code:name "test/integration/consul-container/libs/service/gateway.go" ;
+    code:description "Gateway module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "test/integration/consul-container/libs/cluster" ;
+        code:path "../test/integration/consul-container/libs/cluster"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ] ;
+    code:exports :GatewayConfig, :NewGatewayService, :NewGatewayServiceReg ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package service
 
 import (

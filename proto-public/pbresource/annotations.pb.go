@@ -7,6 +7,27 @@
 // 	protoc        (unknown)
 // source: pbresource/annotations.proto
 
+/*
+# Module: proto-public/pbresource/annotations.pb.go
+Annotations.Pb module for internal layer
+
+## Tags
+internal
+
+## Exports
+File, ResourceTypeSpec, Scope
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbresource/annotations.pb.go> a code:Module ;
+    code:name "proto-public/pbresource/annotations.pb.go" ;
+    code:description "Annotations.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :File, :ResourceTypeSpec, :Scope ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbresource
 
 import (

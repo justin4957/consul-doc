@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/acl_endpoint.go
+Acl Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [lib](../lib)
+
+## Tags
+access-control, agent, authorization, security
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/acl_endpoint.go> a code:Module ;
+    code:name "agent/acl_endpoint.go" ;
+    code:description "Acl Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:tags "access-control", "agent", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

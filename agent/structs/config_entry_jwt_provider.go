@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/config_entry_jwt_provider.go
+Config Entry Jwt Provider module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, configuration, data-model, types
+
+## Exports
+ClusterDiscoveryType, JSONWebKeySet, JWKSCluster, JWKSRetryPolicy, JWKSTLSCertProviderInstance, JWKSTLSCertTrustedCA, JWKSTLSCertificate, JWTCacheConfig, JWTForwardingConfig, JWTLocation, JWTLocationCookie, JWTLocationHeader, JWTLocationQueryParam, JWTProviderConfigEntry, LocalJWKS, RemoteJWKS, RetryPolicyBackOff
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/config_entry_jwt_provider.go> a code:Module ;
+    code:name "agent/structs/config_entry_jwt_provider.go" ;
+    code:description "Config Entry Jwt Provider module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :ClusterDiscoveryType, :JSONWebKeySet, :JWKSCluster, :JWKSRetryPolicy, :JWKSTLSCertProviderInstance, :JWKSTLSCertTrustedCA, :JWKSTLSCertificate, :JWTCacheConfig, :JWTForwardingConfig, :JWTLocation, :JWTLocationCookie, :JWTLocationHeader, :JWTLocationQueryParam, :JWTProviderConfigEntry, :LocalJWKS, :RemoteJWKS, :RetryPolicyBackOff ;
+    code:tags "agent", "configuration", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

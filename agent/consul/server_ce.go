@@ -3,6 +3,54 @@
 
 //go:build !consulent
 
+/*
+# Module: agent/consul/server_ce.go
+Server Ce module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/reporting](../agent/consul/reporting)
+- [agent/grpc-external/services/resource](../agent/grpc-external/services/resource)
+- [agent/structs](../agent/structs)
+- [internal/gossip/librtt](../internal/gossip/librtt)
+- [internal/resource](../internal/resource)
+- [logging](../logging)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server_ce.go> a code:Module ;
+    code:name "agent/consul/server_ce.go" ;
+    code:description "Server Ce module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/reporting" ;
+        code:path "../agent/consul/reporting"
+    ], [
+        code:name "agent/grpc-external/services/resource" ;
+        code:path "../agent/grpc-external/services/resource"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/gossip/librtt" ;
+        code:path "../internal/gossip/librtt"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

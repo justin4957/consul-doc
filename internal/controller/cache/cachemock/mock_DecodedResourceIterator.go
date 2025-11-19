@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/cache/cachemock/mock_DecodedResourceIterator.go
+Mock Decodedresourceiterator module for internal layer
+
+## Linked Modules
+- [internal/resource](../internal/resource)
+
+## Tags
+internal
+
+## Exports
+DecodedResourceIterator, NewDecodedResourceIterator
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/cache/cachemock/mock_DecodedResourceIterator.go> a code:Module ;
+    code:name "internal/controller/cache/cachemock/mock_DecodedResourceIterator.go" ;
+    code:description "Mock Decodedresourceiterator module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ] ;
+    code:exports :DecodedResourceIterator, :NewDecodedResourceIterator ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachemock
 
 import (

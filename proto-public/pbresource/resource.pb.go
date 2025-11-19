@@ -9,6 +9,34 @@
 
 // For more information, see: https://github.com/hashicorp/consul/tree/main/docs/resources
 
+/*
+# Module: proto-public/pbresource/resource.pb.go
+Resource.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+
+## Tags
+internal
+
+## Exports
+Condition, DeleteRequest, DeleteResponse, File, ID, ListByOwnerRequest, ListByOwnerResponse, ListRequest, ListResponse, MutateAndValidateRequest, MutateAndValidateResponse, ReadRequest, ReadResponse, Reference, Resource, Status, Tenancy, Tombstone, Type, WatchEvent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto-public/pbresource/resource.pb.go> a code:Module ;
+    code:name "proto-public/pbresource/resource.pb.go" ;
+    code:description "Resource.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ] ;
+    code:exports :Condition, :DeleteRequest, :DeleteResponse, :File, :ID, :ListByOwnerRequest, :ListByOwnerResponse, :ListRequest, :ListResponse, :MutateAndValidateRequest, :MutateAndValidateResponse, :ReadRequest, :ReadResponse, :Reference, :Resource, :Status, :Tenancy, :Tombstone, :Type, :WatchEvent ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbresource
 
 import (

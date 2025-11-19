@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: internal/controller/controllermock/mock_Initializer.go
+Mock Initializer module for internal layer
+
+## Linked Modules
+- [internal/controller](../internal/controller)
+
+## Tags
+internal
+
+## Exports
+Initializer, NewInitializer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/controllermock/mock_Initializer.go> a code:Module ;
+    code:name "internal/controller/controllermock/mock_Initializer.go" ;
+    code:description "Mock Initializer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ] ;
+    code:exports :Initializer, :NewInitializer ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controllermock
 
 import (

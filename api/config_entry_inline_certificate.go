@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_inline_certificate.go
+Config Entry Inline Certificate module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+InlineCertificateConfigEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_inline_certificate.go> a code:Module ;
+    code:name "api/config_entry_inline_certificate.go" ;
+    code:description "Config Entry Inline Certificate module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :InlineCertificateConfigEntry ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // InlineCertificateConfigEntry -- TODO stub

@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/dataplane/get_supported_features.go
+Get Supported Features module for agent layer
+
+## Linked Modules
+- [agent/grpc-external](../agent/grpc-external)
+- [proto-public/pbdataplane](../proto-public/pbdataplane)
+- [version](../version)
+
+## Tags
+agent, api, communication, grpc, networking
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/dataplane/get_supported_features.go> a code:Module ;
+    code:name "agent/grpc-external/services/dataplane/get_supported_features.go" ;
+    code:description "Get Supported Features module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/grpc-external" ;
+        code:path "../agent/grpc-external"
+    ], [
+        code:name "proto-public/pbdataplane" ;
+        code:path "../proto-public/pbdataplane"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package dataplane
 
 import (

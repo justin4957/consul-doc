@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/routine/routine.go
+Routine module for internal layer
+
+## Tags
+internal
+
+## Exports
+Manager, NewManager, Routine
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/routine/routine.go> a code:Module ;
+    code:name "lib/routine/routine.go" ;
+    code:description "Routine module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Manager, :NewManager, :Routine ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package routine
 
 import (

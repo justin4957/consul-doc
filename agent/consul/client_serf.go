@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/client_serf.go
+Client Serf module for agent layer
+
+## Linked Modules
+- [agent/metadata](../agent/metadata)
+- [internal/gossip/libserf](../internal/gossip/libserf)
+- [lib](../lib)
+- [logging](../logging)
+- [types](../types)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/client_serf.go> a code:Module ;
+    code:name "agent/consul/client_serf.go" ;
+    code:description "Client Serf module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "internal/gossip/libserf" ;
+        code:path "../internal/gossip/libserf"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

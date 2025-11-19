@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: logging/gated_writer.go
+Gated Writer module for internal layer
+
+## Tags
+internal
+
+## Exports
+GatedWriter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/gated_writer.go> a code:Module ;
+    code:name "logging/gated_writer.go" ;
+    code:description "Gated Writer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :GatedWriter ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

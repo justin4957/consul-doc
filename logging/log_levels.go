@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: logging/log_levels.go
+Log Levels module for internal layer
+
+## Tags
+internal
+
+## Exports
+AllowedLogLevels, LevelFromString, ValidateLogLevel
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/log_levels.go> a code:Module ;
+    code:name "logging/log_levels.go" ;
+    code:description "Log Levels module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :AllowedLogLevels, :LevelFromString, :ValidateLogLevel ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

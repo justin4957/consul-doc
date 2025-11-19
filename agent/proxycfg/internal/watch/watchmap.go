@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/internal/watch/watchmap.go
+Watchmap module for agent layer
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+DeepCopyable, Map, NewMap
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/internal/watch/watchmap.go> a code:Module ;
+    code:name "agent/proxycfg/internal/watch/watchmap.go" ;
+    code:description "Watchmap module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :DeepCopyable, :Map, :NewMap ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package watch
 
 import "context"

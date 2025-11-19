@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: proto/private/pbsubscribe/subscribe.go
+Subscribe module for internal layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbsubscribe/subscribe.go> a code:Module ;
+    code:name "proto/private/pbsubscribe/subscribe.go" ;
+    code:description "Subscribe module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbsubscribe
 
 import (

@@ -2,6 +2,27 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbconnectca/mock_UnsafeConnectCAServiceServer.go
+Mock Unsafeconnectcaserviceserver module for internal layer
+
+## Tags
+api, communication, grpc, internal, mtls, networking, service-mesh
+
+## Exports
+NewUnsafeConnectCAServiceServer, UnsafeConnectCAServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbconnectca/mock_UnsafeConnectCAServiceServer.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbconnectca/mock_UnsafeConnectCAServiceServer.go" ;
+    code:description "Mock Unsafeconnectcaserviceserver module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewUnsafeConnectCAServiceServer, :UnsafeConnectCAServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "mtls", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbconnectca
 
 import (

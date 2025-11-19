@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/lock.go
+Lock module for api layer
+
+## Tags
+api, client
+
+## Exports
+Lock, LockOptions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/lock.go> a code:Module ;
+    code:name "api/lock.go" ;
+    code:description "Lock module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Lock, :LockOptions ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

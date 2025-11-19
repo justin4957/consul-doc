@@ -3,6 +3,23 @@
 
 //go:build darwin || freebsd || netbsd
 
+/*
+# Module: logging/logfile_darwinandfreebsd.go
+Logfile Darwinandfreebsd module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/logfile_darwinandfreebsd.go> a code:Module ;
+    code:name "logging/logfile_darwinandfreebsd.go" ;
+    code:description "Logfile Darwinandfreebsd module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

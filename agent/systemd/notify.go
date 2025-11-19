@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/systemd/notify.go
+Notify module for agent layer
+
+## Tags
+agent
+
+## Exports
+Notifier, NotifyNoSocket
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/systemd/notify.go> a code:Module ;
+    code:name "agent/systemd/notify.go" ;
+    code:description "Notify module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Notifier, :NotifyNoSocket ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package systemd
 
 import (

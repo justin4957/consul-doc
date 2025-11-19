@@ -10,4 +10,22 @@
 //
 // xds.Server also support ext_authz network filter API to authorize incoming
 // connections to Envoy.
+
+/*
+# Module: agent/xds/xds.go
+Xds module for agent layer
+
+## Tags
+agent, envoy, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/xds.go> a code:Module ;
+    code:name "agent/xds/xds.go" ;
+    code:description "Xds module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds

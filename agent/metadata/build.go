@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/metadata/build.go
+Build module for agent layer
+
+## Tags
+agent
+
+## Exports
+Build
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/metadata/build.go> a code:Module ;
+    code:name "agent/metadata/build.go" ;
+    code:description "Build module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Build ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package metadata
 
 import (

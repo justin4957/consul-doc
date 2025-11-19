@@ -7,6 +7,27 @@
 // - protoc             (unknown)
 // source: private/pboperator/operator.proto
 
+/*
+# Module: proto/private/pboperator/operator_grpc.pb.go
+Operator Grpc.Pb module for internal layer
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+NewOperatorServiceClient, OperatorService, OperatorServiceClient, OperatorServiceServer, RegisterOperatorServiceServer, UnimplementedOperatorServiceServer, UnsafeOperatorServiceServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pboperator/operator_grpc.pb.go> a code:Module ;
+    code:name "proto/private/pboperator/operator_grpc.pb.go" ;
+    code:description "Operator Grpc.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :NewOperatorServiceClient, :OperatorService, :OperatorServiceClient, :OperatorServiceServer, :RegisterOperatorServiceServer, :UnimplementedOperatorServiceServer, :UnsafeOperatorServiceServer ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package pboperator
 
 import (

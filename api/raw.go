@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/raw.go
+Raw module for api layer
+
+## Tags
+api, client
+
+## Exports
+Raw
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/raw.go> a code:Module ;
+    code:name "api/raw.go" ;
+    code:description "Raw module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Raw ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // Raw can be used to do raw queries against custom endpoints

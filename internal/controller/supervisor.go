@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/supervisor.go
+Supervisor module for internal layer
+
+## Linked Modules
+- [lib/retry](../lib/retry)
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/supervisor.go> a code:Module ;
+    code:name "internal/controller/supervisor.go" ;
+    code:description "Supervisor module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 import (

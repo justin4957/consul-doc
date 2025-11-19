@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/protobuf_compat.go
+Protobuf Compat module for agent layer
+
+## Tags
+agent, data-model, types
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/protobuf_compat.go> a code:Module ;
+    code:name "agent/structs/protobuf_compat.go" ;
+    code:description "Protobuf Compat module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

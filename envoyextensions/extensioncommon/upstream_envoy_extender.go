@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: envoyextensions/extensioncommon/upstream_envoy_extender.go
+Upstream Envoy Extender module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [envoyextensions/xdscommon](../envoyextensions/xdscommon)
+
+## Tags
+internal
+
+## Exports
+UpstreamEnvoyExtender
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<envoyextensions/extensioncommon/upstream_envoy_extender.go> a code:Module ;
+    code:name "envoyextensions/extensioncommon/upstream_envoy_extender.go" ;
+    code:description "Upstream Envoy Extender module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/xdscommon" ;
+        code:path "../envoyextensions/xdscommon"
+    ] ;
+    code:exports :UpstreamEnvoyExtender ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package extensioncommon
 
 import (

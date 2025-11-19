@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/token/persistence.go
+Persistence module for agent layer
+
+## Linked Modules
+- [lib/file](../lib/file)
+
+## Tags
+agent
+
+## Exports
+Config, Logger
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/token/persistence.go> a code:Module ;
+    code:name "agent/token/persistence.go" ;
+    code:description "Persistence module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "lib/file" ;
+        code:path "../lib/file"
+    ] ;
+    code:exports :Config, :Logger ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package token
 
 import (

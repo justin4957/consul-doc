@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/options.go
+Options module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+
+## Tags
+agent, data-model, types
+
+## Exports
+RegisterOptionsBlockingNoRefresh, RegisterOptionsBlockingRefresh, RegisterOptionsNoRefresh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/options.go> a code:Module ;
+    code:name "agent/cache-types/options.go" ;
+    code:description "Options module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ] ;
+    code:exports :RegisterOptionsBlockingNoRefresh, :RegisterOptionsBlockingRefresh, :RegisterOptionsNoRefresh ;
+    code:tags "agent", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

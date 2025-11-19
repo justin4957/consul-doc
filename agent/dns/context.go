@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/dns/context.go
+Context module for agent layer
+
+## Tags
+agent, discovery, networking
+
+## Exports
+Context, NewContextFromGRPCContext
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/dns/context.go> a code:Module ;
+    code:name "agent/dns/context.go" ;
+    code:description "Context module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Context, :NewContextFromGRPCContext ;
+    code:tags "agent", "discovery", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package dns
 
 import (

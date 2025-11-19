@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/tools/proto-gen-rpc-glue/main.go
+Main module for internal layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+
+## Tags
+communication, internal, networking
+
+## Exports
+Annotation, TypeInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/proto-gen-rpc-glue/main.go> a code:Module ;
+    code:name "internal/tools/proto-gen-rpc-glue/main.go" ;
+    code:description "Main module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :Annotation, :TypeInfo ;
+    code:tags "communication", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package main
 
 import (

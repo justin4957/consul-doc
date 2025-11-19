@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/util.go
+Util module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/metadata](../agent/metadata)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent
+
+## Exports
+CanServersUnderstandProtocol, DefaultIntentionAllow, ServersInDCMeetMinimumVersion, ServersInDCMeetRequirements
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/util.go> a code:Module ;
+    code:name "agent/consul/util.go" ;
+    code:description "Util module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :CanServersUnderstandProtocol, :DefaultIntentionAllow, :ServersInDCMeetMinimumVersion, :ServersInDCMeetRequirements ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

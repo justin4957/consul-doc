@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-middleware/testutil/fake_sink.go
+Fake Sink module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+FakeMetricsSink, MetricCall, NewFakeSink
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-middleware/testutil/fake_sink.go> a code:Module ;
+    code:name "agent/grpc-middleware/testutil/fake_sink.go" ;
+    code:description "Fake Sink module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :FakeMetricsSink, :MetricCall, :NewFakeSink ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutil
 
 import (

@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/ca/provider_vault.go
+Provider Vault module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+- [lib/decode](../lib/decode)
+- [lib/retry](../lib/retry)
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+NewVaultProvider, ParseVaultCAConfig, VaultProvider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/ca/provider_vault.go> a code:Module ;
+    code:name "agent/connect/ca/provider_vault.go" ;
+    code:description "Provider Vault module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/decode" ;
+        code:path "../lib/decode"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :NewVaultProvider, :ParseVaultCAConfig, :VaultProvider ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package ca
 
 import (

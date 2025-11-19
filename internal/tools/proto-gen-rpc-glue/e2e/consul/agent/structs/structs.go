@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/tools/proto-gen-rpc-glue/e2e/consul/agent/structs/structs.go
+Structs module for internal layer
+
+## Tags
+communication, data-model, internal, networking, types
+
+## Exports
+DurationFromProto, DurationToProto, IsZeroProtoTime, QueryBackend, QueryOptions, RPCInfo, TimeFromProto, TimeToProto
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/tools/proto-gen-rpc-glue/e2e/consul/agent/structs/structs.go> a code:Module ;
+    code:name "internal/tools/proto-gen-rpc-glue/e2e/consul/agent/structs/structs.go" ;
+    code:description "Structs module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DurationFromProto, :DurationToProto, :IsZeroProtoTime, :QueryBackend, :QueryOptions, :RPCInfo, :TimeFromProto, :TimeToProto ;
+    code:tags "communication", "data-model", "internal", "networking", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

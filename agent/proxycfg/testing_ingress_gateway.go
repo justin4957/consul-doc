@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/testing_ingress_gateway.go
+Testing Ingress Gateway module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/configentry](../agent/configentry)
+- [agent/connect](../agent/connect)
+- [agent/consul/discoverychain](../agent/consul/discoverychain)
+- [agent/structs](../agent/structs)
+- [types](../types)
+
+## Tags
+agent, networking, service-mesh
+
+## Exports
+TestConfigSnapshotIngress, TestConfigSnapshotIngressGateway, TestConfigSnapshotIngressGatewaySDS, TestConfigSnapshotIngressGatewayWithChain
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/testing_ingress_gateway.go> a code:Module ;
+    code:name "agent/proxycfg/testing_ingress_gateway.go" ;
+    code:description "Testing Ingress Gateway module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/configentry" ;
+        code:path "../agent/configentry"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/consul/discoverychain" ;
+        code:path "../agent/consul/discoverychain"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :TestConfigSnapshotIngress, :TestConfigSnapshotIngressGateway, :TestConfigSnapshotIngressGatewaySDS, :TestConfigSnapshotIngressGatewayWithChain ;
+    code:tags "agent", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (

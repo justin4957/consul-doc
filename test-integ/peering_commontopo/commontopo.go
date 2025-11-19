@@ -1,6 +1,58 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test-integ/peering_commontopo/commontopo.go
+Commontopo module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [sdk/testutil/retry](../sdk/testutil/retry)
+- [test-integ/topoutil](../test-integ/topoutil)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+- [testing/deployer/sprawl](../testing/deployer/sprawl)
+- [testing/deployer/sprawl/sprawltest](../testing/deployer/sprawl/sprawltest)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+ConfigEntryPartition, DisableNode, EnableNode, LocalPeerName, NewCommonTopo, NewCommonTopoWithoutAgentless, NewFortioServiceWithDefaults
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test-integ/peering_commontopo/commontopo.go> a code:Module ;
+    code:name "test-integ/peering_commontopo/commontopo.go" ;
+    code:description "Commontopo module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "sdk/testutil/retry" ;
+        code:path "../sdk/testutil/retry"
+    ], [
+        code:name "test-integ/topoutil" ;
+        code:path "../test-integ/topoutil"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ], [
+        code:name "testing/deployer/sprawl" ;
+        code:path "../testing/deployer/sprawl"
+    ], [
+        code:name "testing/deployer/sprawl/sprawltest" ;
+        code:path "../testing/deployer/sprawl/sprawltest"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :ConfigEntryPartition, :DisableNode, :EnableNode, :LocalPeerName, :NewCommonTopo, :NewCommonTopoWithoutAgentless, :NewFortioServiceWithDefaults ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package peering
 
 import (

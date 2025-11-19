@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/submatview/store.go
+Store module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [lib/ttlcache](../lib/ttlcache)
+
+## Tags
+agent
+
+## Exports
+Materializer, NewStore, Request, Store
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/submatview/store.go> a code:Module ;
+    code:name "agent/submatview/store.go" ;
+    code:description "Store module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "lib/ttlcache" ;
+        code:path "../lib/ttlcache"
+    ] ;
+    code:exports :Materializer, :NewStore, :Request, :Store ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package submatview
 
 import (

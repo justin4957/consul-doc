@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/internal_endpoint.go
+Internal Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [lib/stringslice](../lib/stringslice)
+
+## Tags
+agent
+
+## Exports
+Internal, MaximumManualVIPsPerService
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/internal_endpoint.go> a code:Module ;
+    code:name "agent/consul/internal_endpoint.go" ;
+    code:description "Internal Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/stringslice" ;
+        code:path "../lib/stringslice"
+    ] ;
+    code:exports :Internal, :MaximumManualVIPsPerService ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

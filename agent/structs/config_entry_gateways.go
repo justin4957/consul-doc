@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/config_entry_gateways.go
+Config Entry Gateways module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [lib/stringslice](../lib/stringslice)
+- [types](../types)
+
+## Tags
+agent, configuration, data-model, types
+
+## Exports
+APIGatewayConfigEntry, APIGatewayListener, APIGatewayListenerProtocol, APIGatewayPolicy, APIGatewayTLSConfiguration, BoundAPIGatewayConfigEntry, BoundAPIGatewayListener, GatewayService, GatewayServiceKind, GatewayServiceTLSConfig, GatewayServices, GatewayTLSConfig, GatewayTLSSDSConfig, IngressGatewayConfigEntry, IngressListener, IngressService, IngressServiceConfig, LinkedService, ServiceRouteReferences, TerminatingGatewayConfigEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/config_entry_gateways.go> a code:Module ;
+    code:name "agent/structs/config_entry_gateways.go" ;
+    code:description "Config Entry Gateways module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "lib/stringslice" ;
+        code:path "../lib/stringslice"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :APIGatewayConfigEntry, :APIGatewayListener, :APIGatewayListenerProtocol, :APIGatewayPolicy, :APIGatewayTLSConfiguration, :BoundAPIGatewayConfigEntry, :BoundAPIGatewayListener, :GatewayService, :GatewayServiceKind, :GatewayServiceTLSConfig, :GatewayServices, :GatewayTLSConfig, :GatewayTLSSDSConfig, :IngressGatewayConfigEntry, :IngressListener, :IngressService, :IngressServiceConfig, :LinkedService, :ServiceRouteReferences, :TerminatingGatewayConfigEntry ;
+    code:tags "agent", "configuration", "data-model", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

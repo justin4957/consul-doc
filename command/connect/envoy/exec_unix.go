@@ -3,6 +3,23 @@
 
 //go:build linux || darwin
 
+/*
+# Module: command/connect/envoy/exec_unix.go
+Exec Unix module for cli layer
+
+## Tags
+cli, mtls, service-mesh, user-interface
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/connect/envoy/exec_unix.go> a code:Module ;
+    code:name "command/connect/envoy/exec_unix.go" ;
+    code:description "Exec Unix module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:tags "cli", "mtls", "service-mesh", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package envoy
 
 import (

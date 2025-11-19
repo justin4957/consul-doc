@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/config_entry_gateways.go
+Config Entry Gateways module for api layer
+
+## Tags
+api, client, configuration
+
+## Exports
+APIGatewayConfigEntry, APIGatewayJWTClaimVerification, APIGatewayJWTProvider, APIGatewayJWTRequirement, APIGatewayListener, APIGatewayPolicy, APIGatewayTLSConfiguration, GatewayServiceTLSConfig, GatewayTLSConfig, GatewayTLSSDSConfig, IngressGatewayConfigEntry, IngressListener, IngressService, IngressServiceConfig, LinkedService, TerminatingGatewayConfigEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/config_entry_gateways.go> a code:Module ;
+    code:name "api/config_entry_gateways.go" ;
+    code:description "Config Entry Gateways module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :APIGatewayConfigEntry, :APIGatewayJWTClaimVerification, :APIGatewayJWTProvider, :APIGatewayJWTRequirement, :APIGatewayListener, :APIGatewayPolicy, :APIGatewayTLSConfiguration, :GatewayServiceTLSConfig, :GatewayTLSConfig, :GatewayTLSSDSConfig, :IngressGatewayConfigEntry, :IngressListener, :IngressService, :IngressServiceConfig, :LinkedService, :TerminatingGatewayConfigEntry ;
+    code:tags "api", "client", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 // IngressGatewayConfigEntry manages the configuration for an ingress service

@@ -3,6 +3,27 @@
 
 //go:build !consulent
 
+/*
+# Module: acl/authorizer_ce.go
+Authorizer Ce module for acl layer
+
+## Tags
+access-control, acl, authentication, authorization, security
+
+## Exports
+AuthorizerContext
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/authorizer_ce.go> a code:Module ;
+    code:name "acl/authorizer_ce.go" ;
+    code:description "Authorizer Ce module for acl layer" ;
+    code:language "go" ;
+    code:layer "acl" ;
+    code:exports :AuthorizerContext ;
+    code:tags "access-control", "acl", "authentication", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 // AuthorizerContext contains extra information that can be

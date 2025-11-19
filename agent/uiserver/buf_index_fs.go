@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/uiserver/buf_index_fs.go
+Buf Index Fs module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/uiserver/buf_index_fs.go> a code:Module ;
+    code:name "agent/uiserver/buf_index_fs.go" ;
+    code:description "Buf Index Fs module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package uiserver
 
 import (

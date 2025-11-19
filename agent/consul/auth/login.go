@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/auth/login.go
+Login module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/authmethod](../agent/consul/authmethod)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, authentication, security
+
+## Exports
+BuildTokenDescription, Login, NewLogin
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/auth/login.go> a code:Module ;
+    code:name "agent/consul/auth/login.go" ;
+    code:description "Login module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/authmethod" ;
+        code:path "../agent/consul/authmethod"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :BuildTokenDescription, :Login, :NewLogin ;
+    code:tags "agent", "authentication", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package auth
 
 import (

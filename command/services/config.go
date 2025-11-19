@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/services/config.go
+Config module for cli layer
+
+## Linked Modules
+- [agent/config](../agent/config)
+- [agent/structs](../agent/structs)
+- [api](../api)
+
+## Tags
+cli, configuration, user-interface
+
+## Exports
+ServicesFromFiles
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/services/config.go> a code:Module ;
+    code:name "command/services/config.go" ;
+    code:description "Config module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :ServicesFromFiles ;
+    code:tags "cli", "configuration", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package services
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/kv/impexp/kvimpexp.go
+Kvimpexp module for cli layer
+
+## Linked Modules
+- [api](../api)
+
+## Tags
+cli, user-interface
+
+## Exports
+Entry, ToEntry
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/kv/impexp/kvimpexp.go> a code:Module ;
+    code:name "command/kv/impexp/kvimpexp.go" ;
+    code:description "Kvimpexp module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ] ;
+    code:exports :Entry, :ToEntry ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package impexp
 
 import (

@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/builder.go
+Builder module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/checks](../agent/checks)
+- [agent/connect/ca](../agent/connect/ca)
+- [agent/consul](../agent/consul)
+- [agent/consul/authmethod/ssoauth](../agent/consul/authmethod/ssoauth)
+- [agent/consul/rate](../agent/consul/rate)
+- [agent/hcp/config](../agent/hcp/config)
+- [agent/rpc/middleware](../agent/rpc/middleware)
+- [agent/structs](../agent/structs)
+- [agent/token](../agent/token)
+
+## Tags
+agent, configuration
+
+## Exports
+FlagValuesTarget, Load, LoadOpts, LoadResult, UIPathBuilder
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/builder.go> a code:Module ;
+    code:name "agent/config/builder.go" ;
+    code:description "Builder module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/checks" ;
+        code:path "../agent/checks"
+    ], [
+        code:name "agent/connect/ca" ;
+        code:path "../agent/connect/ca"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/consul/authmethod/ssoauth" ;
+        code:path "../agent/consul/authmethod/ssoauth"
+    ], [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ], [
+        code:name "agent/hcp/config" ;
+        code:path "../agent/hcp/config"
+    ], [
+        code:name "agent/rpc/middleware" ;
+        code:path "../agent/rpc/middleware"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/token" ;
+        code:path "../agent/token"
+    ] ;
+    code:exports :FlagValuesTarget, :Load, :LoadOpts, :LoadResult, :UIPathBuilder ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

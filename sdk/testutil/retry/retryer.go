@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/retry/retryer.go
+Retryer module for internal layer
+
+## Tags
+internal
+
+## Exports
+DefaultRetryer, Retryer, ThirtySeconds, ThreeTimes, TwoSeconds
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/retry/retryer.go> a code:Module ;
+    code:name "sdk/testutil/retry/retryer.go" ;
+    code:description "Retryer module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :DefaultRetryer, :Retryer, :ThirtySeconds, :ThreeTimes, :TwoSeconds ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package retry
 
 import "time"

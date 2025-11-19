@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: test-integ/upgrade/l7_traffic_management/common.go
+Common module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [test-integ/topoutil](../test-integ/topoutil)
+- [test/integration/consul-container/libs/utils](../test/integration/consul-container/libs/utils)
+- [testing/deployer/sprawl](../testing/deployer/sprawl)
+- [testing/deployer/sprawl/sprawltest](../testing/deployer/sprawl/sprawltest)
+- [testing/deployer/topology](../testing/deployer/topology)
+
+## Tags
+internal
+
+## Exports
+NewCommonTopo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<test-integ/upgrade/l7_traffic_management/common.go> a code:Module ;
+    code:name "test-integ/upgrade/l7_traffic_management/common.go" ;
+    code:description "Common module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "test-integ/topoutil" ;
+        code:path "../test-integ/topoutil"
+    ], [
+        code:name "test/integration/consul-container/libs/utils" ;
+        code:path "../test/integration/consul-container/libs/utils"
+    ], [
+        code:name "testing/deployer/sprawl" ;
+        code:path "../testing/deployer/sprawl"
+    ], [
+        code:name "testing/deployer/sprawl/sprawltest" ;
+        code:path "../testing/deployer/sprawl/sprawltest"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ] ;
+    code:exports :NewCommonTopo ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package l7_traffic_management
 
 import (

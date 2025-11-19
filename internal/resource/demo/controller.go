@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/resource/demo/controller.go
+Controller module for internal layer
+
+## Linked Modules
+- [internal/controller](../internal/controller)
+- [internal/controller/dependency](../internal/controller/dependency)
+- [internal/resource](../internal/resource)
+- [proto-public/pbresource](../proto-public/pbresource)
+- [proto/private/pbdemo/v2](../proto/private/pbdemo/v2)
+
+## Tags
+internal
+
+## Exports
+RegisterControllers
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/resource/demo/controller.go> a code:Module ;
+    code:name "internal/resource/demo/controller.go" ;
+    code:description "Controller module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../internal/controller"
+    ], [
+        code:name "internal/controller/dependency" ;
+        code:path "../internal/controller/dependency"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../internal/resource"
+    ], [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "proto/private/pbdemo/v2" ;
+        code:path "../proto/private/pbdemo/v2"
+    ] ;
+    code:exports :RegisterControllers ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package demo
 
 import (

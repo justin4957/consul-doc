@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/testing_connect_proxy_config.go
+Testing Connect Proxy Config module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+
+## Tags
+agent, configuration, data-model, mtls, networking, service-mesh, types
+
+## Exports
+TestAddDefaultsToUpstreams, TestConnectProxyConfig, TestUpstreams
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/testing_connect_proxy_config.go> a code:Module ;
+    code:name "agent/structs/testing_connect_proxy_config.go" ;
+    code:description "Testing Connect Proxy Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ] ;
+    code:exports :TestAddDefaultsToUpstreams, :TestConnectProxyConfig, :TestUpstreams ;
+    code:tags "agent", "configuration", "data-model", "mtls", "networking", "service-mesh", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

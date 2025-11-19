@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/authmethod/kubeauth/testing.go
+Testing module for agent layer
+
+## Tags
+agent, authentication, security
+
+## Exports
+StartTestAPIServer, TestAPIServer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/authmethod/kubeauth/testing.go> a code:Module ;
+    code:name "agent/consul/authmethod/kubeauth/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :StartTestAPIServer, :TestAPIServer ;
+    code:tags "agent", "authentication", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package kubeauth
 
 import (

@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/acl.go
+Acl module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [acl/resolver](../acl/resolver)
+- [agent/structs](../agent/structs)
+- [agent/structs/aclfilter](../agent/structs/aclfilter)
+- [agent/token](../agent/token)
+- [logging](../logging)
+
+## Tags
+access-control, agent, authorization, security
+
+## Exports
+ACLCounters, ACLRemoteError, ACLResolver, ACLResolverBackend, ACLResolverConfig, ACLResolverSettings, ACLSummaries, IsACLRemoteError, NewACLResolver
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/acl.go> a code:Module ;
+    code:name "agent/consul/acl.go" ;
+    code:description "Acl module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "acl/resolver" ;
+        code:path "../acl/resolver"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/structs/aclfilter" ;
+        code:path "../agent/structs/aclfilter"
+    ], [
+        code:name "agent/token" ;
+        code:path "../agent/token"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:exports :ACLCounters, :ACLRemoteError, :ACLResolver, :ACLResolverBackend, :ACLResolverConfig, :ACLResolverSettings, :ACLSummaries, :IsACLRemoteError, :NewACLResolver ;
+    code:tags "access-control", "agent", "authorization", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

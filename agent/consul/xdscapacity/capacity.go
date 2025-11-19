@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/xdscapacity/capacity.go
+Capacity module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [lib/channels](../lib/channels)
+- [lib/retry](../lib/retry)
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+Config, Controller, NewController, SessionLimiter, StatsGauges, Store
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/xdscapacity/capacity.go> a code:Module ;
+    code:name "agent/consul/xdscapacity/capacity.go" ;
+    code:description "Capacity module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib/channels" ;
+        code:path "../lib/channels"
+    ], [
+        code:name "lib/retry" ;
+        code:path "../lib/retry"
+    ] ;
+    code:exports :Config, :Controller, :NewController, :SessionLimiter, :StatsGauges, :Store ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xdscapacity
 
 import (

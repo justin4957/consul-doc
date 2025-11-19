@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/wanfed/wanfed.go
+Wanfed module for agent layer
+
+## Linked Modules
+- [agent/pool](../agent/pool)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent
+
+## Exports
+IngestionAwareTransport, MeshGatewayResolver, NewTransport, SplitNodeName, Transport
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/wanfed/wanfed.go> a code:Module ;
+    code:name "agent/consul/wanfed/wanfed.go" ;
+    code:description "Wanfed module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/pool" ;
+        code:path "../agent/pool"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :IngestionAwareTransport, :MeshGatewayResolver, :NewTransport, :SplitNodeName, :Transport ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package wanfed
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/testing.go
+Testing module for agent layer
+
+## Linked Modules
+- [envoyextensions/xdscommon](../envoyextensions/xdscommon)
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+NewTestADSDeltaStream, NewTestEnvoy, TestADSDeltaStream, TestEnvoy
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/testing.go> a code:Module ;
+    code:name "agent/xds/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "envoyextensions/xdscommon" ;
+        code:path "../envoyextensions/xdscommon"
+    ] ;
+    code:exports :NewTestADSDeltaStream, :NewTestEnvoy, :TestADSDeltaStream, :TestEnvoy ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

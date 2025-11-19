@@ -7,6 +7,38 @@
 // 	protoc        (unknown)
 // source: private/pbpeering/peering.proto
 
+/*
+# Module: proto/private/pbpeering/peering.pb.go
+Peering.Pb module for internal layer
+
+## Linked Modules
+- [proto-public/annotations/ratelimit](../proto-public/annotations/ratelimit)
+- [proto/private/pbcommon](../proto/private/pbcommon)
+
+## Tags
+internal
+
+## Exports
+EstablishRequest, EstablishResponse, File, GenerateTokenRequest, GenerateTokenResponse, Peering, PeeringDeleteRequest, PeeringDeleteResponse, PeeringListRequest, PeeringListResponse, PeeringReadRequest, PeeringReadResponse, PeeringSecrets, PeeringServerAddresses, PeeringState, PeeringTerminateByIDRequest, PeeringTerminateByIDResponse, PeeringTrustBundle, PeeringTrustBundleDeleteRequest, PeeringTrustBundleDeleteResponse
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<proto/private/pbpeering/peering.pb.go> a code:Module ;
+    code:name "proto/private/pbpeering/peering.pb.go" ;
+    code:description "Peering.Pb module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/annotations/ratelimit" ;
+        code:path "../proto-public/annotations/ratelimit"
+    ], [
+        code:name "proto/private/pbcommon" ;
+        code:path "../proto/private/pbcommon"
+    ] ;
+    code:exports :EstablishRequest, :EstablishResponse, :File, :GenerateTokenRequest, :GenerateTokenResponse, :Peering, :PeeringDeleteRequest, :PeeringDeleteResponse, :PeeringListRequest, :PeeringListResponse, :PeeringReadRequest, :PeeringReadResponse, :PeeringSecrets, :PeeringServerAddresses, :PeeringState, :PeeringTerminateByIDRequest, :PeeringTerminateByIDResponse, :PeeringTrustBundle, :PeeringTrustBundleDeleteRequest, :PeeringTrustBundleDeleteResponse ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package pbpeering
 
 import (

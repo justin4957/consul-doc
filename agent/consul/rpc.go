@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/rpc.go
+Rpc module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/blockingquery](../agent/blockingquery)
+- [agent/consul/rate](../agent/consul/rate)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/wanfed](../agent/consul/wanfed)
+- [agent/metadata](../agent/metadata)
+- [agent/pool](../agent/pool)
+- [agent/rpc/middleware](../agent/rpc/middleware)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+
+## Tags
+agent, communication, networking
+
+## Exports
+ErrChunkingResubmit, RPCCounters, RPCGauges, RPCSummaries
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/rpc.go> a code:Module ;
+    code:name "agent/consul/rpc.go" ;
+    code:description "Rpc module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/blockingquery" ;
+        code:path "../agent/blockingquery"
+    ], [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/wanfed" ;
+        code:path "../agent/consul/wanfed"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "agent/pool" ;
+        code:path "../agent/pool"
+    ], [
+        code:name "agent/rpc/middleware" ;
+        code:path "../agent/rpc/middleware"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :ErrChunkingResubmit, :RPCCounters, :RPCGauges, :RPCSummaries ;
+    code:tags "agent", "communication", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

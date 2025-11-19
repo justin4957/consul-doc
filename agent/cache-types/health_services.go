@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache-types/health_services.go
+Health Services module for agent layer
+
+## Linked Modules
+- [agent/cache](../agent/cache)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, data-model, health-checks, monitoring, types
+
+## Exports
+HealthServices, HealthServicesName
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache-types/health_services.go> a code:Module ;
+    code:name "agent/cache-types/health_services.go" ;
+    code:description "Health Services module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :HealthServices, :HealthServicesName ;
+    code:tags "agent", "data-model", "health-checks", "monitoring", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package cachetype
 
 import (

@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: sdk/testutil/io.go
+Io module for internal layer
+
+## Tags
+internal
+
+## Exports
+TempDir, TempFile
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/testutil/io.go> a code:Module ;
+    code:name "sdk/testutil/io.go" ;
+    code:description "Io module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :TempDir, :TempFile ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutil
 
 import (

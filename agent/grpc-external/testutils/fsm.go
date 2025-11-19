@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/testutils/fsm.go
+Fsm module for agent layer
+
+## Linked Modules
+- [agent/blockingquery](../agent/blockingquery)
+- [agent/consul/state](../agent/consul/state)
+- [agent/consul/stream](../agent/consul/stream)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+FakeBlockingFSM, FakeFSM, FakeFSMConfig, NewFakeBlockingFSM, Registrar, SetupFSMAndPublisher, TestStateStore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/testutils/fsm.go> a code:Module ;
+    code:name "agent/grpc-external/testutils/fsm.go" ;
+    code:description "Fsm module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/blockingquery" ;
+        code:path "../agent/blockingquery"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/consul/stream" ;
+        code:path "../agent/consul/stream"
+    ] ;
+    code:exports :FakeBlockingFSM, :FakeFSM, :FakeFSMConfig, :NewFakeBlockingFSM, :Registrar, :SetupFSMAndPublisher, :TestStateStore ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package testutils
 
 import (

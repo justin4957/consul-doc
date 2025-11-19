@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/intention_endpoint.go
+Intention Endpoint module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [lib](../lib)
+
+## Tags
+agent
+
+## Exports
+ErrIntentionsNotUpgradedYet, Intention, IntentionSummaries
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/intention_endpoint.go> a code:Module ;
+    code:name "agent/consul/intention_endpoint.go" ;
+    code:description "Intention Endpoint module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :ErrIntentionsNotUpgradedYet, :Intention, :IntentionSummaries ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

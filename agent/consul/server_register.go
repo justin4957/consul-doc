@@ -1,6 +1,30 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/server_register.go
+Server Register module for agent layer
+
+## Linked Modules
+- [logging](../logging)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server_register.go> a code:Module ;
+    code:name "agent/consul/server_register.go" ;
+    code:description "Server Register module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "logging" ;
+        code:path "../logging"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import "github.com/hashicorp/consul/logging"

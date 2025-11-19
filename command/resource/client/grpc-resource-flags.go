@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/client/grpc-resource-flags.go
+Grpc Resource Flags module for cli layer
+
+## Tags
+api, cli, communication, grpc, networking, user-interface
+
+## Exports
+ResourceFlags
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/client/grpc-resource-flags.go> a code:Module ;
+    code:name "command/resource/client/grpc-resource-flags.go" ;
+    code:description "Grpc Resource Flags module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:exports :ResourceFlags ;
+    code:tags "api", "cli", "communication", "grpc", "networking", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import "flag"

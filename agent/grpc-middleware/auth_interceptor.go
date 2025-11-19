@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-middleware/auth_interceptor.go
+Auth Interceptor module for agent layer
+
+## Linked Modules
+- [tlsutil](../tlsutil)
+
+## Tags
+agent, api, authentication, communication, grpc, networking, security
+
+## Exports
+AllowedPeerEndpointPrefix, AuthInterceptor
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-middleware/auth_interceptor.go> a code:Module ;
+    code:name "agent/grpc-middleware/auth_interceptor.go" ;
+    code:description "Auth Interceptor module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :AllowedPeerEndpointPrefix, :AuthInterceptor ;
+    code:tags "agent", "api", "authentication", "communication", "grpc", "networking", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package middleware
 
 import (

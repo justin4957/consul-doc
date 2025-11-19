@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/leader_registrator_v1.go
+Leader Registrator V1 module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/consul/fsm](../agent/consul/fsm)
+- [agent/metadata](../agent/metadata)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [types](../types)
+
+## Tags
+agent
+
+## Exports
+V1ConsulRegistrator
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/leader_registrator_v1.go> a code:Module ;
+    code:name "agent/consul/leader_registrator_v1.go" ;
+    code:description "Leader Registrator V1 module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/consul/fsm" ;
+        code:path "../agent/consul/fsm"
+    ], [
+        code:name "agent/metadata" ;
+        code:path "../agent/metadata"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "types" ;
+        code:path "../types"
+    ] ;
+    code:exports :V1ConsulRegistrator ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

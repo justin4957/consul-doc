@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/listener.go
+Listener module for agent layer
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+Listener, NewListener
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/listener.go> a code:Module ;
+    code:name "agent/grpc-internal/listener.go" ;
+    code:description "Listener module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Listener, :NewListener ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package internal
 
 import (

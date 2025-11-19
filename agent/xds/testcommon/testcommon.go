@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/testcommon/testcommon.go
+Testcommon module for agent layer
+
+## Linked Modules
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, envoy, service-mesh
+
+## Exports
+SetupTLSRootsAndLeaf
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/testcommon/testcommon.go> a code:Module ;
+    code:name "agent/xds/testcommon/testcommon.go" ;
+    code:description "Testcommon module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :SetupTLSRootsAndLeaf ;
+    code:tags "agent", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package testcommon
 
 import (

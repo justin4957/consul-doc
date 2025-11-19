@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: tlsutil/mock.go
+Mock module for security layer
+
+## Tags
+encryption, security
+
+## Exports
+MockConfigurator
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<tlsutil/mock.go> a code:Module ;
+    code:name "tlsutil/mock.go" ;
+    code:description "Mock module for security layer" ;
+    code:language "go" ;
+    code:layer "security" ;
+    code:exports :MockConfigurator ;
+    code:tags "encryption", "security" .
+<!-- End LinkedDoc RDF -->
+*/
 package tlsutil
 
 import "crypto/tls"

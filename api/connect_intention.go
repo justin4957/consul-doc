@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/connect_intention.go
+Connect Intention module for api layer
+
+## Tags
+api, client, mtls, service-mesh
+
+## Exports
+Intention, IntentionAction, IntentionCheck, IntentionDefaultNamespace, IntentionMatch, IntentionMatchType, IntentionSourceType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/connect_intention.go> a code:Module ;
+    code:name "api/connect_intention.go" ;
+    code:description "Connect Intention module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Intention, :IntentionAction, :IntentionCheck, :IntentionDefaultNamespace, :IntentionMatch, :IntentionMatchType, :IntentionSourceType ;
+    code:tags "api", "client", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

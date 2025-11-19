@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/usagemetrics/usagemetrics.go
+Usagemetrics module for agent layer
+
+## Linked Modules
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [logging](../logging)
+- [version](../version)
+
+## Tags
+agent
+
+## Exports
+Config, Gauges, NewUsageMetricsReporter, StateProvider, UsageMetricsReporter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/usagemetrics/usagemetrics.go> a code:Module ;
+    code:name "agent/consul/usagemetrics/usagemetrics.go" ;
+    code:description "Usagemetrics module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "logging" ;
+        code:path "../logging"
+    ], [
+        code:name "version" ;
+        code:path "../version"
+    ] ;
+    code:exports :Config, :Gauges, :NewUsageMetricsReporter, :StateProvider, :UsageMetricsReporter ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package usagemetrics
 
 import (

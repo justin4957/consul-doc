@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/sprawl/boot.go
+Boot module for internal layer
+
+## Linked Modules
+- [api](../api)
+- [testing/deployer/sprawl/internal/build](../testing/deployer/sprawl/internal/build)
+- [testing/deployer/sprawl/internal/secrets](../testing/deployer/sprawl/internal/secrets)
+- [testing/deployer/sprawl/internal/tfgen](../testing/deployer/sprawl/internal/tfgen)
+- [testing/deployer/topology](../testing/deployer/topology)
+- [testing/deployer/util](../testing/deployer/util)
+
+## Tags
+internal
+
+## Exports
+ErrDockerNetworkCollision, LaunchPhase
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/sprawl/boot.go> a code:Module ;
+    code:name "testing/deployer/sprawl/boot.go" ;
+    code:description "Boot module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "testing/deployer/sprawl/internal/build" ;
+        code:path "../testing/deployer/sprawl/internal/build"
+    ], [
+        code:name "testing/deployer/sprawl/internal/secrets" ;
+        code:path "../testing/deployer/sprawl/internal/secrets"
+    ], [
+        code:name "testing/deployer/sprawl/internal/tfgen" ;
+        code:path "../testing/deployer/sprawl/internal/tfgen"
+    ], [
+        code:name "testing/deployer/topology" ;
+        code:path "../testing/deployer/topology"
+    ], [
+        code:name "testing/deployer/util" ;
+        code:path "../testing/deployer/util"
+    ] ;
+    code:exports :ErrDockerNetworkCollision, :LaunchPhase ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package sprawl
 
 import (

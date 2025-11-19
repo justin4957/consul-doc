@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/fsm/snapshot.go
+Snapshot module for agent layer
+
+## Linked Modules
+- [agent/consul/state](../agent/consul/state)
+- [agent/structs](../agent/structs)
+- [internal/storage/raft](../internal/storage/raft)
+
+## Tags
+agent
+
+## Exports
+SnapshotHeader, SnapshotSummaries
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/fsm/snapshot.go> a code:Module ;
+    code:name "agent/consul/fsm/snapshot.go" ;
+    code:description "Snapshot module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../agent/consul/state"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "internal/storage/raft" ;
+        code:path "../internal/storage/raft"
+    ] ;
+    code:exports :SnapshotHeader, :SnapshotSummaries ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package fsm
 
 import (

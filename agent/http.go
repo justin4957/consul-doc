@@ -1,6 +1,70 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/http.go
+Http module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache](../agent/cache)
+- [agent/config](../agent/config)
+- [agent/consul](../agent/consul)
+- [agent/consul/rate](../agent/consul/rate)
+- [agent/structs](../agent/structs)
+- [agent/uiserver](../agent/uiserver)
+- [api](../api)
+- [internal/resource/http](../internal/resource/http)
+- [lib](../lib)
+
+## Tags
+agent
+
+## Exports
+CodeWithPayloadError, HTTPError, HTTPHandlers, HTTPSummaries, MethodNotAllowedError, QueryOptionsCompat
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/http.go> a code:Module ;
+    code:name "agent/http.go" ;
+    code:description "Http module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "agent/config" ;
+        code:path "../agent/config"
+    ], [
+        code:name "agent/consul" ;
+        code:path "../agent/consul"
+    ], [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/uiserver" ;
+        code:path "../agent/uiserver"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "internal/resource/http" ;
+        code:path "../internal/resource/http"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ] ;
+    code:exports :CodeWithPayloadError, :HTTPError, :HTTPHandlers, :HTTPSummaries, :MethodNotAllowedError, :QueryOptionsCompat ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

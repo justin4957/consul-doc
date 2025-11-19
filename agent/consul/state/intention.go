@@ -1,6 +1,42 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/state/intention.go
+Intention module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/connect](../agent/connect)
+- [agent/structs](../agent/structs)
+
+## Tags
+agent, persistence, storage
+
+## Exports
+ErrLegacyIntentionsAreDisabled, IntentionDecisionOpts, ServiceWithDecision
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/state/intention.go> a code:Module ;
+    code:name "agent/consul/state/intention.go" ;
+    code:description "Intention module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ] ;
+    code:exports :ErrLegacyIntentionsAreDisabled, :IntentionDecisionOpts, :ServiceWithDecision ;
+    code:tags "agent", "persistence", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package state
 
 import (

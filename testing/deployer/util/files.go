@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/util/files.go
+Files module for internal layer
+
+## Tags
+internal
+
+## Exports
+AddFileToHash, FileExists, FilesExist, HashFile
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/util/files.go> a code:Module ;
+    code:name "testing/deployer/util/files.go" ;
+    code:description "Files module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :AddFileToHash, :FileExists, :FilesExist, :HashFile ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package util
 
 import (

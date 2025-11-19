@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/lease.go
+Lease module for internal layer
+
+## Tags
+internal
+
+## Exports
+Lease
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/lease.go> a code:Module ;
+    code:name "internal/controller/lease.go" ;
+    code:description "Lease module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Lease ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 // Lease is used to ensure controllers are run as singletons (i.e. one leader-

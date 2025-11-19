@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/server_metadata.go
+Server Metadata module for agent layer
+
+## Tags
+agent
+
+## Exports
+OpenServerMetadata, ReadServerMetadata, ServerMetadata, ServerMetadataFile, ServerMetadataReadFunc, WriteServerMetadata
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server_metadata.go> a code:Module ;
+    code:name "agent/consul/server_metadata.go" ;
+    code:description "Server Metadata module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :OpenServerMetadata, :ReadServerMetadata, :ServerMetadata, :ServerMetadataFile, :ServerMetadataReadFunc, :WriteServerMetadata ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

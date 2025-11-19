@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/peering/peering.go
+Peering module for cli layer
+
+## Linked Modules
+- [command/flags](../command/flags)
+
+## Tags
+cli, user-interface
+
+## Exports
+FormatIsValid, GetSupportedFormats, New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/peering/peering.go> a code:Module ;
+    code:name "command/peering/peering.go" ;
+    code:description "Peering module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/flags" ;
+        code:path "../command/flags"
+    ] ;
+    code:exports :FormatIsValid, :GetSupportedFormats, :New ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package peering
 
 import (

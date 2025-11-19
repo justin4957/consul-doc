@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/rpcclient/health/view.go
+View module for agent layer
+
+## Linked Modules
+- [agent/structs](../agent/structs)
+- [agent/submatview](../agent/submatview)
+- [proto/private/pbservice](../proto/private/pbservice)
+- [proto/private/pbsubscribe](../proto/private/pbsubscribe)
+
+## Tags
+agent, communication, health-checks, monitoring, networking
+
+## Exports
+HealthView, NewHealthView, NewMaterializerRequest
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/rpcclient/health/view.go> a code:Module ;
+    code:name "agent/rpcclient/health/view.go" ;
+    code:description "View module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "agent/submatview" ;
+        code:path "../agent/submatview"
+    ], [
+        code:name "proto/private/pbservice" ;
+        code:path "../proto/private/pbservice"
+    ], [
+        code:name "proto/private/pbsubscribe" ;
+        code:path "../proto/private/pbsubscribe"
+    ] ;
+    code:exports :HealthView, :NewHealthView, :NewMaterializerRequest ;
+    code:tags "agent", "communication", "health-checks", "monitoring", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package health
 
 import (

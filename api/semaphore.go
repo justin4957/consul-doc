@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/semaphore.go
+Semaphore module for api layer
+
+## Tags
+api, client
+
+## Exports
+Semaphore, SemaphoreOptions
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/semaphore.go> a code:Module ;
+    code:name "api/semaphore.go" ;
+    code:description "Semaphore module for api layer" ;
+    code:language "go" ;
+    code:layer "api" ;
+    code:exports :Semaphore, :SemaphoreOptions ;
+    code:tags "api", "client" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

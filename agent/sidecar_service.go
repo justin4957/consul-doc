@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/sidecar_service.go
+Sidecar Service module for agent layer
+
+## Linked Modules
+- [agent/netutil](../agent/netutil)
+- [agent/structs](../agent/structs)
+- [ipaddr](../ipaddr)
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/sidecar_service.go> a code:Module ;
+    code:name "agent/sidecar_service.go" ;
+    code:description "Sidecar Service module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/netutil" ;
+        code:path "../agent/netutil"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "ipaddr" ;
+        code:path "../ipaddr"
+    ] ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

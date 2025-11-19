@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/topology/compile.go
+Compile module for internal layer
+
+## Linked Modules
+- [proto-public/pbresource](../proto-public/pbresource)
+- [testing/deployer/util](../testing/deployer/util)
+
+## Tags
+internal
+
+## Exports
+Compile, DockerPrefix, IsValidLabel, Recompile, ValidateLabel
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/topology/compile.go> a code:Module ;
+    code:name "testing/deployer/topology/compile.go" ;
+    code:description "Compile module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbresource" ;
+        code:path "../proto-public/pbresource"
+    ], [
+        code:name "testing/deployer/util" ;
+        code:path "../testing/deployer/util"
+    ] ;
+    code:exports :Compile, :DockerPrefix, :IsValidLabel, :Recompile, :ValidateLabel ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topology
 
 import (

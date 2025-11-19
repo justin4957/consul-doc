@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/resource/apply-grpc/apply.go
+Apply module for cli layer
+
+## Linked Modules
+- [command/resource](../command/resource)
+- [command/resource/client](../command/resource/client)
+
+## Tags
+api, cli, communication, grpc, networking, user-interface
+
+## Exports
+New
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/resource/apply-grpc/apply.go> a code:Module ;
+    code:name "command/resource/apply-grpc/apply.go" ;
+    code:description "Apply module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "command/resource" ;
+        code:path "../command/resource"
+    ], [
+        code:name "command/resource/client" ;
+        code:path "../command/resource/client"
+    ] ;
+    code:exports :New ;
+    code:tags "api", "cli", "communication", "grpc", "networking", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package apply
 
 import (

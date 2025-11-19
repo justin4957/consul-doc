@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/extensionruntime/runtime_config.go
+Runtime Config module for agent layer
+
+## Linked Modules
+- [agent/connect](../agent/connect)
+- [agent/proxycfg](../agent/proxycfg)
+- [agent/structs](../agent/structs)
+- [api](../api)
+- [envoyextensions/extensioncommon](../envoyextensions/extensioncommon)
+
+## Tags
+agent, configuration, envoy, service-mesh
+
+## Exports
+GetRuntimeConfigurations
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/extensionruntime/runtime_config.go> a code:Module ;
+    code:name "agent/xds/extensionruntime/runtime_config.go" ;
+    code:description "Runtime Config module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/connect" ;
+        code:path "../agent/connect"
+    ], [
+        code:name "agent/proxycfg" ;
+        code:path "../agent/proxycfg"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../agent/structs"
+    ], [
+        code:name "api" ;
+        code:path "../api"
+    ], [
+        code:name "envoyextensions/extensioncommon" ;
+        code:path "../envoyextensions/extensioncommon"
+    ] ;
+    code:exports :GetRuntimeConfigurations ;
+    code:tags "agent", "configuration", "envoy", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package extensionruntime
 
 import (

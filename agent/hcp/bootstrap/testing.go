@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/bootstrap/testing.go
+Testing module for agent layer
+
+## Linked Modules
+- [agent/hcp](../agent/hcp)
+- [tlsutil](../tlsutil)
+
+## Tags
+agent
+
+## Exports
+TestEndpoint, TestExistingClusterID
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/bootstrap/testing.go> a code:Module ;
+    code:name "agent/hcp/bootstrap/testing.go" ;
+    code:description "Testing module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp" ;
+        code:path "../agent/hcp"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../tlsutil"
+    ] ;
+    code:exports :TestEndpoint, :TestExistingClusterID ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package bootstrap
 
 import (

@@ -2,6 +2,34 @@
 // github.com/vektra/mockery
 // template: testify
 
+/*
+# Module: grpcmocks/proto-public/pbdataplane/mock_DataplaneServiceClient.go
+Mock Dataplaneserviceclient module for internal layer
+
+## Linked Modules
+- [proto-public/pbdataplane](../proto-public/pbdataplane)
+
+## Tags
+api, communication, grpc, internal, networking
+
+## Exports
+DataplaneServiceClient, NewDataplaneServiceClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<grpcmocks/proto-public/pbdataplane/mock_DataplaneServiceClient.go> a code:Module ;
+    code:name "grpcmocks/proto-public/pbdataplane/mock_DataplaneServiceClient.go" ;
+    code:description "Mock Dataplaneserviceclient module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "proto-public/pbdataplane" ;
+        code:path "../proto-public/pbdataplane"
+    ] ;
+    code:exports :DataplaneServiceClient, :NewDataplaneServiceClient ;
+    code:tags "api", "communication", "grpc", "internal", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package mockpbdataplane
 
 import (

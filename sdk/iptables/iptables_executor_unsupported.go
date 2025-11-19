@@ -3,6 +3,23 @@
 
 //go:build !linux
 
+/*
+# Module: sdk/iptables/iptables_executor_unsupported.go
+Iptables Executor Unsupported module for internal layer
+
+## Tags
+internal
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<sdk/iptables/iptables_executor_unsupported.go> a code:Module ;
+    code:name "sdk/iptables/iptables_executor_unsupported.go" ;
+    code:description "Iptables Executor Unsupported module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package iptables
 
 import "errors"

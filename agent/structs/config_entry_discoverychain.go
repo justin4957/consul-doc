@@ -1,6 +1,46 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/config_entry_discoverychain.go
+Config Entry Discoverychain module for agent layer
+
+## Linked Modules
+- [acl](../acl)
+- [agent/cache](../agent/cache)
+- [lib](../lib)
+- [lib/maps](../lib/maps)
+
+## Tags
+agent, configuration, data-model, discovery, dns, types
+
+## Exports
+ConfigEntryGraphError, CookieConfig, DiscoveryChainRequest, DiscoveryChainResponse, HTTPHeaderModifiers, HashPolicy, IsProtocolHTTPLike, LeastRequestConfig, LoadBalancer, MergeHTTPHeaderModifiers, NormalizeServiceSplitWeight, RingHashConfig, ServiceResolverConfigEntry, ServiceResolverFailover, ServiceResolverFailoverPolicy, ServiceResolverFailoverTarget, ServiceResolverPrioritizeByLocality, ServiceResolverRedirect, ServiceResolverSubset, ServiceRoute
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/config_entry_discoverychain.go> a code:Module ;
+    code:name "agent/structs/config_entry_discoverychain.go" ;
+    code:description "Config Entry Discoverychain module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "../acl"
+    ], [
+        code:name "agent/cache" ;
+        code:path "../agent/cache"
+    ], [
+        code:name "lib" ;
+        code:path "../lib"
+    ], [
+        code:name "lib/maps" ;
+        code:path "../lib/maps"
+    ] ;
+    code:exports :ConfigEntryGraphError, :CookieConfig, :DiscoveryChainRequest, :DiscoveryChainResponse, :HTTPHeaderModifiers, :HashPolicy, :IsProtocolHTTPLike, :LeastRequestConfig, :LoadBalancer, :MergeHTTPHeaderModifiers, :NormalizeServiceSplitWeight, :RingHashConfig, :ServiceResolverConfigEntry, :ServiceResolverFailover, :ServiceResolverFailoverPolicy, :ServiceResolverFailoverTarget, :ServiceResolverPrioritizeByLocality, :ServiceResolverRedirect, :ServiceResolverSubset, :ServiceRoute ;
+    code:tags "agent", "configuration", "data-model", "discovery", "dns", "types" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

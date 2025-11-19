@@ -1,6 +1,38 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/raft/forwarding.go
+Forwarding module for internal layer
+
+## Linked Modules
+- [agent/grpc-internal](../agent/grpc-internal)
+- [internal/storage](../internal/storage)
+- [proto/private/pbstorage](../proto/private/pbstorage)
+
+## Tags
+consensus, internal, replication
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/raft/forwarding.go> a code:Module ;
+    code:name "internal/storage/raft/forwarding.go" ;
+    code:description "Forwarding module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/grpc-internal" ;
+        code:path "../agent/grpc-internal"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../internal/storage"
+    ], [
+        code:name "proto/private/pbstorage" ;
+        code:path "../proto/private/pbstorage"
+    ] ;
+    code:tags "consensus", "internal", "replication" .
+<!-- End LinkedDoc RDF -->
+*/
 package raft
 
 import (

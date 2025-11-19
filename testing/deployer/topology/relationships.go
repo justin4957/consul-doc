@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: testing/deployer/topology/relationships.go
+Relationships module for internal layer
+
+## Tags
+internal
+
+## Exports
+Relationship, RenderRelationships
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<testing/deployer/topology/relationships.go> a code:Module ;
+    code:name "testing/deployer/topology/relationships.go" ;
+    code:description "Relationships module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:exports :Relationship, :RenderRelationships ;
+    code:tags "internal" .
+<!-- End LinkedDoc RDF -->
+*/
 package topology
 
 import (

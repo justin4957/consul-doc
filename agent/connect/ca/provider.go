@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/connect/ca/provider.go
+Provider module for agent layer
+
+## Tags
+agent, mtls, service-mesh
+
+## Exports
+CAChainResult, ErrRateLimited, NeedsStop, PrimaryProvider, PrimaryUsesIntermediate, Provider, ProviderConfig, SecondaryProvider
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/connect/ca/provider.go> a code:Module ;
+    code:name "agent/connect/ca/provider.go" ;
+    code:description "Provider module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :CAChainResult, :ErrRateLimited, :NeedsStop, :PrimaryProvider, :PrimaryUsesIntermediate, :Provider, :ProviderConfig, :SecondaryProvider ;
+    code:tags "agent", "mtls", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package ca
 
 import (

@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/hcp/client/metrics_client.go
+Metrics Client module for agent layer
+
+## Linked Modules
+- [agent/hcp/telemetry](../agent/hcp/telemetry)
+
+## Tags
+agent
+
+## Exports
+MetricsClientProvider, NewMetricsClient
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/hcp/client/metrics_client.go> a code:Module ;
+    code:name "agent/hcp/client/metrics_client.go" ;
+    code:description "Metrics Client module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/hcp/telemetry" ;
+        code:path "../agent/hcp/telemetry"
+    ] ;
+    code:exports :MetricsClientProvider, :NewMetricsClient ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package client
 
 import (

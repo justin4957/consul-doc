@@ -1,6 +1,27 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/config/merge.go
+Merge module for agent layer
+
+## Tags
+agent, configuration
+
+## Exports
+Merge
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/config/merge.go> a code:Module ;
+    code:name "agent/config/merge.go" ;
+    code:description "Merge module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:exports :Merge ;
+    code:tags "agent", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package config
 
 import (

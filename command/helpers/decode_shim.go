@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/helpers/decode_shim.go
+Decode Shim module for cli layer
+
+## Tags
+cli, user-interface
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/helpers/decode_shim.go> a code:Module ;
+    code:name "command/helpers/decode_shim.go" ;
+    code:description "Decode Shim module for cli layer" ;
+    code:language "go" ;
+    code:layer "cli" ;
+    code:tags "cli", "user-interface" .
+<!-- End LinkedDoc RDF -->
+*/
 package helpers
 
 import (

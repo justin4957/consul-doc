@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: troubleshoot/proxy/utils.go
+Utils module for internal layer
+
+## Tags
+internal, networking, service-mesh
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<troubleshoot/proxy/utils.go> a code:Module ;
+    code:name "troubleshoot/proxy/utils.go" ;
+    code:description "Utils module for internal layer" ;
+    code:language "go" ;
+    code:layer "internal" ;
+    code:tags "internal", "networking", "service-mesh" .
+<!-- End LinkedDoc RDF -->
+*/
 package troubleshoot
 
 import (

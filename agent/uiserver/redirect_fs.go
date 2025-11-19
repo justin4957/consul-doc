@@ -1,6 +1,23 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/uiserver/redirect_fs.go
+Redirect Fs module for agent layer
+
+## Tags
+agent
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/uiserver/redirect_fs.go> a code:Module ;
+    code:name "agent/uiserver/redirect_fs.go" ;
+    code:description "Redirect Fs module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:tags "agent" .
+<!-- End LinkedDoc RDF -->
+*/
 package uiserver
 
 import (

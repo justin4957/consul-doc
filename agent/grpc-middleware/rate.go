@@ -1,6 +1,34 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-middleware/rate.go
+Rate module for agent layer
+
+## Linked Modules
+- [agent/consul/rate](../agent/consul/rate)
+
+## Tags
+agent, api, communication, grpc, networking
+
+## Exports
+ServerRateLimiterMiddleware
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-middleware/rate.go> a code:Module ;
+    code:name "agent/grpc-middleware/rate.go" ;
+    code:description "Rate module for agent layer" ;
+    code:language "go" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/consul/rate" ;
+        code:path "../agent/consul/rate"
+    ] ;
+    code:exports :ServerRateLimiterMiddleware ;
+    code:tags "agent", "api", "communication", "grpc", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package middleware
 
 import (
