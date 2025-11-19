@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/check_definition.go
+Health check definition structures for JSON decoding and check registration.
+
+## Linked Modules
+- [agent/structs](./structs.go) - Core HealthCheck structure
+- [agent/structs/check_type](./check_type.go) - Check type implementations
+- [api/agent](../../api/agent.go) - Agent API check registration
+- [types](../../types/checks.go) - CheckID type definition
+
+## Tags
+structures, data-model, api, health-checks, registration
+
+## Exports
+CheckDefinition, HealthCheck, CheckType
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/check_definition.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/structs/check_definition.go" ;
+    code:description "Health check definition structures for JSON decoding and check registration" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "./structs.go" ;
+        code:relationship "Core HealthCheck structure"
+    ], [
+        code:name "agent/structs/check_type" ;
+        code:path "./check_type.go" ;
+        code:relationship "Check type implementations"
+    ], [
+        code:name "api/agent" ;
+        code:path "../../api/agent.go" ;
+        code:relationship "Agent API check registration"
+    ], [
+        code:name "types" ;
+        code:path "../../types/checks.go" ;
+        code:relationship "CheckID type definition"
+    ] ;
+    code:exports :CheckDefinition, :HealthCheck, :CheckType ;
+    code:tags "structures", "data-model", "api", "health-checks", "registration" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

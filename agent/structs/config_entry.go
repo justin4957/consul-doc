@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/config_entry.go
+Configuration entry structures for centralized service mesh configuration.
+
+## Linked Modules
+- [agent/consul/state](../consul/state/config_entry.go) - Config entry state store operations
+- [agent/consul/fsm](../consul/fsm/fsm.go) - FSM config entry application
+- [api/config_entry](../../api/config_entry.go) - API config entry types
+- [acl](../../acl/acl.go) - ACL authorization for config entries
+
+## Tags
+structures, data-model, api, config-entries, service-mesh, routing
+
+## Exports
+ConfigEntry, ServiceDefaults, ProxyDefaults, ServiceRouter, ServiceResolver, ServiceSplitter, IngressGateway, TerminatingGateway
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/config_entry.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/structs/config_entry.go" ;
+    code:description "Configuration entry structures for centralized service mesh configuration" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../consul/state/config_entry.go" ;
+        code:relationship "Config entry state store operations"
+    ], [
+        code:name "agent/consul/fsm" ;
+        code:path "../consul/fsm/fsm.go" ;
+        code:relationship "FSM config entry application"
+    ], [
+        code:name "api/config_entry" ;
+        code:path "../../api/config_entry.go" ;
+        code:relationship "API config entry types"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL authorization for config entries"
+    ] ;
+    code:exports :ConfigEntry, :ServiceDefaults, :ProxyDefaults, :ServiceRouter, :ServiceResolver, :ServiceSplitter, :IngressGateway, :TerminatingGateway ;
+    code:tags "structures", "data-model", "api", "config-entries", "service-mesh", "routing" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 import (

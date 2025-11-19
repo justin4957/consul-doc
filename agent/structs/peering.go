@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/structs/peering.go
+Cluster peering structures for multi-cluster service mesh federation.
+
+## Linked Modules
+- [agent/consul/state](../consul/state/peering.go) - Peering state store operations
+- [agent/grpc-external/services/peerstream](../../agent/grpc-external/services/peerstream/server.go) - Peer streaming gRPC service
+- [api/peering](../../api/peering.go) - API peering types
+- [agent/structs/discovery_chain](./discovery_chain.go) - Discovery chain for peered services
+
+## Tags
+structures, data-model, api, peering, multi-cluster, federation
+
+## Exports
+PeeringToken, PeeringTokenRemote, ExportedServiceList, ExportedDiscoveryChainInfo
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/structs/peering.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/structs/peering.go" ;
+    code:description "Cluster peering structures for multi-cluster service mesh federation" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../consul/state/peering.go" ;
+        code:relationship "Peering state store operations"
+    ], [
+        code:name "agent/grpc-external/services/peerstream" ;
+        code:path "../../agent/grpc-external/services/peerstream/server.go" ;
+        code:relationship "Peer streaming gRPC service"
+    ], [
+        code:name "api/peering" ;
+        code:path "../../api/peering.go" ;
+        code:relationship "API peering types"
+    ], [
+        code:name "agent/structs/discovery_chain" ;
+        code:path "./discovery_chain.go" ;
+        code:relationship "Discovery chain for peered services"
+    ] ;
+    code:exports :PeeringToken, :PeeringTokenRemote, :ExportedServiceList, :ExportedDiscoveryChainInfo ;
+    code:tags "structures", "data-model", "api", "peering", "multi-cluster", "federation" .
+<!-- End LinkedDoc RDF -->
+*/
 package structs
 
 // PeeringToken identifies a peer in order for a connection to be established.
