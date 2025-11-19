@@ -1,6 +1,44 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/checks/check.go
+Health check implementations including HTTP, TCP, script, and gRPC checks.
+
+## Linked Modules
+- [agent/agent](../agent.go) - Agent instance for check registration
+- [agent/structs](../structs/structs.go) - Check definitions and health states
+- [api](../../api/api.go) - API client for health check queries
+
+## Tags
+health, checks, monitoring, service-discovery
+
+## Exports
+CheckHTTP, CheckTCP, CheckGRPC, CheckDocker, CheckMonitor, CheckTTL, CheckAlias
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/checks/check.go> a code:Module ;
+    code:name "agent/checks/check.go" ;
+    code:description "Health check implementations including HTTP, TCP, script, and gRPC checks" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/agent" ;
+        code:path "../agent.go" ;
+        code:relationship "Agent instance for check registration"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../structs/structs.go" ;
+        code:relationship "Check definitions and health states"
+    ], [
+        code:name "api" ;
+        code:path "../../api/api.go" ;
+        code:relationship "API client for health check queries"
+    ] ;
+    code:exports :CheckHTTP, :CheckTCP, :CheckGRPC, :CheckDocker, :CheckMonitor, :CheckTTL, :CheckAlias ;
+    code:tags "health", "checks", "monitoring", "service-discovery" .
+<!-- End LinkedDoc RDF -->
+*/
 package checks
 
 import (

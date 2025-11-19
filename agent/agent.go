@@ -1,6 +1,64 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/agent.go
+Main Consul agent implementation managing lifecycle, services, checks, and coordination.
+
+## Linked Modules
+- [agent/config](./config/runtime.go) - Agent configuration management
+- [agent/local](./local/state.go) - Local state synchronization
+- [agent/checks](./checks/check.go) - Health check implementations
+- [agent/consul](./consul/server.go) - Consul server integration
+- [acl](../acl/acl.go) - ACL authorization
+- [agent/cache](./cache/cache.go) - Agent-side caching
+- [agent/ae](./ae/ae.go) - Anti-entropy engine
+
+## Tags
+agent, core, lifecycle, service-management, health
+
+## Exports
+Agent, AgentDelegate, ServiceManager, LocalState
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/agent.go> a code:Module ;
+    code:name "agent/agent.go" ;
+    code:description "Main Consul agent implementation managing lifecycle, services, checks, and coordination" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/config" ;
+        code:path "./config/runtime.go" ;
+        code:relationship "Agent configuration management"
+    ], [
+        code:name "agent/local" ;
+        code:path "./local/state.go" ;
+        code:relationship "Local state synchronization"
+    ], [
+        code:name "agent/checks" ;
+        code:path "./checks/check.go" ;
+        code:relationship "Health check implementations"
+    ], [
+        code:name "agent/consul" ;
+        code:path "./consul/server.go" ;
+        code:relationship "Consul server integration"
+    ], [
+        code:name "acl" ;
+        code:path "../acl/acl.go" ;
+        code:relationship "ACL authorization"
+    ], [
+        code:name "agent/cache" ;
+        code:path "./cache/cache.go" ;
+        code:relationship "Agent-side caching"
+    ], [
+        code:name "agent/ae" ;
+        code:path "./ae/ae.go" ;
+        code:relationship "Anti-entropy engine"
+    ] ;
+    code:exports :Agent, :AgentDelegate, :ServiceManager, :LocalState ;
+    code:tags "agent", "core", "lifecycle", "service-management", "health" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

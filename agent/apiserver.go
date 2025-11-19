@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/apiserver.go
+HTTP and HTTPS API server management for agent endpoints.
+
+## Linked Modules
+- [agent/agent](./agent.go) - Agent instance for API handlers
+- [agent/agent_endpoint](./agent_endpoint.go) - HTTP endpoint handlers
+
+## Tags
+api, http, server, networking
+
+## Exports
+apiServers, apiServer, NewAPIServers
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/apiserver.go> a code:Module ;
+    code:name "agent/apiserver.go" ;
+    code:description "HTTP and HTTPS API server management for agent endpoints" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/agent" ;
+        code:path "./agent.go" ;
+        code:relationship "Agent instance for API handlers"
+    ], [
+        code:name "agent/agent_endpoint" ;
+        code:path "./agent_endpoint.go" ;
+        code:relationship "HTTP endpoint handlers"
+    ] ;
+    code:exports :apiServers, :apiServer, :NewAPIServers ;
+    code:tags "api", "http", "server", "networking" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

@@ -1,6 +1,49 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/local/state.go
+Local agent state management and synchronization with catalog servers.
+
+## Linked Modules
+- [agent/agent](../agent.go) - Parent agent implementation
+- [agent/structs](../structs/structs.go) - Service and check definitions
+- [acl](../../acl/acl.go) - ACL authorization for state operations
+- [agent/token](../token/token.go) - Token management
+
+## Tags
+agent, state, synchronization, service-management, health
+
+## Exports
+State, Config, ServiceState, CheckState, SyncChanges
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/local/state.go> a code:Module ;
+    code:name "agent/local/state.go" ;
+    code:description "Local agent state management and synchronization with catalog servers" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/agent" ;
+        code:path "../agent.go" ;
+        code:relationship "Parent agent implementation"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../structs/structs.go" ;
+        code:relationship "Service and check definitions"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL authorization for state operations"
+    ], [
+        code:name "agent/token" ;
+        code:path "../token/token.go" ;
+        code:relationship "Token management"
+    ] ;
+    code:exports :State, :Config, :ServiceState, :CheckState, :SyncChanges ;
+    code:tags "agent", "state", "synchronization", "service-management", "health" .
+<!-- End LinkedDoc RDF -->
+*/
 package local
 
 import (
