@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/ae/ae.go
+Anti-entropy engine for state synchronization between agent and servers.
+
+## Linked Modules
+- [agent/agent](../agent.go) - Agent using anti-entropy
+- [agent/local](../local/state.go) - Local state management synchronized via AE
+
+## Tags
+agent, anti-entropy, synchronization, distributed-systems
+
+## Exports
+StateSyncer, SyncState, scaleFactor, Trigger
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/ae/ae.go> a code:Module ;
+    code:name "agent/ae/ae.go" ;
+    code:description "Anti-entropy engine for state synchronization between agent and servers" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/agent" ;
+        code:path "../agent.go" ;
+        code:relationship "Agent using anti-entropy"
+    ], [
+        code:name "agent/local" ;
+        code:path "../local/state.go" ;
+        code:relationship "Local state management synchronized via AE"
+    ] ;
+    code:exports :StateSyncer, :SyncState, :scaleFactor, :Trigger ;
+    code:tags "agent", "anti-entropy", "synchronization", "distributed-systems" .
+<!-- End LinkedDoc RDF -->
+*/
+
 // Package ae provides tools to synchronize state between local and remote consul servers.
 package ae
 

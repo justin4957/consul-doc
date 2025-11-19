@@ -1,6 +1,49 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/agent_endpoint.go
+HTTP API endpoints for agent operations including service registration, checks, and metrics.
+
+## Linked Modules
+- [agent/agent](./agent.go) - Main agent implementation
+- [agent/structs](./structs/structs.go) - Data structures for API requests/responses
+- [acl](../acl/acl.go) - ACL authorization for endpoints
+- [agent/config](./config/runtime.go) - Configuration access
+
+## Tags
+api, http, endpoints, agent, service-registration
+
+## Exports
+HTTPHandlers, AgentEndpoint, Self, Services, Checks, Join, Leave, ForceLeave, Reload
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/agent_endpoint.go> a code:Module ;
+    code:name "agent/agent_endpoint.go" ;
+    code:description "HTTP API endpoints for agent operations including service registration, checks, and metrics" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "agent/agent" ;
+        code:path "./agent.go" ;
+        code:relationship "Main agent implementation"
+    ], [
+        code:name "agent/structs" ;
+        code:path "./structs/structs.go" ;
+        code:relationship "Data structures for API requests/responses"
+    ], [
+        code:name "acl" ;
+        code:path "../acl/acl.go" ;
+        code:relationship "ACL authorization for endpoints"
+    ], [
+        code:name "agent/config" ;
+        code:path "./config/runtime.go" ;
+        code:relationship "Configuration access"
+    ] ;
+    code:exports :HTTPHandlers, :AgentEndpoint, :Self, :Services, :Checks, :Join, :Leave, :ForceLeave, :Reload ;
+    code:tags "api", "http", "endpoints", "agent", "service-registration" .
+<!-- End LinkedDoc RDF -->
+*/
 package agent
 
 import (

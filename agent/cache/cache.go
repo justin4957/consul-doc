@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/cache/cache.go
+Agent-side caching layer for Consul server data with TTL and refresh support.
+
+## Linked Modules
+- [agent/agent](../agent.go) - Agent instance using cache
+- [agent/cache-types](../cache-types/catalog_services.go) - Cache type implementations
+- [acl](../../acl/acl.go) - ACL authorization for cached data
+
+## Tags
+agent, cache, performance, data-synchronization
+
+## Exports
+Cache, Request, Type, FetchResult, Get, Notify
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/cache/cache.go> a code:Module ;
+    code:name "agent/cache/cache.go" ;
+    code:description "Agent-side caching layer for Consul server data with TTL and refresh support" ;
+    code:layer "agent" ;
+    code:linksTo [
+        code:name "agent/agent" ;
+        code:path "../agent.go" ;
+        code:relationship "Agent instance using cache"
+    ], [
+        code:name "agent/cache-types" ;
+        code:path "../cache-types/catalog_services.go" ;
+        code:relationship "Cache type implementations"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL authorization for cached data"
+    ] ;
+    code:exports :Cache, :Request, :Type, :FetchResult, :Get, :Notify ;
+    code:tags "agent", "cache", "performance", "data-synchronization" .
+<!-- End LinkedDoc RDF -->
+*/
+
 // Package cache provides caching features for data from a Consul server.
 //
 // While this is similar in some ways to the "agent/ae" package, a key
