@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/storage/storage.go
+Storage backend abstraction for resource management with consistency guarantees.
+
+## Linked Modules
+- [internal/controller](../controller/controller.go) - Controller framework using storage
+- [agent/consul/state](../../agent/consul/state/state_store.go) - State store implementation
+
+## Tags
+internal, storage, backend, consistency, resources
+
+## Exports
+Backend, ReadConsistency, WatchSet, ErrNotFound, ErrCASFailure
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/storage/storage.go> a code:Module ;
+    code:language "go" ;
+    code:name "internal/storage/storage.go" ;
+    code:description "Storage backend abstraction for resource management with consistency guarantees" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/controller" ;
+        code:path "../controller/controller.go" ;
+        code:relationship "Controller framework using storage"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../../agent/consul/state/state_store.go" ;
+        code:relationship "State store implementation"
+    ] ;
+    code:exports :Backend, :ReadConsistency, :WatchSet, :ErrNotFound, :ErrCASFailure ;
+    code:tags "internal", "storage", "backend", "consistency", "resources" .
+<!-- End LinkedDoc RDF -->
+*/
 package storage
 
 import (
