@@ -1,6 +1,49 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/xds/server.go
+Envoy xDS (Discovery Service) API server for service mesh proxy configuration.
+
+## Linked Modules
+- [agent/proxycfg](../proxycfg/manager.go) - Proxy configuration management
+- [agent/structs](../structs/structs.go) - Data structures for xDS resources
+- [acl](../../acl/acl.go) - ACL authorization for xDS streams
+- [envoyextensions](../../envoyextensions/xdscommon/xdscommon.go) - Envoy extension framework
+
+## Tags
+service-mesh, envoy, xds, proxy, grpc
+
+## Exports
+Server, ADSStream, DeltaAggregatedResources
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/xds/server.go> a code:Module ;
+    code:name "agent/xds/server.go" ;
+    code:description "Envoy xDS (Discovery Service) API server for service mesh proxy configuration" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "agent/proxycfg" ;
+        code:path "../proxycfg/manager.go" ;
+        code:relationship "Proxy configuration management"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../structs/structs.go" ;
+        code:relationship "Data structures for xDS resources"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL authorization for xDS streams"
+    ], [
+        code:name "envoyextensions" ;
+        code:path "../../envoyextensions/xdscommon/xdscommon.go" ;
+        code:relationship "Envoy extension framework"
+    ] ;
+    code:exports :Server, :ADSStream, :DeltaAggregatedResources ;
+    code:tags "service-mesh", "envoy", "xds", "proxy", "grpc" .
+<!-- End LinkedDoc RDF -->
+*/
 package xds
 
 import (

@@ -1,6 +1,44 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: connect/service.go
+Service mesh service implementation for Connect with TLS certificate management.
+
+## Linked Modules
+- [api](../api/api.go) - Consul API client for service registration
+- [connect/resolver](./resolver.go) - Service name resolution
+- [agent/connect](../agent/connect/authz.go) - Authorization for Connect services
+
+## Tags
+service-mesh, connect, tls, certificates, mTLS
+
+## Exports
+Service, Dial, HTTPClient, ServerTLSConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<connect/service.go> a code:Module ;
+    code:name "connect/service.go" ;
+    code:description "Service mesh service implementation for Connect with TLS certificate management" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "api" ;
+        code:path "../api/api.go" ;
+        code:relationship "Consul API client for service registration"
+    ], [
+        code:name "connect/resolver" ;
+        code:path "./resolver.go" ;
+        code:relationship "Service name resolution"
+    ], [
+        code:name "agent/connect" ;
+        code:path "../agent/connect/authz.go" ;
+        code:relationship "Authorization for Connect services"
+    ] ;
+    code:exports :Service, :Dial, :HTTPClient, :ServerTLSConfig ;
+    code:tags "service-mesh", "connect", "tls", "certificates", "mTLS" .
+<!-- End LinkedDoc RDF -->
+*/
 package connect
 
 import (
