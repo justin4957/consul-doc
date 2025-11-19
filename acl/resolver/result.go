@@ -19,6 +19,7 @@ Result
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <acl/resolver/result.go> a code:Module ;
+    code:language "go" ;
     code:name "acl/resolver/result.go" ;
     code:description "ACL resolution result combining authorizer with ACL identity information" ;
     code:layer "acl" ;

@@ -19,6 +19,7 @@ ChainedAuthorizer, NewChainedAuthorizer
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <acl/chained_authorizer.go> a code:Module ;
+    code:language "go" ;
     code:name "acl/chained_authorizer.go" ;
     code:description "Chained authorizer for composing multiple authorization policies with precedence rules" ;
     code:layer "acl" ;

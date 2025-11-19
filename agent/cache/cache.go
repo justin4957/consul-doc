@@ -19,6 +19,7 @@ Cache, Request, Type, FetchResult, Get, Notify
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/cache/cache.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/cache/cache.go" ;
     code:description "Agent-side caching layer for Consul server data with TTL and refresh support" ;
     code:layer "agent" ;

@@ -19,6 +19,7 @@ Service, Dial, HTTPClient, ServerTLSConfig
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <connect/service.go> a code:Module ;
+    code:language "go" ;
     code:name "connect/service.go" ;
     code:description "Service mesh service implementation for Connect with TLS certificate management" ;
     code:layer "service-mesh" ;

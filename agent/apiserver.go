@@ -18,6 +18,7 @@ apiServers, apiServer, NewAPIServers
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/apiserver.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/apiserver.go" ;
     code:description "HTTP and HTTPS API server management for agent endpoints" ;
     code:layer "api" ;

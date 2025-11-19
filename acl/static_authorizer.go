@@ -18,6 +18,7 @@ DenyAll, AllowAll, ManageAll, RootAuthorizer
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <acl/static_authorizer.go> a code:Module ;
+    code:language "go" ;
     code:name "acl/static_authorizer.go" ;
     code:description "Static authorization rules providing allow-all, deny-all, and manage-all policies" ;
     code:layer "acl" ;

@@ -19,6 +19,7 @@ NewPolicyAuthorizer, policyAuthorizer
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <acl/policy_authorizer.go> a code:Module ;
+    code:language "go" ;
     code:name "acl/policy_authorizer.go" ;
     code:description "Policy-based authorizer implementation using radix trees for efficient rule matching" ;
     code:layer "acl" ;

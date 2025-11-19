@@ -19,6 +19,7 @@ Manager, ProxyID, ConfigSnapshot, Register, Watch
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/proxycfg/manager.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/proxycfg/manager.go" ;
     code:description "Proxy configuration manager coordinating snapshot delivery to Envoy proxies" ;
     code:layer "service-mesh" ;

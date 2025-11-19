@@ -19,6 +19,7 @@ CheckHTTP, CheckTCP, CheckGRPC, CheckDocker, CheckMonitor, CheckTTL, CheckAlias
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/checks/check.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/checks/check.go" ;
     code:description "Health check implementations including HTTP, TCP, script, and gRPC checks" ;
     code:layer "agent" ;

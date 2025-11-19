@@ -20,6 +20,7 @@ HTTPHandlers, AgentEndpoint, Self, Services, Checks, Join, Leave, ForceLeave, Re
 <!-- LinkedDoc RDF -->
 @prefix code: <https://schema.codedoc.org/> .
 <agent/agent_endpoint.go> a code:Module ;
+    code:language "go" ;
     code:name "agent/agent_endpoint.go" ;
     code:description "HTTP API endpoints for agent operations including service registration, checks, and metrics" ;
     code:layer "api" ;
