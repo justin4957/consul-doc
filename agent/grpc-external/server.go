@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/server.go
+External gRPC server infrastructure with TLS, rate limiting, and middleware support.
+
+## Linked Modules
+- [agent/consul/server](../consul/server.go) - Consul server integration
+- [tlsutil](../../tlsutil/config.go) - TLS configuration
+- [agent/grpc-external/services](./services/dataplane/server.go) - gRPC service implementations
+
+## Tags
+grpc, server, rpc, networking, middleware
+
+## Exports
+NewServer, Server
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/server.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/grpc-external/server.go" ;
+    code:description "External gRPC server infrastructure with TLS, rate limiting, and middleware support" ;
+    code:layer "grpc" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "../consul/server.go" ;
+        code:relationship "Consul server integration"
+    ], [
+        code:name "tlsutil" ;
+        code:path "../../tlsutil/config.go" ;
+        code:relationship "TLS configuration"
+    ], [
+        code:name "agent/grpc-external/services" ;
+        code:path "./services/dataplane/server.go" ;
+        code:relationship "gRPC service implementations"
+    ] ;
+    code:exports :NewServer, :Server ;
+    code:tags "grpc", "server", "rpc", "networking", "middleware" .
+<!-- End LinkedDoc RDF -->
+*/
 package external
 
 import (

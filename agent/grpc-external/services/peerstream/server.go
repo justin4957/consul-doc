@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/peerstream/server.go
+Peer streaming gRPC service for cluster peering and cross-datacenter replication.
+
+## Linked Modules
+- [agent/grpc-external/server](../../server.go) - gRPC server infrastructure
+- [agent/consul/state](../../../consul/state/state_store.go) - State store for peering data
+
+## Tags
+grpc, service, peering, replication, clustering
+
+## Exports
+Server, NewServer, Config, StreamResources
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/peerstream/server.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/grpc-external/services/peerstream/server.go" ;
+    code:description "Peer streaming gRPC service for cluster peering and cross-datacenter replication" ;
+    code:layer "grpc" ;
+    code:linksTo [
+        code:name "agent/grpc-external/server" ;
+        code:path "../../server.go" ;
+        code:relationship "gRPC server infrastructure"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "../../../consul/state/state_store.go" ;
+        code:relationship "State store for peering data"
+    ] ;
+    code:exports :Server, :NewServer, :Config, :StreamResources ;
+    code:tags "grpc", "service", "peering", "replication", "clustering" .
+<!-- End LinkedDoc RDF -->
+*/
 package peerstream
 
 import (

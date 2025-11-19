@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/resource/server.go
+Resource gRPC service for managing Consul resources with CRUD operations.
+
+## Linked Modules
+- [agent/grpc-external/server](../../server.go) - gRPC server infrastructure
+- [internal/storage](../../../../internal/storage/storage.go) - Storage backend
+- [internal/resource](../../../../internal/resource/resource.go) - Resource definitions
+
+## Tags
+grpc, service, resources, crud, api
+
+## Exports
+Server, NewServer, Config, Read, Write, Delete, List
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/resource/server.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/grpc-external/services/resource/server.go" ;
+    code:description "Resource gRPC service for managing Consul resources with CRUD operations" ;
+    code:layer "grpc" ;
+    code:linksTo [
+        code:name "agent/grpc-external/server" ;
+        code:path "../../server.go" ;
+        code:relationship "gRPC server infrastructure"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../../../../internal/storage/storage.go" ;
+        code:relationship "Storage backend"
+    ], [
+        code:name "internal/resource" ;
+        code:path "../../../../internal/resource/resource.go" ;
+        code:relationship "Resource definitions"
+    ] ;
+    code:exports :Server, :NewServer, :Config, :Read, :Write, :Delete, :List ;
+    code:tags "grpc", "service", "resources", "crud", "api" .
+<!-- End LinkedDoc RDF -->
+*/
 package resource
 
 import (
