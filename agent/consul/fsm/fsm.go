@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/fsm/fsm.go
+Finite State Machine (FSM) for applying Raft log entries to Consul's state store.
+
+## Linked Modules
+- [agent/consul/state](../state/state_store.go) - State store for data persistence
+- [agent/consul/server](../server.go) - Raft consensus integration
+- [agent/structs](../../structs/structs.go) - Data structures
+
+## Tags
+consensus, raft, fsm, state-machine, storage
+
+## Exports
+FSM, New, Apply, Snapshot, Restore
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/fsm/fsm.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/consul/fsm/fsm.go" ;
+    code:description "Finite State Machine (FSM) for applying Raft log entries to Consul's state store" ;
+    code:layer "consensus" ;
+    code:linksTo [
+        code:name "agent/consul/state" ;
+        code:path "../state/state_store.go" ;
+        code:relationship "State store for data persistence"
+    ], [
+        code:name "agent/consul/server" ;
+        code:path "../server.go" ;
+        code:relationship "Raft consensus integration"
+    ], [
+        code:name "agent/structs" ;
+        code:path "../../structs/structs.go" ;
+        code:relationship "Data structures"
+    ] ;
+    code:exports :FSM, :New, :Apply, :Snapshot, :Restore ;
+    code:tags "consensus", "raft", "fsm", "state-machine", "storage" .
+<!-- End LinkedDoc RDF -->
+*/
 package fsm
 
 import (

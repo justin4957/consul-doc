@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/catalog_endpoint.go
+Catalog RPC endpoint for service and node registration/query operations.
+
+## Linked Modules
+- [agent/consul/server](./server.go) - Server RPC framework
+- [agent/consul/state](./state/state_store.go) - Catalog state storage
+- [api/catalog](../../api/catalog.go) - Client-side catalog API
+
+## Tags
+rpc, endpoint, catalog, service-discovery, registration
+
+## Exports
+Catalog, Register, Deregister, ListDatacenters, ListNodes, ListServices, NodeServices
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/catalog_endpoint.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/consul/catalog_endpoint.go" ;
+    code:description "Catalog RPC endpoint for service and node registration/query operations" ;
+    code:layer "rpc" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "./server.go" ;
+        code:relationship "Server RPC framework"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "./state/state_store.go" ;
+        code:relationship "Catalog state storage"
+    ], [
+        code:name "api/catalog" ;
+        code:path "../../api/catalog.go" ;
+        code:relationship "Client-side catalog API"
+    ] ;
+    code:exports :Catalog, :Register, :Deregister, :ListDatacenters, :ListNodes, :ListServices, :NodeServices ;
+    code:tags "rpc", "endpoint", "catalog", "service-discovery", "registration" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (

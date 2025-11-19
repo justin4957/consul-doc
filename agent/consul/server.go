@@ -1,6 +1,50 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/consul/server.go
+Main Consul server implementation coordinating Raft consensus, RPC, and cluster management.
+
+## Linked Modules
+- [agent/consul/fsm](./fsm/commands.go) - Finite state machine for Raft log application
+- [agent/consul/state](./state/state_store.go) - State store for cluster data
+- [agent/consul/leader](./leader.go) - Leader election and duties
+- [acl](../../acl/acl.go) - ACL system integration
+
+## Tags
+server, consensus, raft, rpc, cluster-management
+
+## Exports
+Server, NewServer, IsLeader, Shutdown
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/consul/server.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/consul/server.go" ;
+    code:description "Main Consul server implementation coordinating Raft consensus, RPC, and cluster management" ;
+    code:layer "consensus" ;
+    code:linksTo [
+        code:name "agent/consul/fsm" ;
+        code:path "./fsm/commands.go" ;
+        code:relationship "Finite state machine for Raft log application"
+    ], [
+        code:name "agent/consul/state" ;
+        code:path "./state/state_store.go" ;
+        code:relationship "State store for cluster data"
+    ], [
+        code:name "agent/consul/leader" ;
+        code:path "./leader.go" ;
+        code:relationship "Leader election and duties"
+    ], [
+        code:name "acl" ;
+        code:path "../../acl/acl.go" ;
+        code:relationship "ACL system integration"
+    ] ;
+    code:exports :Server, :NewServer, :IsLeader, :Shutdown ;
+    code:tags "server", "consensus", "raft", "rpc", "cluster-management" .
+<!-- End LinkedDoc RDF -->
+*/
 package consul
 
 import (
