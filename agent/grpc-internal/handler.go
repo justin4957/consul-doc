@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-internal/handler.go
+Internal gRPC server handler for inter-server communication and streaming subscriptions.
+
+## Linked Modules
+- [agent/consul/server](../consul/server.go) - Consul server using internal gRPC
+- [agent/grpc-internal/services/subscribe](./services/subscribe/subscribe.go) - Subscribe service
+
+## Tags
+grpc, internal, server, streaming, inter-server
+
+## Exports
+Handler, NewHandler, Register
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-internal/handler.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/grpc-internal/handler.go" ;
+    code:description "Internal gRPC server handler for inter-server communication and streaming subscriptions" ;
+    code:layer "grpc" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "../consul/server.go" ;
+        code:relationship "Consul server using internal gRPC"
+    ], [
+        code:name "agent/grpc-internal/services/subscribe" ;
+        code:path "./services/subscribe/subscribe.go" ;
+        code:relationship "Subscribe service"
+    ] ;
+    code:exports :Handler, :NewHandler, :Register ;
+    code:tags "grpc", "internal", "server", "streaming", "inter-server" .
+<!-- End LinkedDoc RDF -->
+*/
 package internal
 
 import (

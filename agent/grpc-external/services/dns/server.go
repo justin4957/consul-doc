@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/grpc-external/services/dns/server.go
+DNS over gRPC service for dataplane proxies to query Consul DNS.
+
+## Linked Modules
+- [agent/grpc-external/server](../../server.go) - gRPC server infrastructure
+- [agent/dns](../../../dns/dns.go) - DNS query handler
+
+## Tags
+grpc, service, dns, networking, service-discovery
+
+## Exports
+Server, NewServer, Config, Query
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/grpc-external/services/dns/server.go> a code:Module ;
+    code:language "go" ;
+    code:name "agent/grpc-external/services/dns/server.go" ;
+    code:description "DNS over gRPC service for dataplane proxies to query Consul DNS" ;
+    code:layer "grpc" ;
+    code:linksTo [
+        code:name "agent/grpc-external/server" ;
+        code:path "../../server.go" ;
+        code:relationship "gRPC server infrastructure"
+    ], [
+        code:name "agent/dns" ;
+        code:path "../../../dns/dns.go" ;
+        code:relationship "DNS query handler"
+    ] ;
+    code:exports :Server, :NewServer, :Config, :Query ;
+    code:tags "grpc", "service", "dns", "networking", "service-discovery" .
+<!-- End LinkedDoc RDF -->
+*/
 package dns
 
 import (
