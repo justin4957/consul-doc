@@ -1,6 +1,45 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: internal/controller/controller.go
+Resource controller framework for Kubernetes-style reconciliation loops and dependency watching.
+
+## Linked Modules
+- [internal/resource](../resource/resource.go) - Resource type definitions
+- [internal/storage](../storage/storage.go) - Storage backend abstraction
+- [agent/consul/server](../../agent/consul/server.go) - Server integration
+
+## Tags
+internal, controller, reconciliation, resources, kubernetes-pattern
+
+## Exports
+Controller, NewController, DependencyMapper, Reconciler, Runtime
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<internal/controller/controller.go> a code:Module ;
+    code:language "go" ;
+    code:name "internal/controller/controller.go" ;
+    code:description "Resource controller framework for Kubernetes-style reconciliation loops and dependency watching" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "internal/resource" ;
+        code:path "../resource/resource.go" ;
+        code:relationship "Resource type definitions"
+    ], [
+        code:name "internal/storage" ;
+        code:path "../storage/storage.go" ;
+        code:relationship "Storage backend abstraction"
+    ], [
+        code:name "agent/consul/server" ;
+        code:path "../../agent/consul/server.go" ;
+        code:relationship "Server integration"
+    ] ;
+    code:exports :Controller, :NewController, :DependencyMapper, :Reconciler, :Runtime ;
+    code:tags "internal", "controller", "reconciliation", "resources", "kubernetes-pattern" .
+<!-- End LinkedDoc RDF -->
+*/
 package controller
 
 import (

@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: logging/logger.go
+Logging infrastructure with support for file rotation, syslog, and structured logging.
+
+## Linked Modules
+- [agent/consul/server](../agent/consul/server.go) - Server logging configuration
+- [agent/agent](../agent/agent.go) - Agent logging setup
+
+## Tags
+logging, infrastructure, observability, syslog
+
+## Exports
+Config, Setup, NewLogFile, GatedWriter
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<logging/logger.go> a code:Module ;
+    code:language "go" ;
+    code:name "logging/logger.go" ;
+    code:description "Logging infrastructure with support for file rotation, syslog, and structured logging" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "../agent/consul/server.go" ;
+        code:relationship "Server logging configuration"
+    ], [
+        code:name "agent/agent" ;
+        code:path "../agent/agent.go" ;
+        code:relationship "Agent logging setup"
+    ] ;
+    code:exports :Config, :Setup, :NewLogFile, :GatedWriter ;
+    code:tags "logging", "infrastructure", "observability", "syslog" .
+<!-- End LinkedDoc RDF -->
+*/
 package logging
 
 import (

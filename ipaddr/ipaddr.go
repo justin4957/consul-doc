@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: ipaddr/ipaddr.go
+IP address utilities for parsing, formatting, and validation of IPv4/IPv6 addresses.
+
+## Linked Modules
+- [agent/consul/catalog_endpoint](../agent/consul/catalog_endpoint.go) - Catalog using IP utilities
+- [agent/checks](../agent/checks/check.go) - Health checks with IP validation
+
+## Tags
+utilities, networking, ipv4, ipv6, validation
+
+## Exports
+FormatAddressPort, IsAny, IsAnyV4, IsAnyV6
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<ipaddr/ipaddr.go> a code:Module ;
+    code:language "go" ;
+    code:name "ipaddr/ipaddr.go" ;
+    code:description "IP address utilities for parsing, formatting, and validation of IPv4/IPv6 addresses" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/catalog_endpoint" ;
+        code:path "../agent/consul/catalog_endpoint.go" ;
+        code:relationship "Catalog using IP utilities"
+    ], [
+        code:name "agent/checks" ;
+        code:path "../agent/checks/check.go" ;
+        code:relationship "Health checks with IP validation"
+    ] ;
+    code:exports :FormatAddressPort, :IsAny, :IsAnyV4, :IsAnyV6 ;
+    code:tags "utilities", "networking", "ipv4", "ipv6", "validation" .
+<!-- End LinkedDoc RDF -->
+*/
 package ipaddr
 
 import (

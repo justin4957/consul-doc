@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: tlsutil/config.go
+TLS configuration and certificate management utilities for secure connections.
+
+## Linked Modules
+- [agent/consul/server](../agent/consul/server.go) - Server TLS configuration
+- [connect/service](../connect/service.go) - Service mesh TLS
+
+## Tags
+security, tls, certificates, networking, mtls
+
+## Exports
+Configurator, Config, ProtocolConfig, ALPNWrapper, DCWrapper
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<tlsutil/config.go> a code:Module ;
+    code:language "go" ;
+    code:name "tlsutil/config.go" ;
+    code:description "TLS configuration and certificate management utilities for secure connections" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/server" ;
+        code:path "../agent/consul/server.go" ;
+        code:relationship "Server TLS configuration"
+    ], [
+        code:name "connect/service" ;
+        code:path "../connect/service.go" ;
+        code:relationship "Service mesh TLS"
+    ] ;
+    code:exports :Configurator, :Config, :ProtocolConfig, :ALPNWrapper, :DCWrapper ;
+    code:tags "security", "tls", "certificates", "networking", "mtls" .
+<!-- End LinkedDoc RDF -->
+*/
 package tlsutil
 
 import (

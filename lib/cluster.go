@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: lib/cluster.go
+Common utility functions for cluster-wide operations including timing, jitter, and rate limiting.
+
+## Linked Modules
+- [agent/consul/leader](../agent/consul/leader.go) - Leader using cluster utilities
+- [agent/checks](../agent/checks/check.go) - Health checks using timing utilities
+
+## Tags
+utilities, cluster, timing, jitter, rate-limiting
+
+## Exports
+DurationMinusBuffer, RandomStagger, RateScaledInterval
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<lib/cluster.go> a code:Module ;
+    code:language "go" ;
+    code:name "lib/cluster.go" ;
+    code:description "Common utility functions for cluster-wide operations including timing, jitter, and rate limiting" ;
+    code:layer "internal" ;
+    code:linksTo [
+        code:name "agent/consul/leader" ;
+        code:path "../agent/consul/leader.go" ;
+        code:relationship "Leader using cluster utilities"
+    ], [
+        code:name "agent/checks" ;
+        code:path "../agent/checks/check.go" ;
+        code:relationship "Health checks using timing utilities"
+    ] ;
+    code:exports :DurationMinusBuffer, :RandomStagger, :RateScaledInterval ;
+    code:tags "utilities", "cluster", "timing", "jitter", "rate-limiting" .
+<!-- End LinkedDoc RDF -->
+*/
 package lib
 
 import (
