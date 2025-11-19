@@ -1,6 +1,44 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: agent/proxycfg/manager.go
+Proxy configuration manager coordinating snapshot delivery to Envoy proxies.
+
+## Linked Modules
+- [agent/structs](../structs/structs.go) - Service and proxy definitions
+- [agent/xds](../xds/server.go) - xDS server consuming snapshots
+- [agent/proxycfg-glue](../proxycfg-glue/glue.go) - Data plane integration
+
+## Tags
+service-mesh, proxy, configuration, envoy
+
+## Exports
+Manager, ProxyID, ConfigSnapshot, Register, Watch
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<agent/proxycfg/manager.go> a code:Module ;
+    code:name "agent/proxycfg/manager.go" ;
+    code:description "Proxy configuration manager coordinating snapshot delivery to Envoy proxies" ;
+    code:layer "service-mesh" ;
+    code:linksTo [
+        code:name "agent/structs" ;
+        code:path "../structs/structs.go" ;
+        code:relationship "Service and proxy definitions"
+    ], [
+        code:name "agent/xds" ;
+        code:path "../xds/server.go" ;
+        code:relationship "xDS server consuming snapshots"
+    ], [
+        code:name "agent/proxycfg-glue" ;
+        code:path "../proxycfg-glue/glue.go" ;
+        code:relationship "Data plane integration"
+    ] ;
+    code:exports :Manager, :ProxyID, :ConfigSnapshot, :Register, :Watch ;
+    code:tags "service-mesh", "proxy", "configuration", "envoy" .
+<!-- End LinkedDoc RDF -->
+*/
 package proxycfg
 
 import (
