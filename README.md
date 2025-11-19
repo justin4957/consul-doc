@@ -60,6 +60,17 @@ A few quick start guides are available on the Consul website:
 
 Full, comprehensive documentation is available on the Consul website: https://developer.hashicorp.com/consul/docs
 
+## GraphFS LinkedDoc Integration
+
+This repository is being annotated with GraphFS LinkedDoc+RDF comments to create a queryable knowledge graph of the codebase.
+
+* **[GRAPHFS_SUMMARY.md](./GRAPHFS_SUMMARY.md)** - Quick start guide and overview
+* **[CLAUDE.md](./CLAUDE.md)** - Annotation guidelines and format specification
+* **[GRAPHFS_BASELINE_ROADMAP.md](./GRAPHFS_BASELINE_ROADMAP.md)** - Baseline metrics and benchmarking
+* **[Issue #10 (Meta)](https://github.com/justin4957/consul-doc/issues/10)** - Overall tracking issue
+
+Learn more about GraphFS: [../graphfs](../graphfs)
+
 ## Contributing
 
 Thank you for your interest in contributing! Please refer to [CONTRIBUTING.md](https://github.com/hashicorp/consul/blob/main/.github/CONTRIBUTING.md)
