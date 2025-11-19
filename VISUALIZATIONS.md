@@ -41,9 +41,14 @@ SELECT ?s WHERE {
 
 ## ACL Dependencies
 
-Dependency relationships within the ACL layer.
+Dependency relationships within the ACL layer showing module connections with directional arrows.
 
-![ACL Dependencies](./diagrams/acl-dependencies.png)
+![ACL Dependencies](./diagrams/acl-dependencies-arrows.png)
+
+**Key insights:**
+- Policy flow and authorization chains
+- Static vs dynamic authorizer relationships
+- Resolver and caching dependencies
 
 **Note:** Due to GraphFS Issue #74, relationship traversal is limited. When resolved, this will show full dependency chains.
 
@@ -85,6 +90,45 @@ Public API client library modules.
 
 ---
 
+## Service Mesh Dependencies
+
+Service mesh component dependencies showing how Connect modules interact.
+
+![Service Mesh Dependencies](./diagrams/service-mesh-dependencies.png)
+
+**Components:**
+- Proxy → Certificate Authority flow
+- TLS configuration dependencies
+- Resolver and service registration paths
+
+---
+
+## API Dependencies
+
+API client module dependencies and interaction patterns.
+
+![API Dependencies](./diagrams/api-dependencies.png)
+
+**Highlights:**
+- Client initialization patterns
+- Service endpoint relationships
+- Cross-API dependencies
+
+---
+
+## gRPC Service Dependencies
+
+gRPC service layer dependencies showing protocol buffer and service relationships.
+
+![gRPC Dependencies](./diagrams/grpc-dependencies.png)
+
+**Services:**
+- Dataplane service connections
+- Peerstream relationships
+- Resource and DNS services
+
+---
+
 ## How These Were Generated
 
 All visualizations are auto-generated from GraphFS semantic metadata:
@@ -106,10 +150,29 @@ graphfs viz --format png --type layer \
   --title "Core Layers Overview" --color-by layer --layout neato \
   --output diagrams/core-layers.png
 
-# ACL dependencies
+# ACL dependencies with arrows
 graphfs viz --format png --type dependency --layer acl \
-  --title "ACL Dependencies" --layout dot \
-  --output diagrams/acl-dependencies.png
+  --title "ACL Module Dependencies" --color-by layer --labels \
+  --layout dot --rankdir TB \
+  --output diagrams/acl-dependencies-arrows.png
+
+# Service mesh dependencies
+graphfs viz --format png --type dependency --layer service-mesh \
+  --title "Service Mesh Dependencies" --color-by layer --labels \
+  --layout dot --rankdir TB \
+  --output diagrams/service-mesh-dependencies.png
+
+# API dependencies
+graphfs viz --format png --type dependency --layer api \
+  --title "API Module Dependencies" --color-by layer --labels \
+  --layout dot --rankdir LR \
+  --output diagrams/api-dependencies.png
+
+# gRPC dependencies
+graphfs viz --format png --type dependency --layer grpc \
+  --title "gRPC Services Dependencies" --color-by layer --labels \
+  --layout dot --rankdir LR \
+  --output diagrams/grpc-dependencies.png
 ```
 
 ---
