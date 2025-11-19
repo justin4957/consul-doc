@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/health.go
+Health API client for querying service and node health status.
+
+## Linked Modules
+- [api/api](./api.go) - Main API client
+- [agent/consul/health_endpoint](../agent/consul/health_endpoint.go) - Server-side health endpoints
+
+## Tags
+api, client, health, monitoring, service-discovery
+
+## Exports
+Health, HealthCheck, ServiceEntry, HealthChecks
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/health.go> a code:Module ;
+    code:name "api/health.go" ;
+    code:description "Health API client for querying service and node health status" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api/api" ;
+        code:path "./api.go" ;
+        code:relationship "Main API client"
+    ], [
+        code:name "agent/consul/health_endpoint" ;
+        code:path "../agent/consul/health_endpoint.go" ;
+        code:relationship "Server-side health endpoints"
+    ] ;
+    code:exports :Health, :HealthCheck, :ServiceEntry, :HealthChecks ;
+    code:tags "api", "client", "health", "monitoring", "service-discovery" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

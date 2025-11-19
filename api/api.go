@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/api.go
+Main Consul HTTP API client with configuration and request handling.
+
+## Linked Modules
+- [api/agent](./agent.go) - Agent API operations
+- [api/catalog](./catalog.go) - Catalog API operations
+- [api/health](./health.go) - Health check API
+- [api/kv](./kv.go) - Key-value store API
+- [api/acl](./acl.go) - ACL API operations
+
+## Tags
+api, client, http, sdk
+
+## Exports
+Client, Config, QueryOptions, WriteOptions, NewClient, DefaultConfig
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/api.go> a code:Module ;
+    code:name "api/api.go" ;
+    code:description "Main Consul HTTP API client with configuration and request handling" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api/agent" ;
+        code:path "./agent.go" ;
+        code:relationship "Agent API operations"
+    ], [
+        code:name "api/catalog" ;
+        code:path "./catalog.go" ;
+        code:relationship "Catalog API operations"
+    ], [
+        code:name "api/health" ;
+        code:path "./health.go" ;
+        code:relationship "Health check API"
+    ], [
+        code:name "api/kv" ;
+        code:path "./kv.go" ;
+        code:relationship "Key-value store API"
+    ], [
+        code:name "api/acl" ;
+        code:path "./acl.go" ;
+        code:relationship "ACL API operations"
+    ] ;
+    code:exports :Client, :Config, :QueryOptions, :WriteOptions, :NewClient, :DefaultConfig ;
+    code:tags "api", "client", "http", "sdk" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (

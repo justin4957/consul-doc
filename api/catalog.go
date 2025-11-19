@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
+/*
+# Module: api/catalog.go
+Catalog API client for querying nodes, services, and datacenter information.
+
+## Linked Modules
+- [api/api](./api.go) - Main API client
+- [agent/consul/catalog_endpoint](../agent/consul/catalog_endpoint.go) - Server-side catalog endpoints
+
+## Tags
+api, client, catalog, discovery, service-discovery
+
+## Exports
+Catalog, CatalogService, CatalogNode, CatalogRegistration, Node
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<api/catalog.go> a code:Module ;
+    code:name "api/catalog.go" ;
+    code:description "Catalog API client for querying nodes, services, and datacenter information" ;
+    code:layer "api" ;
+    code:linksTo [
+        code:name "api/api" ;
+        code:path "./api.go" ;
+        code:relationship "Main API client"
+    ], [
+        code:name "agent/consul/catalog_endpoint" ;
+        code:path "../agent/consul/catalog_endpoint.go" ;
+        code:relationship "Server-side catalog endpoints"
+    ] ;
+    code:exports :Catalog, :CatalogService, :CatalogNode, :CatalogRegistration, :Node ;
+    code:tags "api", "client", "catalog", "discovery", "service-discovery" .
+<!-- End LinkedDoc RDF -->
+*/
 package api
 
 import (
