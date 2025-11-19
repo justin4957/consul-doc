@@ -1,6 +1,54 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/authorizer.go
+Authorization interface and enforcement implementations for ACL policy evaluation.
+
+## Linked Modules
+- [acl](./acl.go) - Core ACL configuration
+- [policy](./policy.go) - Policy definitions used for authorization decisions
+- [policy_authorizer](./policy_authorizer.go) - Policy-based authorizer implementation
+- [static_authorizer](./static_authorizer.go) - Static authorization rules
+- [chained_authorizer](./chained_authorizer.go) - Chained authorization for policy composition
+
+## Tags
+security, authorization, policy, enforcement
+
+## Exports
+Authorizer, AllowAuthorizer, EnforcementDecision, Resource, Enforce, NewAuthorizerFromRules
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/authorizer.go> a code:Module ;
+    code:name "acl/authorizer.go" ;
+    code:description "Authorization interface and enforcement implementations for ACL policy evaluation" ;
+    code:layer "acl" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "./acl.go" ;
+        code:relationship "Core ACL configuration"
+    ], [
+        code:name "policy" ;
+        code:path "./policy.go" ;
+        code:relationship "Policy definitions used for authorization decisions"
+    ], [
+        code:name "policy_authorizer" ;
+        code:path "./policy_authorizer.go" ;
+        code:relationship "Policy-based authorizer implementation"
+    ], [
+        code:name "static_authorizer" ;
+        code:path "./static_authorizer.go" ;
+        code:relationship "Static authorization rules"
+    ], [
+        code:name "chained_authorizer" ;
+        code:path "./chained_authorizer.go" ;
+        code:relationship "Chained authorization for policy composition"
+    ] ;
+    code:exports :Authorizer, :AllowAuthorizer, :EnforcementDecision, :Resource, :Enforce, :NewAuthorizerFromRules ;
+    code:tags "security", "authorization", "policy", "enforcement" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

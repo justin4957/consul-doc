@@ -1,6 +1,44 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/policy_authorizer.go
+Policy-based authorizer implementation using radix trees for efficient rule matching.
+
+## Linked Modules
+- [authorizer](./authorizer.go) - Implements the Authorizer interface
+- [policy](./policy.go) - Uses Policy definitions for rule evaluation
+- [acl](./acl.go) - Core ACL configuration
+
+## Tags
+security, authorization, policy, implementation
+
+## Exports
+NewPolicyAuthorizer, policyAuthorizer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/policy_authorizer.go> a code:Module ;
+    code:name "acl/policy_authorizer.go" ;
+    code:description "Policy-based authorizer implementation using radix trees for efficient rule matching" ;
+    code:layer "acl" ;
+    code:linksTo [
+        code:name "authorizer" ;
+        code:path "./authorizer.go" ;
+        code:relationship "Implements the Authorizer interface"
+    ], [
+        code:name "policy" ;
+        code:path "./policy.go" ;
+        code:relationship "Uses Policy definitions for rule evaluation"
+    ], [
+        code:name "acl" ;
+        code:path "./acl.go" ;
+        code:relationship "Core ACL configuration"
+    ] ;
+    code:exports :NewPolicyAuthorizer, :policyAuthorizer ;
+    code:tags "security", "authorization", "policy", "implementation" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

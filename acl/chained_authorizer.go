@@ -1,6 +1,44 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/chained_authorizer.go
+Chained authorizer for composing multiple authorization policies with precedence rules.
+
+## Linked Modules
+- [authorizer](./authorizer.go) - Implements the Authorizer interface
+- [policy_authorizer](./policy_authorizer.go) - Can be chained with policy authorizers
+- [static_authorizer](./static_authorizer.go) - Can be chained with static authorizers
+
+## Tags
+security, authorization, composition, policy-chaining
+
+## Exports
+ChainedAuthorizer, NewChainedAuthorizer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/chained_authorizer.go> a code:Module ;
+    code:name "acl/chained_authorizer.go" ;
+    code:description "Chained authorizer for composing multiple authorization policies with precedence rules" ;
+    code:layer "acl" ;
+    code:linksTo [
+        code:name "authorizer" ;
+        code:path "./authorizer.go" ;
+        code:relationship "Implements the Authorizer interface"
+    ], [
+        code:name "policy_authorizer" ;
+        code:path "./policy_authorizer.go" ;
+        code:relationship "Can be chained with policy authorizers"
+    ], [
+        code:name "static_authorizer" ;
+        code:path "./static_authorizer.go" ;
+        code:relationship "Can be chained with static authorizers"
+    ] ;
+    code:exports :ChainedAuthorizer, :NewChainedAuthorizer ;
+    code:tags "security", "authorization", "composition", "policy-chaining" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 // ChainedAuthorizer can combine multiple Authorizers into one.
