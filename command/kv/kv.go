@@ -1,6 +1,40 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: command/kv/kv.go
+CLI command parent for key-value store operations (get, put, delete).
+
+## Linked Modules
+- [api/kv](../../api/kv.go) - KV API client
+- [command/registry](../registry.go) - Command registry
+
+## Tags
+cli, kv, storage, commands
+
+## Exports
+New, cmd, Run
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<command/kv/kv.go> a code:Module ;
+    code:language "go" ;
+    code:name "command/kv/kv.go" ;
+    code:description "CLI command parent for key-value store operations (get, put, delete)" ;
+    code:layer "cli" ;
+    code:linksTo [
+        code:name "api/kv" ;
+        code:path "../../api/kv.go" ;
+        code:relationship "KV API client"
+    ], [
+        code:name "command/registry" ;
+        code:path "../registry.go" ;
+        code:relationship "Command registry"
+    ] ;
+    code:exports :New, :cmd, :Run ;
+    code:tags "cli", "kv", "storage", "commands" .
+<!-- End LinkedDoc RDF -->
+*/
 package kv
 
 import (
