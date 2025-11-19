@@ -1,6 +1,39 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/static_authorizer.go
+Static authorization rules providing allow-all, deny-all, and manage-all policies.
+
+## Linked Modules
+- [authorizer](./authorizer.go) - Implements the Authorizer interface
+- [chained_authorizer](./chained_authorizer.go) - Often used as base in authorization chains
+
+## Tags
+security, authorization, static-policy
+
+## Exports
+DenyAll, AllowAll, ManageAll, RootAuthorizer
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/static_authorizer.go> a code:Module ;
+    code:name "acl/static_authorizer.go" ;
+    code:description "Static authorization rules providing allow-all, deny-all, and manage-all policies" ;
+    code:layer "acl" ;
+    code:linksTo [
+        code:name "authorizer" ;
+        code:path "./authorizer.go" ;
+        code:relationship "Implements the Authorizer interface"
+    ], [
+        code:name "chained_authorizer" ;
+        code:path "./chained_authorizer.go" ;
+        code:relationship "Often used as base in authorization chains"
+    ] ;
+    code:exports :DenyAll, :AllowAll, :ManageAll, :RootAuthorizer ;
+    code:tags "security", "authorization", "static-policy" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 var (

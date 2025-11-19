@@ -1,6 +1,44 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/policy.go
+ACL policy definitions, parsing, and validation for rule-based access control.
+
+## Linked Modules
+- [acl](./acl.go) - Core ACL configuration
+- [authorizer](./authorizer.go) - Authorization enforcement using policies
+- [policy_authorizer](./policy_authorizer.go) - Authorizer implementation from policies
+
+## Tags
+security, policy, access-control, parsing
+
+## Exports
+Policy, PolicyRules, AccessLevel, AgentRule, KeyRule, NodeRule, ServiceRule, SessionRule, EventRule, PreparedQueryRule, NewPolicyFromSource
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/policy.go> a code:Module ;
+    code:name "acl/policy.go" ;
+    code:description "ACL policy definitions, parsing, and validation for rule-based access control" ;
+    code:layer "acl" ;
+    code:linksTo [
+        code:name "acl" ;
+        code:path "./acl.go" ;
+        code:relationship "Core ACL configuration"
+    ], [
+        code:name "authorizer" ;
+        code:path "./authorizer.go" ;
+        code:relationship "Authorization enforcement using policies"
+    ], [
+        code:name "policy_authorizer" ;
+        code:path "./policy_authorizer.go" ;
+        code:relationship "Authorizer implementation from policies"
+    ] ;
+    code:exports :Policy, :PolicyRules, :AccessLevel, :AgentRule, :KeyRule, :NodeRule, :ServiceRule, :SessionRule, :EventRule, :PreparedQueryRule, :NewPolicyFromSource ;
+    code:tags "security", "policy", "access-control", "parsing" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 import (

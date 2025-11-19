@@ -1,6 +1,44 @@
 // Copyright (c) HashiCorp, Inc.
 // SPDX-License-Identifier: BUSL-1.1
 
+/*
+# Module: acl/acl.go
+Core ACL configuration and types for access control in Consul.
+
+## Linked Modules
+- [authorizer](./authorizer.go) - Authorization interface and enforcement
+- [policy](./policy.go) - Policy definitions and parsing
+- [resolver](./resolver/result.go) - ACL token resolution
+
+## Tags
+security, access-control, configuration
+
+## Exports
+Config, ExportFetcher, ExportedServices, AnonymousTokenID, WildcardName, AliasIfAnonymousToken
+
+<!-- LinkedDoc RDF -->
+@prefix code: <https://schema.codedoc.org/> .
+<acl/acl.go> a code:Module ;
+    code:name "acl/acl.go" ;
+    code:description "Core ACL configuration and types for access control in Consul" ;
+    code:layer "acl" ;
+    code:linksTo [
+        code:name "authorizer" ;
+        code:path "./authorizer.go" ;
+        code:relationship "Authorization interface and enforcement"
+    ], [
+        code:name "policy" ;
+        code:path "./policy.go" ;
+        code:relationship "Policy definitions and parsing"
+    ], [
+        code:name "resolver" ;
+        code:path "./resolver/result.go" ;
+        code:relationship "ACL token resolution"
+    ] ;
+    code:exports :Config, :ExportFetcher, :ExportedServices, :AnonymousTokenID, :WildcardName, :AliasIfAnonymousToken ;
+    code:tags "security", "access-control", "configuration" .
+<!-- End LinkedDoc RDF -->
+*/
 package acl
 
 const (
